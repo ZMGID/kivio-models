@@ -1,0 +1,28 @@
+name: Validate
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/validate.mjs
+      - name: Require a new version when published data changes
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if [ -n "$BASE_SHA" ] && [ "$BASE_SHA" != "0000000000000000000000000000000000000000" ] && git cat-file -e "$BASE_SHA:v1/modelDatabase.json" 2>/dev/null; then
+            if ! git diff --quiet "$BASE_SHA" HEAD -- v1/modelDatabase.json; then
+              git show "$BASE_SHA:v1/modelDatabase.json" > "$RUNNER_TEMP/previous-models.json"
+              node scripts/validate.mjs v1/modelDatabase.json "$RUNNER_TEMP/previous-models.json"
+            fi
+          fi
