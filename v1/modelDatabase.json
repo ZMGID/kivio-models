@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "version": "2026-10-13.2",
+    "version": "2026-10-13.3",
     "schemaVersion": 1,
     "description": "AI model database for Kivio. Keyed by model ID patterns. Used for auto-filling model info when adding models.",
     "sources": [
@@ -867,35 +867,6 @@
       "low"
     ]
   },
-  "abacusai/dracarys-llama-3.1-70b-instruct": {
-    "displayName": "dracarys-llama-3.1-70b-instruct",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-09-11",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
   "accounts/fireworks/models/chronos-hermes-13b-v2": {
     "displayName": "accounts/fireworks/models/chronos-hermes-13b-v2",
     "contextWindow": 4096,
@@ -1472,19 +1443,6 @@
     },
     "maxOutput": 131072
   },
-  "accounts/fireworks/models/deepseek-v2-lite-chat": {
-    "displayName": "accounts/fireworks/models/deepseek-v2-lite-chat",
-    "contextWindow": 163840,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/deepseek-v2-lite-chat"
-    },
-    "maxOutput": 163840
-  },
   "accounts/fireworks/models/deepseek-v2p5": {
     "displayName": "accounts/fireworks/models/deepseek-v2p5",
     "contextWindow": 32768,
@@ -1787,19 +1745,6 @@
     },
     "maxOutput": 131072
   },
-  "accounts/fireworks/models/dolphin-2p6-mixtral-8x7b": {
-    "displayName": "accounts/fireworks/models/dolphin-2p6-mixtral-8x7b",
-    "contextWindow": 32768,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/dolphin-2p6-mixtral-8x7b"
-    },
-    "maxOutput": 32768
-  },
   "accounts/fireworks/models/ember-1": {
     "displayName": "Ember-1",
     "contextWindow": 1048576,
@@ -2075,19 +2020,6 @@
       "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
       "provider": "fireworks_ai",
       "sourceId": "fireworks_ai/accounts/fireworks/models/gemma-7b-it"
-    },
-    "maxOutput": 8192
-  },
-  "accounts/fireworks/models/gemma2-9b-it": {
-    "displayName": "accounts/fireworks/models/gemma2-9b-it",
-    "contextWindow": 8192,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/gemma2-9b-it"
     },
     "maxOutput": 8192
   },
@@ -3285,86 +3217,6 @@
     },
     "maxOutput": 32768
   },
-  "accounts/fireworks/models/mixtral-8x22b": {
-    "displayName": "accounts/fireworks/models/mixtral-8x22b",
-    "contextWindow": 65536,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/mixtral-8x22b"
-    },
-    "maxOutput": 65536
-  },
-  "accounts/fireworks/models/mixtral-8x22b-instruct": {
-    "displayName": "accounts/fireworks/models/mixtral-8x22b-instruct",
-    "contextWindow": 65536,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/mixtral-8x22b-instruct"
-    },
-    "maxOutput": 65536
-  },
-  "accounts/fireworks/models/mixtral-8x22b-instruct-hf": {
-    "displayName": "accounts/fireworks/models/mixtral-8x22b-instruct-hf",
-    "contextWindow": 65536,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/mixtral-8x22b-instruct-hf"
-    },
-    "maxOutput": 65536
-  },
-  "accounts/fireworks/models/mixtral-8x7b": {
-    "displayName": "accounts/fireworks/models/mixtral-8x7b",
-    "contextWindow": 32768,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/mixtral-8x7b"
-    },
-    "maxOutput": 32768
-  },
-  "accounts/fireworks/models/mixtral-8x7b-instruct": {
-    "displayName": "accounts/fireworks/models/mixtral-8x7b-instruct",
-    "contextWindow": 32768,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/mixtral-8x7b-instruct"
-    },
-    "maxOutput": 32768
-  },
-  "accounts/fireworks/models/mixtral-8x7b-instruct-hf": {
-    "displayName": "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
-    "contextWindow": 32768,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/mixtral-8x7b-instruct-hf"
-    },
-    "maxOutput": 32768
-  },
   "accounts/fireworks/models/muse-glimmer-30b": {
     "displayName": "accounts/fireworks/models/muse-glimmer-30b",
     "contextWindow": 131072,
@@ -3478,19 +3330,6 @@
     },
     "maxOutput": 32768
   },
-  "accounts/fireworks/models/nous-hermes-2-mixtral-8x7b-dpo": {
-    "displayName": "accounts/fireworks/models/nous-hermes-2-mixtral-8x7b-dpo",
-    "contextWindow": 32768,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/nous-hermes-2-mixtral-8x7b-dpo"
-    },
-    "maxOutput": 32768
-  },
   "accounts/fireworks/models/nous-hermes-2-yi-34b": {
     "displayName": "accounts/fireworks/models/nous-hermes-2-yi-34b",
     "contextWindow": 4096,
@@ -3501,45 +3340,6 @@
       "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
       "provider": "fireworks_ai",
       "sourceId": "fireworks_ai/accounts/fireworks/models/nous-hermes-2-yi-34b"
-    },
-    "maxOutput": 4096
-  },
-  "accounts/fireworks/models/nous-hermes-llama2-13b": {
-    "displayName": "accounts/fireworks/models/nous-hermes-llama2-13b",
-    "contextWindow": 4096,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/nous-hermes-llama2-13b"
-    },
-    "maxOutput": 4096
-  },
-  "accounts/fireworks/models/nous-hermes-llama2-70b": {
-    "displayName": "accounts/fireworks/models/nous-hermes-llama2-70b",
-    "contextWindow": 4096,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/nous-hermes-llama2-70b"
-    },
-    "maxOutput": 4096
-  },
-  "accounts/fireworks/models/nous-hermes-llama2-7b": {
-    "displayName": "accounts/fireworks/models/nous-hermes-llama2-7b",
-    "contextWindow": 4096,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/nous-hermes-llama2-7b"
     },
     "maxOutput": 4096
   },
@@ -8639,37 +8439,6 @@
       "max"
     ]
   },
-  "anthropic.claude-opus-4-1-20250805-v1:0": {
-    "displayName": "Claude Opus 4.1",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "amazon-bedrock"
-    },
-    "maxOutput": 32000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-08-05",
-    "status": "deprecated",
-    "canonicalId": "anthropic/claude-opus-4-1-20250805"
-  },
   "anthropic.claude-opus-4-5-20251101-v1:0": {
     "displayName": "Claude Opus 4.5",
     "contextWindow": 200000,
@@ -9103,177 +8872,6 @@
       "cachedInput": 0.2
     },
     "aliasOf": "claude-sonnet-5.5"
-  },
-  "anthropic/claude-3-5-haiku-20241022": {
-    "displayName": "Claude 3.5 Haiku",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": false,
-      "streaming": true,
-      "webSearch": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json",
-      "curatedBase": "claude-3.5-haiku"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-10-22",
-    "reasoningEfforts": [],
-    "canonicalId": "anthropic/claude-3-5-haiku-20241022",
-    "pricing": {
-      "input": 0.8,
-      "output": 4,
-      "cachedInput": 0.08
-    },
-    "aliasOf": "claude-3.5-haiku"
-  },
-  "anthropic/claude-3-5-sonnet-20241022": {
-    "displayName": "Claude Sonnet 3.5 v2",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-10-22",
-    "reasoningEfforts": [],
-    "canonicalId": "anthropic/claude-3-5-sonnet-20241022"
-  },
-  "anthropic/claude-3-7-sonnet-20250219": {
-    "displayName": "Claude Sonnet 3.7",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 64000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-02-19",
-    "canonicalId": "anthropic/claude-3-7-sonnet-20250219"
-  },
-  "anthropic/claude-3-7-sonnet-latest": {
-    "displayName": "anthropic/claude-3-7-sonnet-latest",
-    "contextWindow": 200000,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "deepinfra",
-      "sourceId": "deepinfra/anthropic/claude-3-7-sonnet-latest"
-    },
-    "maxOutput": 200000
-  },
-  "anthropic/claude-3-haiku-20240307": {
-    "displayName": "Claude Haiku 3",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-03-13",
-    "reasoningEfforts": [],
-    "canonicalId": "anthropic/claude-3-haiku-20240307"
-  },
-  "anthropic/claude-4-opus": {
-    "displayName": "anthropic/claude-4-opus",
-    "contextWindow": 200000,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "deepinfra",
-      "sourceId": "deepinfra/anthropic/claude-4-opus"
-    },
-    "maxOutput": 200000
-  },
-  "anthropic/claude-4-sonnet": {
-    "displayName": "anthropic/claude-4-sonnet",
-    "contextWindow": 200000,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "deepinfra",
-      "sourceId": "deepinfra/anthropic/claude-4-sonnet"
-    },
-    "maxOutput": 200000
   },
   "anthropic/claude-fable-5": {
     "displayName": "Claude Fable 5",
@@ -9812,134 +9410,6 @@
       "cachedInput": 1
     },
     "aliasOf": "claude-mythos-5"
-  },
-  "anthropic/claude-opus-4-0": {
-    "displayName": "Claude Opus 4 (latest)",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 32000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-05-22",
-    "canonicalId": "anthropic/claude-opus-4-0"
-  },
-  "anthropic/claude-opus-4-1": {
-    "displayName": "Claude Opus 4.1 (latest)",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 32000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-08-05",
-    "canonicalId": "anthropic/claude-opus-4-1"
-  },
-  "anthropic/claude-opus-4-1-20250805": {
-    "displayName": "Claude Opus 4.1",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 32000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-08-05",
-    "canonicalId": "anthropic/claude-opus-4-1-20250805"
-  },
-  "anthropic/claude-opus-4-20250514": {
-    "displayName": "Claude Opus 4",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json",
-      "curatedBase": "claude-opus-4"
-    },
-    "maxOutput": 32000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-05-22",
-    "canonicalId": "anthropic/claude-opus-4-20250514",
-    "reasoningEfforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "pricing": {
-      "input": 15,
-      "output": 75,
-      "cachedInput": 1.5
-    },
-    "aliasOf": "claude-opus-4"
   },
   "anthropic/claude-opus-4-5": {
     "displayName": "Claude Opus 4.5",
@@ -10778,116 +10248,6 @@
       "max"
     ],
     "variantOf": "claude-opus-5.5"
-  },
-  "anthropic/claude-sonnet-4": {
-    "displayName": "Claude Sonnet 4",
-    "contextWindow": 1000000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true
-    },
-    "modelType": "chat",
-    "modalities": {
-      "input": [
-        "image",
-        "text",
-        "file"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "source": {
-      "catalog": "OpenRouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
-      "provider": "openrouter",
-      "curatedBase": "claude-sonnet-4"
-    },
-    "maxOutput": 64000,
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cachedInput": 0.3
-    },
-    "reasoningEfforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "aliasOf": "claude-sonnet-4"
-  },
-  "anthropic/claude-sonnet-4-0": {
-    "displayName": "Claude Sonnet 4 (latest)",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 64000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-05-22",
-    "canonicalId": "anthropic/claude-sonnet-4-0"
-  },
-  "anthropic/claude-sonnet-4-20250514": {
-    "displayName": "Claude Sonnet 4",
-    "contextWindow": 1000000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json",
-      "curatedBase": "claude-sonnet-4"
-    },
-    "maxOutput": 64000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-05-22",
-    "canonicalId": "anthropic/claude-sonnet-4-20250514",
-    "reasoningEfforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cachedInput": 0.3
-    },
-    "aliasOf": "claude-sonnet-4"
   },
   "anthropic/claude-sonnet-4-5": {
     "displayName": "Claude Sonnet 4.5",
@@ -13843,36 +13203,6 @@
     },
     "aliasOf": "seed-2.0-pro"
   },
-  "bytedance/seed-oss-36b-instruct": {
-    "displayName": "ByteDance-Seed/Seed-OSS-36B-Instruct",
-    "contextWindow": 262000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 262000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-09-04",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
   "bytedance/seedance-1-5-pro": {
     "displayName": "ByteDance: Seedance 1.5 Pro",
     "contextWindow": 0,
@@ -14333,201 +13663,6 @@
     "maxOutput": 4096,
     "aliasOf": "accounts/fireworks/models/chronos-hermes-13b-v2"
   },
-  "claude-3-5-haiku-20241022": {
-    "displayName": "Claude 3.5 Haiku",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": false,
-      "streaming": true,
-      "webSearch": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json",
-      "curatedBase": "claude-3.5-haiku"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-10-22",
-    "reasoningEfforts": [],
-    "canonicalId": "anthropic/claude-3-5-haiku-20241022",
-    "aliasOf": "claude-3.5-haiku",
-    "pricing": {
-      "input": 0.8,
-      "output": 4,
-      "cachedInput": 0.08
-    }
-  },
-  "claude-3-5-sonnet-20241022": {
-    "displayName": "Claude Sonnet 3.5 v2",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-10-22",
-    "reasoningEfforts": [],
-    "canonicalId": "anthropic/claude-3-5-sonnet-20241022",
-    "aliasOf": "anthropic/claude-3-5-sonnet-20241022"
-  },
-  "claude-3-7-sonnet-20250219": {
-    "displayName": "Claude Sonnet 3.7",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 64000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-02-19",
-    "canonicalId": "anthropic/claude-3-7-sonnet-20250219",
-    "aliasOf": "anthropic/claude-3-7-sonnet-20250219"
-  },
-  "claude-3-7-sonnet-latest": {
-    "displayName": "anthropic/claude-3-7-sonnet-latest",
-    "contextWindow": 200000,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "deepinfra",
-      "sourceId": "deepinfra/anthropic/claude-3-7-sonnet-latest"
-    },
-    "maxOutput": 200000,
-    "aliasOf": "anthropic/claude-3-7-sonnet-latest"
-  },
-  "claude-3-haiku-20240307": {
-    "displayName": "Claude Haiku 3",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-03-13",
-    "reasoningEfforts": [],
-    "canonicalId": "anthropic/claude-3-haiku-20240307",
-    "aliasOf": "anthropic/claude-3-haiku-20240307"
-  },
-  "claude-3.5-haiku": {
-    "displayName": "Claude 3.5 Haiku",
-    "contextWindow": 200000,
-    "maxOutput": 8192,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": false,
-      "streaming": true,
-      "webSearch": true
-    },
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.8,
-      "output": 4,
-      "cachedInput": 0.08
-    }
-  },
-  "claude-4-opus": {
-    "displayName": "anthropic/claude-4-opus",
-    "contextWindow": 200000,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "deepinfra",
-      "sourceId": "deepinfra/anthropic/claude-4-opus"
-    },
-    "maxOutput": 200000,
-    "aliasOf": "anthropic/claude-4-opus"
-  },
-  "claude-4-sonnet": {
-    "displayName": "anthropic/claude-4-sonnet",
-    "contextWindow": 200000,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "deepinfra",
-      "sourceId": "deepinfra/anthropic/claude-4-sonnet"
-    },
-    "maxOutput": 200000,
-    "aliasOf": "anthropic/claude-4-sonnet"
-  },
   "claude-fable-5": {
     "displayName": "Claude Fable 5",
     "contextWindow": 1000000,
@@ -14847,181 +13982,6 @@
       "input": 10,
       "output": 50,
       "cachedInput": 0.25
-    }
-  },
-  "claude-mythos-preview": {
-    "displayName": "claude-mythos-preview",
-    "contextWindow": 1000000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "anthropic",
-      "sourceId": "claude-mythos-preview"
-    },
-    "maxOutput": 128000,
-    "pricing": {
-      "input": 10,
-      "output": 50,
-      "cachedInput": 1
-    }
-  },
-  "claude-opus-4": {
-    "displayName": "Claude Opus 4",
-    "contextWindow": 200000,
-    "maxOutput": 32000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true
-    },
-    "reasoningEfforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "pricing": {
-      "input": 15,
-      "output": 75,
-      "cachedInput": 1.5
-    }
-  },
-  "claude-opus-4-0": {
-    "displayName": "Claude Opus 4 (latest)",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 32000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-05-22",
-    "canonicalId": "anthropic/claude-opus-4-0",
-    "aliasOf": "anthropic/claude-opus-4-0"
-  },
-  "claude-opus-4-1": {
-    "displayName": "Claude Opus 4.1 (latest)",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 32000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-08-05",
-    "canonicalId": "anthropic/claude-opus-4-1",
-    "aliasOf": "anthropic/claude-opus-4-1"
-  },
-  "claude-opus-4-1-20250805": {
-    "displayName": "Claude Opus 4.1",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 32000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-08-05",
-    "canonicalId": "anthropic/claude-opus-4-1-20250805",
-    "aliasOf": "anthropic/claude-opus-4-1-20250805"
-  },
-  "claude-opus-4-20250514": {
-    "displayName": "Claude Opus 4",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json",
-      "curatedBase": "claude-opus-4"
-    },
-    "maxOutput": 32000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-05-22",
-    "canonicalId": "anthropic/claude-opus-4-20250514",
-    "reasoningEfforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "aliasOf": "claude-opus-4",
-    "pricing": {
-      "input": 15,
-      "output": 75,
-      "cachedInput": 1.5
     }
   },
   "claude-opus-4-5": {
@@ -15483,99 +14443,6 @@
       "input": 4,
       "output": 20,
       "cachedInput": 0.2
-    }
-  },
-  "claude-sonnet-4": {
-    "displayName": "Claude Sonnet 4",
-    "contextWindow": 1000000,
-    "maxOutput": 64000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true
-    },
-    "reasoningEfforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cachedInput": 0.3
-    }
-  },
-  "claude-sonnet-4-0": {
-    "displayName": "Claude Sonnet 4 (latest)",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 64000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-05-22",
-    "canonicalId": "anthropic/claude-sonnet-4-0",
-    "aliasOf": "anthropic/claude-sonnet-4-0"
-  },
-  "claude-sonnet-4-20250514": {
-    "displayName": "Claude Sonnet 4",
-    "contextWindow": 1000000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json",
-      "curatedBase": "claude-sonnet-4"
-    },
-    "maxOutput": 64000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-05-22",
-    "canonicalId": "anthropic/claude-sonnet-4-20250514",
-    "reasoningEfforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "aliasOf": "claude-sonnet-4",
-    "pricing": {
-      "input": 3,
-      "output": 15,
-      "cachedInput": 0.3
     }
   },
   "claude-sonnet-4-5": {
@@ -17585,48 +16452,6 @@
     "reasoningEfforts": [],
     "aliasOf": "groq/compound-mini"
   },
-  "computer-use-preview": {
-    "displayName": "computer-use-preview",
-    "contextWindow": 8192,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "computer-use-preview"
-    },
-    "maxOutput": 1024,
-    "pricing": {
-      "input": 3,
-      "output": 12
-    }
-  },
-  "computer-use-preview-2025-03-11": {
-    "displayName": "computer-use-preview-2025-03-11",
-    "contextWindow": 8192,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "computer-use-preview-2025-03-11"
-    },
-    "maxOutput": 1024,
-    "pricing": {
-      "input": 3,
-      "output": 12
-    }
-  },
   "cosmos-predict1-5b": {
     "displayName": "cosmos-predict1-5b",
     "contextWindow": 0,
@@ -17779,40 +16604,6 @@
     "reasoningEfforts": [],
     "canonicalId": "thedrummer/cydonia-24b-v4.1",
     "aliasOf": "thedrummer/cydonia-24b-v4.1"
-  },
-  "dall-e-2": {
-    "displayName": "DALL-E 2",
-    "contextWindow": 0,
-    "maxOutput": 0,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": false,
-      "reasoning": false,
-      "streaming": false,
-      "webSearch": false,
-      "imageGeneration": true
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
-  },
-  "dall-e-3": {
-    "displayName": "DALL-E 3",
-    "contextWindow": 0,
-    "maxOutput": 0,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": false,
-      "reasoning": false,
-      "streaming": false,
-      "webSearch": false,
-      "imageGeneration": true
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
   },
   "daybreak-blue-latest": {
     "displayName": "daybreak-blue-latest",
@@ -18171,42 +16962,6 @@
     "releaseDate": "2025-10-20",
     "reasoningEfforts": []
   },
-  "deepseek-ai/deepseek-r1": {
-    "displayName": "DeepSeek R1",
-    "contextWindow": 163840,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": false,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "togetherai",
-      "curatedBase": "deepseek-r1"
-    },
-    "maxOutput": 16000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-01-20",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.7,
-      "output": 2.5,
-      "cachedInput": 0.14
-    },
-    "aliasOf": "deepseek-r1"
-  },
   "deepseek-ai/deepseek-r1-0528": {
     "displayName": "DeepSeek R1-0528",
     "contextWindow": 163840,
@@ -18269,18 +17024,6 @@
       "sourceId": "deepinfra/deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
     },
     "maxOutput": 131072
-  },
-  "deepseek-ai/deepseek-r1-distill-qwen-1.5b": {
-    "displayName": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
-    "contextWindow": 131072,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "together_ai",
-      "sourceId": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
-    }
   },
   "deepseek-ai/deepseek-r1-distill-qwen-14b": {
     "displayName": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
@@ -18353,65 +17096,6 @@
     "releaseDate": "2024-12-26",
     "canonicalId": "deepseek/deepseek-v3",
     "reasoningEfforts": []
-  },
-  "deepseek-ai/deepseek-v3-0324": {
-    "displayName": "DeepSeek V3 0324",
-    "contextWindow": 163840,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "deepinfra"
-    },
-    "maxOutput": 163840,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-03-24",
-    "status": "deprecated",
-    "canonicalId": "deepseek/deepseek-v3-0324",
-    "reasoningEfforts": []
-  },
-  "deepseek-ai/deepseek-v3-1": {
-    "displayName": "DeepSeek V3.1",
-    "contextWindow": 131072,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "togetherai"
-    },
-    "maxOutput": 131072,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-08-21",
-    "status": "deprecated"
   },
   "deepseek-ai/deepseek-v3.1": {
     "displayName": "DeepSeek-V3.1",
@@ -18747,23 +17431,6 @@
       "xhigh",
       "max"
     ]
-  },
-  "deepseek-chat": {
-    "displayName": "DeepSeek V3",
-    "contextWindow": 131072,
-    "maxOutput": 16000,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "streaming": true,
-      "webSearch": false
-    },
-    "pricing": {
-      "input": 0.2,
-      "output": 0.8,
-      "cachedInput": 0.07
-    }
   },
   "deepseek-chat-v3-0324": {
     "displayName": "DeepSeek V3 0324",
@@ -19255,46 +17922,6 @@
     },
     "releaseDate": "2025-01-01"
   },
-  "deepseek-r1-distill-qwen-1-5b": {
-    "displayName": "DeepSeek R1 Distill Qwen 1.5B",
-    "contextWindow": 32768,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "alibaba-cn"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-01-01"
-  },
-  "deepseek-r1-distill-qwen-1.5b": {
-    "displayName": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
-    "contextWindow": 131072,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "together_ai",
-      "sourceId": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
-    },
-    "aliasOf": "deepseek-ai/deepseek-r1-distill-qwen-1.5b"
-  },
   "deepseek-r1-distill-qwen-14b": {
     "displayName": "DeepSeek R1 Distill Qwen 14B",
     "contextWindow": 32768,
@@ -19389,41 +18016,6 @@
       ]
     },
     "releaseDate": "2025-01-01"
-  },
-  "deepseek-reasoner": {
-    "displayName": "deepseek-reasoner",
-    "contextWindow": 131072,
-    "capabilities": {
-      "functionCalling": false,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "deepseek",
-      "sourceId": "deepseek-reasoner"
-    },
-    "maxOutput": 65536,
-    "pricing": {
-      "input": 0.28,
-      "output": 0.42,
-      "cachedInput": 0.028
-    }
-  },
-  "deepseek-v2-lite-chat": {
-    "displayName": "accounts/fireworks/models/deepseek-v2-lite-chat",
-    "contextWindow": 163840,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/deepseek-v2-lite-chat"
-    },
-    "maxOutput": 163840,
-    "aliasOf": "accounts/fireworks/models/deepseek-v2-lite-chat"
   },
   "deepseek-v2p5": {
     "displayName": "accounts/fireworks/models/deepseek-v2p5",
@@ -19832,23 +18424,23 @@
     }
   },
   "deepseek-v4-flash:0731": {
-    "displayName": "DeepSeek V4 Flash 0731",
+    "displayName": "DeepSeek V4.1 Flash (Legacy Alias)",
     "contextWindow": 1048576,
     "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
+      "vision": true,
       "functionCalling": true,
       "reasoning": true,
-      "structuredOutput": true
+      "streaming": true,
+      "webSearch": false
     },
     "modelType": "chat",
     "source": {
       "catalog": "models.dev",
       "url": "https://models.dev/api.json",
-      "provider": "ollama-cloud"
+      "provider": "ollama-cloud",
+      "curatedBase": "deepseek-v4-flash"
     },
-    "maxOutput": 1048576,
+    "maxOutput": 384000,
     "modalities": {
       "input": [
         "text"
@@ -19860,9 +18452,17 @@
     "releaseDate": "2026-07-31",
     "canonicalId": "deepseek/deepseek-v4-flash-0731",
     "reasoningEfforts": [
+      "low",
       "high",
+      "xhigh",
       "max"
-    ]
+    ],
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cachedInput": 0.006
+    },
+    "aliasOf": "deepseek-v4-flash"
   },
   "deepseek-v4-pro": {
     "displayName": "DeepSeek V4 Pro",
@@ -19974,23 +18574,23 @@
     }
   },
   "deepseek-v4-pro:0813": {
-    "displayName": "DeepSeek V4 Pro 0813",
+    "displayName": "DeepSeek V4 Pro",
     "contextWindow": 1048576,
     "capabilities": {
       "vision": false,
-      "videoInput": false,
-      "audioInput": false,
       "functionCalling": true,
       "reasoning": true,
-      "structuredOutput": true
+      "streaming": true,
+      "webSearch": false
     },
     "modelType": "chat",
     "source": {
       "catalog": "models.dev",
       "url": "https://models.dev/api.json",
-      "provider": "ollama-cloud"
+      "provider": "ollama-cloud",
+      "curatedBase": "deepseek-v4-pro"
     },
-    "maxOutput": 1048576,
+    "maxOutput": 384000,
     "modalities": {
       "input": [
         "text"
@@ -20002,9 +18602,17 @@
     "releaseDate": "2026-08-12",
     "canonicalId": "deepseek/deepseek-v4-pro-0813",
     "reasoningEfforts": [
+      "low",
       "high",
+      "xhigh",
       "max"
-    ]
+    ],
+    "pricing": {
+      "input": 1.32,
+      "output": 3.96,
+      "cachedInput": 0.044
+    },
+    "aliasOf": "deepseek-v4-pro"
   },
   "deepseek-v4.1-flash": {
     "displayName": "DeepSeek V4.1 Flash",
@@ -20197,41 +18805,6 @@
     "releaseDate": "2024-12-26",
     "canonicalId": "deepseek/deepseek-v3",
     "reasoningEfforts": []
-  },
-  "deepseek/deepseek-chat": {
-    "displayName": "DeepSeek V3",
-    "contextWindow": 131072,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "streaming": true,
-      "webSearch": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json",
-      "curatedBase": "deepseek-chat"
-    },
-    "maxOutput": 16000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-01",
-    "reasoningEfforts": [],
-    "canonicalId": "deepseek/deepseek-chat",
-    "pricing": {
-      "input": 0.2,
-      "output": 0.8,
-      "cachedInput": 0.07
-    },
-    "aliasOf": "deepseek-chat"
   },
   "deepseek/deepseek-chat-v3-0324": {
     "displayName": "DeepSeek V3 0324",
@@ -20571,33 +19144,6 @@
       "sourceId": "novita/deepseek/deepseek-r1/community"
     },
     "maxOutput": 8000
-  },
-  "deepseek/deepseek-reasoner": {
-    "displayName": "DeepSeek Reasoner",
-    "contextWindow": 1000000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 384000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-01",
-    "canonicalId": "deepseek/deepseek-reasoner"
   },
   "deepseek/deepseek-v3": {
     "displayName": "DeepSeek-V3",
@@ -21139,138 +19685,6 @@
       "low"
     ]
   },
-  "devstral-2512": {
-    "displayName": "Devstral 2",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 262144,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-09",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.4,
-      "output": 2
-    }
-  },
-  "devstral-latest": {
-    "displayName": "Devstral 2",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 262144,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-09",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.4,
-      "output": 2
-    }
-  },
-  "devstral-medium-2507": {
-    "displayName": "Devstral Medium",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-07-10",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.4,
-      "output": 2
-    }
-  },
-  "devstral-medium-latest": {
-    "displayName": "Devstral 2 (latest)",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 262144,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-02",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.4,
-      "output": 2
-    }
-  },
   "devstral-small-2": {
     "displayName": "Devstral Small 2",
     "contextWindow": 262144,
@@ -21300,72 +19714,6 @@
     "reasoningEfforts": [],
     "canonicalId": "mistral/devstral-small-2",
     "aliasOf": "mistral/devstral-small-2"
-  },
-  "devstral-small-2505": {
-    "displayName": "Devstral Small 2505",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-05-07",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.1,
-      "output": 0.3
-    }
-  },
-  "devstral-small-2507": {
-    "displayName": "Devstral Small",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-07-10",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.1,
-      "output": 0.3
-    }
   },
   "devstral-small-latest": {
     "displayName": "devstral-small-latest",
@@ -21457,20 +19805,6 @@
     },
     "maxOutput": 131072,
     "aliasOf": "accounts/fireworks/models/dolphin-2-9-2-qwen2-72b"
-  },
-  "dolphin-2p6-mixtral-8x7b": {
-    "displayName": "accounts/fireworks/models/dolphin-2p6-mixtral-8x7b",
-    "contextWindow": 32768,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/dolphin-2p6-mixtral-8x7b"
-    },
-    "maxOutput": 32768,
-    "aliasOf": "accounts/fireworks/models/dolphin-2p6-mixtral-8x7b"
   },
   "dolphin-mistral-24b-venice-edition": {
     "displayName": "Uncensored",
@@ -22299,36 +20633,6 @@
       "imageGeneration": true
     }
   },
-  "dracarys-llama-3.1-70b-instruct": {
-    "displayName": "dracarys-llama-3.1-70b-instruct",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-09-11",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "abacusai/dracarys-llama-3.1-70b-instruct"
-  },
   "embed-english-light-v3.0": {
     "displayName": "embed-english-light-v3.0",
     "contextWindow": 512,
@@ -22683,35 +20987,6 @@
     "releaseDate": "2024-03-15",
     "reasoningEfforts": [],
     "aliasOf": "meta/esmfold"
-  },
-  "essentialai/rnj-1-instruct": {
-    "displayName": "Rnj-1 Instruct",
-    "contextWindow": 32768,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "togetherai"
-    },
-    "maxOutput": 32768,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-05",
-    "status": "deprecated",
-    "reasoningEfforts": []
   },
   "fare-20b": {
     "displayName": "accounts/fireworks/models/fare-20b",
@@ -23228,93 +21503,6 @@
       "output": 0
     }
   },
-  "ft:gpt-3.5-turbo": {
-    "displayName": "ft:gpt-3.5-turbo",
-    "contextWindow": 16385,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "ft:gpt-3.5-turbo"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 3,
-      "output": 6
-    }
-  },
-  "ft:gpt-3.5-turbo-0125": {
-    "displayName": "ft:gpt-3.5-turbo-0125",
-    "contextWindow": 16385,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "ft:gpt-3.5-turbo-0125"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 3,
-      "output": 6
-    }
-  },
-  "ft:gpt-3.5-turbo-0613": {
-    "displayName": "ft:gpt-3.5-turbo-0613",
-    "contextWindow": 4096,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "ft:gpt-3.5-turbo-0613"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 3,
-      "output": 6
-    }
-  },
-  "ft:gpt-3.5-turbo-1106": {
-    "displayName": "ft:gpt-3.5-turbo-1106",
-    "contextWindow": 16385,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "ft:gpt-3.5-turbo-1106"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 3,
-      "output": 6
-    }
-  },
-  "ft:gpt-4-0613": {
-    "displayName": "ft:gpt-4-0613",
-    "contextWindow": 8192,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "ft:gpt-4-0613"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 30,
-      "output": 60
-    }
-  },
   "ft:gpt-4.1-2025-04-14": {
     "displayName": "ft:gpt-4.1-2025-04-14",
     "contextWindow": 1047576,
@@ -23620,109 +21808,6 @@
       "output_cost_per_second": 0.1
     }
   },
-  "gemini-2.0-flash": {
-    "displayName": "Gemini 2.0 Flash",
-    "contextWindow": 1048576,
-    "maxOutput": 8192,
-    "capabilities": {
-      "vision": true,
-      "videoInput": true,
-      "functionCalling": true,
-      "reasoning": false,
-      "streaming": true,
-      "webSearch": true
-    },
-    "pricing": {
-      "input": 0.1,
-      "output": 0.4
-    }
-  },
-  "gemini-2.0-flash-exp-image-generation": {
-    "displayName": "gemini-2.0-flash-exp-image-generation",
-    "contextWindow": 0,
-    "capabilities": {
-      "vision": true,
-      "imageGeneration": true
-    },
-    "modelType": "image_generation",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "gemini",
-      "sourceId": "gemini-2.0-flash-exp-image-generation"
-    },
-    "reasoningEfforts": [],
-    "unitPricing": {
-      "output_cost_per_image": 0.039
-    }
-  },
-  "gemini-2.0-flash-lite": {
-    "displayName": "Gemini 2.0 Flash-Lite",
-    "contextWindow": 1048576,
-    "capabilities": {
-      "vision": true,
-      "videoInput": true,
-      "audioInput": true,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-12-11",
-    "reasoningEfforts": [],
-    "canonicalId": "google/gemini-2.0-flash-lite",
-    "aliasOf": "google/gemini-2.0-flash-lite"
-  },
-  "gemini-2.5-computer-use-preview-10-2025": {
-    "displayName": "Gemini 2.5 Computer Use Preview 10-2025",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "google"
-    },
-    "maxOutput": 64000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-10-07",
-    "canonicalId": "google/gemini-2.5-computer-use-preview-10-2025",
-    "pricing": {
-      "input": 1.25,
-      "output": 10
-    }
-  },
   "gemini-2.5-flash": {
     "displayName": "Gemini 2.5 Flash",
     "contextWindow": 1048576,
@@ -23905,43 +21990,6 @@
       "output": 0
     }
   },
-  "gemini-3-pro-image-preview": {
-    "displayName": "Gemini 3 Pro Image Preview",
-    "contextWindow": 65536,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": false,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true,
-      "imageGeneration": true
-    },
-    "modelType": "image_generation",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "google",
-      "curatedBase": "google/gemini-3-pro-image-preview"
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "releaseDate": "2025-11-20",
-    "canonicalId": "google/gemini-3-pro-image-preview",
-    "maxOutput": 32768,
-    "pricing": {
-      "input": 0,
-      "output": 0
-    },
-    "aliasOf": "google/gemini-3-pro-image-preview"
-  },
   "gemini-3-pro-preview": {
     "displayName": "Gemini 3 Pro Preview",
     "contextWindow": 1048576,
@@ -23957,23 +22005,6 @@
   },
   "gemini-3.1-flash-image": {
     "displayName": "Gemini 3.1 Flash Image",
-    "contextWindow": 131072,
-    "maxOutput": 32768,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": false,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true,
-      "imageGeneration": true
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
-  },
-  "gemini-3.1-flash-image-preview": {
-    "displayName": "Gemini 3.1 Flash Image Preview",
     "contextWindow": 131072,
     "maxOutput": 32768,
     "capabilities": {
@@ -24022,50 +22053,6 @@
     "pricing": {
       "input": 0,
       "output": 0
-    }
-  },
-  "gemini-3.1-flash-lite-preview": {
-    "displayName": "Gemini 3.1 Flash Lite Preview",
-    "contextWindow": 1048576,
-    "capabilities": {
-      "vision": true,
-      "videoInput": true,
-      "audioInput": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "google"
-    },
-    "maxOutput": 65536,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-03-03",
-    "status": "deprecated",
-    "reasoningEfforts": [
-      "minimal",
-      "low",
-      "medium",
-      "high"
-    ],
-    "pricing": {
-      "input": 0.25,
-      "output": 1.5,
-      "cachedInput": 0.025
     }
   },
   "gemini-3.1-flash-live-preview": {
@@ -24747,67 +22734,6 @@
       "input_cost_per_audio_token": 0.000001
     }
   },
-  "gemma-2-27b-it": {
-    "displayName": "Gemma 2 27B",
-    "contextWindow": 8192,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 2048,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-07-13",
-    "reasoningEfforts": [],
-    "canonicalId": "google/gemma-2-27b-it",
-    "aliasOf": "google/gemma-2-27b-it"
-  },
-  "gemma-2-2b-it": {
-    "displayName": "Gemma 2 2b It",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-07-16",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "google/gemma-2-2b-it"
-  },
   "gemma-2b-it": {
     "displayName": "accounts/fireworks/models/gemma-2b-it",
     "contextWindow": 8192,
@@ -24907,70 +22833,6 @@
     "reasoningEfforts": [],
     "canonicalId": "google/gemma-3-4b-it",
     "aliasOf": "google/gemma-3-4b-it"
-  },
-  "gemma-3n-e2b-it": {
-    "displayName": "Gemma 3n E2b It",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-06-12",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "google/gemma-3n-e2b-it"
-  },
-  "gemma-3n-e4b-it": {
-    "displayName": "Gemma 3n E4b It",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-06-03",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "google/gemma-3n-e4b-it"
   },
   "gemma-4-12b-it": {
     "displayName": "Gemma 4 12B IT",
@@ -25213,20 +23075,6 @@
     "canonicalId": "aisingapore/gemma-sea-lion-v4-27b-it",
     "aliasOf": "aisingapore/gemma-sea-lion-v4-27b-it"
   },
-  "gemma2-9b-it": {
-    "displayName": "accounts/fireworks/models/gemma2-9b-it",
-    "contextWindow": 8192,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/gemma2-9b-it"
-    },
-    "maxOutput": 8192,
-    "aliasOf": "accounts/fireworks/models/gemma2-9b-it"
-  },
   "gemma4": {
     "displayName": "Gemma 4",
     "contextWindow": 131072,
@@ -25246,22 +23094,23 @@
     ]
   },
   "gemma4:31b": {
-    "displayName": "gemma4:31b",
-    "contextWindow": 262144,
+    "displayName": "Gemma 4",
+    "contextWindow": 131072,
     "capabilities": {
       "vision": true,
-      "videoInput": false,
-      "audioInput": false,
       "functionCalling": true,
-      "reasoning": true
+      "reasoning": true,
+      "streaming": true,
+      "webSearch": false
     },
     "modelType": "chat",
     "source": {
       "catalog": "models.dev",
       "url": "https://models.dev/api.json",
-      "provider": "ollama-cloud"
+      "provider": "ollama-cloud",
+      "curatedBase": "gemma4"
     },
-    "maxOutput": 262144,
+    "maxOutput": 8192,
     "modalities": {
       "input": [
         "text",
@@ -25271,7 +23120,14 @@
         "text"
       ]
     },
-    "releaseDate": "2026-04-02"
+    "releaseDate": "2026-04-02",
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "max"
+    ],
+    "aliasOf": "gemma4"
   },
   "gen4_image": {
     "displayName": "gen4_image",
@@ -25343,36 +23199,6 @@
     "unitPricing": {
       "output_cost_per_second": 0.12
     }
-  },
-  "gliner-pii": {
-    "displayName": "gliner-pii",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-03-03",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "nvidia/gliner-pii"
   },
   "glm-4-32b-0414": {
     "displayName": "thudm/glm-4-32b-0414",
@@ -25836,47 +23662,6 @@
       "output": 3.2,
       "cachedInput": 0.2
     }
-  },
-  "glm-5-2": {
-    "displayName": "GLM-5.2",
-    "contextWindow": 1000000,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral",
-      "curatedBase": "glm-5.2"
-    },
-    "maxOutput": 131072,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-06-13",
-    "status": "deprecated",
-    "canonicalId": "zhipuai/glm-5.2",
-    "reasoningEfforts": [
-      "low",
-      "high",
-      "max"
-    ],
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cachedInput": 0.26
-    },
-    "aliasOf": "glm-5.2"
   },
   "glm-5-2-260617": {
     "displayName": "GLM-5.2",
@@ -26752,106 +24537,6 @@
     "releaseDate": "2026-06-09",
     "canonicalId": "google/diffusiongemma-26b-a4b-it"
   },
-  "google/gemini-2.0-flash": {
-    "displayName": "Gemini 2.0 Flash",
-    "contextWindow": 1048576,
-    "capabilities": {
-      "vision": true,
-      "videoInput": true,
-      "functionCalling": true,
-      "reasoning": false,
-      "streaming": true,
-      "webSearch": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json",
-      "curatedBase": "gemini-2.0-flash"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-12-11",
-    "reasoningEfforts": [],
-    "canonicalId": "google/gemini-2.0-flash",
-    "pricing": {
-      "input": 0.1,
-      "output": 0.4
-    },
-    "aliasOf": "gemini-2.0-flash"
-  },
-  "google/gemini-2.0-flash-lite": {
-    "displayName": "Gemini 2.0 Flash-Lite",
-    "contextWindow": 1048576,
-    "capabilities": {
-      "vision": true,
-      "videoInput": true,
-      "audioInput": true,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-12-11",
-    "reasoningEfforts": [],
-    "canonicalId": "google/gemini-2.0-flash-lite"
-  },
-  "google/gemini-2.5-computer-use-preview-10-2025": {
-    "displayName": "Gemini 2.5 Computer Use Preview",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 64000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-10-07",
-    "canonicalId": "google/gemini-2.5-computer-use-preview-10-2025"
-  },
   "google/gemini-2.5-flash": {
     "displayName": "Gemini 2.5 Flash",
     "contextWindow": 1048576,
@@ -27285,23 +24970,6 @@
     },
     "aliasOf": "gemini-3-pro-image"
   },
-  "google/gemini-3-pro-image-preview": {
-    "displayName": "Gemini 3 Pro Image Preview",
-    "contextWindow": 65536,
-    "maxOutput": 32768,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": false,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true,
-      "imageGeneration": true
-    },
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
-  },
   "google/gemini-3-pro-preview": {
     "displayName": "Gemini 3 Pro Preview",
     "contextWindow": 1048576,
@@ -27373,43 +25041,6 @@
       "output": 0
     },
     "aliasOf": "gemini-3.1-flash-image"
-  },
-  "google/gemini-3.1-flash-image-preview": {
-    "displayName": "Gemini 3.1 Flash Image Preview",
-    "contextWindow": 131072,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": false,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true,
-      "imageGeneration": true
-    },
-    "modelType": "image_generation",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json",
-      "curatedBase": "gemini-3.1-flash-image-preview"
-    },
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text",
-        "image"
-      ]
-    },
-    "releaseDate": "2026-02-26",
-    "canonicalId": "google/gemini-3.1-flash-image-preview",
-    "maxOutput": 32768,
-    "pricing": {
-      "input": 0,
-      "output": 0
-    },
-    "aliasOf": "gemini-3.1-flash-image-preview"
   },
   "google/gemini-3.1-flash-lite": {
     "displayName": "Gemini 3.1 Flash-Lite",
@@ -27485,47 +25116,6 @@
       "output": 0
     },
     "aliasOf": "gemini-3.1-flash-lite-image"
-  },
-  "google/gemini-3.1-flash-lite-preview": {
-    "displayName": "Gemini 3.1 Flash Lite Preview",
-    "contextWindow": 1048576,
-    "capabilities": {
-      "vision": true,
-      "videoInput": true,
-      "audioInput": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 65536,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video",
-        "audio",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-03-03",
-    "canonicalId": "google/gemini-3.1-flash-lite-preview",
-    "pricing": {
-      "input": 0.25,
-      "output": 1.5,
-      "cachedInput": 0.025
-    },
-    "pricingSource": {
-      "provider": "openrouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all"
-    }
   },
   "google/gemini-3.1-flash-lite:batch": {
     "displayName": "Gemini 3.1 Flash-Lite",
@@ -28521,73 +26111,6 @@
     "releaseDate": "2026-04-14",
     "canonicalId": "google/gemini-robotics-er-1.6-preview"
   },
-  "google/gemma-2-27b-it": {
-    "displayName": "Gemma 2 27B",
-    "contextWindow": 8192,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 2048,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-07-13",
-    "reasoningEfforts": [],
-    "canonicalId": "google/gemma-2-27b-it",
-    "pricing": {
-      "input": 0.65,
-      "output": 0.65
-    },
-    "pricingSource": {
-      "provider": "openrouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all"
-    }
-  },
-  "google/gemma-2-2b-it": {
-    "displayName": "Gemma 2 2b It",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-07-16",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
   "google/gemma-3-12b-it": {
     "displayName": "Gemma 3 12B IT",
     "contextWindow": 131072,
@@ -28699,68 +26222,6 @@
       "provider": "openrouter",
       "url": "https://openrouter.ai/api/v1/models?output_modalities=all"
     }
-  },
-  "google/gemma-3n-e2b-it": {
-    "displayName": "Gemma 3n E2b It",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-06-12",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
-  "google/gemma-3n-e4b-it": {
-    "displayName": "Gemma 3n E4b It",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-06-03",
-    "status": "deprecated",
-    "reasoningEfforts": []
   },
   "google/gemma-4-12b-it": {
     "displayName": "Gemma 4 12B IT",
@@ -29309,223 +26770,6 @@
     "reasoningEfforts": [],
     "canonicalId": "google/veo-3.1-lite-generate-preview"
   },
-  "gpt-3.5-turbo": {
-    "displayName": "GPT-3.5-turbo",
-    "contextWindow": 16385,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": false,
-      "structuredOutput": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "openai"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2023-03-01",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.5,
-      "output": 1.5,
-      "cachedInput": 0
-    }
-  },
-  "gpt-3.5-turbo-0125": {
-    "displayName": "gpt-3.5-turbo-0125",
-    "contextWindow": 16385,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-3.5-turbo-0125"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 0.5,
-      "output": 1.5
-    }
-  },
-  "gpt-3.5-turbo-1106": {
-    "displayName": "gpt-3.5-turbo-1106",
-    "contextWindow": 16385,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-3.5-turbo-1106"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 1,
-      "output": 2
-    }
-  },
-  "gpt-3.5-turbo-16k": {
-    "displayName": "gpt-3.5-turbo-16k",
-    "contextWindow": 16385,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-3.5-turbo-16k"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 3,
-      "output": 4
-    }
-  },
-  "gpt-4": {
-    "displayName": "GPT-4",
-    "contextWindow": 8192,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "openai"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2023-11-06",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 30,
-      "output": 60
-    }
-  },
-  "gpt-4-0613": {
-    "displayName": "gpt-4-0613",
-    "contextWindow": 8192,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-4-0613"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 30,
-      "output": 60
-    }
-  },
-  "gpt-4-1106-preview": {
-    "displayName": "gpt-4-1106-preview",
-    "contextWindow": 128000,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-4-1106-preview"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 10,
-      "output": 30
-    }
-  },
-  "gpt-4-turbo": {
-    "displayName": "GPT-4 Turbo",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "openai"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2023-11-06",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 10,
-      "output": 30
-    }
-  },
-  "gpt-4-turbo-2024-04-09": {
-    "displayName": "gpt-4-turbo-2024-04-09",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-4-turbo-2024-04-09"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 10,
-      "output": 30
-    }
-  },
   "gpt-4.1": {
     "displayName": "GPT-4.1",
     "contextWindow": 1047576,
@@ -29657,41 +26901,6 @@
       "input": 2.5,
       "output": 10,
       "cachedInput": 1.25
-    }
-  },
-  "gpt-4o-2024-05-13": {
-    "displayName": "GPT-4o (2024-05-13)",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "openai"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-05-13",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 5,
-      "output": 15
     }
   },
   "gpt-4o-2024-08-06": {
@@ -29899,28 +27108,6 @@
       "cachedInput": 0.075
     }
   },
-  "gpt-4o-mini-search-preview-2025-03-11": {
-    "displayName": "gpt-4o-mini-search-preview-2025-03-11",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "webSearch": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-4o-mini-search-preview-2025-03-11"
-    },
-    "maxOutput": 16384,
-    "pricing": {
-      "input": 0.15,
-      "output": 0.6,
-      "cachedInput": 0.075
-    }
-  },
   "gpt-4o-search-preview": {
     "displayName": "gpt-4o-search-preview",
     "contextWindow": 128000,
@@ -29935,28 +27122,6 @@
       "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
       "provider": "openai",
       "sourceId": "gpt-4o-search-preview"
-    },
-    "maxOutput": 16384,
-    "pricing": {
-      "input": 2.5,
-      "output": 10,
-      "cachedInput": 1.25
-    }
-  },
-  "gpt-4o-search-preview-2025-03-11": {
-    "displayName": "gpt-4o-search-preview-2025-03-11",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "webSearch": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-4o-search-preview-2025-03-11"
     },
     "maxOutput": 16384,
     "pricing": {
@@ -30008,71 +27173,6 @@
       "input": 1.25,
       "output": 10,
       "cachedInput": 0.125
-    }
-  },
-  "gpt-5-chat": {
-    "displayName": "gpt-5-chat",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": false,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-5-chat"
-    },
-    "maxOutput": 16384,
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cachedInput": 0.125
-    }
-  },
-  "gpt-5-chat-latest": {
-    "displayName": "gpt-5-chat-latest",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-5-chat-latest"
-    },
-    "maxOutput": 16384,
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cachedInput": 0.125
-    }
-  },
-  "gpt-5-codex": {
-    "displayName": "GPT-5 Codex",
-    "contextWindow": 256000,
-    "maxOutput": 128000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": false
-    },
-    "reasoningEfforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "pricing": {
-      "input": 1.25,
-      "output": 10
     }
   },
   "gpt-5-mini": {
@@ -30304,96 +27404,6 @@
       "cachedInput": 0.125
     }
   },
-  "gpt-5.1-chat-latest": {
-    "displayName": "gpt-5.1-chat-latest",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-5.1-chat-latest"
-    },
-    "maxOutput": 16384,
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cachedInput": 0.125
-    }
-  },
-  "gpt-5.1-codex": {
-    "displayName": "gpt-5.1-codex",
-    "contextWindow": 400000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "webSearch": true
-    },
-    "modelType": "responses",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-5.1-codex"
-    },
-    "maxOutput": 128000,
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cachedInput": 0.125
-    }
-  },
-  "gpt-5.1-codex-max": {
-    "displayName": "gpt-5.1-codex-max",
-    "contextWindow": 400000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "webSearch": true
-    },
-    "modelType": "responses",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-5.1-codex-max"
-    },
-    "maxOutput": 128000,
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cachedInput": 0.125
-    }
-  },
-  "gpt-5.1-codex-mini": {
-    "displayName": "gpt-5.1-codex-mini",
-    "contextWindow": 400000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "responses",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-5.1-codex-mini"
-    },
-    "maxOutput": 128000,
-    "pricing": {
-      "input": 0.25,
-      "output": 2,
-      "cachedInput": 0.025
-    }
-  },
   "gpt-5.2": {
     "displayName": "GPT-5.2",
     "contextWindow": 400000,
@@ -30449,67 +27459,6 @@
       "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
       "provider": "openai",
       "sourceId": "gpt-5.2-2025-12-11"
-    },
-    "maxOutput": 128000,
-    "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cachedInput": 0.175
-    }
-  },
-  "gpt-5.2-chat-latest": {
-    "displayName": "GPT-5.2 Chat",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "openai"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-11",
-    "status": "deprecated",
-    "reasoningEfforts": [
-      "medium"
-    ],
-    "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cachedInput": 0.175
-    }
-  },
-  "gpt-5.2-codex": {
-    "displayName": "gpt-5.2-codex",
-    "contextWindow": 272000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "webSearch": true
-    },
-    "modelType": "responses",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-5.2-codex"
     },
     "maxOutput": 128000,
     "pricing": {
@@ -30576,42 +27525,6 @@
     "pricing": {
       "input": 21,
       "output": 168
-    }
-  },
-  "gpt-5.3-chat-latest": {
-    "displayName": "GPT-5.3 Chat (latest)",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "openai"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-03-03",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cachedInput": 0.175
     }
   },
   "gpt-5.3-codex": {
@@ -31333,34 +28246,6 @@
       "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
       "provider": "openai",
       "sourceId": "gpt-audio-mini"
-    },
-    "maxOutput": 16384,
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.6,
-      "output": 2.4
-    },
-    "unitPricing": {
-      "input_cost_per_audio_token": 0.00001,
-      "output_cost_per_audio_token": 0.00002
-    }
-  },
-  "gpt-audio-mini-2025-10-06": {
-    "displayName": "gpt-audio-mini-2025-10-06",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "audioInput": true,
-      "audioOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "gpt-audio-mini-2025-10-06"
     },
     "maxOutput": 16384,
     "reasoningEfforts": [],
@@ -36860,96 +33745,6 @@
     "maxOutput": 8192,
     "aliasOf": "sao10k/l31-70b-euryale-v2.2"
   },
-  "labs-devstral-small-2512": {
-    "displayName": "Devstral Small 2",
-    "contextWindow": 256000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 256000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-09",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
-  },
-  "labs-leanstral-1-5": {
-    "displayName": "labs-leanstral-1-5",
-    "contextWindow": 262144,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "mistral",
-      "sourceId": "mistral/labs-leanstral-1-5"
-    },
-    "maxOutput": 131072,
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
-  },
-  "labs-leanstral-1-5-1": {
-    "displayName": "Leanstral 1.5",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-06-30",
-    "status": "deprecated",
-    "reasoningEfforts": [
-      "high"
-    ],
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
-  },
   "laguna-m.1": {
     "displayName": "Laguna M.1",
     "contextWindow": 262144,
@@ -37610,65 +34405,6 @@
     },
     "aliasOf": "nvidia/llama-3.1-nemotron-70b-instruct-hf"
   },
-  "llama-3.1-nemotron-nano-8b-v1": {
-    "displayName": "Llama 3.1 Nemotron Nano 8B v1",
-    "contextWindow": 131072,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-03-18",
-    "status": "deprecated",
-    "aliasOf": "nvidia/llama-3.1-nemotron-nano-8b-v1"
-  },
-  "llama-3.1-nemotron-nano-vl-8b-v1": {
-    "displayName": "Llama 3.1 Nemotron Nano VL 8B v1",
-    "contextWindow": 32768,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-04-10",
-    "status": "deprecated",
-    "aliasOf": "nvidia/llama-3.1-nemotron-nano-vl-8b-v1"
-  },
   "llama-3.1-nemotron-safety-guard-8b-v3": {
     "displayName": "Llama 3.1 Nemotron Safety Guard 8B v3",
     "contextWindow": 128000,
@@ -37841,37 +34577,6 @@
     "reasoningEfforts": [],
     "canonicalId": "meta/llama-3.2-3b",
     "aliasOf": "meta/llama-3.2-3b"
-  },
-  "llama-3.2-3b-instruct": {
-    "displayName": "Llama 3.2 3B Instruct",
-    "contextWindow": 32768,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 32000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-09-18",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "meta/llama-3.2-3b-instruct"
   },
   "llama-3.2-90b-vision-instruct": {
     "displayName": "Llama-3.2-90B-Vision-Instruct",
@@ -38104,38 +34809,6 @@
       "input": 0.15,
       "output": 0.6
     }
-  },
-  "llama-4-maverick-17b-128e-instruct": {
-    "displayName": "Llama 4 Maverick 17b 128e Instruct",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-04-01",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "meta/llama-4-maverick-17b-128e-instruct"
   },
   "llama-4-maverick-17b-128e-instruct-fp8": {
     "displayName": "Llama-4-Maverick-17B-128E-Instruct-FP8",
@@ -38844,91 +35517,6 @@
     "maxOutput": 131072,
     "aliasOf": "accounts/fireworks/models/llama-v3p3-70b-instruct"
   },
-  "llama2": {
-    "displayName": "llama2",
-    "contextWindow": 4096,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "ollama",
-      "sourceId": "ollama/llama2"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
-  },
-  "llama2-uncensored": {
-    "displayName": "llama2-uncensored",
-    "contextWindow": 4096,
-    "capabilities": {},
-    "modelType": "completion",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "ollama",
-      "sourceId": "ollama/llama2-uncensored"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
-  },
-  "llama2:13b": {
-    "displayName": "llama2:13b",
-    "contextWindow": 4096,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "ollama",
-      "sourceId": "ollama/llama2:13b"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
-  },
-  "llama2:70b": {
-    "displayName": "llama2:70b",
-    "contextWindow": 4096,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "ollama",
-      "sourceId": "ollama/llama2:70b"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
-  },
-  "llama2:7b": {
-    "displayName": "llama2:7b",
-    "contextWindow": 4096,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "ollama",
-      "sourceId": "ollama/llama2:7b"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
-  },
   "llama3": {
     "displayName": "llama3",
     "contextWindow": 8192,
@@ -39293,42 +35881,6 @@
     },
     "unitPricing": {
       "output_cost_per_image": 0.08
-    }
-  },
-  "magistral-medium-latest": {
-    "displayName": "Magistral Medium (latest)",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-03-17",
-    "status": "deprecated",
-    "reasoningEfforts": [
-      "high"
-    ],
-    "pricing": {
-      "input": 2,
-      "output": 5
     }
   },
   "magistral-small-2509": {
@@ -40117,37 +36669,6 @@
     "reasoningEfforts": [],
     "aliasOf": "llama-4-maverick"
   },
-  "meta-llama/llama-4-maverick-17b-128e-instruct-fp8": {
-    "displayName": "Llama 4 Maverick 17B FP8",
-    "contextWindow": 1048576,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "deepinfra"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-04-05",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
   "meta-llama/llama-4-scout": {
     "displayName": "Llama 4 Scout",
     "contextWindow": 10000000,
@@ -40799,36 +37320,6 @@
     "reasoningEfforts": [],
     "canonicalId": "meta/llama-3.2-3b"
   },
-  "meta/llama-3.2-3b-instruct": {
-    "displayName": "Llama 3.2 3B Instruct",
-    "contextWindow": 32768,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 32000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-09-18",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
   "meta/llama-3.2-90b-vision-instruct": {
     "displayName": "Llama-3.2-90B-Vision-Instruct",
     "contextWindow": 128000,
@@ -40885,37 +37376,6 @@
     "releaseDate": "2024-12-06",
     "reasoningEfforts": [],
     "canonicalId": "meta/llama-3.3-70b-instruct"
-  },
-  "meta/llama-4-maverick-17b-128e-instruct": {
-    "displayName": "Llama 4 Maverick 17b 128e Instruct",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-04-01",
-    "status": "deprecated",
-    "reasoningEfforts": []
   },
   "meta/llama-4-maverick-17b-instruct": {
     "displayName": "Llama 4 Maverick 17B Instruct",
@@ -41671,65 +38131,6 @@
     "releaseDate": "2024-12-11",
     "reasoningEfforts": [],
     "canonicalId": "microsoft/phi-4-mini"
-  },
-  "microsoft/phi-4-mini-instruct": {
-    "displayName": "Phi-4-Mini",
-    "contextWindow": 131072,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-12-01",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
-  "microsoft/phi-4-multimodal-instruct": {
-    "displayName": "Phi 4 Multimodal",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": false,
-      "structuredOutput": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-07-26",
-    "status": "deprecated",
-    "reasoningEfforts": []
   },
   "microsoft/wizardlm-2-8x22b": {
     "displayName": "WizardLM 2 8x22B",
@@ -43338,71 +39739,6 @@
     },
     "releaseDate": "2025-12-23"
   },
-  "minimaxai/minimax-m2.5": {
-    "displayName": "MiniMax M2.5",
-    "contextWindow": 196608,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "deepinfra"
-    },
-    "maxOutput": 131072,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-02-12",
-    "status": "deprecated"
-  },
-  "minimaxai/minimax-m2.7": {
-    "displayName": "MiniMax M2.7",
-    "contextWindow": 204800,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "deepinfra",
-      "curatedBase": "minimax-m2.7"
-    },
-    "maxOutput": 204800,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-03-18",
-    "status": "deprecated",
-    "canonicalId": "minimax/minimax-m2.7",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.3,
-      "output": 1.2,
-      "cachedInput": 0.06
-    },
-    "aliasOf": "minimax-m2.7"
-  },
   "minimaxai/minimax-m2.7-turbo": {
     "displayName": "MiniMaxAI/MiniMax-M2.7-Turbo",
     "contextWindow": 196608,
@@ -43523,37 +39859,6 @@
       "output": 0.2,
       "cachedInput": 0.02
     }
-  },
-  "ministral-14b-instruct-2512": {
-    "displayName": "Ministral 3 14B Instruct 2512",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-02",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "mistralai/ministral-14b-instruct-2512"
   },
   "ministral-14b-latest": {
     "displayName": "ministral-14b-latest",
@@ -44148,40 +40453,6 @@
     "canonicalId": "mistral/mistral-large-2407",
     "aliasOf": "mistral/mistral-large-2407"
   },
-  "mistral-large-2411": {
-    "displayName": "Mistral Large 2.1",
-    "contextWindow": 131072,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-11-18",
-    "status": "deprecated",
-    "canonicalId": "mistral/mistral-large-2411",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 2,
-      "output": 6
-    }
-  },
   "mistral-large-2512": {
     "displayName": "Mistral Large 3 2512",
     "contextWindow": 262144,
@@ -44220,38 +40491,6 @@
       "output": 1.5,
       "cachedInput": 0.05
     }
-  },
-  "mistral-large-3-675b-instruct-2512": {
-    "displayName": "Mistral Large 3 675B Instruct 2512",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 262144,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-02",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "mistralai/mistral-large-3-675b-instruct-2512"
   },
   "mistral-large-3-fp8": {
     "displayName": "accounts/fireworks/models/mistral-large-3-fp8",
@@ -44413,74 +40652,6 @@
       "input": 1.5,
       "output": 7.5,
       "cachedInput": 0.15
-    }
-  },
-  "mistral-medium-2505": {
-    "displayName": "Mistral Medium 3",
-    "contextWindow": 131072,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 131072,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-05-07",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.4,
-      "output": 2
-    }
-  },
-  "mistral-medium-2508": {
-    "displayName": "Mistral Medium 3.1",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 262144,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-08-12",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.4,
-      "output": 2
     }
   },
   "mistral-medium-2604": {
@@ -44652,41 +40823,6 @@
     ],
     "aliasOf": "mistral-medium-3-5"
   },
-  "mistral-medium-3.5-128b": {
-    "displayName": "Mistral Medium 3.5",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 32768,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-04-29",
-    "status": "deprecated",
-    "canonicalId": "mistral/mistral-medium-2604",
-    "reasoningEfforts": [
-      "high"
-    ],
-    "aliasOf": "mistralai/mistral-medium-3.5-128b"
-  },
   "mistral-medium-latest": {
     "displayName": "Mistral Medium 3.5",
     "contextWindow": 262144,
@@ -44706,39 +40842,6 @@
     "reasoningEfforts": [
       "high"
     ]
-  },
-  "mistral-nemo": {
-    "displayName": "Mistral Nemo",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-07-01",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.15,
-      "output": 0.15
-    }
   },
   "mistral-nemo-base-2407": {
     "displayName": "accounts/fireworks/models/mistral-nemo-base-2407",
@@ -44799,40 +40902,6 @@
     "pricing": {
       "input": 0.4,
       "output": 2
-    }
-  },
-  "mistral-small-2506": {
-    "displayName": "Mistral Small 3.2",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-06-20",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.1,
-      "output": 0.3
     }
   },
   "mistral-small-2603": {
@@ -44963,40 +41032,6 @@
     },
     "maxOutput": 128000,
     "aliasOf": "mistralai/mistral-small-3.2-24b-instruct-2506"
-  },
-  "mistral-small-4-119b-2603": {
-    "displayName": "mistral-small-4-119b-2603",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-03-16",
-    "status": "deprecated",
-    "reasoningEfforts": [
-      "high"
-    ],
-    "aliasOf": "mistralai/mistral-small-4-119b-2603"
   },
   "mistral-small-latest": {
     "displayName": "Mistral Small 4",
@@ -46666,36 +42701,6 @@
     ],
     "aliasOf": "mistral-small-latest"
   },
-  "mistral/mixtral-8x22b-instruct": {
-    "displayName": "Mixtral 8x22B Instruct",
-    "contextWindow": 65536,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 52428,
-    "modalities": {
-      "input": [
-        "text",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-04-17",
-    "reasoningEfforts": [],
-    "canonicalId": "mistral/mixtral-8x22b-instruct"
-  },
   "mistral/pixtral-12b": {
     "displayName": "Pixtral 12B",
     "contextWindow": 128000,
@@ -47067,36 +43072,6 @@
     },
     "reasoningEfforts": []
   },
-  "mistralai/ministral-14b-instruct-2512": {
-    "displayName": "Ministral 3 14B Instruct 2512",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-02",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
   "mistralai/ministral-3-14b-instruct-2512": {
     "displayName": "mistralai/Ministral-3-14B-Instruct-2512",
     "contextWindow": 262144,
@@ -47427,37 +43402,6 @@
     "reasoningEfforts": [],
     "variantOf": "mistral-large-2512"
   },
-  "mistralai/mistral-large-3-675b-instruct-2512": {
-    "displayName": "Mistral Large 3 675B Instruct 2512",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 262144,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-02",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
   "mistralai/mistral-large-4-0": {
     "displayName": "Mistral: Mistral Large 4",
     "contextWindow": 1048576,
@@ -47710,40 +43654,6 @@
     },
     "reasoningEfforts": []
   },
-  "mistralai/mistral-medium-3.5-128b": {
-    "displayName": "Mistral Medium 3.5",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 32768,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-04-29",
-    "status": "deprecated",
-    "canonicalId": "mistral/mistral-medium-2604",
-    "reasoningEfforts": [
-      "high"
-    ]
-  },
   "mistralai/mistral-nemo": {
     "displayName": "Mistral: Mistral Nemo",
     "contextWindow": 131072,
@@ -47790,36 +43700,6 @@
       "sourceId": "deepinfra/mistralai/Mistral-Nemo-Instruct-2407"
     },
     "maxOutput": 131072
-  },
-  "mistralai/mistral-nemotron": {
-    "displayName": "mistral-nemotron",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-06-11",
-    "status": "deprecated",
-    "canonicalId": "nvidia/mistral-nemotron",
-    "reasoningEfforts": []
   },
   "mistralai/mistral-saba": {
     "displayName": "Mistral: Saba",
@@ -48045,117 +43925,6 @@
     },
     "maxOutput": 128000
   },
-  "mistralai/mistral-small-4-119b-2603": {
-    "displayName": "mistral-small-4-119b-2603",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-03-16",
-    "status": "deprecated",
-    "reasoningEfforts": [
-      "high"
-    ]
-  },
-  "mistralai/mixtral-8x22b-instruct": {
-    "displayName": "Mistral: Mixtral 8x22B Instruct",
-    "contextWindow": 65536,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "modalities": {
-      "input": [
-        "text",
-        "file"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "source": {
-      "catalog": "OpenRouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
-      "provider": "openrouter"
-    },
-    "maxOutput": 52428,
-    "pricing": {
-      "input": 2,
-      "output": 6,
-      "cachedInput": 0.2
-    },
-    "reasoningEfforts": []
-  },
-  "mistralai/mixtral-8x7b-instruct": {
-    "displayName": "Mistral: Mixtral 8x7B Instruct",
-    "contextWindow": 32768,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2023-12-10",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
-  "mistralai/mixtral-8x7b-instruct-v0.1": {
-    "displayName": "mistralai/Mixtral-8x7B-Instruct-v0.1",
-    "contextWindow": 32768,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "deepinfra",
-      "sourceId": "deepinfra/mistralai/Mixtral-8x7B-Instruct-v0.1"
-    },
-    "maxOutput": 32768
-  },
   "mistralai/voxtral-small-24b-2507": {
     "displayName": "Mistral: Voxtral Small 24B 2507",
     "contextWindow": 32768,
@@ -48218,102 +43987,6 @@
     "releaseDate": "2026-08-13",
     "reasoningEfforts": [],
     "canonicalId": "mixedbread/toast-1"
-  },
-  "mixtral-8x22b": {
-    "displayName": "accounts/fireworks/models/mixtral-8x22b",
-    "contextWindow": 65536,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/mixtral-8x22b"
-    },
-    "maxOutput": 65536,
-    "aliasOf": "accounts/fireworks/models/mixtral-8x22b"
-  },
-  "mixtral-8x22b-instruct-hf": {
-    "displayName": "accounts/fireworks/models/mixtral-8x22b-instruct-hf",
-    "contextWindow": 65536,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/mixtral-8x22b-instruct-hf"
-    },
-    "maxOutput": 65536,
-    "aliasOf": "accounts/fireworks/models/mixtral-8x22b-instruct-hf"
-  },
-  "mixtral-8x22b-instruct-v0.1": {
-    "displayName": "mixtral-8x22B-Instruct-v0.1",
-    "contextWindow": 65536,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "ollama",
-      "sourceId": "ollama/mixtral-8x22B-Instruct-v0.1"
-    },
-    "maxOutput": 65536,
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
-  },
-  "mixtral-8x7b": {
-    "displayName": "accounts/fireworks/models/mixtral-8x7b",
-    "contextWindow": 32768,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/mixtral-8x7b"
-    },
-    "maxOutput": 32768,
-    "aliasOf": "accounts/fireworks/models/mixtral-8x7b"
-  },
-  "mixtral-8x7b-instruct-hf": {
-    "displayName": "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
-    "contextWindow": 32768,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/mixtral-8x7b-instruct-hf"
-    },
-    "maxOutput": 32768,
-    "aliasOf": "accounts/fireworks/models/mixtral-8x7b-instruct-hf"
-  },
-  "mixtral-8x7b-instruct-v0.1": {
-    "displayName": "mixtral-8x7B-Instruct-v0.1",
-    "contextWindow": 32768,
-    "capabilities": {
-      "functionCalling": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "ollama",
-      "sourceId": "ollama/mixtral-8x7B-Instruct-v0.1"
-    },
-    "maxOutput": 32768,
-    "pricing": {
-      "input": 0,
-      "output": 0
-    }
   },
   "moonshot-kimi-k2-instruct": {
     "displayName": "Moonshot Kimi K2 Instruct",
@@ -50566,48 +46239,6 @@
     "maxOutput": 4096,
     "aliasOf": "accounts/fireworks/models/nous-hermes-2-yi-34b"
   },
-  "nous-hermes-llama2-13b": {
-    "displayName": "accounts/fireworks/models/nous-hermes-llama2-13b",
-    "contextWindow": 4096,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/nous-hermes-llama2-13b"
-    },
-    "maxOutput": 4096,
-    "aliasOf": "accounts/fireworks/models/nous-hermes-llama2-13b"
-  },
-  "nous-hermes-llama2-70b": {
-    "displayName": "accounts/fireworks/models/nous-hermes-llama2-70b",
-    "contextWindow": 4096,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/nous-hermes-llama2-70b"
-    },
-    "maxOutput": 4096,
-    "aliasOf": "accounts/fireworks/models/nous-hermes-llama2-70b"
-  },
-  "nous-hermes-llama2-7b": {
-    "displayName": "accounts/fireworks/models/nous-hermes-llama2-7b",
-    "contextWindow": 4096,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "fireworks_ai",
-      "sourceId": "fireworks_ai/accounts/fireworks/models/nous-hermes-llama2-7b"
-    },
-    "maxOutput": 4096,
-    "aliasOf": "accounts/fireworks/models/nous-hermes-llama2-7b"
-  },
   "nousresearch/hermes-2-pro-llama-3-8b": {
     "displayName": "Hermes 2 Pro Llama 3 8B",
     "contextWindow": 8192,
@@ -50745,18 +46376,6 @@
     "pricingSource": {
       "provider": "openrouter",
       "url": "https://openrouter.ai/api/v1/models?output_modalities=all"
-    }
-  },
-  "nousresearch/nous-hermes-2-mixtral-8x7b-dpo": {
-    "displayName": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
-    "contextWindow": 32768,
-    "capabilities": {},
-    "modelType": "chat",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "together_ai",
-      "sourceId": "together_ai/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
     }
   },
   "nova-2-lite": {
@@ -51427,35 +47046,6 @@
     "releaseDate": "2026-02-26",
     "reasoningEfforts": []
   },
-  "nvidia/gliner-pii": {
-    "displayName": "gliner-pii",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-03-03",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
   "nvidia/llama-3_2-nemoretriever-300m-embed-v1": {
     "displayName": "llama-3_2-nemoretriever-300m-embed-v1",
     "contextWindow": 32768,
@@ -51523,63 +47113,6 @@
       "provider": "together_ai",
       "sourceId": "together_ai/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF"
     }
-  },
-  "nvidia/llama-3.1-nemotron-nano-8b-v1": {
-    "displayName": "Llama 3.1 Nemotron Nano 8B v1",
-    "contextWindow": 131072,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-03-18",
-    "status": "deprecated"
-  },
-  "nvidia/llama-3.1-nemotron-nano-vl-8b-v1": {
-    "displayName": "Llama 3.1 Nemotron Nano VL 8B v1",
-    "contextWindow": 32768,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-04-10",
-    "status": "deprecated"
   },
   "nvidia/llama-3.1-nemotron-safety-guard-8b-v3": {
     "displayName": "Llama 3.1 Nemotron Safety Guard 8B v3",
@@ -52646,35 +48179,6 @@
       "sourceId": "deepinfra/nvidia/NVIDIA-Nemotron-3.5-Lightning"
     }
   },
-  "nvidia/nvidia-nemotron-nano-9b-v2": {
-    "displayName": "nvidia-nemotron-nano-9b-v2",
-    "contextWindow": 131072,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 131072,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-08-18",
-    "status": "deprecated",
-    "canonicalId": "nvidia/nemotron-nano-9b-v2"
-  },
   "nvidia/rerank-qa-mistral-4b": {
     "displayName": "rerank-qa-mistral-4b",
     "contextWindow": 128000,
@@ -52909,45 +48413,6 @@
       "cachedInput": 7.5
     }
   },
-  "o1-pro": {
-    "displayName": "o1-pro",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "openai"
-    },
-    "maxOutput": 100000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-03-19",
-    "status": "deprecated",
-    "reasoningEfforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "pricing": {
-      "input": 150,
-      "output": 600
-    }
-  },
   "o1-pro-2025-03-19": {
     "displayName": "o1-pro-2025-03-19",
     "contextWindow": 200000,
@@ -53007,50 +48472,6 @@
       "input": 2,
       "output": 8,
       "cachedInput": 0.5
-    }
-  },
-  "o3-deep-research": {
-    "displayName": "o3-deep-research",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": false,
-      "reasoning": true
-    },
-    "modelType": "responses",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "o3-deep-research"
-    },
-    "maxOutput": 100000,
-    "pricing": {
-      "input": 10,
-      "output": 40,
-      "cachedInput": 2.5
-    }
-  },
-  "o3-deep-research-2025-06-26": {
-    "displayName": "o3-deep-research-2025-06-26",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": false,
-      "reasoning": true
-    },
-    "modelType": "responses",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "o3-deep-research-2025-06-26"
-    },
-    "maxOutput": 100000,
-    "pricing": {
-      "input": 10,
-      "output": 40,
-      "cachedInput": 2.5
     }
   },
   "o3-mini": {
@@ -53170,50 +48591,6 @@
       "cachedInput": 0.275
     }
   },
-  "o4-mini-deep-research": {
-    "displayName": "o4-mini-deep-research",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": false,
-      "reasoning": true
-    },
-    "modelType": "responses",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "o4-mini-deep-research"
-    },
-    "maxOutput": 100000,
-    "pricing": {
-      "input": 2,
-      "output": 8,
-      "cachedInput": 0.5
-    }
-  },
-  "o4-mini-deep-research-2025-06-26": {
-    "displayName": "o4-mini-deep-research-2025-06-26",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": false,
-      "reasoning": true
-    },
-    "modelType": "responses",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "o4-mini-deep-research-2025-06-26"
-    },
-    "maxOutput": 100000,
-    "pricing": {
-      "input": 2,
-      "output": 8,
-      "cachedInput": 0.5
-    }
-  },
   "olmocr-7b-0725-fp8": {
     "displayName": "allenai/olmOCR-7B-0725-FP8",
     "contextWindow": 16384,
@@ -53227,138 +48604,6 @@
     },
     "maxOutput": 16384,
     "aliasOf": "allenai/olmocr-7b-0725-fp8"
-  },
-  "open-mistral-7b": {
-    "displayName": "Mistral 7B",
-    "contextWindow": 8000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 8000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2023-09-27",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.25,
-      "output": 0.25
-    }
-  },
-  "open-mistral-nemo": {
-    "displayName": "Open Mistral Nemo",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-07-01",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.15,
-      "output": 0.15
-    }
-  },
-  "open-mixtral-8x22b": {
-    "displayName": "Mixtral 8x22B",
-    "contextWindow": 64000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 64000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-04-17",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 2,
-      "output": 6
-    }
-  },
-  "open-mixtral-8x7b": {
-    "displayName": "Mixtral 8x7B",
-    "contextWindow": 32000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 32000,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2023-12-11",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.7,
-      "output": 0.7
-    }
   },
   "openai.gpt-5.4": {
     "displayName": "GPT-5.4",
@@ -53958,279 +49203,6 @@
       "high"
     ]
   },
-  "openai/gpt-3.5-turbo": {
-    "displayName": "GPT-3.5-turbo",
-    "contextWindow": 16385,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": false,
-      "structuredOutput": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2023-03-01",
-    "reasoningEfforts": [],
-    "canonicalId": "openai/gpt-3.5-turbo",
-    "pricing": {
-      "input": 0.5,
-      "output": 1.5
-    },
-    "pricingSource": {
-      "provider": "openrouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all"
-    }
-  },
-  "openai/gpt-3.5-turbo-0613": {
-    "displayName": "OpenAI: GPT-3.5 Turbo (older v0613)",
-    "contextWindow": 4095,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "source": {
-      "catalog": "OpenRouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
-      "provider": "openrouter"
-    },
-    "maxOutput": 3685,
-    "pricing": {
-      "input": 1,
-      "output": 2
-    },
-    "reasoningEfforts": []
-  },
-  "openai/gpt-3.5-turbo-16k": {
-    "displayName": "OpenAI: GPT-3.5 Turbo 16k",
-    "contextWindow": 16385,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "source": {
-      "catalog": "OpenRouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
-      "provider": "openrouter"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 3,
-      "output": 4
-    },
-    "reasoningEfforts": []
-  },
-  "openai/gpt-3.5-turbo-instruct": {
-    "displayName": "OpenAI: GPT-3.5 Turbo Instruct",
-    "contextWindow": 4095,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "source": {
-      "catalog": "OpenRouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
-      "provider": "openrouter"
-    },
-    "maxOutput": 3685,
-    "pricing": {
-      "input": 1.5,
-      "output": 2
-    },
-    "reasoningEfforts": []
-  },
-  "openai/gpt-3.5-turbo:batch": {
-    "displayName": "OpenAI: GPT-3.5 Turbo (batch)",
-    "contextWindow": 16385,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "source": {
-      "catalog": "OpenRouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
-      "provider": "openrouter"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 0.25,
-      "output": 0.75
-    },
-    "reasoningEfforts": []
-  },
-  "openai/gpt-4": {
-    "displayName": "GPT-4",
-    "contextWindow": 8192,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2023-11-06",
-    "reasoningEfforts": [],
-    "canonicalId": "openai/gpt-4",
-    "pricing": {
-      "input": 30,
-      "output": 60
-    },
-    "pricingSource": {
-      "provider": "openrouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all"
-    }
-  },
-  "openai/gpt-4-turbo": {
-    "displayName": "GPT-4 Turbo",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2023-11-06",
-    "reasoningEfforts": [],
-    "canonicalId": "openai/gpt-4-turbo",
-    "pricing": {
-      "input": 10,
-      "output": 30
-    },
-    "pricingSource": {
-      "provider": "openrouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all"
-    }
-  },
-  "openai/gpt-4-turbo:batch": {
-    "displayName": "OpenAI: GPT-4 Turbo (batch)",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "source": {
-      "catalog": "OpenRouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
-      "provider": "openrouter"
-    },
-    "maxOutput": 4096,
-    "pricing": {
-      "input": 5,
-      "output": 15
-    },
-    "reasoningEfforts": []
-  },
   "openai/gpt-4.1": {
     "displayName": "GPT-4.1",
     "contextWindow": 1047576,
@@ -54801,74 +49773,6 @@
     },
     "aliasOf": "gpt-5"
   },
-  "openai/gpt-5-chat-latest": {
-    "displayName": "GPT-5 Chat (latest)",
-    "contextWindow": 400000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-08-07",
-    "canonicalId": "openai/gpt-5-chat-latest"
-  },
-  "openai/gpt-5-codex": {
-    "displayName": "GPT-5 Codex",
-    "contextWindow": 256000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json",
-      "curatedBase": "gpt-5-codex"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-09-15",
-    "canonicalId": "openai/gpt-5-codex",
-    "reasoningEfforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "pricing": {
-      "input": 1.25,
-      "output": 10
-    },
-    "aliasOf": "gpt-5-codex"
-  },
   "openai/gpt-5-image": {
     "displayName": "GPT-5 Image",
     "contextWindow": 400000,
@@ -55223,149 +50127,6 @@
       "url": "https://openrouter.ai/api/v1/models?output_modalities=all"
     }
   },
-  "openai/gpt-5.1-chat-latest": {
-    "displayName": "GPT-5.1 Chat",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-11-13",
-    "canonicalId": "openai/gpt-5.1-chat-latest"
-  },
-  "openai/gpt-5.1-codex": {
-    "displayName": "GPT-5.1 Codex",
-    "contextWindow": 400000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-11-13",
-    "canonicalId": "openai/gpt-5.1-codex",
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cachedInput": 0.13
-    },
-    "pricingSource": {
-      "provider": "openrouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all"
-    }
-  },
-  "openai/gpt-5.1-codex-max": {
-    "displayName": "GPT-5.1 Codex Max",
-    "contextWindow": 400000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-11-13",
-    "canonicalId": "openai/gpt-5.1-codex-max",
-    "pricing": {
-      "input": 1.25,
-      "output": 10,
-      "cachedInput": 0.125
-    },
-    "pricingSource": {
-      "provider": "openrouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all"
-    }
-  },
-  "openai/gpt-5.1-codex-mini": {
-    "displayName": "GPT-5.1 Codex mini",
-    "contextWindow": 400000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-11-13",
-    "canonicalId": "openai/gpt-5.1-codex-mini",
-    "pricing": {
-      "input": 0.25,
-      "output": 2,
-      "cachedInput": 0.03
-    },
-    "pricingSource": {
-      "provider": "openrouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all"
-    }
-  },
   "openai/gpt-5.1:batch": {
     "displayName": "OpenAI: GPT-5.1 (batch)",
     "contextWindow": 400000,
@@ -55477,74 +50238,6 @@
       "cachedInput": 0.175
     },
     "reasoningEfforts": []
-  },
-  "openai/gpt-5.2-chat-latest": {
-    "displayName": "GPT-5.2 Chat",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-11",
-    "canonicalId": "openai/gpt-5.2-chat-latest"
-  },
-  "openai/gpt-5.2-codex": {
-    "displayName": "GPT-5.2 Codex",
-    "contextWindow": 400000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-11",
-    "canonicalId": "openai/gpt-5.2-codex",
-    "pricing": {
-      "input": 1.75,
-      "output": 14,
-      "cachedInput": 0.175
-    },
-    "pricingSource": {
-      "provider": "openrouter",
-      "url": "https://openrouter.ai/api/v1/models?output_modalities=all"
-    }
   },
   "openai/gpt-5.2-pro": {
     "displayName": "GPT-5.2 Pro",
@@ -55660,36 +50353,6 @@
       "medium",
       "low"
     ]
-  },
-  "openai/gpt-5.3-chat-latest": {
-    "displayName": "GPT-5.3 Chat (latest)",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-03-03",
-    "reasoningEfforts": [],
-    "canonicalId": "openai/gpt-5.3-chat-latest"
   },
   "openai/gpt-5.3-codex": {
     "displayName": "GPT-5.3 Codex",
@@ -58286,34 +52949,6 @@
     },
     "aliasOf": "o3"
   },
-  "openai/o3-deep-research": {
-    "displayName": "o3-deep-research",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 100000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-06-26",
-    "canonicalId": "openai/o3-deep-research"
-  },
   "openai/o3-mini": {
     "displayName": "o3 Mini",
     "contextWindow": 200000,
@@ -58528,34 +53163,6 @@
       "cachedInput": 0.275
     },
     "aliasOf": "o4-mini"
-  },
-  "openai/o4-mini-deep-research": {
-    "displayName": "o4-mini-deep-research",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/models.json"
-    },
-    "maxOutput": 100000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-06-26",
-    "canonicalId": "openai/o4-mini-deep-research"
   },
   "openai/o4-mini-high": {
     "displayName": "o4 Mini",
@@ -59963,67 +54570,6 @@
     "canonicalId": "microsoft/phi-4-mini",
     "aliasOf": "microsoft/phi-4-mini"
   },
-  "phi-4-mini-instruct": {
-    "displayName": "Phi-4-Mini",
-    "contextWindow": 131072,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-12-01",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "microsoft/phi-4-mini-instruct"
-  },
-  "phi-4-multimodal-instruct": {
-    "displayName": "Phi 4 Multimodal",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": false,
-      "reasoning": false,
-      "structuredOutput": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-07-26",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "microsoft/phi-4-multimodal-instruct"
-  },
   "phind-code-llama-34b-python-v1": {
     "displayName": "accounts/fireworks/models/phind-code-llama-34b-python-v1",
     "contextWindow": 16384,
@@ -60066,40 +54612,6 @@
     "maxOutput": 16384,
     "aliasOf": "accounts/fireworks/models/phind-code-llama-34b-v2"
   },
-  "pixtral-12b": {
-    "displayName": "Pixtral 12B",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-09-01",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.15,
-      "output": 0.15
-    }
-  },
   "pixtral-large-2502": {
     "displayName": "Pixtral Large (25.02)",
     "contextWindow": 128000,
@@ -60129,40 +54641,6 @@
     "reasoningEfforts": [],
     "canonicalId": "mistral/pixtral-large-2502",
     "aliasOf": "mistral/pixtral-large-2502"
-  },
-  "pixtral-large-latest": {
-    "displayName": "Pixtral Large (latest)",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": true,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral"
-    },
-    "maxOutput": 128000,
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-11-01",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 2,
-      "output": 6
-    }
   },
   "playground-v2-1024px-aesthetic": {
     "displayName": "accounts/fireworks/models/playground-v2-1024px-aesthetic",
@@ -62539,36 +57017,6 @@
     "releaseDate": "2024-09-19",
     "reasoningEfforts": []
   },
-  "qwen/qwen2.5-coder-32b-instruct": {
-    "displayName": "Qwen2.5 Coder 32b Instruct",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 4096,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-11-06",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
   "qwen/qwen2.5-vl-32b-instruct": {
     "displayName": "Qwen/Qwen2.5-VL-32B-Instruct",
     "contextWindow": 128000,
@@ -62754,35 +57202,6 @@
     },
     "releaseDate": "2025-07-21",
     "canonicalId": "alibaba/qwen3-235b-a22b-instruct-2507",
-    "reasoningEfforts": []
-  },
-  "qwen/qwen3-235b-a22b-instruct-2507-tput": {
-    "displayName": "Qwen3 235B A22B Instruct 2507 FP8",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "togetherai"
-    },
-    "maxOutput": 262144,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-07-25",
-    "status": "deprecated",
     "reasoningEfforts": []
   },
   "qwen/qwen3-235b-a22b-thinking-2507": {
@@ -63065,64 +57484,6 @@
     },
     "reasoningEfforts": []
   },
-  "qwen/qwen3-coder-480b-a35b-instruct": {
-    "displayName": "Qwen3 Coder 480B A35B Instruct",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 66536,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-07-23",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
-  "qwen/qwen3-coder-480b-a35b-instruct-fp8": {
-    "displayName": "Qwen3 Coder 480B A35B Instruct",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "togetherai"
-    },
-    "maxOutput": 262144,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-07-23",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
   "qwen/qwen3-coder-480b-a35b-instruct-turbo": {
     "displayName": "Qwen3 Coder 480B A35B Instruct Turbo",
     "contextWindow": 262144,
@@ -63218,35 +57579,6 @@
     },
     "reasoningEfforts": []
   },
-  "qwen/qwen3-coder-next-fp8": {
-    "displayName": "Qwen3 Coder Next FP8",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "togetherai"
-    },
-    "maxOutput": 262144,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-02-03",
-    "status": "deprecated",
-    "reasoningEfforts": []
-  },
   "qwen/qwen3-embedding-0.6b": {
     "displayName": "Qwen3-Embedding-0.6B",
     "contextWindow": 32768,
@@ -63328,37 +57660,6 @@
     "dimensions": 4096,
     "multilingual": true,
     "aliasOf": "qwen3-embedding-8b"
-  },
-  "qwen/qwen3-max": {
-    "displayName": "Qwen3 Max",
-    "contextWindow": 256000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "structuredOutput": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "deepinfra"
-    },
-    "maxOutput": 65536,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-09-23",
-    "status": "deprecated",
-    "canonicalId": "alibaba/qwen3-max",
-    "reasoningEfforts": []
   },
   "qwen/qwen3-max-thinking": {
     "displayName": "Qwen/Qwen3-Max-Thinking",
@@ -65658,36 +59959,6 @@
     "maxOutput": 20000,
     "aliasOf": "qwen/qwen3-235b-a22b-fp8"
   },
-  "qwen3-235b-a22b-instruct-2507-tput": {
-    "displayName": "Qwen3 235B A22B Instruct 2507 FP8",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "togetherai"
-    },
-    "maxOutput": 262144,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-07-25",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "qwen/qwen3-235b-a22b-instruct-2507-tput"
-  },
   "qwen3-235b-a22b-thinking-2507": {
     "displayName": "accounts/fireworks/models/qwen3-235b-a22b-thinking-2507",
     "contextWindow": 262144,
@@ -66014,36 +60285,6 @@
       "output": 7.5
     }
   },
-  "qwen3-coder-480b-a35b-instruct-fp8": {
-    "displayName": "Qwen3 Coder 480B A35B Instruct",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "togetherai"
-    },
-    "maxOutput": 262144,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-07-23",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "qwen/qwen3-coder-480b-a35b-instruct-fp8"
-  },
   "qwen3-coder-480b-a35b-instruct-turbo": {
     "displayName": "Qwen3 Coder 480B A35B Instruct Turbo",
     "contextWindow": 262144,
@@ -66166,36 +60407,6 @@
     "canonicalId": "alibaba/qwen3-coder-next",
     "aliasOf": "alibaba/qwen3-coder-next"
   },
-  "qwen3-coder-next-fp8": {
-    "displayName": "Qwen3 Coder Next FP8",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "togetherai"
-    },
-    "maxOutput": 262144,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-02-03",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "qwen/qwen3-coder-next-fp8"
-  },
   "qwen3-coder-plus": {
     "displayName": "Qwen3 Coder Plus",
     "contextWindow": 1048576,
@@ -66245,23 +60456,29 @@
     "maxOutput": 65536
   },
   "qwen3-coder:480b-cloud": {
-    "displayName": "qwen3-coder:480b-cloud",
-    "contextWindow": 262144,
+    "displayName": "Qwen3 Coder",
+    "contextWindow": 1048576,
     "capabilities": {
-      "functionCalling": true
+      "vision": false,
+      "functionCalling": true,
+      "reasoning": false,
+      "streaming": true,
+      "webSearch": false
     },
     "modelType": "chat",
     "source": {
       "catalog": "LiteLLM",
       "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
       "provider": "ollama",
-      "sourceId": "ollama/qwen3-coder:480b-cloud"
+      "sourceId": "ollama/qwen3-coder:480b-cloud",
+      "curatedBase": "qwen3-coder"
     },
-    "maxOutput": 262144,
+    "maxOutput": 65536,
     "pricing": {
-      "input": 0,
-      "output": 0
-    }
+      "input": 0.22,
+      "output": 1.8
+    },
+    "aliasOf": "qwen3-coder"
   },
   "qwen3-embedding-0.6b": {
     "displayName": "Qwen3-Embedding-0.6B",
@@ -68775,36 +62992,6 @@
       "output": 0
     }
   },
-  "rnj-1-instruct": {
-    "displayName": "Rnj-1 Instruct",
-    "contextWindow": 32768,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "togetherai"
-    },
-    "maxOutput": 32768,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-12-05",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "essentialai/rnj-1-instruct"
-  },
   "rolm-ocr": {
     "displayName": "accounts/fireworks/models/rolm-ocr",
     "contextWindow": 128000,
@@ -69353,36 +63540,6 @@
     "canonicalId": "sarvam/sarvam-30b",
     "aliasOf": "sarvam/sarvam-30b"
   },
-  "sarvam-m": {
-    "displayName": "sarvam-m",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-07-25",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "sarvamai/sarvam-m"
-  },
   "sarvam/sarvam-105b": {
     "displayName": "Sarvam 105B",
     "contextWindow": 131072,
@@ -69436,35 +63593,6 @@
     },
     "releaseDate": "2026-02-18",
     "canonicalId": "sarvam/sarvam-30b"
-  },
-  "sarvamai/sarvam-m": {
-    "displayName": "sarvam-m",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2025-07-25",
-    "status": "deprecated",
-    "reasoningEfforts": []
   },
   "scaledown/extract": {
     "displayName": "ScaleDown: Extract",
@@ -70656,36 +64784,6 @@
     "maxOutput": 32768,
     "aliasOf": "accounts/fireworks/models/snorkel-mistral-7b-pairrm-dpo"
   },
-  "solar-10.7b-instruct": {
-    "displayName": "solar-10.7b-instruct",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-06-05",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "aliasOf": "upstage/solar-10.7b-instruct"
-  },
   "solar-mini": {
     "displayName": "solar-mini",
     "contextWindow": 32768,
@@ -70969,51 +65067,6 @@
       "input": 2,
       "output": 8
     }
-  },
-  "sora-2": {
-    "displayName": "sora-2",
-    "contextWindow": 0,
-    "capabilities": {
-      "videoGeneration": true
-    },
-    "modelType": "video_generation",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "openai/sora-2"
-    },
-    "reasoningEfforts": []
-  },
-  "sora-2-pro": {
-    "displayName": "sora-2-pro",
-    "contextWindow": 0,
-    "capabilities": {
-      "videoGeneration": true
-    },
-    "modelType": "video_generation",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "openai/sora-2-pro"
-    },
-    "reasoningEfforts": []
-  },
-  "sora-2-pro-high-res": {
-    "displayName": "sora-2-pro-high-res",
-    "contextWindow": 0,
-    "capabilities": {
-      "videoGeneration": true
-    },
-    "modelType": "video_generation",
-    "source": {
-      "catalog": "LiteLLM",
-      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-      "provider": "openai",
-      "sourceId": "openai/sora-2-pro-high-res"
-    },
-    "reasoningEfforts": []
   },
   "sourceful/riverflow-v2-fast": {
     "displayName": "Riverflow V2 Fast",
@@ -71521,82 +65574,6 @@
       "cachedInput": 0.048
     },
     "aliasOf": "stepfun/step-5-preview"
-  },
-  "stepfun-ai/step-3.5-flash": {
-    "displayName": "Step 3.5 Flash",
-    "contextWindow": 262144,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": true,
-      "reasoning": false,
-      "streaming": true,
-      "webSearch": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia",
-      "curatedBase": "step-3.5-flash"
-    },
-    "maxOutput": 16384,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-02-02",
-    "status": "deprecated",
-    "reasoningEfforts": [
-      "low",
-      "medium",
-      "high"
-    ],
-    "pricing": {
-      "input": 0.09,
-      "output": 0.3
-    },
-    "aliasOf": "step-3.5-flash"
-  },
-  "stepfun-ai/step-3.7-flash": {
-    "displayName": "Step 3.7 Flash",
-    "contextWindow": 256000,
-    "capabilities": {
-      "vision": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "deepinfra",
-      "curatedBase": "step-3.7-flash"
-    },
-    "maxOutput": 256000,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-05-29",
-    "status": "deprecated",
-    "canonicalId": "stepfun/step-3.7-flash",
-    "pricing": {
-      "input": 0.2,
-      "output": 1.15
-    },
-    "aliasOf": "step-3.7-flash"
   },
   "stepfun/step-3.5-flash": {
     "displayName": "Step 3.5 Flash",
@@ -73114,35 +67091,6 @@
     "reasoningEfforts": [],
     "canonicalId": "thedrummer/unslopnemo-12b",
     "aliasOf": "thedrummer/unslopnemo-12b"
-  },
-  "upstage/solar-10.7b-instruct": {
-    "displayName": "solar-10.7b-instruct",
-    "contextWindow": 128000,
-    "capabilities": {
-      "vision": false,
-      "videoInput": false,
-      "audioInput": false,
-      "functionCalling": true,
-      "reasoning": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "nvidia"
-    },
-    "maxOutput": 8192,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2024-06-05",
-    "status": "deprecated",
-    "reasoningEfforts": []
   },
   "upstage/solar-mini4": {
     "displayName": "Upstage: Solar Mini 4",
@@ -76546,85 +70494,6 @@
     },
     "aliasOf": "mimo-v2-flash"
   },
-  "xiaomimimo/mimo-v2.5": {
-    "displayName": "MiMo V2.5",
-    "contextWindow": 1048576,
-    "capabilities": {
-      "vision": true,
-      "videoInput": true,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "deepinfra",
-      "curatedBase": "mimo-v2.5"
-    },
-    "maxOutput": 131072,
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-04-22",
-    "status": "deprecated",
-    "canonicalId": "xiaomi/mimo-v2.5",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.14,
-      "output": 0.28,
-      "cachedInput": 0.0028
-    },
-    "aliasOf": "mimo-v2.5"
-  },
-  "xiaomimimo/mimo-v2.5-pro": {
-    "displayName": "MiMo V2.5 Pro",
-    "contextWindow": 1048576,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": true
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "deepinfra",
-      "curatedBase": "mimo-v2.5-pro"
-    },
-    "maxOutput": 131072,
-    "modalities": {
-      "input": [
-        "text",
-        "audio"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-04-22",
-    "status": "deprecated",
-    "canonicalId": "xiaomi/mimo-v2.5-pro",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0.435,
-      "output": 0.87,
-      "cachedInput": 0.0036
-    },
-    "aliasOf": "mimo-v2.5-pro"
-  },
   "xiaomimimo/mimo-v2.6-flash": {
     "displayName": "MiMo V2.6 Flash",
     "contextWindow": 1048576,
@@ -77462,47 +71331,6 @@
       "cachedInput": 0.14
     }
   },
-  "zai-glm-5-2": {
-    "displayName": "GLM-5.2",
-    "contextWindow": 1000000,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "mistral",
-      "curatedBase": "glm-5.2"
-    },
-    "maxOutput": 131072,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-06-13",
-    "status": "deprecated",
-    "canonicalId": "zhipuai/glm-5.2",
-    "reasoningEfforts": [
-      "low",
-      "high",
-      "max"
-    ],
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cachedInput": 0.26
-    },
-    "aliasOf": "glm-5.2"
-  },
   "zai-glm-5-3": {
     "displayName": "GLM-5.3",
     "contextWindow": 1000000,
@@ -77859,41 +71687,6 @@
     },
     "aliasOf": "glm-4.7"
   },
-  "zai-org/glm-4.7-flash": {
-    "displayName": "GLM-4.7 Flash",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "deepinfra",
-      "curatedBase": "glm-4.7-flash"
-    },
-    "maxOutput": 131072,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-01-19",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 0,
-      "output": 0
-    },
-    "aliasOf": "glm-4.7-flash"
-  },
   "zai-org/glm-4.7-h": {
     "displayName": "zai-org/glm-4.7-h",
     "contextWindow": 204800,
@@ -77910,42 +71703,6 @@
       "sourceId": "novita/zai-org/glm-4.7-h"
     },
     "maxOutput": 131072
-  },
-  "zai-org/glm-5": {
-    "displayName": "GLM-5",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "deepinfra",
-      "curatedBase": "glm-5"
-    },
-    "maxOutput": 131072,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-02-12",
-    "status": "deprecated",
-    "reasoningEfforts": [],
-    "pricing": {
-      "input": 1,
-      "output": 3.2,
-      "cachedInput": 0.2
-    },
-    "aliasOf": "glm-5"
   },
   "zai-org/glm-5-turbo": {
     "displayName": "GLM-5 Turbo",
@@ -77973,46 +71730,6 @@
       "cachedInput": 0.24
     },
     "aliasOf": "glm-5-turbo"
-  },
-  "zai-org/glm-5.1": {
-    "displayName": "GLM-5.1",
-    "contextWindow": 200000,
-    "capabilities": {
-      "vision": false,
-      "functionCalling": true,
-      "reasoning": true,
-      "streaming": true,
-      "webSearch": false
-    },
-    "modelType": "chat",
-    "source": {
-      "catalog": "models.dev",
-      "url": "https://models.dev/api.json",
-      "provider": "deepinfra",
-      "curatedBase": "glm-5.1"
-    },
-    "maxOutput": 131072,
-    "modalities": {
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "releaseDate": "2026-04-07",
-    "status": "deprecated",
-    "reasoningEfforts": [
-      "low",
-      "high",
-      "max"
-    ],
-    "pricing": {
-      "input": 1.4,
-      "output": 4.4,
-      "cachedInput": 0.26
-    },
-    "aliasOf": "glm-5.1"
   },
   "zai-org/glm-5.2": {
     "displayName": "GLM-5.2",

@@ -93,3 +93,40 @@ test('official verification can withdraw a dubious source price without inventin
   assert.equal(result.database['embed-example-light'].dimensions, 384)
   }
 })
+
+test('Ollama parameter-size and quantization tags keep curated reasoning profiles', () => {
+  const result = buildCatalog(previous({ gemma4: { displayName: 'Gemma 4', contextWindow: 262144, capabilities: { reasoning: true }, reasoningEfforts: ['low', 'medium', 'high', 'max'] } }), feeds({
+    'models-dev': { 'ollama-cloud': { models: { 'gemma4:31b': model('gemma4:31b', { reasoning: true }) } } },
+    litellm: {
+      'ollama/gemma4:31b-q4_k_m': { litellm_provider: 'ollama', mode: 'chat', max_input_tokens: 262144, supports_reasoning: true },
+      'ollama/gemma4:latest': { litellm_provider: 'ollama', mode: 'chat', max_input_tokens: 262144, supports_reasoning: true },
+    },
+  }), '2026-10-13.3')
+  for (const id of ['gemma4:31b', 'gemma4:31b-q4_k_m', 'gemma4:latest']) {
+    assert.equal(result.database[id].displayName, 'Gemma 4')
+    assert.deepEqual(result.database[id].reasoningEfforts, ['low', 'medium', 'high', 'max'])
+  }
+})
+
+
+test('imports remove retired and obsolete models plus dependent aliases while preserving active embeddings', () => {
+  const result = buildCatalog(previous({
+    'gpt-3.5-turbo': { contextWindow: 16384, capabilities: {} },
+    'old-alias': { contextWindow: 16384, capabilities: {}, aliasOf: 'gpt-3.5-turbo' },
+    'alias-chain': { contextWindow: 16384, capabilities: {}, variantOf: 'old-alias' },
+    'text-embedding-ada-002': { contextWindow: 8191, capabilities: { embedding: true } },
+    'gpt-4o': { contextWindow: 128000, capabilities: {} },
+    'gpt-4-1': { contextWindow: 1000000, capabilities: {} },
+    'dall-e-3': { contextWindow: 0, capabilities: { imageGeneration: true } },
+    'gemini-2.0-flash': { contextWindow: 1000000, capabilities: {} },
+  }), feeds({ 'models-dev': { openai: { models: {
+    'retired-1': model('retired-1', { status: 'deprecated' }),
+    'active-1': model('active-1'),
+  } } }, 'models-dev-canonical': {
+    'vendor/claude-3-7-sonnet-20250219': model('vendor/claude-3-7-sonnet-20250219'),
+    'vendor/llama2:7b': model('vendor/llama2:7b'),
+  } }), '2026-10-13.3')
+  for (const id of ['gpt-3.5-turbo', 'old-alias', 'alias-chain', 'retired-1', 'vendor/claude-3-7-sonnet-20250219', 'vendor/llama2:7b', 'dall-e-3', 'gemini-2.0-flash']) assert.equal(id in result.database, false, id)
+  for (const id of ['text-embedding-ada-002', 'gpt-4o', 'gpt-4-1', 'active-1']) assert.ok(result.database[id], id)
+  assert.ok(result.report.removedEntries >= 6)
+})

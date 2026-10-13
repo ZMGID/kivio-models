@@ -73,7 +73,8 @@ export function buildCatalog(previous, feeds, version) {
   const curatedReference = (id, entry) => {
     const candidates = [id, tail(id), entry?.canonicalId, entry?.canonicalId && tail(entry.canonicalId)].filter(Boolean)
     for (const candidate of candidates) {
-      const base = candidate.replace(/:(free|batch)$/, '').replace(/-\d{6,8}$/, '').replace(/-(low|medium|high|xhigh|max)$/, '')
+      const tagged = ['ollama', 'ollama-cloud'].includes(entry?.source?.provider) ? candidate.split(':')[0] : candidate
+      const base = tagged.replace(/:(free|batch)$/, '').replace(/-\d{6,8}$/, '').replace(/-(low|medium|high|xhigh|max)$/, '')
       const found = byNormalized.get(normalized(candidate)) ?? byNormalized.get(normalized(base))
       if (found) return found
     }
@@ -228,6 +229,43 @@ export function buildCatalog(previous, feeds, version) {
     entry.aliasOf = target
     add(id, entry, 'compatibility-aliases')
   }
+  // Catalog policy: retire obsolete generations, not every model with an old release date.
+  // Embeddings stay compatible with existing vector stores unless explicitly deprecated.
+  const obsolete = /(?:^|[/.:-])(?:gpt-3[.-]5(?:-|$)|gpt-4(?:$|:(?:free|batch)$|-(?:turbo|vision|32k|0125|0314|0613|1106)(?:-|$|:))|claude-[123](?:[.-]|$)|gemini-1(?:[.-]|$)|llama-?[12](?:[-.:/]|$)|gemma-?2(?:[-.:/]|$)|qwen-?1(?:[.-]|$)|deepseek-(?:v1|v2)(?:[-.:/]|$)|chatglm(?:[-.:/]|$)|babbage(?:[-.:/]|$)|davinci(?:[-.:/]|$)|text-davinci(?:[-.:/]|$)|open-mistral-7b(?:$|:)|open-mixtral(?:[-.:/]|$)|mixtral-8x(?:7|22)b(?:[-.:/]|$))/i
+  const retirementDate = version.split('.')[0]
+  const retiredFirstParty = new Set()
+  for (const [sourceId, model] of Object.entries(feeds.litellm)) {
+    if (!['openai', 'anthropic', 'gemini', 'mistral', 'cohere', 'voyage', 'deepseek', 'xai'].includes(model.litellm_provider)) continue
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(model.deprecation_date ?? '') || model.deprecation_date > retirementDate) continue
+    const prefix = sourceId.split('/')[0]
+    const id = [model.litellm_provider, 'openai', 'gemini', 'deepseek', 'mistral', 'xai'].includes(prefix) ? sourceId.slice(prefix.length + 1) : sourceId
+    retiredFirstParty.add(normalized(id))
+  }
+  // Additional shutdowns verified against the labs' official retirement pages.
+  const retiredFamily = /(?:^|[/.:-])(?:dall-e-[23](?:$|:)|gemini-2[.-]0(?:-|$)|claude-(?:opus|sonnet)-4(?:$|:(?:free|batch)$|-(?:0|1)(?:$|[-:])|-20250514(?:$|:))|claude-4-(?:opus|sonnet)(?:$|:))/i
+  report.removedModels = {}
+  for (const [id, entry] of Object.entries(database)) {
+    if (id === '_meta') continue
+    const deprecated = ['deprecated', 'retired'].includes(entry.status)
+    const retired = [id, entry.canonicalId].filter(Boolean).some(name => retiredFamily.test(name) || retiredFirstParty.has(normalized(tail(name).replace(/:(free|batch)$/, ''))))
+    const oldFamily = !entry.capabilities?.embedding && [id, entry.canonicalId].filter(Boolean).some(name => obsolete.test(name))
+    if (deprecated || retired || oldFamily) report.removedModels[id] = retired ? 'retirement-date-reached' : deprecated ? 'source-deprecated' : 'obsolete-generation'
+  }
+  // Remove dependency chains too, even when an alias uses an unrelated name.
+  let changed = true
+  while (changed) {
+    changed = false
+    for (const [id, entry] of Object.entries(database)) {
+      if (id === '_meta' || report.removedModels[id]) continue
+      if ([entry.aliasOf, entry.variantOf].some(target => target && report.removedModels[target])) {
+        report.removedModels[id] = 'removed-target'
+        changed = true
+      }
+    }
+  }
+  for (const id of Object.keys(report.removedModels)) delete database[id]
+  report.removedEntries = Object.keys(report.removedModels).length
+  report.preservedEntries = Object.keys(previous).filter(id => id !== '_meta' && id in database).length
   report.aliases = Object.values(database).filter(entry => entry?.aliasOf).length
   report.totalEntries = Object.keys(database).length - 1
   report.addedEntries = report.totalEntries - report.previousEntries
