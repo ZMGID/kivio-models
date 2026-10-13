@@ -30,3 +30,26 @@ Kivio 发版流程会先固定模型库提交 SHA，再把同一份经过校验�
 将正确的旧资料恢复到一个**更高版本号**后发布。客户端不会自动降级模型库，直接把分支回退到低版本不能让已更新用户回滚。
 
 数据沿用 Kivio 的 GPL-3.0-or-later 许可，见 LICENSE。
+
+## 收录来源与批量维护
+
+当前 `2026-10-13.2` 快照收录 2,988 个可识别模型 ID，其中 944 条为兼容别名。ID 数量包含供应商限定 ID、日期快照及免费变体，不等于底层独立模型的数量。旧版与已退役记录用于兼容历史配置；目录收录不代表供应商仍在服务该模型，也不代表 Kivio 已实现该供应商的专用协议。
+
+来源：
+
+- [Models.dev](https://github.com/anomalyco/models.dev)：优先使用模型原厂资料和供应商无关的模型记录；主要推理平台用于补缺，转售商价格不作为裸模型 ID 的统一价格。
+- [OpenRouter 全模态目录](https://openrouter.ai/api/v1/models?output_modalities=all)：补充聊天、图像、视频和向量模型；保留 `:free`、`:batch` 等变体的限定 ID。价格按来源标明，token 单价统一换算为每百万 token 的 USD。
+- [LiteLLM 模型目录](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json)：补充旧版、开源和向量模型，排除按尺寸/画质计费的配置组合及通用图片编辑操作。
+- [Voyage 官方资料](https://www.mongodb.com/docs/voyageai/models/)：核对新向量模型的默认维度和多模态能力；Cohere 的轻量向量模型也用[官方模型表](https://docs.cohere.com/v2/docs/models)核对。补充资料维护在 `sources/verified-models.json`。
+
+Models.dev 和 LiteLLM 的 MIT 许可声明保留在 `licenses/`。每个新增记录带来源；下载快照的 SHA-256 记录在 `_meta.importSnapshot` 和 `IMPORT-REPORT.json` 中。
+
+批量补缺命令（Node.js 20+）：
+
+```sh
+node scripts/import-catalogs.mjs --fetch --snapshot-dir /tmp/kivio-catalogs --version 2026-10-14.1
+node --test scripts/import-catalogs.test.mjs
+node scripts/validate.mjs
+```
+
+`--fetch` 将源数据下载到指定目录。省略它可重复使用已经审核的源快照。先审查生成的 JSON 和导入报告，再发布；脚本不会自动推送。导入保持已有记录不变，因此原有条目的修订仍应在 `v1/modelDatabase.json` 中依据原厂资料手动完成。未知价格、缺失输出上限和缺失维度保持为空；图片/视频的按张、按秒价格不塞进 token 价格字段。官方补充数据中的 `pricing: null` 表示撤下未能核实的上游报价，生成后的模型记录会省略该字段。

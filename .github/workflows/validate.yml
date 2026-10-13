@@ -15,6 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - run: node --test scripts/import-catalogs.test.mjs
       - run: node scripts/validate.mjs
       - name: Require a new version when published data changes
         env:

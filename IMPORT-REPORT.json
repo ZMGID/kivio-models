@@ -1,0 +1,53 @@
+{
+  "version": "2026-10-13.2",
+  "previousEntries": 337,
+  "addedBySource": {
+    "models.dev:first-party": 234,
+    "models.dev:canonical": 531,
+    "openrouter": 372,
+    "models.dev:hosted": 298,
+    "litellm": 688,
+    "official-supplements": 1,
+    "compatibility-aliases": 527
+  },
+  "excludedBySource": {
+    "models.dev:first-party": 8,
+    "models.dev:canonical": 7,
+    "models.dev:hosted": 102,
+    "litellm": 19
+  },
+  "aliases": 944,
+  "preservedEntries": 337,
+  "omittedUnverifiedPrices": [
+    "embed-multilingual-light-v3.0"
+  ],
+  "totalEntries": 2988,
+  "addedEntries": 2651,
+  "modelTypes": {
+    "chat": 2563,
+    "image_generation": 195,
+    "embedding": 99,
+    "video_generation": 93,
+    "image_edit": 4,
+    "completion": 14,
+    "responses": 20
+  },
+  "snapshots": {
+    "models-dev-canonical": {
+      "url": "https://models.dev/models.json",
+      "sha256": "cf8c89c3653e86d32fa0d0cd269efe9a2c60fefbc1e1b894b88538566afedce3"
+    },
+    "models-dev": {
+      "url": "https://models.dev/api.json",
+      "sha256": "992b589e9a02cd89ff9c12cbad28dd12989b7e255d4ce89b79e064415acb0ae1"
+    },
+    "openrouter-all": {
+      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
+      "sha256": "b5e47fdbd353a942a49ac3379eee5d8157498c92e6223dda387398a75be8af71"
+    },
+    "litellm": {
+      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+      "sha256": "d1172bab5733b6c3f0e090a04fd2b4b077e6c9460a540f7ca3aeb6b939045f28"
+    }
+  }
+}

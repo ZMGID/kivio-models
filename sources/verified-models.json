@@ -1,0 +1,258 @@
+{
+  "voyage-4-large": {
+    "displayName": "voyage-4-large",
+    "contextWindow": 32000,
+    "dimensions": 1024,
+    "capabilities": {
+      "embedding": true,
+      "vision": false,
+      "videoInput": false
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "voyage-4": {
+    "displayName": "voyage-4",
+    "contextWindow": 32000,
+    "dimensions": 1024,
+    "capabilities": {
+      "embedding": true,
+      "vision": false,
+      "videoInput": false
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "voyage-4-lite": {
+    "displayName": "voyage-4-lite",
+    "contextWindow": 32000,
+    "dimensions": 1024,
+    "capabilities": {
+      "embedding": true,
+      "vision": false,
+      "videoInput": false
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "voyage-code-4": {
+    "displayName": "voyage-code-4",
+    "contextWindow": 32000,
+    "dimensions": 1024,
+    "capabilities": {
+      "embedding": true,
+      "vision": false,
+      "videoInput": false
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "voyage-4-nano": {
+    "displayName": "voyage-4-nano",
+    "contextWindow": 32000,
+    "dimensions": 512,
+    "capabilities": {
+      "embedding": true,
+      "vision": false,
+      "videoInput": false
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "voyage-finance-2": {
+    "displayName": "voyage-finance-2",
+    "contextWindow": 32000,
+    "dimensions": 1024,
+    "capabilities": {
+      "embedding": true,
+      "vision": false,
+      "videoInput": false
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "voyage-law-2": {
+    "displayName": "voyage-law-2",
+    "contextWindow": 16000,
+    "dimensions": 1024,
+    "capabilities": {
+      "embedding": true,
+      "vision": false,
+      "videoInput": false
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "voyage-code-2": {
+    "displayName": "voyage-code-2",
+    "contextWindow": 16000,
+    "dimensions": 1536,
+    "capabilities": {
+      "embedding": true,
+      "vision": false,
+      "videoInput": false
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "voyage-code-3": {
+    "displayName": "voyage-code-3",
+    "contextWindow": 32000,
+    "dimensions": 1024,
+    "capabilities": {
+      "embedding": true,
+      "vision": false,
+      "videoInput": false
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "voyage-context-3": {
+    "displayName": "voyage-context-3",
+    "contextWindow": 120000,
+    "dimensions": 1024,
+    "capabilities": {
+      "embedding": true,
+      "vision": false,
+      "videoInput": false
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "voyage-context-4": {
+    "displayName": "voyage-context-4",
+    "contextWindow": 120000,
+    "dimensions": 1024,
+    "capabilities": {
+      "embedding": true,
+      "vision": false,
+      "videoInput": false
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "voyage-multimodal-3": {
+    "displayName": "voyage-multimodal-3",
+    "contextWindow": 32000,
+    "dimensions": 1024,
+    "capabilities": {
+      "embedding": true,
+      "vision": true,
+      "videoInput": false
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "voyage-multimodal-3.5": {
+    "displayName": "voyage-multimodal-3.5",
+    "contextWindow": 32000,
+    "dimensions": 1024,
+    "capabilities": {
+      "embedding": true,
+      "vision": true,
+      "videoInput": true
+    },
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.mongodb.com/docs/voyageai/models/",
+      "provider": "voyage"
+    }
+  },
+  "embed-english-light-v3.0": {
+    "displayName": "embed-english-light-v3.0",
+    "contextWindow": 512,
+    "dimensions": 384,
+    "capabilities": {
+      "embedding": true,
+      "vision": true
+    },
+    "multilingual": false,
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://docs.cohere.com/v2/docs/models",
+      "provider": "cohere"
+    }
+  },
+  "embed-multilingual-light-v3.0": {
+    "displayName": "embed-multilingual-light-v3.0",
+    "contextWindow": 512,
+    "dimensions": 384,
+    "capabilities": {
+      "embedding": true,
+      "vision": true
+    },
+    "multilingual": true,
+    "reasoningEfforts": [],
+    "modelType": "embedding",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://docs.cohere.com/v2/docs/models",
+      "provider": "cohere"
+    },
+    "pricing": null
+  }
+}
