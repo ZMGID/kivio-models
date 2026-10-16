@@ -1,0 +1,1914 @@
+{
+  "version": "2026-10-16.1",
+  "verifiedDate": "2026-10-16",
+  "scope": "Native API effort values, thinking-off availability and official token limits; explicit identity aliases inherit corrections. Provider-specific routes and unverified variants are not inferred.",
+  "correctedEntries": 119,
+  "changes": [
+    {
+      "id": "accounts/fireworks/models/deepseek-v4-flash",
+      "verifiedModel": "deepseek-v4-flash",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "accounts/fireworks/models/deepseek-v4-flash-vision-exp",
+      "verifiedModel": "deepseek-v4-flash-vision-exp",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "accounts/fireworks/models/deepseek-v4-pro",
+      "verifiedModel": "deepseek-v4-pro",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "accounts/fireworks/models/glm-5p3",
+      "verifiedModel": "glm-5.3",
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "accounts/fireworks/models/glm-5p3-flash",
+      "verifiedModel": "glm-5.3-flash",
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "accounts/fireworks/models/qwen3p8-max",
+      "verifiedModel": "qwen3.8-max",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "accounts/fireworks/routers/glm-5p3-fast",
+      "verifiedModel": "glm-5.3",
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "accounts/fireworks/routers/glm-fast-latest",
+      "verifiedModel": "glm-5.3",
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "accounts/fireworks/routers/glm-flash-latest",
+      "verifiedModel": "glm-5.3-flash",
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "accounts/fireworks/routers/glm-latest",
+      "verifiedModel": "glm-5.3",
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "accounts/fireworks/routers/qwen-max-latest",
+      "verifiedModel": "qwen3.8-max",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "alibaba/qwen3.8-27b",
+      "verifiedModel": "qwen3.8-27b",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "alibaba/qwen3.8-flash",
+      "verifiedModel": "qwen3.8-flash",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "alibaba/qwen3.8-flash-next",
+      "verifiedModel": "qwen3.8-flash-next",
+      "source": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "changes": {
+        "reasoningEfforts": {
+          "before": null,
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        },
+        "capabilities": {
+          "before": {
+            "vision": true,
+            "videoInput": true,
+            "audioInput": false,
+            "functionCalling": true,
+            "reasoning": true,
+            "structuredOutput": true
+          },
+          "after": {
+            "vision": true,
+            "videoInput": true,
+            "audioInput": false,
+            "functionCalling": true,
+            "reasoning": true,
+            "structuredOutput": true,
+            "streaming": true
+          }
+        }
+      }
+    },
+    {
+      "id": "alibaba/qwen3.8-max",
+      "verifiedModel": "qwen3.8-max",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "alibaba/qwen3.8-max-0902",
+      "verifiedModel": "qwen3.8-max-0902",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "alibaba/qwen3.8-omni-flash",
+      "verifiedModel": "qwen3.8-omni-flash",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "deepseek-ai/deepseek-v4-flash",
+      "verifiedModel": "deepseek-v4-flash",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek-ai/deepseek-v4-flash-vision-exp",
+      "verifiedModel": "deepseek-v4-flash-vision-exp",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek-ai/deepseek-v4-pro",
+      "verifiedModel": "deepseek-v4-pro",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek-flash",
+      "verifiedModel": "deepseek-flash",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek-v4-flash",
+      "verifiedModel": "deepseek-v4-flash",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek-v4-flash-0731",
+      "verifiedModel": "deepseek-v4-flash-0731",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "high",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek-v4-flash-vision-exp",
+      "verifiedModel": "deepseek-v4-flash-vision-exp",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek-v4-flash:0731",
+      "verifiedModel": "deepseek-v4-flash",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "verifiedModel": "deepseek-v4-pro",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek-v4-pro-0813",
+      "verifiedModel": "deepseek-v4-pro-0813",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": null,
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek-v4-pro:0813",
+      "verifiedModel": "deepseek-v4-pro",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek-v4.1-flash",
+      "verifiedModel": "deepseek-v4.1-flash",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash",
+      "verifiedModel": "deepseek-v4-flash",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-0731",
+      "verifiedModel": "deepseek-v4-flash-0731",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": null,
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-vision-exp",
+      "verifiedModel": "deepseek-v4-flash-vision-exp",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro",
+      "verifiedModel": "deepseek-v4-pro",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "verifiedModel": "deepseek-v4.1-flash",
+      "source": "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "changes": {
+        "reasoningEfforts": {
+          "before": null,
+          "after": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "glm-5-2-260617",
+      "verifiedModel": "glm-5.2",
+      "source": "https://docs.z.ai/guides/overview/concept-param",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "glm-5-3-flash-260828",
+      "verifiedModel": "glm-5.3-flash",
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "glm-5.1",
+      "verifiedModel": "glm-5.1",
+      "source": "https://docs.z.ai/guides/overview/concept-param",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "max"
+          ],
+          "after": []
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "glm-5.2",
+      "verifiedModel": "glm-5.2",
+      "source": "https://docs.z.ai/guides/overview/concept-param",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "glm-5.3",
+      "verifiedModel": "glm-5.3",
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "glm-5.3-flash",
+      "verifiedModel": "glm-5.3-flash",
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "glm-5.3-flashx",
+      "verifiedModel": "glm-5.3-flashx",
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "glm-fast-latest",
+      "verifiedModel": "glm-5.3",
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "glm-flash-latest",
+      "verifiedModel": "glm-5.3-flash",
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "glm-latest",
+      "verifiedModel": "glm-5.3",
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "gpt-5.5",
+      "verifiedModel": "gpt-5.5",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "gpt-5.5-2026-04-23",
+      "verifiedModel": "gpt-5.5-2026-04-23",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "gpt-5.5-pro",
+      "verifiedModel": "gpt-5.5-pro",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        },
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "after": [
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "gpt-5.5-pro-2026-04-23",
+      "verifiedModel": "gpt-5.5-pro-2026-04-23",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        },
+        "reasoningEfforts": {
+          "before": null,
+          "after": [
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "gpt-5.6",
+      "verifiedModel": "gpt-5.6",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "gpt-5.6-cyber",
+      "verifiedModel": "gpt-5.6-cyber",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-cyber",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 400000
+        }
+      }
+    },
+    {
+      "id": "gpt-5.6-luna",
+      "verifiedModel": "gpt-5.6-luna",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "gpt-5.6-sol",
+      "verifiedModel": "gpt-5.6-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "gpt-5.6-terra",
+      "verifiedModel": "gpt-5.6-terra",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "gpt-6-astra",
+      "verifiedModel": "gpt-6-astra",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "gpt-6-luna",
+      "verifiedModel": "gpt-6-luna",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "gpt-6-sol",
+      "verifiedModel": "gpt-6-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "verifiedModel": "gpt-6.1-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "gpt-daybreak-blue-latest",
+      "verifiedModel": "gpt-5.6-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "gpt-daybreak-red-latest",
+      "verifiedModel": "gpt-5.6-cyber",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-cyber",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 400000
+        }
+      }
+    },
+    {
+      "id": "in.openai.gpt-5.6-luna",
+      "verifiedModel": "gpt-5.6-luna",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "in.openai.gpt-5.6-terra",
+      "verifiedModel": "gpt-5.6-terra",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai.gpt-5.5",
+      "verifiedModel": "gpt-5.5",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai.gpt-5.6-luna",
+      "verifiedModel": "gpt-5.6-luna",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai.gpt-5.6-sol",
+      "verifiedModel": "gpt-5.6-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai.gpt-5.6-terra",
+      "verifiedModel": "gpt-5.6-terra",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai.gpt-6-astra",
+      "verifiedModel": "gpt-6-astra",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "openai.gpt-6-luna",
+      "verifiedModel": "gpt-6-luna",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai.gpt-6-sol",
+      "verifiedModel": "gpt-6-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai.gpt-6.1-sol",
+      "verifiedModel": "gpt-6.1-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-5.5",
+      "verifiedModel": "gpt-5.5",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-5.5-pro",
+      "verifiedModel": "gpt-5.5-pro",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        },
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "after": [
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-5.5-pro:batch",
+      "verifiedModel": "gpt-5.5-pro",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        },
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "after": [
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-5.5:batch",
+      "verifiedModel": "gpt-5.5",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-5.6-cyber",
+      "verifiedModel": "gpt-5.6-cyber",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-cyber",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 400000
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-5.6-luna",
+      "verifiedModel": "gpt-5.6-luna",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-5.6-luna:batch",
+      "verifiedModel": "gpt-5.6-luna",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-5.6-sol",
+      "verifiedModel": "gpt-5.6-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-5.6-sol:batch",
+      "verifiedModel": "gpt-5.6-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-5.6-terra",
+      "verifiedModel": "gpt-5.6-terra",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-5.6-terra:batch",
+      "verifiedModel": "gpt-5.6-terra",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-6-astra",
+      "verifiedModel": "gpt-6-astra",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-6-astra:batch",
+      "verifiedModel": "gpt-6-astra",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-6-luna",
+      "verifiedModel": "gpt-6-luna",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-6-luna:batch",
+      "verifiedModel": "gpt-6-luna",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-6-sol",
+      "verifiedModel": "gpt-6-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-6-sol:batch",
+      "verifiedModel": "gpt-6-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-6.1-sol",
+      "verifiedModel": "gpt-6.1-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "changes": {
+        "contextWindow": {
+          "before": 256000,
+          "after": 1050000
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-6.1-sol:batch",
+      "verifiedModel": "gpt-6.1-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "pro/zai-org/glm-5.1",
+      "verifiedModel": "glm-5.1",
+      "source": "https://docs.z.ai/guides/overview/concept-param",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "max"
+          ],
+          "after": []
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "qwen-3.8-27b",
+      "verifiedModel": "qwen3.8-27b",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen-max-latest",
+      "verifiedModel": "qwen3.8-max",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen/qwen3.8-27b",
+      "verifiedModel": "qwen3.8-27b",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen/qwen3.8-flash",
+      "verifiedModel": "qwen3.8-flash",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen/qwen3.8-max",
+      "verifiedModel": "qwen3.8-max",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen/qwen3.8-max-0902",
+      "verifiedModel": "qwen3.8-max-0902",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen/qwen3.8-omni-flash",
+      "verifiedModel": "qwen3.8-omni-flash",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen3.8-27b",
+      "verifiedModel": "qwen3.8-27b",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen3.8-27b-uncensored",
+      "verifiedModel": "qwen3.8-27b-uncensored",
+      "source": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored/blob/main/chat_template.jinja",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen3.8-flash",
+      "verifiedModel": "qwen3.8-flash",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen3.8-flash-next",
+      "verifiedModel": "qwen3.8-flash-next",
+      "source": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "changes": {
+        "reasoningEfforts": {
+          "before": null,
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        },
+        "capabilities": {
+          "before": {
+            "vision": true,
+            "videoInput": true,
+            "audioInput": false,
+            "functionCalling": true,
+            "reasoning": true,
+            "structuredOutput": true
+          },
+          "after": {
+            "vision": true,
+            "videoInput": true,
+            "audioInput": false,
+            "functionCalling": true,
+            "reasoning": true,
+            "structuredOutput": true,
+            "streaming": true
+          }
+        }
+      }
+    },
+    {
+      "id": "qwen3.8-max",
+      "verifiedModel": "qwen3.8-max",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen3.8-max-0902",
+      "verifiedModel": "qwen3.8-max-0902",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen3.8-max-2026-09-02",
+      "verifiedModel": "qwen3.8-max-2026-09-02",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "qwen3.8-omni-flash",
+      "verifiedModel": "qwen3.8-omni-flash",
+      "source": "https://help.aliyun.com/en/model-studio/qwen-api-via-openai-chat-completions",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "after": [
+            "low",
+            "medium",
+            "xhigh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "z-ai/glm-5.1",
+      "verifiedModel": "glm-5.1",
+      "source": "https://docs.z.ai/guides/overview/concept-param",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "max"
+          ],
+          "after": []
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "z-ai/glm-5.2",
+      "verifiedModel": "glm-5.2",
+      "source": "https://docs.z.ai/guides/overview/concept-param",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "z-ai/glm-5.3",
+      "verifiedModel": "glm-5.3",
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "z-ai/glm-5.3-flash",
+      "verifiedModel": "glm-5.3-flash",
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "z-ai/glm-5.3-flash:batch",
+      "verifiedModel": "glm-5.3-flash",
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "z-ai/glm-5.3-flashx",
+      "verifiedModel": "glm-5.3-flashx",
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "z-ai/glm-5.3:batch",
+      "verifiedModel": "glm-5.3",
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "zai-glm-5-3",
+      "verifiedModel": "glm-5.3",
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "zai-org/glm-5.2",
+      "verifiedModel": "glm-5.2",
+      "source": "https://docs.z.ai/guides/overview/concept-param",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "zai-org/glm-5.3",
+      "verifiedModel": "glm-5.3",
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "zai-org/glm-5.3-flash",
+      "verifiedModel": "glm-5.3-flash",
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "zhipuai/glm-5.1",
+      "verifiedModel": "glm-5.1",
+      "source": "https://docs.z.ai/guides/overview/concept-param",
+      "changes": {
+        "reasoningEfforts": {
+          "before": [
+            "low",
+            "high",
+            "max"
+          ],
+          "after": []
+        },
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "zhipuai/glm-5.2",
+      "verifiedModel": "glm-5.2",
+      "source": "https://docs.z.ai/guides/overview/concept-param",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": true
+        }
+      }
+    },
+    {
+      "id": "zhipuai/glm-5.3",
+      "verifiedModel": "glm-5.3",
+      "source": "https://docs.z.ai/guides/llm/glm-5.3",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    },
+    {
+      "id": "zhipuai/glm-5.3-flash",
+      "verifiedModel": "glm-5.3-flash",
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "changes": {
+        "thinkingOff": {
+          "before": null,
+          "after": false
+        }
+      }
+    }
+  ]
+}

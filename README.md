@@ -33,7 +33,7 @@ Kivio 发版流程会先固定模型库提交 SHA，再把同一份经过校验�
 
 ## 收录来源与批量维护
 
-当前 `2026-10-13.3` 快照收录 2,756 个可识别模型 ID，其中 881 条为兼容别名。ID 数量包含供应商限定 ID、日期快照及免费变体，不等于底层独立模型的数量。已清理 232 个已弃用、已到退役日期或明显过时的型号 ID；仍在服务的向量模型保留，以兼容已有向量库。目录收录不代表供应商仍在服务该模型，也不代表 Kivio 已实现该供应商的专用协议。
+当前 `2026-10-16.1` 快照收录 2,756 个可识别模型 ID，其中 881 条为兼容别名。ID 数量包含供应商限定 ID、日期快照及免费变体，不等于底层独立模型的数量。已清理 232 个已弃用、已到退役日期或明显过时的型号 ID；仍在服务的向量模型保留，以兼容已有向量库。目录收录不代表供应商仍在服务该模型，也不代表 Kivio 已实现该供应商的专用协议。
 
 来源：
 
@@ -59,3 +59,14 @@ node scripts/validate.mjs
 导入脚本移除来源标记为 deprecated/retired 的记录、原厂模型已经到达的退役日期，以及 GPT-3.5、早期 GPT-4、Claude 1–3、Gemini 1、Llama 1–2、Gemma 2 等明显过时的系列。相关别名、日期 ID 和免费/批量变体一并清理；依赖被删条目的别名也不会残留。尚未到退役日期的型号不因预告日期被删除。向量模型不单纯按年龄清除。
 
 额外退役核验依据：[OpenAI](https://developers.openai.com/api/docs/deprecations)、[Anthropic](https://platform.claude.com/docs/en/about-claude/model-deprecations)、[Google](https://ai.google.dev/gemini-api/docs/deprecations)。完整移除清单和原因记录在 `IMPORT-REPORT.json` 的 `removedModels`。用户自己配置的供应商、启用模型与覆盖资料不因官方目录清理而删除。
+
+## 2026-10-16 参数核验
+
+本次修正记录见 `VERIFICATION-REPORT.json`，逐条保留官方依据及修改前后的字段。
+
+- Qwen3.8 的原生思考档位为 `low / medium / xhigh`；Flash Next 与 27B 的模板会拒绝 `high`，不能把代理的兼容映射当作模型原生档位。
+- DeepSeek 当前 Flash / Pro 原生档位为 `low / high / max`；`xhigh` 是兼容映射，不是另一档更高强度。专用供应商 ID 和未核验变体保留原配置。
+- GLM-5.1 不提供原生 effort 旋钮；GLM-5.3 / Flash / FlashX 不允许关闭思考。
+- 官方 GPT-5.5、GPT-5.6（Cyber 除外）和已核验 GPT-6 型号的上下文为 1,050,000，最大输出为 128,000；GPT-5.6 Cyber 上下文为 400,000。GPT-5.5 Pro 的档位为 `medium / high / xhigh`。
+
+模型原生能力与供应商兼容参数不是同一件事。仅对有明确身份关系的别名传播已核验字段；保留供应商专用路由、免费变体的独立限制和报价。用户覆盖仍优先。Qwen 开源模型的关闭思考需要供应商正确处理 `enable_thinking` / `chat_template_kwargs`；本次不把它们的 `thinkingOff` 从未知改成已支持。
