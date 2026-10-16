@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
 import { resolve, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { applyOfficialPricing } from './official-pricing.mjs'
 
 const FEEDS = {
   'models-dev-canonical': 'https://models.dev/models.json',
@@ -267,6 +268,7 @@ export function buildCatalog(previous, feeds, version) {
   report.removedEntries = Object.keys(report.removedModels).length
   report.preservedEntries = Object.keys(previous).filter(id => id !== '_meta' && id in database).length
   report.aliases = Object.values(database).filter(entry => entry?.aliasOf).length
+  if (feeds.officialPricing) report.pricing = applyOfficialPricing(database, feeds.officialPricing)
   report.totalEntries = Object.keys(database).length - 1
   report.addedEntries = report.totalEntries - report.previousEntries
   report.modelTypes = {}
@@ -283,10 +285,11 @@ async function main(args) {
   const option = name => { const i = args.indexOf(name); return i < 0 ? undefined : args[i + 1] }
   const directory = option('--snapshot-dir')
   const version = option('--version')
-  if (!directory || !/^\d{4}-\d{2}-\d{2}\.\d+$/.test(version ?? '')) throw new Error('Usage: node scripts/import-catalogs.mjs --snapshot-dir DIR --version YYYY-MM-DD.N [--fetch] [--output FILE]')
+  const pricingOnly = args.includes('--pricing-only')
+  if ((!directory && !pricingOnly) || !/^\d{4}-\d{2}-\d{2}\.\d+$/.test(version ?? '')) throw new Error('Usage: node scripts/import-catalogs.mjs (--snapshot-dir DIR [--fetch] | --pricing-only) --version YYYY-MM-DD.N [--output FILE]')
   const output = option('--output') ?? 'v1/modelDatabase.json'
-  await mkdir(directory, { recursive: true })
-  if (args.includes('--fetch')) {
+  if (directory) await mkdir(directory, { recursive: true })
+  if (!pricingOnly && args.includes('--fetch')) {
     for (const [name, url] of Object.entries(FEEDS)) {
       const response = await fetch(url, { signal: AbortSignal.timeout(45_000) })
       if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`)
@@ -301,19 +304,29 @@ async function main(args) {
   const incoming = key(version), current = key(previous._meta.version)
   const difference = incoming.findIndex((n, i) => n !== current[i])
   if (difference < 0 || incoming[difference] < current[difference]) throw new Error('Use a higher published model database version')
-  const feeds = {}, snapshots = {}
-  for (const [name, url] of Object.entries(FEEDS)) {
-    const bytes = await readFile(join(directory, `${name}.json`))
-    feeds[name] = JSON.parse(bytes)
-    snapshots[name] = { url, sha256: createHash('sha256').update(bytes).digest('hex') }
+  const policy = JSON.parse(await readFile('sources/official-pricing.json', 'utf8'))
+  let database, report
+  const snapshots = {}
+  if (pricingOnly) {
+    database = structuredClone(previous)
+    report = applyOfficialPricing(database, policy)
+    database._meta.version = version
+  } else {
+    const feeds = {}
+    for (const [name, url] of Object.entries(FEEDS)) {
+      const bytes = await readFile(join(directory, `${name}.json`))
+      feeds[name] = JSON.parse(bytes)
+      snapshots[name] = { url, sha256: createHash('sha256').update(bytes).digest('hex') }
+    }
+    feeds.verified = JSON.parse(await readFile('sources/verified-models.json', 'utf8'))
+    feeds.officialPricing = policy
+    ;({ database, report } = buildCatalog(previous, feeds, version))
+    database._meta.importSnapshot = { date: version.split('.')[0], sources: snapshots }
   }
-  feeds.verified = JSON.parse(await readFile('sources/verified-models.json', 'utf8'))
-  const { database, report } = buildCatalog(previous, feeds, version)
-  database._meta.importSnapshot = { date: version.split('.')[0], sources: snapshots }
   const text = JSON.stringify(database, null, 2) + '\n'
   if (Buffer.byteLength(text) > 4 * 1024 * 1024) throw new Error('Imported catalog exceeds the v1 client size limit')
   await writeFile(output, text)
-  await writeFile('IMPORT-REPORT.json', JSON.stringify({ version, ...report, snapshots }, null, 2) + '\n')
+  await writeFile(pricingOnly ? 'PRICING-VERIFICATION-REPORT.json' : 'IMPORT-REPORT.json', JSON.stringify({ version, ...report, snapshots }, null, 2) + '\n')
   console.log(JSON.stringify({ version, bytes: Buffer.byteLength(text), ...report }, null, 2))
 }
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

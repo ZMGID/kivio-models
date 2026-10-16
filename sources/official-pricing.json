@@ -1,0 +1,4768 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-16",
+  "baseline": "Official standard pay-as-you-go reference prices; text tokens and shortest context tier unless specified. Qwen uses China Beijing RMB, Z.AI uses its official USD rate card. Unknown/third-party quotes are omitted, not free. Media billing remains separate.",
+  "exchangeRate": {
+    "date": "2026-10-16",
+    "cnyPerUsd": 6.722,
+    "source": "https://www.xinhuanet.com/20261016/7095dae31ecc47eeb2ea7679834be269/c.html"
+  },
+  "models": {
+    "gpt-6-astra": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 10.0,
+        "cachedInput": 1.0,
+        "output": 50.0
+      },
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 20.0,
+            "cachedInput": 2.0,
+            "output": 75.0
+          }
+        }
+      ]
+    },
+    "gpt-6.1-sol": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.0,
+        "cachedInput": 0.1,
+        "output": 10.0
+      },
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 4.0,
+            "cachedInput": 0.2,
+            "output": 15.0
+          }
+        }
+      ]
+    },
+    "gpt-6-luna": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.1,
+        "cachedInput": 0.01,
+        "output": 0.5
+      },
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 0.2,
+            "cachedInput": 0.02,
+            "output": 0.75
+          }
+        }
+      ]
+    },
+    "gpt-6-sol": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.0,
+        "cachedInput": 0.2,
+        "output": 10.0
+      },
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 4.0,
+            "cachedInput": 0.4,
+            "output": 15.0
+          }
+        }
+      ]
+    },
+    "gpt-5.6-sol": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 4.0,
+        "cachedInput": 0.4,
+        "output": 20.0
+      },
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 8.0,
+            "cachedInput": 0.8,
+            "output": 30.0
+          }
+        }
+      ]
+    },
+    "gpt-5.6-terra": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.0,
+        "cachedInput": 0.2,
+        "output": 12.0
+      },
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 4.0,
+            "cachedInput": 0.4,
+            "output": 18.0
+          }
+        }
+      ]
+    },
+    "gpt-5.6-luna": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.2,
+        "cachedInput": 0.02,
+        "output": 1.2
+      },
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 0.4,
+            "cachedInput": 0.04,
+            "output": 1.8
+          }
+        }
+      ]
+    },
+    "gpt-5.5": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 5.0,
+        "cachedInput": 0.5,
+        "output": 30.0
+      },
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 10.0,
+            "cachedInput": 1.0,
+            "output": 45.0
+          }
+        }
+      ],
+      "aliases": [
+        "gpt-5.5-2026-04-23"
+      ]
+    },
+    "gpt-5.5-pro": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 30.0,
+        "output": 180.0
+      },
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 60.0,
+            "output": 270.0
+          }
+        }
+      ],
+      "aliases": [
+        "gpt-5.5-pro-2026-04-23"
+      ]
+    },
+    "gpt-5.4": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.5,
+        "cachedInput": 0.25,
+        "output": 15.0
+      },
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 5.0,
+            "cachedInput": 0.5,
+            "output": 22.5
+          }
+        }
+      ],
+      "aliases": [
+        "gpt-5.4-2026-03-05"
+      ]
+    },
+    "gpt-5.4-mini": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.75,
+        "cachedInput": 0.075,
+        "output": 4.5
+      },
+      "aliases": [
+        "gpt-5.4-mini-2026-03-17"
+      ]
+    },
+    "gpt-5.4-nano": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.2,
+        "cachedInput": 0.02,
+        "output": 1.25
+      },
+      "aliases": [
+        "gpt-5.4-nano-2026-03-17"
+      ]
+    },
+    "gpt-5.4-pro": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 30.0,
+        "output": 180.0
+      },
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 60.0,
+            "output": 270.0
+          }
+        }
+      ],
+      "aliases": [
+        "gpt-5.4-pro-2026-03-05"
+      ]
+    },
+    "gpt-5.2": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.75,
+        "cachedInput": 0.175,
+        "output": 14.0
+      },
+      "aliases": [
+        "gpt-5.2-2025-12-11"
+      ]
+    },
+    "gpt-5.2-pro": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 21.0,
+        "output": 168.0
+      },
+      "aliases": [
+        "gpt-5.2-pro-2025-12-11"
+      ]
+    },
+    "gpt-5.1": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.25,
+        "cachedInput": 0.125,
+        "output": 10.0
+      },
+      "aliases": [
+        "gpt-5.1-2025-11-13"
+      ]
+    },
+    "gpt-5": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.25,
+        "cachedInput": 0.125,
+        "output": 10.0
+      },
+      "aliases": [
+        "gpt-5-2025-08-07"
+      ]
+    },
+    "gpt-5-mini": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.25,
+        "cachedInput": 0.025,
+        "output": 2.0
+      },
+      "aliases": [
+        "gpt-5-mini-2025-08-07"
+      ]
+    },
+    "gpt-5-nano": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.05,
+        "cachedInput": 0.005,
+        "output": 0.4
+      },
+      "aliases": [
+        "gpt-5-nano-2025-08-07"
+      ]
+    },
+    "gpt-5-pro": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 15.0,
+        "output": 120.0
+      },
+      "aliases": [
+        "gpt-5-pro-2025-10-06"
+      ]
+    },
+    "gpt-4.1": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.0,
+        "cachedInput": 0.5,
+        "output": 8.0
+      },
+      "aliases": [
+        "gpt-4.1-2025-04-14"
+      ]
+    },
+    "gpt-4.1-mini": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.4,
+        "cachedInput": 0.1,
+        "output": 1.6
+      },
+      "aliases": [
+        "gpt-4.1-mini-2025-04-14"
+      ]
+    },
+    "gpt-4.1-nano": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.1,
+        "cachedInput": 0.025,
+        "output": 0.4
+      },
+      "aliases": [
+        "gpt-4.1-nano-2025-04-14"
+      ]
+    },
+    "gpt-4o": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.5,
+        "cachedInput": 1.25,
+        "output": 10.0
+      },
+      "aliases": [
+        "gpt-4o-2024-08-06",
+        "gpt-4o-2024-11-20"
+      ]
+    },
+    "gpt-4o-2024-05-13": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 5.0,
+        "output": 15.0
+      }
+    },
+    "gpt-4o-mini": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.15,
+        "cachedInput": 0.075,
+        "output": 0.6
+      },
+      "aliases": [
+        "gpt-4o-mini-2024-07-18"
+      ]
+    },
+    "o1": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 15.0,
+        "cachedInput": 7.5,
+        "output": 60.0
+      },
+      "aliases": [
+        "o1-2024-12-17"
+      ]
+    },
+    "o1-pro": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 150.0,
+        "output": 600.0
+      },
+      "aliases": [
+        "o1-pro-2025-03-19"
+      ]
+    },
+    "o3-pro": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 20.0,
+        "output": 80.0
+      },
+      "aliases": [
+        "o3-pro-2025-06-10"
+      ]
+    },
+    "o3": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.0,
+        "cachedInput": 0.5,
+        "output": 8.0
+      },
+      "aliases": [
+        "o3-2025-04-16"
+      ]
+    },
+    "o4-mini": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.1,
+        "cachedInput": 0.275,
+        "output": 4.4
+      },
+      "aliases": [
+        "o4-mini-2025-04-16"
+      ]
+    },
+    "o3-mini": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.1,
+        "cachedInput": 0.55,
+        "output": 4.4
+      },
+      "aliases": [
+        "o3-mini-2025-01-31"
+      ]
+    },
+    "gpt-4-turbo-2024-04-09": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 10.0,
+        "output": 30.0
+      }
+    },
+    "gpt-4-0613": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 30.0,
+        "output": 60.0
+      }
+    },
+    "gpt-3.5-turbo": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.5,
+        "output": 1.5
+      }
+    },
+    "gpt-3.5-turbo-0125": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.5,
+        "output": 1.5
+      }
+    },
+    "gpt-3.5-turbo-1106": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.0,
+        "output": 2.0
+      }
+    },
+    "gpt-3.5-turbo-instruct": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.5,
+        "output": 2.0
+      }
+    },
+    "gpt-5.6-cyber": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 12.5,
+        "cachedInput": 1.25,
+        "output": 75.0
+      }
+    },
+    "chat-latest": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 5.0,
+        "cachedInput": 0.5,
+        "output": 30.0
+      }
+    },
+    "gpt-5.3-codex": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.75,
+        "cachedInput": 0.175,
+        "output": 14.0
+      }
+    },
+    "gpt-5-search-api": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.25,
+        "cachedInput": 0.125,
+        "output": 10.0
+      }
+    },
+    "text-embedding-3-small": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.02
+      }
+    },
+    "text-embedding-3-large": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.13
+      }
+    },
+    "text-embedding-ada-002": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.1
+      }
+    },
+    "omni-moderation-latest": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0
+      }
+    },
+    "gpt-image-2.5-sunburst": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Image and text token rates are separate; see modalityPricing",
+      "modalityPricing": {
+        "image": {
+          "input": 8.0,
+          "cachedInput": 2.0,
+          "output": 30.0
+        },
+        "text": {
+          "input": 5.0,
+          "cachedInput": 1.25
+        }
+      },
+      "aliases": [
+        "gpt-image-2.5-sunburst-2026-09-08"
+      ]
+    },
+    "gpt-image-2.5-flare": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Image and text token rates are separate; see modalityPricing",
+      "modalityPricing": {
+        "image": {
+          "input": 8.0,
+          "cachedInput": 2.0,
+          "output": 30.0
+        },
+        "text": {
+          "input": 5.0,
+          "cachedInput": 1.25
+        }
+      },
+      "aliases": [
+        "gpt-image-2.5-flare-2026-09-08"
+      ]
+    },
+    "gpt-image-2": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Image and text token rates are separate; see modalityPricing",
+      "modalityPricing": {
+        "image": {
+          "input": 8.0,
+          "cachedInput": 2.0,
+          "output": 30.0
+        },
+        "text": {
+          "input": 5.0,
+          "cachedInput": 1.25
+        }
+      }
+    },
+    "gpt-image-1.5": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Image and text token rates are separate; see modalityPricing",
+      "modalityPricing": {
+        "image": {
+          "input": 8.0,
+          "cachedInput": 2.0,
+          "output": 32.0
+        },
+        "text": {
+          "input": 5.0,
+          "cachedInput": 1.25,
+          "output": 10.0
+        }
+      }
+    },
+    "gpt-image-1-mini": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Image and text token rates are separate; see modalityPricing",
+      "modalityPricing": {
+        "image": {
+          "input": 2.5,
+          "cachedInput": 0.25,
+          "output": 8.0
+        },
+        "text": {
+          "input": 2.0,
+          "cachedInput": 0.2
+        }
+      }
+    },
+    "gpt-image-1": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Image and text token rates are separate; see modalityPricing",
+      "modalityPricing": {
+        "image": {
+          "input": 10.0,
+          "cachedInput": 2.5,
+          "output": 40.0
+        },
+        "text": {
+          "input": 5.0,
+          "cachedInput": 1.25
+        }
+      }
+    },
+    "chatgpt-image-latest": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "condition": "Image and text token rates are separate; see modalityPricing",
+      "modalityPricing": {
+        "image": {
+          "input": 8.0,
+          "cachedInput": 2.0,
+          "output": 32.0
+        },
+        "text": {
+          "input": 5.0,
+          "cachedInput": 1.25,
+          "output": 10.0
+        }
+      }
+    },
+    "claude-fable-5.1": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 10.0,
+        "cachedInput": 0.25,
+        "output": 50.0
+      }
+    },
+    "claude-mythos-5.1": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 10.0,
+        "cachedInput": 0.25,
+        "output": 50.0
+      }
+    },
+    "claude-fable-5": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 10.0,
+        "cachedInput": 1.0,
+        "output": 50.0
+      }
+    },
+    "claude-mythos-5": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 10.0,
+        "cachedInput": 1.0,
+        "output": 50.0
+      }
+    },
+    "claude-opus-5.5": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 4.0,
+        "cachedInput": 0.2,
+        "output": 20.0
+      }
+    },
+    "claude-opus-5": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 5.0,
+        "cachedInput": 0.5,
+        "output": 25.0
+      }
+    },
+    "claude-opus-4.8": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 5.0,
+        "cachedInput": 0.5,
+        "output": 25.0
+      }
+    },
+    "claude-opus-4.7": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 5.0,
+        "cachedInput": 0.5,
+        "output": 25.0
+      }
+    },
+    "claude-opus-4.6": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 5.0,
+        "cachedInput": 0.5,
+        "output": 25.0
+      }
+    },
+    "claude-opus-4.5": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 5.0,
+        "cachedInput": 0.5,
+        "output": 25.0
+      }
+    },
+    "claude-opus-4.1": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 15.0,
+        "cachedInput": 1.5,
+        "output": 75.0
+      }
+    },
+    "claude-opus-4": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 15.0,
+        "cachedInput": 1.5,
+        "output": 75.0
+      }
+    },
+    "claude-sonnet-5.5": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.0,
+        "cachedInput": 0.1,
+        "output": 10.0
+      }
+    },
+    "claude-sonnet-5": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.0,
+        "cachedInput": 0.2,
+        "output": 10.0
+      }
+    },
+    "claude-sonnet-4.6": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 3.0,
+        "cachedInput": 0.3,
+        "output": 15.0
+      }
+    },
+    "claude-sonnet-4.5": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 3.0,
+        "cachedInput": 0.3,
+        "output": 15.0
+      }
+    },
+    "claude-sonnet-4": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 3.0,
+        "cachedInput": 0.3,
+        "output": 15.0
+      }
+    },
+    "claude-haiku-5.5": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.1,
+        "cachedInput": 0.01,
+        "output": 0.5
+      },
+      "tiers": [
+        {
+          "condition": "More than 100000 input tokens",
+          "pricing": {
+            "input": 0.5,
+            "cachedInput": 0.05,
+            "output": 2.5
+          }
+        }
+      ]
+    },
+    "claude-haiku-4.5": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.0,
+        "cachedInput": 0.1,
+        "output": 5.0
+      }
+    },
+    "claude-haiku-3.5": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.8,
+        "cachedInput": 0.08,
+        "output": 4.0
+      }
+    },
+    "glm-5.3-flash": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.15,
+        "cachedInput": 0.03,
+        "output": 0.5
+      }
+    },
+    "glm-5.3-flashx": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.37,
+        "cachedInput": 0.075,
+        "output": 1.25
+      }
+    },
+    "glm-5.3": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.4,
+        "cachedInput": 0.26,
+        "output": 4.4
+      }
+    },
+    "glm-5.2": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.4,
+        "cachedInput": 0.26,
+        "output": 4.4
+      }
+    },
+    "glm-5.1": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.4,
+        "cachedInput": 0.26,
+        "output": 4.4
+      }
+    },
+    "glm-5": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.0,
+        "cachedInput": 0.2,
+        "output": 3.2
+      }
+    },
+    "glm-4.7": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.6,
+        "cachedInput": 0.11,
+        "output": 2.2
+      }
+    },
+    "glm-4.6": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.6,
+        "cachedInput": 0.11,
+        "output": 2.2
+      }
+    },
+    "glm-4.7-flashx": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.07,
+        "cachedInput": 0.01,
+        "output": 0.4
+      }
+    },
+    "glm-4.5": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.6,
+        "cachedInput": 0.11,
+        "output": 2.2
+      }
+    },
+    "glm-4.5-x": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.2,
+        "cachedInput": 0.45,
+        "output": 8.9
+      }
+    },
+    "glm-4.5-air": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.2,
+        "cachedInput": 0.03,
+        "output": 1.1
+      }
+    },
+    "glm-4.5-airx": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.1,
+        "cachedInput": 0.22,
+        "output": 4.5
+      }
+    },
+    "glm-4-32b-0414-128k": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.1
+      }
+    },
+    "glm-4.7-flash": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0,
+        "cachedInput": 0,
+        "output": 0
+      }
+    },
+    "glm-4.5-flash": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0,
+        "cachedInput": 0,
+        "output": 0
+      }
+    },
+    "glm-4.6v": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.3,
+        "cachedInput": 0.05,
+        "output": 0.9
+      }
+    },
+    "glm-ocr": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.03,
+        "output": 0.03
+      }
+    },
+    "glm-4.6v-flashx": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.04,
+        "cachedInput": 0.004,
+        "output": 0.4
+      }
+    },
+    "glm-4.5v": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.6,
+        "cachedInput": 0.11,
+        "output": 1.8
+      }
+    },
+    "glm-4.6v-flash": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0,
+        "cachedInput": 0,
+        "output": 0
+      }
+    },
+    "minimax-m3": {
+      "currency": "USD",
+      "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "cachedInput": 0.06
+      },
+      "tiers": [
+        {
+          "condition": "More than 512000 input tokens",
+          "pricing": {
+            "input": 0.6,
+            "output": 2.4,
+            "cachedInput": 0.12
+          }
+        }
+      ]
+    },
+    "minimax-m2.7": {
+      "currency": "USD",
+      "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "cachedInput": 0.06
+      }
+    },
+    "minimax-m2.7-highspeed": {
+      "currency": "USD",
+      "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.6,
+        "output": 2.4,
+        "cachedInput": 0.06
+      }
+    },
+    "minimax-m2.5": {
+      "currency": "USD",
+      "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "cachedInput": 0.03
+      }
+    },
+    "minimax-m2.5-highspeed": {
+      "currency": "USD",
+      "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.6,
+        "output": 2.4,
+        "cachedInput": 0.03
+      }
+    },
+    "minimax-m2.1": {
+      "currency": "USD",
+      "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "cachedInput": 0.03
+      }
+    },
+    "minimax-m2.1-highspeed": {
+      "currency": "USD",
+      "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.6,
+        "output": 2.4,
+        "cachedInput": 0.03
+      }
+    },
+    "minimax-m2": {
+      "currency": "USD",
+      "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "cachedInput": 0.03
+      }
+    },
+    "mistral-large-4": {
+      "currency": "USD",
+      "source": "https://docs.mistral.ai/inference/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.68,
+        "cachedInput": 0.07,
+        "output": 2.09
+      },
+      "aliases": [
+        "mistral-large-4-0"
+      ]
+    },
+    "mistral-large-2512": {
+      "currency": "USD",
+      "source": "https://docs.mistral.ai/inference/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.5,
+        "output": 1.5
+      },
+      "aliases": [
+        "mistral-large-3",
+        "mistral-large-latest"
+      ]
+    },
+    "mistral-medium-3-5": {
+      "currency": "USD",
+      "source": "https://docs.mistral.ai/inference/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.5,
+        "output": 7.5
+      },
+      "aliases": [
+        "mistral-medium-2604"
+      ]
+    },
+    "mistral-small-2603": {
+      "currency": "USD",
+      "source": "https://docs.mistral.ai/inference/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6
+      },
+      "aliases": [
+        "mistral-small-latest"
+      ]
+    },
+    "ministral-14b-2512": {
+      "currency": "USD",
+      "source": "https://docs.mistral.ai/inference/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.2
+      },
+      "aliases": [
+        "ministral-14b-latest",
+        "ministral-3-14b-2512"
+      ]
+    },
+    "ministral-8b-2512": {
+      "currency": "USD",
+      "source": "https://docs.mistral.ai/inference/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.15
+      },
+      "aliases": [
+        "ministral-3-8b-2512",
+        "ministral-8b-latest"
+      ]
+    },
+    "ministral-3b-2512": {
+      "currency": "USD",
+      "source": "https://docs.mistral.ai/inference/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.1
+      },
+      "aliases": [
+        "ministral-3-3b-2512",
+        "ministral-3b-latest"
+      ]
+    },
+    "voxtral-mini-2602": {
+      "currency": "USD",
+      "source": "https://docs.mistral.ai/inference/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "unitPricing": {
+        "input_cost_per_minute": 0.003
+      }
+    },
+    "zai-glm-5-3": {
+      "currency": "USD",
+      "source": "https://docs.mistral.ai/inference/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.4,
+        "cachedInput": 0.14,
+        "output": 4.4
+      }
+    },
+    "codestral-2508": {
+      "currency": "USD",
+      "source": "https://docs.mistral.ai/inference/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.3,
+        "output": 0.9
+      },
+      "aliases": [
+        "codestral",
+        "codestral-latest"
+      ]
+    },
+    "codestral-embed-2505": {
+      "currency": "USD",
+      "source": "https://docs.mistral.ai/inference/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.15
+      },
+      "aliases": [
+        "codestral-embed"
+      ]
+    },
+    "deepseek-flash": {
+      "currency": "USD",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "condition": "Peak rate; official off-peak rate is 50% of peak",
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "cachedInput": 0.006
+      },
+      "aliases": [
+        "deepseek-v4-flash",
+        "deepseek-v4-flash-vision-exp",
+        "deepseek-v4.1-flash"
+      ]
+    },
+    "deepseek-v4-pro": {
+      "currency": "USD",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "condition": "Peak rate; official off-peak rate is 50% of peak",
+      "pricing": {
+        "input": 1.32,
+        "output": 3.96,
+        "cachedInput": 0.044
+      },
+      "aliases": [
+        "deepseek-v4-pro-0813"
+      ]
+    },
+    "gemini-4-argon": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Input price: $2.00 through November 30, 2026. $4.00 starting December 1, 2026.; Output price (including thinking tokens): $10.00 through November 30, 2026. $20.00 starting December 1, 2026.; Context caching price: $0.10 through November 30, 2026. $0.20 starting December 1, 2026. Implicit caching only (explicit caching is not supported).",
+      "pricing": {
+        "input": 2.0,
+        "output": 10.0,
+        "cachedInput": 0.1
+      }
+    },
+    "gemini-3.8-flash": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Input price: $0.75 through December 31, 2026. $1.50 starting January 1, 2027.; Output price (including thinking tokens): $3.75 through December 31, 2026. $7.50 starting January 1, 2027.; Context caching price: $0.075 through December 31, 2026. $0.15 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027.",
+      "pricing": {
+        "input": 0.75,
+        "output": 3.75,
+        "cachedInput": 0.075
+      }
+    },
+    "gemini-3.6-flash": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Input price: $0.75 through December 31, 2026. $1.50 starting January 1, 2027.; Output price (including thinking tokens): $3.75 through December 31, 2026. $7.50 starting January 1, 2027.; Context caching price: $0.075 through December 31, 2026. $0.15 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027.",
+      "pricing": {
+        "input": 0.75,
+        "output": 3.75,
+        "cachedInput": 0.075
+      }
+    },
+    "gemini-3.5-flash-lite": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Input price: $0.30 (text / image / video / audio); Output price (including thinking tokens): $2.50; Context caching price: $0.03 $1.00 / 1,000,000 tokens per hour (storage price)",
+      "pricing": {
+        "input": 0.3,
+        "output": 2.5,
+        "cachedInput": 0.03
+      }
+    },
+    "gemini-3.1-flash-lite": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Input price: $0.25 (text / image / video) $0.50 (audio); Output price (including thinking tokens): $1.50; Context caching price: $0.025 (text / image / video) $0.05 (audio) $1.00 / 1,000,000 tokens per hour (storage price)",
+      "pricing": {
+        "input": 0.25,
+        "output": 1.5,
+        "cachedInput": 0.025
+      }
+    },
+    "gemini-3.1-pro-preview": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Input price: $2.00, prompts <= 200k tokens $4.00, prompts > 200k tokens; Output price (including thinking tokens): $12.00, prompts <= 200k tokens $18.00, prompts > 200k; Context caching price: $0.20, prompts <= 200k tokens $0.40, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price)",
+      "pricing": {
+        "input": 2.0,
+        "output": 12.0,
+        "cachedInput": 0.2
+      },
+      "tiers": [
+        {
+          "condition": "More than 200000 input tokens",
+          "pricing": {
+            "input": 4,
+            "output": 18,
+            "cachedInput": 0.4
+          }
+        }
+      ]
+    },
+    "gemini-3.1-flash-image": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Text tokens and image generation billed separately; Input price: $0.50 (text/image); Output price: $3 (text and thinking) $60.00 (images) Equivalent to $0.045 per 0.5K image* $0.067 per 1K image*, $0.101 per 2K image*, and $0.151 per 4K image*.",
+      "modalityPricing": {
+        "text": {
+          "input": 0.5,
+          "output": 3.0
+        },
+        "image": {
+          "output": 60.0
+        }
+      },
+      "unitPricing": {
+        "output_cost_per_image": 0.067
+      },
+      "aliases": [
+        "gemini-3.1-flash-image-preview"
+      ]
+    },
+    "gemini-3.1-flash-lite-image": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Text tokens and image generation billed separately; Input price: $0.25 (text/image/video); Output price: $1.50 (text and thinking) $30.00 (images) Equivalent to $0.0336 per 1K resolution image*",
+      "modalityPricing": {
+        "text": {
+          "input": 0.25,
+          "output": 1.5
+        },
+        "image": {
+          "output": 30.0
+        }
+      },
+      "unitPricing": {
+        "output_cost_per_image": 0.0336
+      },
+      "aliases": [
+        "gemini-3.1-flash-lite-image-preview"
+      ]
+    },
+    "gemini-3-flash-preview": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Input price: $0.50 (text / image / video) $1.00 (audio); Output price (including thinking tokens): $3.00; Context caching price: $0.05 (text / image / video) $0.10 (audio) $1.00 / 1,000,000 tokens per hour (storage price)",
+      "pricing": {
+        "input": 0.5,
+        "output": 3.0,
+        "cachedInput": 0.05
+      }
+    },
+    "gemini-3-pro-image": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Text tokens and image generation billed separately; Input price: $2.00 (text/image), equivalent to $0.0011 per image*; Output price: $12.00 (text and thinking) $120.00 (images) Equivalent to $0.134 per 1K/2K image** and $0.24 per 4K image**",
+      "modalityPricing": {
+        "text": {
+          "input": 2.0,
+          "output": 12.0
+        },
+        "image": {
+          "output": 120.0
+        }
+      },
+      "unitPricing": {
+        "output_cost_per_image": 0.134
+      },
+      "aliases": [
+        "gemini-3-pro-image-preview"
+      ]
+    },
+    "gemini-2.5-pro": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Input price: $1.25, prompts <= 200k tokens $2.50, prompts > 200k tokens; Output price (including thinking tokens): $10.00, prompts <= 200k tokens $15.00, prompts > 200k; Context caching price: $0.125, prompts <= 200k tokens $0.25, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price)",
+      "pricing": {
+        "input": 1.25,
+        "output": 10.0,
+        "cachedInput": 0.125
+      },
+      "tiers": [
+        {
+          "condition": "More than 200000 input tokens",
+          "pricing": {
+            "input": 2.5,
+            "output": 15,
+            "cachedInput": 0.25
+          }
+        }
+      ]
+    },
+    "gemini-2.5-flash": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Input price: $0.30 (text / image / video) $1.00 (audio); Output price (including thinking tokens): $2.50; Context caching price: $0.03 (text / image / video) $0.1 (audio) $1.00 / 1,000,000 tokens per hour (storage price)",
+      "pricing": {
+        "input": 0.3,
+        "output": 2.5,
+        "cachedInput": 0.03
+      }
+    },
+    "gemini-2.5-flash-lite": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Input price (text, image, video): $0.10 (text / image / video) $0.30 (audio); Output price (including thinking tokens): $0.40; Context caching price: $0.01 (text / image / video) $0.03 (audio) $1.00 / 1,000,000 tokens per hour (storage price)",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.4,
+        "cachedInput": 0.01
+      }
+    },
+    "gemini-2.5-flash-image": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Text tokens and image generation billed separately; Input price: $0.30 (text / image); Output price: $0.039 per image*",
+      "modalityPricing": {
+        "text": {
+          "input": 0.3
+        }
+      },
+      "unitPricing": {
+        "output_cost_per_image": 0.039
+      }
+    },
+    "gemini-embedding-2": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Text input price: $0.20",
+      "pricing": {
+        "input": 0.2
+      }
+    },
+    "gemini-robotics-er-2-preview": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Input price: $1.00 (text / image / video / audio) through December 31, 2026. $2.00 (text / image / video / audio) starting January 1, 2027.; Output price (including thinking tokens): $5.00 through December 31, 2026. $10.00 starting January 1, 2027.; Context caching price: $0.10 through December 31, 2026. $0.20 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027.",
+      "pricing": {
+        "input": 1.0,
+        "output": 5.0,
+        "cachedInput": 0.1
+      }
+    },
+    "gemini-robotics-er-2-streaming-preview": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Standard paid tier; text input/output; Input price: $1.00 (text / image / video / audio) through December 31, 2026. $2.00 (text / image / video / audio) starting January 1, 2027.; Output price: $5.00 through December 31, 2026. $10.00 starting January 1, 2027.",
+      "pricing": {
+        "input": 1.0,
+        "output": 5.0
+      }
+    },
+    "grok-4.7": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.0,
+        "cachedInput": 0.5,
+        "output": 6.0
+      },
+      "tiers": [
+        {
+          "condition": "At least 200000 input tokens",
+          "pricing": {
+            "input": 4.0,
+            "cachedInput": 1.0,
+            "output": 12.0
+          }
+        }
+      ]
+    },
+    "grok-build-0.1": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.0,
+        "cachedInput": 0.2,
+        "output": 2.0
+      },
+      "tiers": [
+        {
+          "condition": "At least 200000 input tokens",
+          "pricing": {
+            "input": 2.0,
+            "cachedInput": 0.4,
+            "output": 4.0
+          }
+        }
+      ]
+    },
+    "grok-4.6": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.0,
+        "cachedInput": 0.5,
+        "output": 6.0
+      },
+      "tiers": [
+        {
+          "condition": "At least 200000 input tokens",
+          "pricing": {
+            "input": 4.0,
+            "cachedInput": 1.0,
+            "output": 12.0
+          }
+        }
+      ]
+    },
+    "grok-4.5": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.0,
+        "cachedInput": 0.3,
+        "output": 6.0
+      },
+      "tiers": [
+        {
+          "condition": "At least 200000 input tokens",
+          "pricing": {
+            "input": 4.0,
+            "cachedInput": 0.6,
+            "output": 12.0
+          }
+        }
+      ]
+    },
+    "grok-4.3": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.25,
+        "cachedInput": 0.2,
+        "output": 2.5
+      },
+      "tiers": [
+        {
+          "condition": "At least 200000 input tokens",
+          "pricing": {
+            "input": 2.5,
+            "cachedInput": 0.4,
+            "output": 5.0
+          }
+        }
+      ]
+    },
+    "grok-4.20-multi-agent-0309": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.25,
+        "cachedInput": 0.2,
+        "output": 2.5
+      },
+      "tiers": [
+        {
+          "condition": "At least 200000 input tokens",
+          "pricing": {
+            "input": 2.5,
+            "cachedInput": 0.4,
+            "output": 5.0
+          }
+        }
+      ]
+    },
+    "grok-4.20-0309-reasoning": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.25,
+        "cachedInput": 0.2,
+        "output": 2.5
+      },
+      "tiers": [
+        {
+          "condition": "At least 200000 input tokens",
+          "pricing": {
+            "input": 2.5,
+            "cachedInput": 0.4,
+            "output": 5.0
+          }
+        }
+      ]
+    },
+    "grok-4.20-0309-non-reasoning": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.25,
+        "cachedInput": 0.2,
+        "output": 2.5
+      },
+      "tiers": [
+        {
+          "condition": "At least 200000 input tokens",
+          "pricing": {
+            "input": 2.5,
+            "cachedInput": 0.4,
+            "output": 5.0
+          }
+        }
+      ]
+    },
+    "qwen3.8-max-prime": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 24元 | 72元 | 无免费额度",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 24.0,
+        "output": 72.0
+      }
+    },
+    "qwen3.8-max": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 12.0,
+        "output": 36.0
+      }
+    },
+    "qwen3.8-max-0902": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 12.0,
+        "output": 36.0
+      },
+      "aliases": [
+        "qwen3.8-max-2026-09-02"
+      ]
+    },
+    "qwen3.7-max": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 12.0,
+        "output": 36.0
+      }
+    },
+    "qwen3.7-max-2026-06-08": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 12.0,
+        "output": 36.0
+      }
+    },
+    "qwen3.7-max-2026-05-20": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 12.0,
+        "output": 36.0
+      }
+    },
+    "qwen3.7-max-preview": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 仅思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 12.0,
+        "output": 36.0
+      }
+    },
+    "qwen3.7-max-2026-05-17": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 仅思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 12.0,
+        "output": 36.0
+      }
+    },
+    "qwen-max": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 仅非思考模式 | 无阶梯计价 | 2.4元 | 9.6元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 2.4,
+        "output": 9.6
+      }
+    },
+    "qwen3.7-plus": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤256K | 原价2元（限时8折） | 原价8元（限时8折） | 原价8元（限时8折） | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 1.6,
+        "output": 6.4
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 原价6元（限时8折） | 原价24元（限时8折） | 原价24元（限时8折） | 100万Token",
+          "pricing": {
+            "input": 4.8,
+            "output": 19.2
+          }
+        }
+      ]
+    },
+    "qwen3.7-plus-2026-05-26": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤256K | 2元 | 8元 | 8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 2.0,
+        "output": 8.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 6元 | 24元 | 24元 | 100万Token",
+          "pricing": {
+            "input": 6.0,
+            "output": 24.0
+          }
+        }
+      ]
+    },
+    "qwen3.6-plus": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤256K | 2元 | 12元 | 12元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 2.0,
+        "output": 12.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 8元 | 48元 | 48元 | 100万Token",
+          "pricing": {
+            "input": 8.0,
+            "output": 48.0
+          }
+        }
+      ]
+    },
+    "qwen3.6-plus-2026-04-02": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤256K | 2元 | 12元 | 12元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 2.0,
+        "output": 12.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 8元 | 48元 | 48元 | 100万Token",
+          "pricing": {
+            "input": 8.0,
+            "output": 48.0
+          }
+        }
+      ]
+    },
+    "qwen3.5-plus": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤128K | 0.8元 | 4.8元 | 4.8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 4.8
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2元 | 12元 | 12元 | 100万Token",
+          "pricing": {
+            "input": 2.0,
+            "output": 12.0
+          }
+        },
+        {
+          "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 4元 | 24元 | 24元 | 100万Token",
+          "pricing": {
+            "input": 4.0,
+            "output": 24.0
+          }
+        }
+      ]
+    },
+    "qwen3.5-plus-2026-04-20": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤128K | 0.8元 | 4.8元 | 4.8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 4.8
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2元 | 12元 | 12元 | 100万Token",
+          "pricing": {
+            "input": 2.0,
+            "output": 12.0
+          }
+        },
+        {
+          "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 4元 | 24元 | 24元 | 100万Token",
+          "pricing": {
+            "input": 4.0,
+            "output": 24.0
+          }
+        }
+      ]
+    },
+    "qwen3.5-plus-2026-02-15": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤128K | 0.8元 | 4.8元 | 4.8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 4.8
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2元 | 12元 | 12元 | 100万Token",
+          "pricing": {
+            "input": 2.0,
+            "output": 12.0
+          }
+        },
+        {
+          "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 4元 | 24元 | 24元 | 100万Token",
+          "pricing": {
+            "input": 4.0,
+            "output": 24.0
+          }
+        }
+      ]
+    },
+    "qwen-plus": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤128K | 0.8元 | 2元 | 8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 8.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; non-thinking output rate; 0<Token≤128K | 0.8元 | 2元 | 8元 | 100万Token",
+          "pricing": {
+            "input": 0.8,
+            "output": 2.0
+          }
+        },
+        {
+          "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2.4元 | 20元 | 24元 | 100万Token",
+          "pricing": {
+            "input": 2.4,
+            "output": 24.0
+          }
+        },
+        {
+          "condition": "China Beijing; non-thinking output rate; 128K<Token≤256K | 2.4元 | 20元 | 24元 | 100万Token",
+          "pricing": {
+            "input": 2.4,
+            "output": 20.0
+          }
+        },
+        {
+          "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 4.8元 | 48元 | 64元 | 100万Token",
+          "pricing": {
+            "input": 4.8,
+            "output": 64.0
+          }
+        },
+        {
+          "condition": "China Beijing; non-thinking output rate; 256K<Token≤1M | 4.8元 | 48元 | 64元 | 100万Token",
+          "pricing": {
+            "input": 4.8,
+            "output": 48.0
+          }
+        }
+      ]
+    },
+    "qwen-plus-latest": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤128K | 0.8元 | 2元 | 8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 8.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; non-thinking output rate; 0<Token≤128K | 0.8元 | 2元 | 8元 | 100万Token",
+          "pricing": {
+            "input": 0.8,
+            "output": 2.0
+          }
+        },
+        {
+          "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2.4元 | 20元 | 24元 | 100万Token",
+          "pricing": {
+            "input": 2.4,
+            "output": 24.0
+          }
+        },
+        {
+          "condition": "China Beijing; non-thinking output rate; 128K<Token≤256K | 2.4元 | 20元 | 24元 | 100万Token",
+          "pricing": {
+            "input": 2.4,
+            "output": 20.0
+          }
+        },
+        {
+          "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 4.8元 | 48元 | 64元 | 100万Token",
+          "pricing": {
+            "input": 4.8,
+            "output": 64.0
+          }
+        },
+        {
+          "condition": "China Beijing; non-thinking output rate; 256K<Token≤1M | 4.8元 | 48元 | 64元 | 100万Token",
+          "pricing": {
+            "input": 4.8,
+            "output": 48.0
+          }
+        }
+      ]
+    },
+    "qwen-plus-2025-12-01": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤128K | 0.8元 | 2元 | 8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 8.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; non-thinking output rate; 0<Token≤128K | 0.8元 | 2元 | 8元 | 100万Token",
+          "pricing": {
+            "input": 0.8,
+            "output": 2.0
+          }
+        },
+        {
+          "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2.4元 | 20元 | 24元 | 100万Token",
+          "pricing": {
+            "input": 2.4,
+            "output": 24.0
+          }
+        },
+        {
+          "condition": "China Beijing; non-thinking output rate; 128K<Token≤256K | 2.4元 | 20元 | 24元 | 100万Token",
+          "pricing": {
+            "input": 2.4,
+            "output": 20.0
+          }
+        },
+        {
+          "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 4.8元 | 48元 | 64元 | 100万Token",
+          "pricing": {
+            "input": 4.8,
+            "output": 64.0
+          }
+        },
+        {
+          "condition": "China Beijing; non-thinking output rate; 256K<Token≤1M | 4.8元 | 48元 | 64元 | 100万Token",
+          "pricing": {
+            "input": 4.8,
+            "output": 48.0
+          }
+        }
+      ]
+    },
+    "qwen-plus-2025-07-14": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 无阶梯计价 | 0.8元 | 2元 | 8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 8.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; non-thinking output rate; 无阶梯计价 | 0.8元 | 2元 | 8元 | 100万Token",
+          "pricing": {
+            "input": 0.8,
+            "output": 2.0
+          }
+        }
+      ]
+    },
+    "qwen-plus-2025-04-28": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 无阶梯计价 | 0.8元 | 2元 | 8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 8.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; non-thinking output rate; 无阶梯计价 | 0.8元 | 2元 | 8元 | 100万Token",
+          "pricing": {
+            "input": 0.8,
+            "output": 2.0
+          }
+        }
+      ]
+    },
+    "qwen-plus-2025-01-25": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 无阶梯计价 | 0.8元 | 2元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 2.0
+      }
+    },
+    "qwen-plus-2025-01-12": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 无阶梯计价 | 0.8元 | 2元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 2.0
+      }
+    },
+    "qwen-plus-2024-12-20": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 无阶梯计价 | 0.8元 | 2元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 2.0
+      }
+    },
+    "qwen3.8-flash": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 0.8元 | 2.7元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 2.7
+      }
+    },
+    "qwen3.7-flash": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤32K | 0.2元 | 0.8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.8
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 32K<Token≤256K | 0.6元 | 2.4元 | 100万Token",
+          "pricing": {
+            "input": 0.6,
+            "output": 2.4
+          }
+        },
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 256K<Token≤1M | 1.2元 | 4.8元 | 100万Token",
+          "pricing": {
+            "input": 1.2,
+            "output": 4.8
+          }
+        }
+      ]
+    },
+    "qwen3.7-flash-2026-07-15": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤32K | 0.2元 | 0.8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.2,
+        "output": 0.8
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 32K<Token≤256K | 0.6元 | 2.4元 | 100万Token",
+          "pricing": {
+            "input": 0.6,
+            "output": 2.4
+          }
+        },
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 256K<Token≤1M | 1.2元 | 4.8元 | 100万Token",
+          "pricing": {
+            "input": 1.2,
+            "output": 4.8
+          }
+        }
+      ]
+    },
+    "qwen3.6-flash": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤256K | 1.2元 | 7.2元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 1.2,
+        "output": 7.2
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 256K<Token≤1M | 4.8元 | 28.8元 | 100万Token",
+          "pricing": {
+            "input": 4.8,
+            "output": 28.8
+          }
+        }
+      ]
+    },
+    "qwen3.6-flash-2026-04-16": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤256K | 1.2元 | 7.2元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 1.2,
+        "output": 7.2
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 256K<Token≤1M | 4.8元 | 28.8元 | 100万Token",
+          "pricing": {
+            "input": 4.8,
+            "output": 28.8
+          }
+        }
+      ]
+    },
+    "qwen3.5-flash": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤128K | 0.2元 | 2元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.2,
+        "output": 2.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 128K<Token≤256K | 0.8元 | 8元 | 100万Token",
+          "pricing": {
+            "input": 0.8,
+            "output": 8.0
+          }
+        },
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 256K<Token≤1M | 1.2元 | 12元 | 100万Token",
+          "pricing": {
+            "input": 1.2,
+            "output": 12.0
+          }
+        }
+      ]
+    },
+    "qwen3.5-flash-2026-02-23": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤128K | 0.2元 | 2元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.2,
+        "output": 2.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 128K<Token≤256K | 0.8元 | 8元 | 100万Token",
+          "pricing": {
+            "input": 0.8,
+            "output": 8.0
+          }
+        },
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 256K<Token≤1M | 1.2元 | 12元 | 100万Token",
+          "pricing": {
+            "input": 1.2,
+            "output": 12.0
+          }
+        }
+      ]
+    },
+    "qwen-flash": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤128K | 0.15元 | 1.5元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.15,
+        "output": 1.5
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 128K<Token≤256K | 0.6元 | 6元 | 100万Token",
+          "pricing": {
+            "input": 0.6,
+            "output": 6.0
+          }
+        },
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 256K<Token≤1M | 1.2元 | 12元 | 100万Token",
+          "pricing": {
+            "input": 1.2,
+            "output": 12.0
+          }
+        }
+      ]
+    },
+    "qwen-flash-2025-07-28": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤128K | 0.15元 | 1.5元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.15,
+        "output": 1.5
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 128K<Token≤256K | 0.6元 | 6元 | 100万Token",
+          "pricing": {
+            "input": 0.6,
+            "output": 6.0
+          }
+        },
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 256K<Token≤1M | 1.2元 | 12元 | 100万Token",
+          "pricing": {
+            "input": 1.2,
+            "output": 12.0
+          }
+        }
+      ]
+    },
+    "qwen-long": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.5元 | 2元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.5,
+        "output": 2.0
+      }
+    },
+    "qwen3.8-omni-flash": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 中国内地 | 0.8元 | 0.1元 | 2.7元",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 2.7,
+        "cachedInput": 0.1
+      }
+    },
+    "qwen3-vl-plus": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤32K | 1元 | 10元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 1.0,
+        "output": 10.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 32K<Token≤128K | 1.5元 | 15元 | 100万Token",
+          "pricing": {
+            "input": 1.5,
+            "output": 15.0
+          }
+        },
+        {
+          "condition": "China Beijing; 非思考和思考模式 | 128K<Token≤256K | 3元 | 30元 | 100万Token",
+          "pricing": {
+            "input": 3.0,
+            "output": 30.0
+          }
+        }
+      ]
+    },
+    "qwen3.5-ocr": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.5元 | 2元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.5,
+        "output": 2.0
+      }
+    },
+    "qwen-vl-ocr": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.3元 | 0.5元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.3,
+        "output": 0.5
+      }
+    },
+    "qwen-vl-ocr-2025-11-20": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.3元 | 0.5元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.3,
+        "output": 0.5
+      }
+    },
+    "qwen-vl-ocr-2024-10-28": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 5元 | 5元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 5.0,
+        "output": 5.0
+      }
+    },
+    "qwen3-coder-flash": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0<Token≤32K | 1元 | 4元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 1.0,
+        "output": 4.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; 32K<Token≤128K | 1.5元 | 6元 | 100万Token",
+          "pricing": {
+            "input": 1.5,
+            "output": 6.0
+          }
+        },
+        {
+          "condition": "China Beijing; 128K<Token≤256K | 2.5元 | 10元 | 100万Token",
+          "pricing": {
+            "input": 2.5,
+            "output": 10.0
+          }
+        },
+        {
+          "condition": "China Beijing; 256K<Token≤1M | 5元 | 25元 | 100万Token",
+          "pricing": {
+            "input": 5.0,
+            "output": 25.0
+          }
+        }
+      ]
+    },
+    "qwen3-coder-flash-2025-07-28": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0<Token≤32K | 1元 | 4元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 1.0,
+        "output": 4.0
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; 32K<Token≤128K | 1.5元 | 6元 | 100万Token",
+          "pricing": {
+            "input": 1.5,
+            "output": 6.0
+          }
+        },
+        {
+          "condition": "China Beijing; 128K<Token≤256K | 2.5元 | 10元 | 100万Token",
+          "pricing": {
+            "input": 2.5,
+            "output": 10.0
+          }
+        },
+        {
+          "condition": "China Beijing; 256K<Token≤1M | 5元 | 25元 | 100万Token",
+          "pricing": {
+            "input": 5.0,
+            "output": 25.0
+          }
+        }
+      ]
+    },
+    "qwen-mt-plus": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 1.8元 | 5.4元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 1.8,
+        "output": 5.4
+      }
+    },
+    "qwen-mt-flash": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.7元 | 1.95元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.7,
+        "output": 1.95
+      }
+    },
+    "qwen-mt-lite": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.6元 | 1.6元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.6,
+        "output": 1.6
+      }
+    },
+    "qwen-doc-turbo": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.6元 | 1元 | 无免费额度",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.6,
+        "output": 1.0
+      }
+    },
+    "qwen-deep-research": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 54元 | 163元 | 无免费额度",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 54.0,
+        "output": 163.0
+      }
+    },
+    "qwen-deep-research-2025-12-15": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 79元 | 236元 | 无免费额度",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 79.0,
+        "output": 236.0
+      }
+    },
+    "qwen3.8-2.4t-a95b": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 12.0,
+        "output": 36.0
+      }
+    },
+    "qwen3.8-27b": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 3元 | 12元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 3.0,
+        "output": 12.0
+      }
+    },
+    "qwen3.6-35b-a3b": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤256K | 1.8元 | 10.8元 | 10.8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 1.8,
+        "output": 10.8
+      }
+    },
+    "qwen3.6-27b": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤256K | 3元 | 18元 | 18元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 3.0,
+        "output": 18.0
+      }
+    },
+    "qwen3.5-397b-a17b": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤128K | 1.2元 | 7.2元 | 7.2元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 1.2,
+        "output": 7.2
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 3元 | 18元 | 18元 | 100万Token",
+          "pricing": {
+            "input": 3.0,
+            "output": 18.0
+          }
+        }
+      ]
+    },
+    "qwen3.5-122b-a10b": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤128K | 0.8元 | 6.4元 | 6.4元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.8,
+        "output": 6.4
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2元 | 16元 | 16元 | 100万Token",
+          "pricing": {
+            "input": 2.0,
+            "output": 16.0
+          }
+        }
+      ]
+    },
+    "qwen3.5-27b": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤128K | 0.6元 | 4.8元 | 4.8元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.6,
+        "output": 4.8
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 1.8元 | 14.4元 | 14.4元 | 100万Token",
+          "pricing": {
+            "input": 1.8,
+            "output": 14.4
+          }
+        }
+      ]
+    },
+    "qwen3.5-35b-a3b": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; thinking output rate; 0<Token≤128K | 0.4元 | 3.2元 | 3.2元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.4,
+        "output": 3.2
+      },
+      "tiers": [
+        {
+          "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 1.6元 | 12.8元 | 12.8元 | 100万Token",
+          "pricing": {
+            "input": 1.6,
+            "output": 12.8
+          }
+        }
+      ]
+    },
+    "qwen3.7-text-embedding": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.5元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.5
+      }
+    },
+    "qwen3.7-text-embedding-flash": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.125元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.125
+      }
+    },
+    "text-embedding-v4": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.5元 | 100万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.5
+      }
+    },
+    "text-embedding-v3": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.5元 | 50万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.5
+      }
+    },
+    "text-embedding-v2": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.7元 | 50万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.7
+      }
+    },
+    "text-embedding-v1": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.7元 | 50万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.7
+      }
+    },
+    "text-embedding-async-v2": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.7元 | 2000万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.7
+      }
+    },
+    "text-embedding-async-v1": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "China Beijing; 0.7元 | 2000万Token",
+      "region": "China (Beijing)",
+      "pricing": {
+        "input": 0.7
+      }
+    },
+    "voyage-4-large": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.12
+      }
+    },
+    "voyage-4": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.06
+      }
+    },
+    "voyage-4-lite": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.02
+      }
+    },
+    "voyage-context-4": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.12
+      }
+    },
+    "voyage-code-4": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.12
+      }
+    },
+    "voyage-finance-2": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.12
+      }
+    },
+    "voyage-law-2": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.12
+      }
+    },
+    "voyage-code-2": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.12
+      }
+    },
+    "voyage-multimodal-3.5": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.12
+      }
+    },
+    "voyage-multimodal-3": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.12
+      }
+    },
+    "voyage-context-3": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.18
+      }
+    },
+    "voyage-code-3": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.18
+      }
+    },
+    "voyage-3-large": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.18
+      }
+    },
+    "voyage-3.5": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.06
+      }
+    },
+    "voyage-3.5-lite": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.02
+      }
+    },
+    "voyage-multilingual-2": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.12
+      }
+    },
+    "voyage-large-2-instruct": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.12
+      }
+    },
+    "voyage-large-2": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.12
+      }
+    },
+    "voyage-01": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.1
+      }
+    },
+    "voyage-lite-01": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.1
+      }
+    },
+    "voyage-lite-01-instruct": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.1
+      }
+    },
+    "voyage-02": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.1
+      }
+    },
+    "voyage-lite-02-instruct": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.1
+      }
+    },
+    "voyage-2": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.1
+      }
+    },
+    "voyage-3": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.06
+      }
+    },
+    "voyage-3-lite": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.02
+      }
+    },
+    "rerank-lite-1": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.02
+      }
+    },
+    "rerank-2-lite": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.02
+      }
+    },
+    "rerank-2.5-lite": {
+      "currency": "USD",
+      "source": "https://docs.voyageai.com/docs/pricing",
+      "condition": "Text input embeddings; image pixels billed separately",
+      "pricing": {
+        "input": 0.02
+      }
+    },
+    "gpt-5.6": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 4,
+        "cachedInput": 0.4,
+        "output": 20
+      }
+    },
+    "gemini-nano-banana-2.1": {
+      "currency": "USD",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "condition": "Text tokens and image generation billed separately; Input price: $1.50 (text/image/video); Output price: $7.50 (text and thinking) $30.00 (images) Equivalent to $0.0336 per 1K image*, $0.0504 per 2K image*, and $0.113 per 4K image*.",
+      "modalityPricing": {
+        "text": {
+          "input": 1.5,
+          "output": 7.5
+        },
+        "image": {
+          "output": 30.0
+        }
+      },
+      "unitPricing": {
+        "output_cost_per_image": 0.0336
+      }
+    },
+    "kimi-k3": {
+      "currency": "USD",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cachedInput": 0.3
+      }
+    },
+    "kimi-k2.7-code": {
+      "currency": "USD",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.95,
+        "output": 4,
+        "cachedInput": 0.19
+      }
+    },
+    "kimi-k2.7-code-highspeed": {
+      "currency": "USD",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 1.9,
+        "output": 8,
+        "cachedInput": 0.38
+      }
+    },
+    "kimi-k2.6": {
+      "currency": "USD",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.95,
+        "output": 4,
+        "cachedInput": 0.16
+      }
+    },
+    "mimo-v2.6-pro": {
+      "currency": "USD",
+      "source": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+      "condition": "Official overseas USD real-time API rate; 2.5 models retire 2026-10-21",
+      "region": "Overseas",
+      "pricing": {
+        "input": 0.435,
+        "output": 0.87,
+        "cachedInput": 0.0036
+      }
+    },
+    "mimo-v2.5-pro": {
+      "currency": "USD",
+      "source": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+      "condition": "Official overseas USD real-time API rate; 2.5 models retire 2026-10-21",
+      "region": "Overseas",
+      "pricing": {
+        "input": 0.435,
+        "output": 0.87,
+        "cachedInput": 0.0036
+      }
+    },
+    "mimo-v2.6-flash": {
+      "currency": "USD",
+      "source": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+      "condition": "Official overseas USD real-time API rate; 2.5 models retire 2026-10-21",
+      "region": "Overseas",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "cachedInput": 0.0028
+      }
+    },
+    "mimo-v2.5": {
+      "currency": "USD",
+      "source": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+      "condition": "Official overseas USD real-time API rate; 2.5 models retire 2026-10-21",
+      "region": "Overseas",
+      "pricing": {
+        "input": 0.14,
+        "output": 0.28,
+        "cachedInput": 0.0028
+      }
+    },
+    "mimo-v2.6-pro-ultraspeed": {
+      "currency": "USD",
+      "source": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+      "condition": "Official overseas USD real-time API rate; 2.5 models retire 2026-10-21",
+      "region": "Overseas",
+      "pricing": {
+        "input": 4.35,
+        "output": 8.7,
+        "cachedInput": 0.036
+      }
+    },
+    "mimo-v2.5-asr": {
+      "currency": "USD",
+      "source": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+      "condition": "Audio duration billing",
+      "region": "Overseas",
+      "unitPricing": {
+        "input_cost_per_hour": 0.074
+      }
+    },
+    "step-5-preview": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Standard PAYG. Step 5 cache rate for new users since 2026-10-14; grandfathered users pay CNY 0.35/M cached tokens",
+      "pricing": {
+        "input": 7,
+        "cachedInput": 0.7,
+        "output": 20
+      }
+    },
+    "step-3.7-flash": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Standard PAYG. Step 5 cache rate for new users since 2026-10-14; grandfathered users pay CNY 0.35/M cached tokens",
+      "pricing": {
+        "input": 1.35,
+        "cachedInput": 0.27,
+        "output": 8.1
+      }
+    },
+    "step-3.5-flash": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Standard PAYG. Step 5 cache rate for new users since 2026-10-14; grandfathered users pay CNY 0.35/M cached tokens",
+      "pricing": {
+        "input": 0.7,
+        "cachedInput": 0.14,
+        "output": 2.1
+      }
+    },
+    "step-3.5-flash-2603": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Standard PAYG. Step 5 cache rate for new users since 2026-10-14; grandfathered users pay CNY 0.35/M cached tokens",
+      "pricing": {
+        "input": 0.7,
+        "cachedInput": 0.14,
+        "output": 2.1
+      }
+    },
+    "step-1o-turbo-vision": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Standard PAYG. Step 5 cache rate for new users since 2026-10-14; grandfathered users pay CNY 0.35/M cached tokens",
+      "pricing": {
+        "input": 2.5,
+        "cachedInput": 0.5,
+        "output": 8
+      }
+    },
+    "stepaudio-2.5-realtime": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Audio token billing; separate from text token rates",
+      "modalityPricing": {
+        "audio": {
+          "input": 10,
+          "cachedInput": 2,
+          "output": 70
+        }
+      }
+    },
+    "stepaudio-2.5-chat": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Audio token billing; separate from text token rates",
+      "modalityPricing": {
+        "audio": {
+          "input": 10,
+          "cachedInput": 2,
+          "output": 25
+        }
+      }
+    },
+    "step-1o-audio": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Audio token billing; separate from text token rates",
+      "modalityPricing": {
+        "audio": {
+          "input": 25,
+          "cachedInput": 5,
+          "output": 60
+        }
+      }
+    },
+    "step-audio-2": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Audio token billing; separate from text token rates",
+      "modalityPricing": {
+        "audio": {
+          "input": 10,
+          "cachedInput": 2,
+          "output": 70
+        }
+      }
+    },
+    "step-audio-r1.5": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Audio token billing; separate from text token rates",
+      "modalityPricing": {
+        "audio": {
+          "input": 10,
+          "cachedInput": 2,
+          "output": 105
+        }
+      }
+    },
+    "stepaudio-3-tts": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Speech synthesis per character; voice cloning separate",
+      "unitPricing": {
+        "output_cost_per_character": 0.00025
+      }
+    },
+    "stepaudio-2.5-tts": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Speech synthesis per character; voice cloning separate",
+      "unitPricing": {
+        "output_cost_per_character": 0.00058
+      }
+    },
+    "step-tts-2": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Speech synthesis per character; voice cloning separate",
+      "unitPricing": {
+        "output_cost_per_character": 0.00028
+      }
+    },
+    "step-tts-mini": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Speech synthesis per character; voice cloning separate",
+      "unitPricing": {
+        "output_cost_per_character": 9e-05
+      }
+    },
+    "stepaudio-3-asr-max": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Audio transcription duration",
+      "unitPricing": {
+        "input_cost_per_hour": 2.8
+      }
+    },
+    "stepaudio-2.5-asr": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Audio transcription duration",
+      "unitPricing": {
+        "input_cost_per_hour": 0.15
+      }
+    },
+    "stepaudio-2.5-asr-stream": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Audio transcription duration",
+      "unitPricing": {
+        "input_cost_per_hour": 1.2
+      }
+    },
+    "stepaudio-2-asr-pro": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Audio transcription duration",
+      "unitPricing": {
+        "input_cost_per_hour": 2
+      }
+    },
+    "step-asr": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Audio transcription duration",
+      "unitPricing": {
+        "input_cost_per_hour": 0.9
+      }
+    },
+    "step-asr-1.1": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Audio transcription duration",
+      "unitPricing": {
+        "input_cost_per_hour": 2.2
+      }
+    },
+    "step-asr-1.1-stream": {
+      "currency": "CNY",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "condition": "Audio transcription duration",
+      "unitPricing": {
+        "input_cost_per_hour": 2.6
+      }
+    },
+    "mercury-2.5": {
+      "currency": "USD",
+      "source": "https://docs.inceptionlabs.ai/get-started/models",
+      "condition": "Current official rate including launch promotion; not undiscounted list price",
+      "pricing": {
+        "input": 0.04,
+        "cachedInput": 0.004,
+        "output": 0.15
+      }
+    },
+    "mercury-voice": {
+      "currency": "USD",
+      "source": "https://docs.inceptionlabs.ai/get-started/models",
+      "condition": "Current official rate including launch promotion; not undiscounted list price",
+      "pricing": {
+        "input": 0.2,
+        "cachedInput": 0.02,
+        "output": 0.75
+      }
+    },
+    "mercury-decide": {
+      "currency": "USD",
+      "source": "https://docs.inceptionlabs.ai/get-started/models",
+      "condition": "Current official rate including launch promotion; not undiscounted list price",
+      "pricing": {
+        "input": 0.02,
+        "cachedInput": 0,
+        "output": 0
+      }
+    },
+    "mercury-2": {
+      "currency": "USD",
+      "source": "https://docs.inceptionlabs.ai/get-started/models",
+      "condition": "Current official rate including launch promotion; not undiscounted list price",
+      "pricing": {
+        "input": 0.25,
+        "cachedInput": 0.025,
+        "output": 0.75
+      }
+    },
+    "mercury-edit-2": {
+      "currency": "USD",
+      "source": "https://docs.inceptionlabs.ai/get-started/models",
+      "condition": "Current official rate including launch promotion; not undiscounted list price",
+      "pricing": {
+        "input": 0.25,
+        "cachedInput": 0.025,
+        "output": 0.75
+      }
+    },
+    "sonar": {
+      "currency": "USD",
+      "source": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "condition": "Token charges only; search/request/citation/reasoning charges are additional",
+      "pricing": {
+        "input": 1,
+        "output": 1
+      }
+    },
+    "sonar-pro": {
+      "currency": "USD",
+      "source": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "condition": "Token charges only; search/request/citation/reasoning charges are additional",
+      "pricing": {
+        "input": 3,
+        "output": 15
+      }
+    },
+    "sonar-reasoning-pro": {
+      "currency": "USD",
+      "source": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "condition": "Token charges only; search/request/citation/reasoning charges are additional",
+      "pricing": {
+        "input": 2,
+        "output": 8
+      }
+    },
+    "sonar-deep-research": {
+      "currency": "USD",
+      "source": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "condition": "Token charges only; search/request/citation/reasoning charges are additional",
+      "pricing": {
+        "input": 2,
+        "output": 8
+      }
+    },
+    "pplx-embed-v1-0.6b": {
+      "currency": "USD",
+      "source": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "condition": "Input embedding tokens",
+      "pricing": {
+        "input": 0.004
+      }
+    },
+    "pplx-embed-v1-4b": {
+      "currency": "USD",
+      "source": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "condition": "Input embedding tokens",
+      "pricing": {
+        "input": 0.03
+      }
+    },
+    "pplx-embed-context-v1-0.6b": {
+      "currency": "USD",
+      "source": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "condition": "Input embedding tokens",
+      "pricing": {
+        "input": 0.008
+      }
+    },
+    "pplx-embed-context-v1-4b": {
+      "currency": "USD",
+      "source": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "condition": "Input embedding tokens",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "pplx-decider-v1.1-27b": {
+      "currency": "USD",
+      "source": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.02,
+        "output": 0
+      }
+    },
+    "pplx-decider-v1-27b": {
+      "currency": "USD",
+      "source": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.02,
+        "output": 0
+      }
+    },
+    "muse-spark-1.1": {
+      "currency": "USD",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "condition": "Standard mode PAYG",
+      "pricing": {
+        "input": 1.25,
+        "output": 4.25,
+        "cachedInput": 0.15
+      }
+    },
+    "muse-spark-1.2": {
+      "currency": "USD",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "condition": "Standard mode PAYG",
+      "pricing": {
+        "input": 1.25,
+        "output": 4.25,
+        "cachedInput": 0.15
+      }
+    },
+    "muse-spark-1.3": {
+      "currency": "USD",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "condition": "Standard mode PAYG",
+      "pricing": {
+        "input": 1.25,
+        "output": 4.25,
+        "cachedInput": 0.15
+      }
+    },
+    "muse-spark-1.2-contributor": {
+      "currency": "USD",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "condition": "Contributor mode PAYG; requires permission to use submitted content for training",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.2,
+        "cachedInput": 0.002
+      }
+    },
+    "muse-spark-1.3-contributor": {
+      "currency": "USD",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "condition": "Contributor mode PAYG; requires permission to use submitted content for training",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.2,
+        "cachedInput": 0.002
+      }
+    },
+    "muse-wonder-1.0": {
+      "currency": "USD",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 4,
+        "output": 20,
+        "cachedInput": 0.2
+      }
+    },
+    "muse-image-1.0": {
+      "currency": "USD",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "condition": "Per successfully generated image; token counts not billed",
+      "unitPricing": {
+        "output_cost_per_image": 0.01
+      },
+      "aliases": [
+        "muse-image"
+      ]
+    },
+    "muse-voice-transcribe-1.0": {
+      "currency": "USD",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "condition": "Input audio duration",
+      "unitPricing": {
+        "input_cost_per_hour": 0.18
+      }
+    },
+    "doubao-seed-evolving": {
+      "currency": "CNY",
+      "source": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "condition": "Online inference, text/non-audio tokens; 输入长度 [0, 1024]",
+      "region": "China",
+      "pricing": {
+        "input": 6.0,
+        "cachedInput": 1.2,
+        "output": 30.0
+      }
+    },
+    "doubao-seed-2.1-pro": {
+      "currency": "CNY",
+      "source": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "condition": "Online inference, text/non-audio tokens; 输入长度 [0, 1024]",
+      "region": "China",
+      "pricing": {
+        "input": 6.0,
+        "cachedInput": 1.2,
+        "output": 30.0
+      },
+      "aliases": [
+        "seed-2.1-pro"
+      ]
+    },
+    "doubao-seed-2.1-lite": {
+      "currency": "CNY",
+      "source": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "condition": "Online inference, text/non-audio tokens; 输入长度 [0, 1024]",
+      "region": "China",
+      "pricing": {
+        "input": 0.8,
+        "cachedInput": 0.16,
+        "output": 2.7
+      }
+    },
+    "doubao-seed-2.1-turbo": {
+      "currency": "CNY",
+      "source": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "condition": "Online inference, text/non-audio tokens; 输入长度 [0, 256]",
+      "region": "China",
+      "pricing": {
+        "input": 3.0,
+        "cachedInput": 0.6,
+        "output": 15.0
+      },
+      "aliases": [
+        "seed-2.1-turbo"
+      ]
+    },
+    "doubao-seed-2.0-pro": {
+      "currency": "CNY",
+      "source": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "condition": "Online inference, text/non-audio tokens; 输入长度 [0, 32]",
+      "region": "China",
+      "pricing": {
+        "input": 3.2,
+        "cachedInput": 0.64,
+        "output": 16.0
+      },
+      "tiers": [
+        {
+          "condition": "Online inference, text/non-audio tokens; 输入长度 (32, 128]",
+          "pricing": {
+            "input": 4.8,
+            "cachedInput": 0.96,
+            "output": 24.0
+          }
+        },
+        {
+          "condition": "Online inference, text/non-audio tokens; 输入长度 (128, 256]",
+          "pricing": {
+            "input": 9.6,
+            "cachedInput": 1.92,
+            "output": 48.0
+          }
+        }
+      ],
+      "aliases": [
+        "seed-2.0-pro"
+      ]
+    },
+    "doubao-seed-2.0-lite": {
+      "currency": "CNY",
+      "source": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "condition": "Online inference, text/non-audio tokens; 输入长度 [0, 32]",
+      "region": "China",
+      "pricing": {
+        "input": 0.6,
+        "cachedInput": 0.12,
+        "output": 3.6
+      },
+      "tiers": [
+        {
+          "condition": "Online inference, text/non-audio tokens; 输入长度 (32, 128]",
+          "pricing": {
+            "input": 0.9,
+            "cachedInput": 0.18,
+            "output": 5.4
+          }
+        },
+        {
+          "condition": "Online inference, text/non-audio tokens; 输入长度 (128, 256]",
+          "pricing": {
+            "input": 1.8,
+            "cachedInput": 0.36,
+            "output": 10.8
+          }
+        }
+      ],
+      "aliases": [
+        "seed-2.0-lite"
+      ]
+    },
+    "doubao-seed-2.0-mini": {
+      "currency": "CNY",
+      "source": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "condition": "Online inference, text/non-audio tokens; 输入长度 [0, 32]",
+      "region": "China",
+      "pricing": {
+        "input": 0.2,
+        "cachedInput": 0.04,
+        "output": 2.0
+      },
+      "tiers": [
+        {
+          "condition": "Online inference, text/non-audio tokens; 输入长度 (32, 128]",
+          "pricing": {
+            "input": 0.4,
+            "cachedInput": 0.08,
+            "output": 4.0
+          }
+        },
+        {
+          "condition": "Online inference, text/non-audio tokens; 输入长度 (128, 256]",
+          "pricing": {
+            "input": 0.8,
+            "cachedInput": 0.16,
+            "output": 8.0
+          }
+        }
+      ],
+      "aliases": [
+        "seed-2.0-mini"
+      ]
+    },
+    "doubao-seed-2.0-code": {
+      "currency": "CNY",
+      "source": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "condition": "Online inference, text/non-audio tokens; 输入长度 [0, 32]",
+      "region": "China",
+      "pricing": {
+        "input": 3.2,
+        "cachedInput": 0.64,
+        "output": 16.0
+      },
+      "tiers": [
+        {
+          "condition": "Online inference, text/non-audio tokens; 输入长度 (32, 128]",
+          "pricing": {
+            "input": 4.8,
+            "cachedInput": 0.96,
+            "output": 24.0
+          }
+        },
+        {
+          "condition": "Online inference, text/non-audio tokens; 输入长度 (128, 256]",
+          "pricing": {
+            "input": 9.6,
+            "cachedInput": 1.92,
+            "output": 48.0
+          }
+        }
+      ],
+      "aliases": [
+        "seed-2.0-code"
+      ]
+    },
+    "doubao-seed-character": {
+      "currency": "CNY",
+      "source": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "condition": "Online inference, text/non-audio tokens; 输入长度 [0, 32]",
+      "region": "China",
+      "pricing": {
+        "input": 0.8,
+        "cachedInput": 0.16,
+        "output": 2.0
+      },
+      "tiers": [
+        {
+          "condition": "Online inference, text/non-audio tokens; 输入长度 (32, 128]",
+          "pricing": {
+            "input": 1.2,
+            "cachedInput": 0.16,
+            "output": 6.0
+          }
+        }
+      ]
+    },
+    "doubao-seed-translation": {
+      "currency": "CNY",
+      "source": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "condition": "Online inference, text/non-audio tokens; -",
+      "region": "China",
+      "pricing": {
+        "input": 1.2,
+        "output": 3.6
+      }
+    },
+    "hy4-preview": {
+      "currency": "CNY",
+      "source": "https://cloud.tencent.com/document/product/1823/130055",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "region": "China Guangzhou",
+      "pricing": {
+        "input": 6,
+        "output": 18,
+        "cachedInput": 0.3
+      },
+      "aliases": [
+        "hy4"
+      ]
+    },
+    "hy3": {
+      "currency": "CNY",
+      "source": "https://cloud.tencent.com/document/product/1823/130055",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "region": "China Guangzhou",
+      "pricing": {
+        "input": 1,
+        "output": 4,
+        "cachedInput": 0.25
+      }
+    },
+    "hy-mt2-pro": {
+      "currency": "CNY",
+      "source": "https://cloud.tencent.com/document/product/1823/130055",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "region": "China Guangzhou",
+      "pricing": {
+        "input": 0.5,
+        "output": 2
+      }
+    },
+    "hy-mt2-plus": {
+      "currency": "CNY",
+      "source": "https://cloud.tencent.com/document/product/1823/130055",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "region": "China Guangzhou",
+      "pricing": {
+        "input": 0.5,
+        "output": 2
+      }
+    },
+    "hy-mt2-lite": {
+      "currency": "CNY",
+      "source": "https://cloud.tencent.com/document/product/1823/130055",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "region": "China Guangzhou",
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2
+      }
+    },
+    "hy-role-latest": {
+      "currency": "CNY",
+      "source": "https://cloud.tencent.com/document/product/1823/130055",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "region": "China Guangzhou",
+      "pricing": {
+        "input": 2.4,
+        "output": 9.6
+      }
+    },
+    "hy-role": {
+      "currency": "CNY",
+      "source": "https://cloud.tencent.com/document/product/1823/130055",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "region": "China Guangzhou",
+      "pricing": {
+        "input": 2.4,
+        "output": 9.6
+      }
+    },
+    "hy-vision-2.0-instruct": {
+      "currency": "CNY",
+      "source": "https://cloud.tencent.com/document/product/1823/130055",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "region": "China Guangzhou",
+      "pricing": {
+        "input": 7.5,
+        "output": 17.5
+      }
+    },
+    "hy-image-v3": {
+      "currency": "CNY",
+      "source": "https://cloud.tencent.com/document/product/1823/130055",
+      "condition": "1K/2K reference; 3.5-preview 4K costs CNY 0.20/image",
+      "unitPricing": {
+        "output_cost_per_image": 0.2
+      }
+    },
+    "hy-image-3.0": {
+      "currency": "CNY",
+      "source": "https://cloud.tencent.com/document/product/1823/130055",
+      "condition": "1K/2K reference; 3.5-preview 4K costs CNY 0.20/image",
+      "unitPricing": {
+        "output_cost_per_image": 0.2
+      }
+    },
+    "hy-image-3.5-preview": {
+      "currency": "CNY",
+      "source": "https://cloud.tencent.com/document/product/1823/130055",
+      "condition": "1K/2K reference; 3.5-preview 4K costs CNY 0.20/image",
+      "unitPricing": {
+        "output_cost_per_image": 0.15
+      }
+    },
+    "composer-2.5": {
+      "currency": "USD",
+      "source": "https://prod.cursor.com/docs/models/cursor-composer-2-5",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.5,
+        "cachedInput": 0.2,
+        "output": 2.5
+      }
+    },
+    "composer-2.5-fast": {
+      "currency": "USD",
+      "source": "https://prod.cursor.com/docs/models/cursor-composer-2-5",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 3,
+        "cachedInput": 0.5,
+        "output": 15
+      }
+    },
+    "qwen-image-3.0-pro": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 1k | 0.02元/张 | 0.25元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.25,
+        "input_cost_per_image": 0.02
+      },
+      "region": "China (Beijing)",
+      "aliases": [
+        "qwen-image-3-pro"
+      ]
+    },
+    "qwen-image-3.0": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 1k | 0.02元/张 | 0.18元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.18,
+        "input_cost_per_image": 0.02
+      },
+      "region": "China (Beijing)",
+      "aliases": [
+        "qwen-image-3"
+      ]
+    },
+    "qwen-image-2.1-pro": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.25元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.25
+      },
+      "region": "China (Beijing)"
+    },
+    "qwen-image-2.1-turbo": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.1元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.1
+      },
+      "region": "China (Beijing)"
+    },
+    "qwen-image-2.0-pro": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.5元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.5
+      },
+      "region": "China (Beijing)"
+    },
+    "qwen-image-2.0-pro-2026-06-22": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.5元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.5
+      },
+      "region": "China (Beijing)"
+    },
+    "qwen-image-2.0-pro-2026-04-22": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.5元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.5
+      },
+      "region": "China (Beijing)"
+    },
+    "qwen-image-2.0-pro-2026-03-03": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.5元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.5
+      },
+      "region": "China (Beijing)"
+    },
+    "qwen-image-2.0": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.2元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.2
+      },
+      "region": "China (Beijing)"
+    },
+    "qwen-image-2.0-2026-03-03": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.2元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.2
+      },
+      "region": "China (Beijing)"
+    },
+    "qwen-mt-image-2.0": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.004元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.004
+      },
+      "region": "China (Beijing)"
+    },
+    "qwen-mt-image": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.003元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.003
+      },
+      "region": "China (Beijing)"
+    },
+    "wan2.6-t2i": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.20元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.2
+      },
+      "region": "China (Beijing)"
+    },
+    "wan2.5-t2i-preview": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.20元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.2
+      },
+      "region": "China (Beijing)"
+    },
+    "wan2.2-t2i-plus": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.20元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.2
+      },
+      "region": "China (Beijing)"
+    },
+    "wan2.2-t2i-flash": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.14元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.14
+      },
+      "region": "China (Beijing)"
+    },
+    "wanx2.1-t2i-plus": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.20元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.2
+      },
+      "region": "China (Beijing)"
+    },
+    "wanx2.1-t2i-turbo": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.14元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.14
+      },
+      "region": "China (Beijing)"
+    },
+    "wanx2.0-t2i-turbo": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.04元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.04
+      },
+      "region": "China (Beijing)"
+    },
+    "wanx-v1": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.16元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.16
+      },
+      "region": "China (Beijing)"
+    },
+    "wan2.7-image-pro": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.50元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.5
+      },
+      "region": "China (Beijing)"
+    },
+    "wan2.7-image": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.20元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.2
+      },
+      "region": "China (Beijing)"
+    },
+    "wan2.6-image": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.20元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.2
+      },
+      "region": "China (Beijing)"
+    },
+    "wan2.5-i2i-preview": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.20元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.2
+      },
+      "region": "China (Beijing)"
+    },
+    "wanx2.1-imageedit": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.14元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.14
+      },
+      "region": "China (Beijing)"
+    },
+    "wanx-sketch-to-image-lite": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.06元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.06
+      },
+      "region": "China (Beijing)"
+    },
+    "wanx-style-repaint-v1": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "condition": "Per image; 0.12元/张",
+      "unitPricing": {
+        "output_cost_per_image": 0.12
+      },
+      "region": "China (Beijing)"
+    },
+    "flux-3-image": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "1K image reference; actual price varies by output resolution",
+      "unitPricing": {
+        "output_cost_per_image": 0.048
+      }
+    },
+    "flux-3-image-klein": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "1K image reference; actual price varies by output resolution",
+      "unitPricing": {
+        "output_cost_per_image": 0.009000000000000001
+      }
+    },
+    "flux-2-max": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "First output megapixel reference; additional output and input megapixels billed separately",
+      "unitPricing": {
+        "output_cost_per_image": 0.07,
+        "output_cost_per_additional_megapixel": 0.03,
+        "input_cost_per_megapixel": 0.03
+      },
+      "aliases": [
+        "flux.2-max"
+      ]
+    },
+    "flux-2-klein-9b": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "First output megapixel reference; additional output and input megapixels billed separately",
+      "unitPricing": {
+        "output_cost_per_image": 0.015,
+        "output_cost_per_additional_megapixel": 0.002,
+        "input_cost_per_megapixel": 0.002
+      },
+      "aliases": [
+        "flux.2-klein"
+      ]
+    },
+    "flux-2-klein-4b": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "First output megapixel reference; additional output and input megapixels billed separately",
+      "unitPricing": {
+        "output_cost_per_image": 0.013999999999999999,
+        "output_cost_per_additional_megapixel": 0.001,
+        "input_cost_per_megapixel": 0.001
+      },
+      "aliases": [
+        "flux.2-klein-4b"
+      ]
+    },
+    "flux-2-pro": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "First output megapixel reference; additional output and input megapixels billed separately",
+      "unitPricing": {
+        "output_cost_per_image": 0.03,
+        "output_cost_per_additional_megapixel": 0.015,
+        "input_cost_per_megapixel": 0.015
+      },
+      "aliases": [
+        "flux.2-pro"
+      ]
+    },
+    "flux-2-flex": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "First output megapixel reference; additional output and input megapixels billed separately",
+      "unitPricing": {
+        "output_cost_per_image": 0.05,
+        "output_cost_per_additional_megapixel": 0.05,
+        "input_cost_per_megapixel": 0.05
+      },
+      "aliases": [
+        "flux.2-flex"
+      ]
+    },
+    "flux-kontext-max": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "Per image",
+      "unitPricing": {
+        "output_cost_per_image": 0.08
+      }
+    },
+    "flux-kontext-pro": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "Per image",
+      "unitPricing": {
+        "output_cost_per_image": 0.04
+      }
+    },
+    "flux-pro-1.1-ultra": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "Per image",
+      "unitPricing": {
+        "output_cost_per_image": 0.06
+      }
+    },
+    "flux-pro-1.1": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "Per image",
+      "unitPricing": {
+        "output_cost_per_image": 0.04
+      }
+    },
+    "flux-pro": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "Per image",
+      "unitPricing": {
+        "output_cost_per_image": 0.05
+      }
+    },
+    "flux-dev": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "Per image",
+      "unitPricing": {
+        "output_cost_per_image": 0.025
+      }
+    },
+    "flux-pro-1.0-fill": {
+      "currency": "USD",
+      "source": "https://docs.bfl.ai/quick_start/pricing",
+      "condition": "Per image",
+      "unitPricing": {
+        "output_cost_per_image": 0.05
+      }
+    },
+    "jina-clip-v2": {
+      "currency": "USD",
+      "source": "https://jina.ai/embeddings/",
+      "condition": "Standard 1-billion-token prepaid pack at USD 50; no free-credit assumption",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "jina-code-embeddings-0.5b": {
+      "currency": "USD",
+      "source": "https://jina.ai/embeddings/",
+      "condition": "Standard 1-billion-token prepaid pack at USD 50; no free-credit assumption",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "jina-embeddings-v3": {
+      "currency": "USD",
+      "source": "https://jina.ai/embeddings/",
+      "condition": "Standard 1-billion-token prepaid pack at USD 50; no free-credit assumption",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "jina-embeddings-v3.What": {
+      "currency": "USD",
+      "source": "https://jina.ai/embeddings/",
+      "condition": "Standard 1-billion-token prepaid pack at USD 50; no free-credit assumption",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "jina-embeddings-v4": {
+      "currency": "USD",
+      "source": "https://jina.ai/embeddings/",
+      "condition": "Standard 1-billion-token prepaid pack at USD 50; no free-credit assumption",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "jina-embeddings-v5": {
+      "currency": "USD",
+      "source": "https://jina.ai/embeddings/",
+      "condition": "Standard 1-billion-token prepaid pack at USD 50; no free-credit assumption",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "jina-embeddings-v5-omni": {
+      "currency": "USD",
+      "source": "https://jina.ai/embeddings/",
+      "condition": "Standard 1-billion-token prepaid pack at USD 50; no free-credit assumption",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "jina-embeddings-v5-omni-nano": {
+      "currency": "USD",
+      "source": "https://jina.ai/embeddings/",
+      "condition": "Standard 1-billion-token prepaid pack at USD 50; no free-credit assumption",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "jina-embeddings-v5-omni-small": {
+      "currency": "USD",
+      "source": "https://jina.ai/embeddings/",
+      "condition": "Standard 1-billion-token prepaid pack at USD 50; no free-credit assumption",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "jina-embeddings-v5-text": {
+      "currency": "USD",
+      "source": "https://jina.ai/embeddings/",
+      "condition": "Standard 1-billion-token prepaid pack at USD 50; no free-credit assumption",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "jina-embeddings-v5-text-nano": {
+      "currency": "USD",
+      "source": "https://jina.ai/embeddings/",
+      "condition": "Standard 1-billion-token prepaid pack at USD 50; no free-credit assumption",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "jina-embeddings-v5-text-small": {
+      "currency": "USD",
+      "source": "https://jina.ai/embeddings/",
+      "condition": "Standard 1-billion-token prepaid pack at USD 50; no free-credit assumption",
+      "pricing": {
+        "input": 0.05
+      }
+    },
+    "grok-imagine-image-2.0": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Imagine API; 1K · Low; higher resolutions/quality use separate rates",
+      "unitPricing": {
+        "input_cost_per_image": 0.01,
+        "output_cost_per_image": 0.04
+      }
+    },
+    "grok-imagine-image": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Imagine API; 1K; higher resolutions/quality use separate rates",
+      "unitPricing": {
+        "input_cost_per_image": 0.002,
+        "output_cost_per_image": 0.02
+      }
+    },
+    "grok-imagine-image-quality": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Imagine API; 1K; higher resolutions/quality use separate rates",
+      "unitPricing": {
+        "input_cost_per_image": 0.01,
+        "output_cost_per_image": 0.05
+      }
+    },
+    "grok-imagine-video-1.5": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Imagine API; 480p; higher resolutions/quality use separate rates",
+      "unitPricing": {
+        "input_cost_per_image": 0.01,
+        "output_cost_per_second": 0.08
+      }
+    },
+    "grok-imagine-video": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Imagine API; 480p; higher resolutions/quality use separate rates",
+      "unitPricing": {
+        "input_cost_per_image": 0.002,
+        "input_cost_per_second": 0.01,
+        "output_cost_per_second": 0.05
+      }
+    },
+    "grok-imagine-video-1.5-lite": {
+      "currency": "USD",
+      "source": "https://docs.x.ai/developers/pricing",
+      "condition": "Imagine API; 480p; higher resolutions/quality use separate rates",
+      "unitPricing": {
+        "input_cost_per_image": 0.01,
+        "output_cost_per_second": 0.02
+      }
+    },
+    "embed-v5.0-pro": {
+      "currency": "USD",
+      "source": "https://cohere.com/pricing",
+      "condition": "Per million tokens; native Embed 5 Pro",
+      "pricing": {
+        "input": 0.12
+      }
+    },
+    "embed-v5.0-fast": {
+      "currency": "USD",
+      "source": "https://cohere.com/pricing",
+      "condition": "Per million tokens; native Embed 5 Fast",
+      "pricing": {
+        "input": 0.08
+      }
+    },
+    "command-r-08-2024": {
+      "currency": "USD",
+      "source": "https://cohere.com/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6
+      }
+    },
+    "command-r7b-12-2024": {
+      "currency": "USD",
+      "source": "https://cohere.com/pricing",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.0375,
+        "output": 0.15
+      }
+    },
+    "command-a-03-2025": {
+      "currency": "USD",
+      "source": "https://cohere.com/blog/command-a",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.5,
+        "output": 10
+      }
+    },
+    "mistral-embed-2312": {
+      "currency": "USD",
+      "source": "https://docs.mistral.ai/models/mistral-embed-23-12",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.1
+      },
+      "aliases": [
+        "mistral-embed"
+      ]
+    },
+    "recraft-v4.1": {
+      "currency": "USD",
+      "source": "https://www.recraft.ai/pricing?tab=api",
+      "condition": "Native text-to-image API; editing separately billed",
+      "unitPricing": {
+        "output_cost_per_image": 0.035
+      }
+    },
+    "recraft-v4.1-pro": {
+      "currency": "USD",
+      "source": "https://www.recraft.ai/pricing?tab=api",
+      "condition": "Native text-to-image API; editing separately billed",
+      "unitPricing": {
+        "output_cost_per_image": 0.21
+      }
+    },
+    "recraft-v4.1-vector": {
+      "currency": "USD",
+      "source": "https://www.recraft.ai/pricing?tab=api",
+      "condition": "Native text-to-image API; editing separately billed",
+      "unitPricing": {
+        "output_cost_per_image": 0.08
+      }
+    },
+    "recraft-v4.1-pro-vector": {
+      "currency": "USD",
+      "source": "https://www.recraft.ai/pricing?tab=api",
+      "condition": "Native text-to-image API; editing separately billed",
+      "unitPricing": {
+        "output_cost_per_image": 0.3
+      }
+    },
+    "gen4.5": {
+      "currency": "USD",
+      "source": "https://docs.dev.runwayml.com/guides/pricing/",
+      "condition": "Runway native video; standard output format, minimum duration and format surcharges apply",
+      "unitPricing": {
+        "output_cost_per_second": 0.12
+      }
+    },
+    "gen4_turbo": {
+      "currency": "USD",
+      "source": "https://docs.dev.runwayml.com/guides/pricing/",
+      "condition": "Runway native video; standard output format, minimum duration and format surcharges apply",
+      "unitPricing": {
+        "output_cost_per_second": 0.05
+      }
+    },
+    "aleph2": {
+      "currency": "USD",
+      "source": "https://docs.dev.runwayml.com/guides/pricing/",
+      "condition": "Runway native video; standard output format, minimum duration and format surcharges apply",
+      "unitPricing": {
+        "output_cost_per_second": 0.28
+      }
+    },
+    "gen4_image": {
+      "currency": "USD",
+      "source": "https://docs.dev.runwayml.com/guides/pricing/",
+      "condition": "720p image; 1080p costs USD .08",
+      "unitPricing": {
+        "output_cost_per_image": 0.05
+      }
+    },
+    "gen4_image_turbo": {
+      "currency": "USD",
+      "source": "https://docs.dev.runwayml.com/guides/pricing/",
+      "condition": "Per image, any resolution",
+      "unitPricing": {
+        "output_cost_per_image": 0.02
+      }
+    },
+    "gpt-realtime-2.1": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-realtime-2.1",
+      "condition": "Separate text/audio token billing",
+      "modalityPricing": {
+        "text": {
+          "input": 4.0,
+          "cachedInput": 0.4,
+          "output": 24.0
+        },
+        "audio": {
+          "input": 32.0,
+          "cachedInput": 0.4,
+          "output": 64.0
+        },
+        "image": {
+          "input": 5.0,
+          "cachedInput": 0.5
+        }
+      }
+    },
+    "gpt-audio": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-audio",
+      "condition": "Separate text/audio token billing",
+      "modalityPricing": {
+        "text": {
+          "input": 2.5,
+          "output": 10.0
+        },
+        "audio": {
+          "input": 32.0,
+          "output": 64.0
+        }
+      },
+      "aliases": [
+        "gpt-audio-2025-08-28"
+      ]
+    },
+    "gpt-audio-mini": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-audio-mini",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.6,
+        "output": 2.4
+      },
+      "aliases": [
+        "gpt-audio-mini-2025-10-06",
+        "gpt-audio-mini-2025-12-15"
+      ]
+    },
+    "gpt-audio-1.5": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-audio-1.5",
+      "condition": "Separate text/audio token billing",
+      "modalityPricing": {
+        "text": {
+          "input": 2.5,
+          "output": 10.0
+        },
+        "audio": {
+          "input": 32.0,
+          "output": 64.0
+        }
+      }
+    },
+    "gpt-4o-mini-audio-preview": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini-audio-preview",
+      "condition": "Separate text/audio token billing",
+      "modalityPricing": {
+        "text": {
+          "input": 0.15,
+          "output": 0.6
+        },
+        "audio": {
+          "input": 10.0,
+          "output": 20.0
+        }
+      },
+      "aliases": [
+        "gpt-4o-mini-audio-preview-2024-12-17"
+      ]
+    },
+    "gpt-4o-mini-search-preview": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini-search-preview",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6
+      },
+      "aliases": [
+        "gpt-4o-mini-search-preview-2025-03-11"
+      ]
+    },
+    "gpt-4o-search-preview": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-4o-search-preview",
+      "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
+      "pricing": {
+        "input": 2.5,
+        "output": 10.0
+      },
+      "aliases": [
+        "gpt-4o-search-preview-2025-03-11"
+      ]
+    },
+    "gpt-4o-audio-preview": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-4o-audio-preview",
+      "condition": "Separate text/audio token billing",
+      "modalityPricing": {
+        "text": {
+          "input": 2.5,
+          "output": 10.0
+        },
+        "audio": {
+          "input": 40.0,
+          "output": 80.0
+        }
+      },
+      "aliases": [
+        "gpt-4o-audio-preview-2024-10-01",
+        "gpt-4o-audio-preview-2024-12-17",
+        "gpt-4o-audio-preview-2025-06-03"
+      ]
+    }
+  }
+}

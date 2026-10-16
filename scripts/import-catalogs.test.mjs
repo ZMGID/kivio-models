@@ -1,10 +1,41 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { buildCatalog } from './import-catalogs.mjs'
+import { assertOfficialPricing } from './official-pricing.mjs'
 
 const previous = entries => ({ _meta: { schemaVersion: 1, version: '2026-10-13.1', sources: [] }, ...entries })
 const model = (id, extra = {}) => ({ id, name: id, reasoning: false, tool_call: false, modalities: { input: ['text'], output: ['text'] }, limit: { context: 32000, output: 4000 }, ...extra })
 const feeds = (extra = {}) => ({ 'models-dev': {}, 'models-dev-canonical': {}, 'openrouter-all': { data: [] }, litellm: {}, ...extra })
+
+test('official prices replace stale imports, use a fixed FX rate, and leave unverified billing unknown', () => {
+  const original = previous({
+    reasoner: { displayName: 'Reasoner', contextWindow: 32000, capabilities: {}, pricing: { input: 99, output: 199, cachedInput: 9 } },
+    'vendor/reasoner': { displayName: 'Hosted', contextWindow: 8000, capabilities: {}, aliasOf: 'reasoner', pricing: { input: 8 } },
+    'vendor/reasoner:free': { displayName: 'Free route', contextWindow: 8000, capabilities: {}, variantOf: 'reasoner', pricing: { input: 0, output: 0 } },
+    unknown: { displayName: 'Unknown', contextWindow: 32000, capabilities: {}, pricing: { input: 0 }, unitPricing: { output_cost_per_image: 0.04 } },
+    image: { displayName: 'Image', contextWindow: 0, capabilities: { imageGeneration: true }, pricing: { input: 0, output: 0 } },
+  })
+  const policy = {
+    schemaVersion: 1, asOf: '2026-10-16',
+    exchangeRate: { date: '2026-10-16', cnyPerUsd: 6.722, source: 'https://bank.example/rate' },
+    models: {
+      reasoner: { currency: 'CNY', pricing: { input: 6.722, output: 13.444 }, source: 'https://lab.example/pricing', region: 'China' },
+      image: { currency: 'USD', unitPricing: { output_cost_per_image: 0.025 }, source: 'https://lab.example/images' },
+    },
+  }
+  const result = buildCatalog(original, feeds({ officialPricing: policy }), '2026-10-16.2')
+  assert.deepEqual(result.database.reasoner.pricing, { input: 1, output: 2 })
+  assert.deepEqual(result.database['vendor/reasoner'].pricing, { input: 1, output: 2 })
+  assert.equal(result.database['vendor/reasoner'].contextWindow, 8000)
+  assert.equal(result.database.reasoner.pricingSource.exchangeRate.cnyPerUsd, 6.722)
+  for (const id of ['unknown', 'vendor/reasoner:free', 'image']) assert.equal('pricing' in result.database[id], false, id)
+  assert.equal('unitPricing' in result.database.unknown, false)
+  assert.equal(result.database.image.unitPricing.output_cost_per_image, 0.025)
+  assert.equal(original.reasoner.pricing.input, 99)
+  assert.doesNotThrow(() => assertOfficialPricing(result.database, policy))
+  result.database.unknown.pricing = { input: 0, output: 0 }
+  assert.throws(() => assertOfficialPricing(result.database, policy), /unknown.pricing/)
+})
 
 test('curated values survive imports and normalized ID spellings, while first-party pricing wins over hosted prices', () => {
   const original = previous({ 'claude-sample-4.5': { displayName: 'Curated', contextWindow: 200000, maxOutput: 64000, capabilities: { reasoning: true }, pricing: { input: 9 }, reasoningEfforts: ['high', 'max'] } })

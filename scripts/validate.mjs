@@ -1,4 +1,5 @@
 import { readFile } from 'node:fs/promises'
+import { assertOfficialPricing } from './official-pricing.mjs'
 
 export const MODEL_DATABASE_REPO = 'ZMGID/kivio-models'
 const MAX_BYTES = 4 * 1024 * 1024
@@ -39,6 +40,7 @@ export function validateDatabase(text) {
 
 const file = process.argv[2] ?? 'v1/modelDatabase.json'
 const data = validateDatabase(await readFile(file, 'utf8'))
+assertOfficialPricing(data, JSON.parse(await readFile(new URL('../sources/official-pricing.json', import.meta.url), 'utf8')))
 if (process.argv[3]) {
   const previous = validateDatabase(await readFile(process.argv[3], 'utf8'))
   if (compareVersions(data._meta.version, previous._meta.version) <= 0) throw new Error('Every published update needs a higher version')

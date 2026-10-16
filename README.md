@@ -33,12 +33,12 @@ Kivio 发版流程会先固定模型库提交 SHA，再把同一份经过校验�
 
 ## 收录来源与批量维护
 
-当前 `2026-10-16.1` 快照收录 2,756 个可识别模型 ID，其中 881 条为兼容别名。ID 数量包含供应商限定 ID、日期快照及免费变体，不等于底层独立模型的数量。已清理 232 个已弃用、已到退役日期或明显过时的型号 ID；仍在服务的向量模型保留，以兼容已有向量库。目录收录不代表供应商仍在服务该模型，也不代表 Kivio 已实现该供应商的专用协议。
+当前 `2026-10-16.2` 快照收录 2,756 个可识别模型 ID，其中 881 条为兼容别名。ID 数量包含供应商限定 ID、日期快照及免费变体，不等于底层独立模型的数量。已清理 232 个已弃用、已到退役日期或明显过时的型号 ID；仍在服务的向量模型保留，以兼容已有向量库。目录收录不代表供应商仍在服务该模型，也不代表 Kivio 已实现该供应商的专用协议。
 
 来源：
 
 - [Models.dev](https://github.com/anomalyco/models.dev)：优先使用模型原厂资料和供应商无关的模型记录；主要推理平台用于补缺，转售商价格不作为裸模型 ID 的统一价格。
-- [OpenRouter 全模态目录](https://openrouter.ai/api/v1/models?output_modalities=all)：补充聊天、图像、视频和向量模型；保留 `:free`、`:batch` 等变体的限定 ID。价格按来源标明，token 单价统一换算为每百万 token 的 USD。
+- [OpenRouter 全模态目录](https://openrouter.ai/api/v1/models?output_modalities=all)：补充聊天、图像、视频和向量模型；保留 `:free`、`:batch` 等变体的限定 ID。此源只补充非价格资料；发布价格由下述官方价格表统一覆盖。
 - [LiteLLM 模型目录](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json)：补充开源和向量模型，排除按尺寸/画质计费的配置组合及通用图片编辑操作。
 - [Voyage 官方资料](https://www.mongodb.com/docs/voyageai/models/)：核对新向量模型的默认维度和多模态能力；Cohere 的轻量向量模型也用[官方模型表](https://docs.cohere.com/v2/docs/models)核对。补充资料维护在 `sources/verified-models.json`。
 
@@ -52,7 +52,7 @@ node --test scripts/import-catalogs.test.mjs
 node scripts/validate.mjs
 ```
 
-`--fetch` 将源数据下载到指定目录。省略它可重复使用已经审核的源快照。先审查生成的 JSON 和导入报告，再发布；脚本不会自动推送。导入保留已有记录的资料，但会应用下述清理规则；因此原有条目的修订仍应在 `v1/modelDatabase.json` 中依据原厂资料手动完成。未知价格、缺失输出上限和缺失维度保持为空；图片/视频的按张、按秒价格不塞进 token 价格字段。官方补充数据中的 `pricing: null` 表示撤下未能核实的上游报价，生成后的模型记录会省略该字段。
+`--fetch` 将源数据下载到指定目录。省略它可重复使用已经审核的源快照。先审查生成的 JSON 和导入报告，再发布；脚本不会自动推送。导入保留已有记录的资料，但会应用下述清理规则；因此原有条目的非价格修订仍应在 `v1/modelDatabase.json` 中依据原厂资料手动完成。价格单独维护在 `sources/official-pricing.json`，导入最后一步统一应用。未知价格、缺失输出上限和缺失维度保持为空；图片/视频的按张、按秒价格不塞进 token 价格字段。官方补充数据中的 `pricing: null` 表示撤下未能核实的上游报价，生成后的模型记录会省略该字段。
 
 ## 旧模型清理规则
 
@@ -70,3 +70,24 @@ node scripts/validate.mjs
 - 官方 GPT-5.5、GPT-5.6（Cyber 除外）和已核验 GPT-6 型号的上下文为 1,050,000，最大输出为 128,000；GPT-5.6 Cyber 上下文为 400,000。GPT-5.5 Pro 的档位为 `medium / high / xhigh`。
 
 模型原生能力与供应商兼容参数不是同一件事。仅对有明确身份关系的别名传播已核验字段；保留供应商专用路由、免费变体的独立限制和报价。用户覆盖仍优先。Qwen 开源模型的关闭思考需要供应商正确处理 `enable_thinking` / `chat_template_kwargs`；本次不把它们的 `thinkingOff` 从未知改成已支持。
+
+
+## 2026-10-16 价格核验
+
+`2026-10-16.2` 对全部 2,756 个 ID 应用官方报价规则，757 条取得可溯源报价（665 条文本 token 价格，92 条按图片、时长或分模态计费资料，数量含别名）。撤下 680 条未经原厂确认的旧报价，包括转售商价格、免费额度、开源模型的零值占位和单位混用。缺失代表未知，不代表免费。逐项修改前后及来源见 `PRICING-VERIFICATION-REPORT.json`。
+
+- 发布价格的唯一维护入口是 `sources/official-pricing.json`。每条记录保留官方链接、原币种、适用地域、计费条件；`pricingSource` 同步写入发布快照。汇总目录仅补充模型资料，不能覆盖官方报价。
+- `pricing` 仍为 USD／百万文本 token 的基础参考价。上下文阶梯、思考/非思考差异放入 `pricingTiers`；图像、音频 token 单独放入 `modalityPricing`，按张/秒/字符等计费放入 `unitPricing`。现有客户端只消费 `pricing`，不把其他单位误作文本 token，也未实现按条件自动切换所有价格阶梯。
+- 原厂有明确美元价时采用美元价（例如小米海外 API）；仅人民币报价按 **2026-10-16 的 1 USD = 6.722 CNY** 固定换算。来源为[中国外汇交易中心授权公布的当日汇率中间价](https://www.xinhuanet.com/20261016/7095dae31ecc47eeb2ea7679834be269/c.html)。原始人民币金额与汇率日期保留，导入时不联网浮动换汇。Qwen 采用北京地域价格，腾讯混元采用广州地域价格。
+- 官方免费模型必须有直接的零价依据；第三方 `free` 路由不自动继承原厂付费价或被当作原厂免费。相同身份的供应商限定 ID 使用原厂参考价，不代表该供应商的实际账单。
+- 当前促销价保留在参考价中，期限和长期价格写在条件说明。长期会变的价格仍需定期核验；本次快照不会随汇率或促销日期自行变化。
+
+仅更新已核验价格，无需重新下载第三方目录：
+
+```sh
+node scripts/import-catalogs.mjs --pricing-only --version 2026-10-16.3
+node --test scripts/import-catalogs.test.mjs
+node scripts/validate.mjs
+```
+
+验证器会按官方价格表重新计算并比对所有价格字段、来源和固定汇率，阻止手改发布快照或导入旧报价造成的偏差。发布仍需递增版本。用户自己的价格覆盖继续优先，按上下文、缓存写入、工具调用、地域和第三方渠道产生的实际费用应以供应商账单为准。
