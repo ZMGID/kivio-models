@@ -1,11 +1,39 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
+import { readFileSync } from 'node:fs'
 import { buildCatalog } from './import-catalogs.mjs'
 import { assertOfficialPricing } from './official-pricing.mjs'
 
 const previous = entries => ({ _meta: { schemaVersion: 1, version: '2026-10-13.1', sources: [] }, ...entries })
 const model = (id, extra = {}) => ({ id, name: id, reasoning: false, tool_call: false, modalities: { input: ['text'], output: ['text'] }, limit: { context: 32000, output: 4000 }, ...extra })
 const feeds = (extra = {}) => ({ 'models-dev': {}, 'models-dev-canonical': {}, 'openrouter-all': { data: [] }, litellm: {}, ...extra })
+
+test('published October refresh preserves verified controls, limits, and independently priced variants', () => {
+  const database = JSON.parse(readFileSync(new URL('../v1/modelDatabase.json', import.meta.url), 'utf8'))
+  for (const id of ['gpt-6.1-terra', 'openai/gpt-6.1-terra']) {
+    assert.equal(database[id].contextWindow, 1050000)
+    assert.equal(database[id].thinkingOff, true)
+    assert.equal(database[id].pricing.input, 1)
+    assert.deepEqual(database[id].reasoningEfforts, ['low', 'medium', 'high', 'xhigh', 'max'])
+  }
+  for (const id of ['kimi-k3.1-pro', 'moonshotai/kimi-k3.1-pro']) {
+    assert.equal(database[id].thinkingOff, false)
+    assert.equal(database[id].maxOutput, 1048576)
+    assert.equal(database[id].pricing.output, 10)
+  }
+  assert.equal(database['kimi-k3.1-pro-highspeed'].pricing.output, 20)
+  for (const id of ['minimax-m3.1-flash', 'minimax/minimax-m3.1-flash']) {
+    assert.equal(database[id].thinkingOff, false)
+    assert.equal(database[id].maxOutput, 524288)
+    assert.equal(database[id].pricing.output, 0.6)
+  }
+  assert.equal(database['gemini-4-argon'].maxOutput, 65536)
+  assert.equal(database['google/gemini-4-argon'].maxOutput, 65536)
+  assert.equal(database['inception/mercury-3'].pricing.output, 0.35)
+  assert.equal(database['openai/gpt-6.1-terra:batch'].pricing, undefined)
+  assert.equal(database['gpt-4.1-nano'], undefined)
+  assert(database['gpt-4.1']) // A future retirement announcement is not a shutdown.
+})
 
 test('official prices replace stale imports, use a fixed FX rate, and leave unverified billing unknown', () => {
   const original = previous({

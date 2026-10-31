@@ -1,0 +1,1652 @@
+{
+  "date": "2026-10-31",
+  "changes": [
+    {
+      "id": "gpt-6.1-terra",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+      "before": {
+        "displayName": "GPT-6.1 Terra",
+        "contextWindow": 1050000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "openai"
+        },
+        "maxOutput": 128000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-26",
+        "canonicalId": "openai/gpt-6.1-terra",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "after": {
+        "displayName": "GPT-6.1 Terra",
+        "contextWindow": 1050000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "openai"
+        },
+        "maxOutput": 128000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-26",
+        "canonicalId": "openai/gpt-6.1-terra",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "thinkingOff": true,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-6.1-terra",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+      "before": {
+        "displayName": "GPT-6.1 Terra",
+        "contextWindow": 1050000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 128000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-26",
+        "canonicalId": "openai/gpt-6.1-terra"
+      },
+      "after": {
+        "displayName": "GPT-6.1 Terra",
+        "contextWindow": 1050000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 128000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-26",
+        "canonicalId": "openai/gpt-6.1-terra",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "thinkingOff": true,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+        }
+      }
+    },
+    {
+      "id": "openai.gpt-6.1-terra",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+      "before": {
+        "displayName": "GPT-6.1 Terra",
+        "contextWindow": 1050000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "amazon-bedrock"
+        },
+        "maxOutput": 128000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-26",
+        "canonicalId": "openai/gpt-6.1-terra",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "after": {
+        "displayName": "GPT-6.1 Terra",
+        "contextWindow": 1050000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "amazon-bedrock"
+        },
+        "maxOutput": 128000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-26",
+        "canonicalId": "openai/gpt-6.1-terra",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "thinkingOff": true,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+        }
+      }
+    },
+    {
+      "id": "kimi-k3.1-pro",
+      "source": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+      "before": {
+        "displayName": "Kimi K3.1 Pro",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "moonshotai"
+        },
+        "maxOutput": 1048576,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-23",
+        "canonicalId": "moonshotai/kimi-k3.1-pro",
+        "reasoningEfforts": [
+          "low",
+          "high",
+          "max"
+        ]
+      },
+      "after": {
+        "displayName": "Kimi K3.1 Pro",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "moonshotai"
+        },
+        "maxOutput": 1048576,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-23",
+        "canonicalId": "moonshotai/kimi-k3.1-pro",
+        "reasoningEfforts": [
+          "low",
+          "high",
+          "max"
+        ],
+        "thinkingOff": false,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart"
+        }
+      }
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "source": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+      "before": {
+        "displayName": "Kimi K3.1 Pro",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 131072,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-23",
+        "canonicalId": "moonshotai/kimi-k3.1-pro"
+      },
+      "after": {
+        "displayName": "Kimi K3.1 Pro",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 131072,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-23",
+        "canonicalId": "moonshotai/kimi-k3.1-pro",
+        "reasoningEfforts": [
+          "low",
+          "high",
+          "max"
+        ],
+        "thinkingOff": false,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart"
+        }
+      }
+    },
+    {
+      "id": "kimi-k3.1-pro-highspeed",
+      "source": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+      "before": {
+        "displayName": "Kimi K3.1 Pro Highspeed",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "moonshotai"
+        },
+        "maxOutput": 1048576,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-23",
+        "canonicalId": "moonshotai/kimi-k3.1-pro",
+        "reasoningEfforts": [
+          "low",
+          "high",
+          "max"
+        ]
+      },
+      "after": {
+        "displayName": "Kimi K3.1 Pro Highspeed",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "moonshotai"
+        },
+        "maxOutput": 1048576,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-23",
+        "canonicalId": "moonshotai/kimi-k3.1-pro",
+        "reasoningEfforts": [
+          "low",
+          "high",
+          "max"
+        ],
+        "thinkingOff": false,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart"
+        }
+      }
+    },
+    {
+      "id": "minimax-m3.1-flash",
+      "source": "https://platform.minimax.io/docs/api-reference/text-chat-openai",
+      "before": {
+        "displayName": "MiniMax-M3.1-Flash",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": false
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "minimax"
+        },
+        "maxOutput": 524288,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-19",
+        "canonicalId": "minimax/minimax-m3.1-flash",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "after": {
+        "displayName": "MiniMax-M3.1-Flash",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": false,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "minimax"
+        },
+        "maxOutput": 524288,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-19",
+        "canonicalId": "minimax/minimax-m3.1-flash",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "thinkingOff": false,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://platform.minimax.io/docs/api-reference/text-chat-openai"
+        }
+      }
+    },
+    {
+      "id": "minimax/minimax-m3.1-flash",
+      "source": "https://platform.minimax.io/docs/api-reference/text-chat-openai",
+      "before": {
+        "displayName": "MiniMax-M3.1-Flash",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 512000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-19",
+        "canonicalId": "minimax/minimax-m3.1-flash"
+      },
+      "after": {
+        "displayName": "MiniMax-M3.1-Flash",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 512000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-19",
+        "canonicalId": "minimax/minimax-m3.1-flash",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "thinkingOff": false,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://platform.minimax.io/docs/api-reference/text-chat-openai"
+        }
+      }
+    },
+    {
+      "id": "mercury-3",
+      "source": "https://docs.inceptionlabs.ai/get-started/models",
+      "before": {
+        "displayName": "Mercury 3",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": false,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "inception"
+        },
+        "maxOutput": 131072,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-16",
+        "canonicalId": "inception/mercury-3",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      "after": {
+        "displayName": "Mercury 3",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": false,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "inception"
+        },
+        "maxOutput": 131072,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-16",
+        "canonicalId": "inception/mercury-3",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "temperature": 1,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://docs.inceptionlabs.ai/get-started/models"
+        }
+      }
+    },
+    {
+      "id": "inception/mercury-3",
+      "source": "https://docs.inceptionlabs.ai/get-started/models",
+      "before": {
+        "displayName": "Mercury 3",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": false,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 131072,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-16",
+        "canonicalId": "inception/mercury-3"
+      },
+      "after": {
+        "displayName": "Mercury 3",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": false,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 131072,
+        "modalities": {
+          "input": [
+            "text"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-16",
+        "canonicalId": "inception/mercury-3",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "temperature": 1,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://docs.inceptionlabs.ai/get-started/models"
+        }
+      }
+    },
+    {
+      "id": "gemini-4-argon",
+      "source": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+      "before": {
+        "displayName": "Gemini 4 Argon",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": true,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "google"
+        },
+        "maxOutput": 32768,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-13",
+        "canonicalId": "google/gemini-4-argon",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "pricing": {
+          "input": 2,
+          "output": 10,
+          "cachedInput": 0.1
+        },
+        "pricingSource": {
+          "kind": "official",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "date": "2026-10-16",
+          "model": "gemini-4-argon",
+          "currency": "USD",
+          "tokenUnit": "per million tokens",
+          "condition": "Standard paid tier; text input/output; Input price: $2.00 through November 30, 2026. $4.00 starting December 1, 2026.; Output price (including thinking tokens): $10.00 through November 30, 2026. $20.00 starting December 1, 2026.; Context caching price: $0.10 through November 30, 2026. $0.20 starting December 1, 2026. Implicit caching only (explicit caching is not supported)."
+        }
+      },
+      "after": {
+        "displayName": "Gemini 4 Argon",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": true,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "google"
+        },
+        "maxOutput": 65536,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-13",
+        "canonicalId": "google/gemini-4-argon",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "pricing": {
+          "input": 2,
+          "output": 10,
+          "cachedInput": 0.1
+        },
+        "pricingSource": {
+          "kind": "official",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "date": "2026-10-16",
+          "model": "gemini-4-argon",
+          "currency": "USD",
+          "tokenUnit": "per million tokens",
+          "condition": "Standard paid tier; text input/output; Input price: $2.00 through November 30, 2026. $4.00 starting December 1, 2026.; Output price (including thinking tokens): $10.00 through November 30, 2026. $20.00 starting December 1, 2026.; Context caching price: $0.10 through November 30, 2026. $0.20 starting December 1, 2026. Implicit caching only (explicit caching is not supported)."
+        },
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon"
+        }
+      }
+    },
+    {
+      "id": "google/gemini-4-argon",
+      "source": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+      "before": {
+        "displayName": "Gemini 4 Argon",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": true,
+          "functionCalling": true,
+          "reasoning": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 65536,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-13",
+        "canonicalId": "google/gemini-4-argon",
+        "pricing": {
+          "input": 2,
+          "output": 10,
+          "cachedInput": 0.1
+        },
+        "pricingSource": {
+          "kind": "official",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "date": "2026-10-16",
+          "model": "gemini-4-argon",
+          "currency": "USD",
+          "tokenUnit": "per million tokens",
+          "condition": "Standard paid tier; text input/output; Input price: $2.00 through November 30, 2026. $4.00 starting December 1, 2026.; Output price (including thinking tokens): $10.00 through November 30, 2026. $20.00 starting December 1, 2026.; Context caching price: $0.10 through November 30, 2026. $0.20 starting December 1, 2026. Implicit caching only (explicit caching is not supported)."
+        }
+      },
+      "after": {
+        "displayName": "Gemini 4 Argon",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": true,
+          "functionCalling": true,
+          "reasoning": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 65536,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video",
+            "audio",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-13",
+        "canonicalId": "google/gemini-4-argon",
+        "pricing": {
+          "input": 2,
+          "output": 10,
+          "cachedInput": 0.1
+        },
+        "pricingSource": {
+          "kind": "official",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "date": "2026-10-16",
+          "model": "gemini-4-argon",
+          "currency": "USD",
+          "tokenUnit": "per million tokens",
+          "condition": "Standard paid tier; text input/output; Input price: $2.00 through November 30, 2026. $4.00 starting December 1, 2026.; Output price (including thinking tokens): $10.00 through November 30, 2026. $20.00 starting December 1, 2026.; Context caching price: $0.10 through November 30, 2026. $0.20 starting December 1, 2026. Implicit caching only (explicit caching is not supported)."
+        },
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon"
+        }
+      }
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+      "before": {
+        "displayName": "Claude Haiku 5.5",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "anthropic"
+        },
+        "maxOutput": 128000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-07",
+        "canonicalId": "anthropic/claude-haiku-5-5",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "pricing": {
+          "input": 0.1,
+          "cachedInput": 0.01,
+          "output": 0.5
+        },
+        "pricingTiers": [
+          {
+            "condition": "More than 100000 input tokens",
+            "pricing": {
+              "input": 0.5,
+              "cachedInput": 0.05,
+              "output": 2.5
+            }
+          }
+        ],
+        "pricingSource": {
+          "kind": "official",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+          "date": "2026-10-16",
+          "model": "claude-haiku-5.5",
+          "currency": "USD",
+          "tokenUnit": "per million tokens",
+          "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier"
+        }
+      },
+      "after": {
+        "displayName": "Claude Haiku 5.5",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "anthropic"
+        },
+        "maxOutput": 128000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-07",
+        "canonicalId": "anthropic/claude-haiku-5-5",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "pricing": {
+          "input": 0.1,
+          "cachedInput": 0.01,
+          "output": 0.5
+        },
+        "pricingTiers": [
+          {
+            "condition": "More than 100000 input tokens",
+            "pricing": {
+              "input": 0.5,
+              "cachedInput": 0.05,
+              "output": 2.5
+            }
+          }
+        ],
+        "pricingSource": {
+          "kind": "official",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+          "date": "2026-10-16",
+          "model": "claude-haiku-5.5",
+          "currency": "USD",
+          "tokenUnit": "per million tokens",
+          "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier"
+        },
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview"
+        }
+      }
+    },
+    {
+      "id": "anthropic/claude-haiku-5-5",
+      "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+      "before": {
+        "displayName": "Claude Haiku 5.5",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 128000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-07",
+        "canonicalId": "anthropic/claude-haiku-5-5",
+        "pricing": {
+          "input": 0.1,
+          "cachedInput": 0.01,
+          "output": 0.5
+        },
+        "pricingTiers": [
+          {
+            "condition": "More than 100000 input tokens",
+            "pricing": {
+              "input": 0.5,
+              "cachedInput": 0.05,
+              "output": 2.5
+            }
+          }
+        ],
+        "pricingSource": {
+          "kind": "official",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+          "date": "2026-10-16",
+          "model": "claude-haiku-5.5",
+          "currency": "USD",
+          "tokenUnit": "per million tokens",
+          "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier"
+        }
+      },
+      "after": {
+        "displayName": "Claude Haiku 5.5",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 128000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "pdf"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-07",
+        "canonicalId": "anthropic/claude-haiku-5-5",
+        "pricing": {
+          "input": 0.1,
+          "cachedInput": 0.01,
+          "output": 0.5
+        },
+        "pricingTiers": [
+          {
+            "condition": "More than 100000 input tokens",
+            "pricing": {
+              "input": 0.5,
+              "cachedInput": 0.05,
+              "output": 2.5
+            }
+          }
+        ],
+        "pricingSource": {
+          "kind": "official",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+          "date": "2026-10-16",
+          "model": "claude-haiku-5.5",
+          "currency": "USD",
+          "tokenUnit": "per million tokens",
+          "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier"
+        },
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview"
+        }
+      }
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro-highspeed",
+      "source": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+      "before": {
+        "displayName": "Kimi K3.1 Pro Highspeed",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "novita-ai"
+        },
+        "maxOutput": 1048576,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-23",
+        "canonicalId": "moonshotai/kimi-k3.1-pro",
+        "reasoningEfforts": [
+          "low",
+          "high",
+          "max"
+        ]
+      },
+      "after": {
+        "displayName": "Kimi K3.1 Pro Highspeed",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "structuredOutput": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/api.json",
+          "provider": "novita-ai"
+        },
+        "maxOutput": 1048576,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-23",
+        "canonicalId": "moonshotai/kimi-k3.1-pro",
+        "reasoningEfforts": [
+          "low",
+          "high",
+          "max"
+        ],
+        "thinkingOff": false,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart"
+        }
+      }
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash-1017",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "before": {
+        "displayName": "DeepSeek V4.1 Flash 1017",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 384000,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-17",
+        "canonicalId": "deepseek/deepseek-v4.1-flash-1017"
+      },
+      "after": {
+        "displayName": "DeepSeek V4.1 Flash 1017",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": false,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 384000,
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-17",
+        "canonicalId": "deepseek/deepseek-v4.1-flash-1017",
+        "thinkingOff": true,
+        "reasoningEfforts": [
+          "low",
+          "high",
+          "max"
+        ],
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://api-docs.deepseek.com/quick_start/pricing/"
+        }
+      }
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "source": "https://platform.kimi.ai/docs/api/chat",
+      "before": {
+        "displayName": "Kimi K3.1 Pro",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 131072,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-23",
+        "canonicalId": "moonshotai/kimi-k3.1-pro",
+        "reasoningEfforts": [
+          "low",
+          "high",
+          "max"
+        ],
+        "thinkingOff": false,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart"
+        },
+        "pricing": {
+          "input": 2,
+          "output": 10,
+          "cachedInput": 0.2
+        },
+        "pricingSource": {
+          "kind": "official",
+          "url": "https://platform.kimi.ai/docs/pricing/chat",
+          "date": "2026-10-31",
+          "model": "kimi-k3.1-pro",
+          "currency": "USD",
+          "tokenUnit": "per million tokens",
+          "condition": "Standard inference; cache writes and web search billed separately; Batch is 60% of standard."
+        }
+      },
+      "after": {
+        "displayName": "Kimi K3.1 Pro",
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 1048576,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-23",
+        "canonicalId": "moonshotai/kimi-k3.1-pro",
+        "reasoningEfforts": [
+          "low",
+          "high",
+          "max"
+        ],
+        "thinkingOff": false,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://platform.kimi.ai/docs/api/chat"
+        },
+        "pricing": {
+          "input": 2,
+          "output": 10,
+          "cachedInput": 0.2
+        },
+        "pricingSource": {
+          "kind": "official",
+          "url": "https://platform.kimi.ai/docs/pricing/chat",
+          "date": "2026-10-31",
+          "model": "kimi-k3.1-pro",
+          "currency": "USD",
+          "tokenUnit": "per million tokens",
+          "condition": "Standard inference; cache writes and web search billed separately; Batch is 60% of standard."
+        }
+      }
+    },
+    {
+      "id": "minimax/minimax-m3.1-flash",
+      "source": "https://platform.minimax.io/docs/api-reference/text-chat-openai",
+      "before": {
+        "displayName": "MiniMax-M3.1-Flash",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 512000,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-19",
+        "canonicalId": "minimax/minimax-m3.1-flash",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "thinkingOff": false,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://platform.minimax.io/docs/api-reference/text-chat-openai"
+        },
+        "pricing": {
+          "input": 0.15,
+          "output": 0.6,
+          "cachedInput": 0.015
+        },
+        "pricingSource": {
+          "kind": "official",
+          "url": "https://platform.minimax.io/docs/pricing/overview",
+          "date": "2026-10-31",
+          "model": "minimax-m3.1-flash",
+          "currency": "USD",
+          "tokenUnit": "per million tokens",
+          "condition": "Standard pay-as-you-go; text tokens; excludes the earlier Flash Preview route."
+        }
+      },
+      "after": {
+        "displayName": "MiniMax-M3.1-Flash",
+        "contextWindow": 1000000,
+        "capabilities": {
+          "vision": true,
+          "videoInput": true,
+          "audioInput": false,
+          "functionCalling": true,
+          "reasoning": true,
+          "streaming": true
+        },
+        "modelType": "chat",
+        "source": {
+          "catalog": "models.dev",
+          "url": "https://models.dev/models.json"
+        },
+        "maxOutput": 524288,
+        "modalities": {
+          "input": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "releaseDate": "2026-10-19",
+        "canonicalId": "minimax/minimax-m3.1-flash",
+        "reasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "thinkingOff": false,
+        "verification": {
+          "date": "2026-10-31",
+          "url": "https://platform.minimax.io/docs/api-reference/text-chat-openai"
+        },
+        "pricing": {
+          "input": 0.15,
+          "output": 0.6,
+          "cachedInput": 0.015
+        },
+        "pricingSource": {
+          "kind": "official",
+          "url": "https://platform.minimax.io/docs/pricing/overview",
+          "date": "2026-10-31",
+          "model": "minimax-m3.1-flash",
+          "currency": "USD",
+          "tokenUnit": "per million tokens",
+          "condition": "Standard pay-as-you-go; text tokens; excludes the earlier Flash Preview route."
+        }
+      }
+    }
+  ]
+}
