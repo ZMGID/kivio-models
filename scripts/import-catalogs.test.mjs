@@ -11,9 +11,13 @@ const feeds = (extra = {}) => ({ 'models-dev': {}, 'models-dev-canonical': {}, '
 test('published October refresh preserves verified controls, limits, and independently priced variants', () => {
   const database = JSON.parse(readFileSync(new URL('../v1/modelDatabase.json', import.meta.url), 'utf8'))
   for (const id of ['gpt-6.1-terra', 'openai/gpt-6.1-terra']) {
-    assert.equal(database[id].contextWindow, 1050000)
+    assert.equal(database[id].contextWindow, 500000)
     assert.equal(database[id].pricing.input, 1)
     assert.deepEqual(database[id].reasoningEfforts, ['low', 'medium', 'high', 'xhigh', 'max'])
+  }
+  const codex = JSON.parse(readFileSync(new URL('../sources/codex-models-2026-10-31.json', import.meta.url), 'utf8'))
+  for (const [name, reference] of Object.entries(codex.models)) {
+    for (const id of [name, 'openai/' + name]) assert.equal(database[id].contextWindow, reference.contextWindow, id)
   }
   assert.equal(database['gpt-6.1-terra'].thinkingOff, false)
   assert.equal(database['gpt-5.4'].contextWindow, 1000000)
@@ -22,7 +26,7 @@ test('published October refresh preserves verified controls, limits, and indepen
   assert.deepEqual(database['gpt-5.5-pro'].reasoningEfforts, ['low', 'medium', 'high', 'xhigh'])
   assert.equal(database['openai-codex/gpt-6-astra'].contextWindow, 272000)
   assert.equal(database['openai-codex/gpt-6.1-sol'].contextWindow, 500000)
-  assert.equal(database['gpt-6.1-sol'].contextWindow, 1050000)
+  assert.equal(database['gpt-6.1-sol'].contextWindow, 500000)
   assert.equal(database['gpt-6.1-sol'].pricingSource.kind, 'catalog')
   for (const id of ['kimi-k3.1-pro', 'moonshotai/kimi-k3.1-pro']) {
     assert.equal(database[id].thinkingOff, false)

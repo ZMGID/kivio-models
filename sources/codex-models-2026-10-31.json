@@ -1,0 +1,30 @@
+{
+  "fetchedAt": "2026-10-31T08:11:50.995338700Z",
+  "clientVersion": "0.166.0",
+  "models": {
+    "gpt-5.6-luna": {
+      "contextWindow": 272000
+    },
+    "gpt-5.6-sol": {
+      "contextWindow": 272000
+    },
+    "gpt-5.6-terra": {
+      "contextWindow": 272000
+    },
+    "gpt-6-astra": {
+      "contextWindow": 272000
+    },
+    "gpt-6-luna": {
+      "contextWindow": 272000
+    },
+    "gpt-6-sol": {
+      "contextWindow": 272000
+    },
+    "gpt-6.1-sol": {
+      "contextWindow": 500000
+    },
+    "gpt-6.1-terra": {
+      "contextWindow": 500000
+    }
+  }
+}
