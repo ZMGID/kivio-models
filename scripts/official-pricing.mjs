@@ -15,7 +15,7 @@ export function assertOfficialPricing(database, policy) {
   if (!isDeepStrictEqual(database._meta.pricingPolicy, expected._meta.pricingPolicy)) throw new Error('Missing or stale official pricing policy')
 }
 
-/** Official rate cards are the sole owner of published reference prices. */
+/** The reference-price registry owns published prices, including reviewed catalog overrides. */
 export function applyOfficialPricing(database, policy) {
   if (policy.schemaVersion !== 1 || !/^\d{4}-\d{2}-\d{2}$/.test(policy.asOf)) throw new Error('Invalid official pricing policy')
   const rate = policy.exchangeRate
@@ -59,7 +59,7 @@ export function applyOfficialPricing(database, policy) {
       if (record.modalityPricing) entry.modalityPricing = Object.fromEntries(Object.entries(record.modalityPricing).map(([modality, prices]) => [modality, convert(prices, record.currency)]))
       if (record.tiers) entry.pricingTiers = record.tiers.map(tier => ({ ...tier, pricing: convert(tier.pricing, record.currency) }))
       entry.pricingSource = {
-        kind: 'official', url: record.source, date: policy.asOf, model,
+        kind: record.kind ?? 'official', url: record.source, date: policy.asOf, model,
         currency: 'USD', ...(record.pricing || record.modalityPricing ? { tokenUnit: 'per million tokens' } : {}),
         ...(record.region ? { region: record.region } : {}),
         ...(record.condition ? { condition: record.condition } : {}),

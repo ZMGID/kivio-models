@@ -293,10 +293,39 @@
       "xhigh",
       "max"
     ],
-    "thinkingOff": true,
+    "thinkingOff": false,
     "verification": {
       "date": "2026-10-31",
-      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openai",
+      "model": "gpt-6.1-terra",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "lowest-effort"
+    },
+    "catalogCost": {
+      "cacheRead": 0.05,
+      "cacheWrite": 1.25,
+      "input": 1,
+      "longContext": {
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5,
+        "input": 2,
+        "inputThreshold": 272000,
+        "output": 7.5
+      },
+      "output": 5
     }
   },
   "openai/gpt-6.1-terra": {
@@ -335,10 +364,39 @@
       "xhigh",
       "max"
     ],
-    "thinkingOff": true,
+    "thinkingOff": false,
     "verification": {
       "date": "2026-10-31",
-      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openai",
+      "model": "gpt-6.1-terra",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "lowest-effort"
+    },
+    "catalogCost": {
+      "cacheRead": 0.05,
+      "cacheWrite": 1.25,
+      "input": 1,
+      "longContext": {
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5,
+        "input": 2,
+        "inputThreshold": 272000,
+        "output": 7.5
+      },
+      "output": 5
     }
   },
   "openai.gpt-6.1-terra": {
@@ -550,7 +608,34 @@
     "thinkingOff": false,
     "verification": {
       "date": "2026-10-31",
-      "url": "https://platform.minimax.io/docs/api-reference/text-chat-openai"
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "minimax",
+      "model": "MiniMax-M3.1-Flash",
+      "thinking": {
+        "effortMap": {
+          "high": "high",
+          "low": "low",
+          "medium": "medium"
+        },
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "anthropic-adaptive",
+        "requiresEffort": true
+      }
+    },
+    "catalogCost": {
+      "cacheRead": 0.015,
+      "cacheWrite": 0,
+      "input": 0.15,
+      "output": 0.6
     }
   },
   "minimax/minimax-m3.1-flash": {
@@ -592,7 +677,34 @@
     "thinkingOff": false,
     "verification": {
       "date": "2026-10-31",
-      "url": "https://platform.minimax.io/docs/api-reference/text-chat-openai"
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "minimax",
+      "model": "MiniMax-M3.1-Flash",
+      "thinking": {
+        "effortMap": {
+          "high": "high",
+          "low": "low",
+          "medium": "medium"
+        },
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "anthropic-adaptive",
+        "requiresEffort": true
+      }
+    },
+    "catalogCost": {
+      "cacheRead": 0.015,
+      "cacheWrite": 0,
+      "input": 0.15,
+      "output": 0.6
     }
   },
   "mercury-3": {
@@ -632,7 +744,33 @@
     "temperature": 1,
     "verification": {
       "date": "2026-10-31",
-      "url": "https://docs.inceptionlabs.ai/get-started/models"
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "thinkingOff": false,
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "inception",
+      "model": "mercury-3",
+      "thinking": {
+        "defaultLevel": "low",
+        "effortMap": {
+          "minimal": "instant"
+        },
+        "efforts": [
+          "minimal",
+          "low",
+          "medium",
+          "high"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "lowest-effort"
+    },
+    "catalogCost": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0,
+      "input": 0.1,
+      "output": 0.35
     }
   },
   "inception/mercury-3": {
@@ -663,6 +801,7 @@
     "releaseDate": "2026-10-16",
     "canonicalId": "inception/mercury-3",
     "reasoningEfforts": [
+      "minimal",
       "low",
       "medium",
       "high"
@@ -670,7 +809,28 @@
     "temperature": 1,
     "verification": {
       "date": "2026-10-31",
-      "url": "https://docs.inceptionlabs.ai/get-started/models"
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openrouter",
+      "model": "inception/mercury-3",
+      "thinking": {
+        "efforts": [
+          "minimal",
+          "low",
+          "medium",
+          "high"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "openrouter-enabled-false"
+    },
+    "catalogCost": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0,
+      "input": 0.09999999999999999,
+      "output": 0.35
     }
   },
   "gemini-4-argon": {
@@ -691,7 +851,7 @@
       "url": "https://models.dev/api.json",
       "provider": "google"
     },
-    "maxOutput": 65536,
+    "maxOutput": 32768,
     "modalities": {
       "input": [
         "text",
@@ -713,7 +873,48 @@
     ],
     "verification": {
       "date": "2026-10-31",
-      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon"
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "thinkingOff": false,
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "google",
+      "model": "gemini-4-argon",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "mode": "google-level",
+        "requiresEffort": true
+      }
+    },
+    "catalogCost": {
+      "cacheRead": 0.1,
+      "cacheWrite": 0,
+      "input": 2,
+      "output": 10,
+      "timeBased": {
+        "effectiveRates": [
+          {
+            "cacheRead": 0.1,
+            "cacheWrite": 0,
+            "effectiveFrom": -8640000000000000,
+            "input": 2,
+            "output": 10
+          },
+          {
+            "cacheRead": 0.2,
+            "cacheWrite": 0,
+            "effectiveFrom": 1796112000000,
+            "input": 4,
+            "output": 20
+          }
+        ],
+        "offPeakMultiplier": 1,
+        "peakWindows": []
+      }
     }
   },
   "google/gemini-4-argon": {
@@ -732,7 +933,7 @@
       "catalog": "models.dev",
       "url": "https://models.dev/models.json"
     },
-    "maxOutput": 65536,
+    "maxOutput": 943718,
     "modalities": {
       "input": [
         "text",
@@ -754,7 +955,30 @@
     ],
     "verification": {
       "date": "2026-10-31",
-      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon"
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "thinkingOff": false,
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openrouter",
+      "model": "google/gemini-4-argon",
+      "thinking": {
+        "defaultLevel": "medium",
+        "efforts": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "mode": "effort",
+        "requiresEffort": true
+      },
+      "reasoningDisableMode": "openrouter-enabled-false"
+    },
+    "catalogCost": {
+      "cacheRead": 0.09999999999999999,
+      "cacheWrite": 0.1875,
+      "input": 2,
+      "output": 10
     }
   },
   "claude-haiku-5-5": {
@@ -797,7 +1021,37 @@
     ],
     "verification": {
       "date": "2026-10-31",
-      "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview"
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "anthropic",
+      "model": "claude-haiku-5-5",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "anthropic-adaptive",
+        "prefixBinding": true,
+        "supportsDisplay": true
+      }
+    },
+    "catalogCost": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.1,
+      "longContext": {
+        "cacheRead": 0.05,
+        "cacheWrite": 0.625,
+        "input": 0.5,
+        "inputThreshold": 100000,
+        "output": 2.5
+      },
+      "output": 0.5
     }
   },
   "anthropic/claude-haiku-5-5": {
@@ -839,7 +1093,37 @@
     ],
     "verification": {
       "date": "2026-10-31",
-      "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview"
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openrouter",
+      "model": "anthropic/claude-haiku-5.5",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "effort",
+        "prefixBinding": true
+      },
+      "reasoningDisableMode": "openrouter-enabled-false"
+    },
+    "catalogCost": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.09999999999999999,
+      "longContext": {
+        "cacheRead": 0.05,
+        "cacheWrite": 0.625,
+        "input": 0.49999999999999994,
+        "inputThreshold": 100000,
+        "output": 2.5
+      },
+      "output": 0.5
     }
   },
   "moonshotai/kimi-k3.1-pro-highspeed": {
@@ -886,7 +1170,7 @@
   },
   "deepseek/deepseek-v4.1-flash-1017": {
     "displayName": "DeepSeek V4.1 Flash 1017",
-    "contextWindow": 1000000,
+    "contextWindow": 1048576,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -900,7 +1184,7 @@
       "catalog": "models.dev",
       "url": "https://models.dev/models.json"
     },
-    "maxOutput": 384000,
+    "maxOutput": 393216,
     "modalities": {
       "input": [
         "text",
@@ -920,7 +1204,400 @@
     ],
     "verification": {
       "date": "2026-10-31",
-      "url": "https://api-docs.deepseek.com/quick_start/pricing/"
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openrouter",
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "thinking": {
+        "efforts": [
+          "low",
+          "high",
+          "max"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "openrouter-enabled-false"
+    },
+    "catalogCost": {
+      "cacheRead": 0.003,
+      "cacheWrite": 0,
+      "input": 0.15,
+      "output": 0.6
+    }
+  },
+  "openai-codex/gpt-5.6-luna": {
+    "displayName": "GPT-5.6 Luna",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true
+    },
+    "maxOutput": 128000,
+    "maxContextWindow": 872000,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinkingOff": false,
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openai-codex",
+      "model": "gpt-5.6-luna",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "lowest-effort"
+    },
+    "verification": {
+      "date": "2026-10-31",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "catalogCost": {
+      "cacheRead": 0.02,
+      "cacheWrite": 0.25,
+      "input": 0.2,
+      "longContext": {
+        "cacheRead": 0.04,
+        "cacheWrite": 0.5,
+        "input": 0.4,
+        "inputThreshold": 272000,
+        "output": 1.8
+      },
+      "output": 1.2
+    }
+  },
+  "openai-codex/gpt-5.6-sol": {
+    "displayName": "GPT-5.6 Sol",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true
+    },
+    "maxOutput": 128000,
+    "maxContextWindow": 872000,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinkingOff": false,
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openai-codex",
+      "model": "gpt-5.6-sol",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "lowest-effort"
+    },
+    "verification": {
+      "date": "2026-10-31",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "catalogCost": {
+      "cacheRead": 0.4,
+      "cacheWrite": 5,
+      "input": 4,
+      "longContext": {
+        "cacheRead": 0.8,
+        "cacheWrite": 10,
+        "input": 8,
+        "inputThreshold": 272000,
+        "output": 30
+      },
+      "output": 20
+    }
+  },
+  "openai-codex/gpt-5.6-terra": {
+    "displayName": "GPT-5.6 Terra",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true
+    },
+    "maxOutput": 128000,
+    "maxContextWindow": 872000,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinkingOff": false,
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openai-codex",
+      "model": "gpt-5.6-terra",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "lowest-effort"
+    },
+    "verification": {
+      "date": "2026-10-31",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "catalogCost": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "longContext": {
+        "cacheRead": 0.4,
+        "cacheWrite": 5,
+        "input": 4,
+        "inputThreshold": 272000,
+        "output": 18
+      },
+      "output": 12
+    }
+  },
+  "openai-codex/gpt-6-astra": {
+    "displayName": "GPT-6 Astra",
+    "contextWindow": 272000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true
+    },
+    "maxOutput": 128000,
+    "maxContextWindow": 872000,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinkingOff": false,
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openai-codex",
+      "model": "gpt-6-astra",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "lowest-effort"
+    },
+    "verification": {
+      "date": "2026-10-31",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "catalogCost": {
+      "cacheRead": 1,
+      "cacheWrite": 0,
+      "input": 10,
+      "output": 50
+    }
+  },
+  "openai-codex/gpt-6-luna": {
+    "displayName": "GPT-6 Luna",
+    "contextWindow": 272000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true
+    },
+    "maxOutput": 128000,
+    "maxContextWindow": 872000,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinkingOff": false,
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "lowest-effort"
+    },
+    "verification": {
+      "date": "2026-10-31",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "catalogCost": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0,
+      "input": 0.1,
+      "output": 0.5
+    }
+  },
+  "openai-codex/gpt-6-sol": {
+    "displayName": "GPT-6 Sol",
+    "contextWindow": 272000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true
+    },
+    "maxOutput": 128000,
+    "maxContextWindow": 872000,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinkingOff": false,
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openai-codex",
+      "model": "gpt-6-sol",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "lowest-effort"
+    },
+    "verification": {
+      "date": "2026-10-31",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "catalogCost": {
+      "cacheRead": 0.2,
+      "cacheWrite": 0,
+      "input": 2,
+      "output": 10
+    }
+  },
+  "openai-codex/gpt-6.1-sol": {
+    "displayName": "GPT-6.1 Sol",
+    "contextWindow": 500000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true
+    },
+    "maxOutput": 128000,
+    "maxContextWindow": 872000,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinkingOff": false,
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "lowest-effort"
+    },
+    "verification": {
+      "date": "2026-10-31",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "catalogCost": {
+      "cacheRead": 0.1,
+      "cacheWrite": 0,
+      "input": 2,
+      "output": 10
+    }
+  },
+  "openai-codex/gpt-daybreak-blue-latest": {
+    "displayName": "Daybreak Blue",
+    "contextWindow": 272000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true
+    },
+    "maxOutput": 128000,
+    "maxContextWindow": 872000,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinkingOff": false,
+    "omp": {
+      "commit": "c29f7c56f5530d805bb2887ade964aa55970d8e1",
+      "provider": "openai-codex",
+      "model": "gpt-daybreak-blue-latest",
+      "thinking": {
+        "efforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "mode": "effort"
+      },
+      "reasoningDisableMode": "lowest-effort"
+    },
+    "verification": {
+      "date": "2026-10-31",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json"
+    },
+    "catalogCost": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 30
     }
   }
 }

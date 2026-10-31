@@ -12,10 +12,18 @@ test('published October refresh preserves verified controls, limits, and indepen
   const database = JSON.parse(readFileSync(new URL('../v1/modelDatabase.json', import.meta.url), 'utf8'))
   for (const id of ['gpt-6.1-terra', 'openai/gpt-6.1-terra']) {
     assert.equal(database[id].contextWindow, 1050000)
-    assert.equal(database[id].thinkingOff, true)
     assert.equal(database[id].pricing.input, 1)
     assert.deepEqual(database[id].reasoningEfforts, ['low', 'medium', 'high', 'xhigh', 'max'])
   }
+  assert.equal(database['gpt-6.1-terra'].thinkingOff, false)
+  assert.equal(database['gpt-5.4'].contextWindow, 1000000)
+  assert.equal(database['gpt-5.4-mini'].contextWindow, 400000)
+  assert.equal(database['gpt-5.4-nano'].contextWindow, 400000)
+  assert.deepEqual(database['gpt-5.5-pro'].reasoningEfforts, ['low', 'medium', 'high', 'xhigh'])
+  assert.equal(database['openai-codex/gpt-6-astra'].contextWindow, 272000)
+  assert.equal(database['openai-codex/gpt-6.1-sol'].contextWindow, 500000)
+  assert.equal(database['gpt-6.1-sol'].contextWindow, 1050000)
+  assert.equal(database['gpt-6.1-sol'].pricingSource.kind, 'catalog')
   for (const id of ['kimi-k3.1-pro', 'moonshotai/kimi-k3.1-pro']) {
     assert.equal(database[id].thinkingOff, false)
     assert.equal(database[id].maxOutput, 1048576)
@@ -27,8 +35,8 @@ test('published October refresh preserves verified controls, limits, and indepen
     assert.equal(database[id].maxOutput, 524288)
     assert.equal(database[id].pricing.output, 0.6)
   }
-  assert.equal(database['gemini-4-argon'].maxOutput, 65536)
-  assert.equal(database['google/gemini-4-argon'].maxOutput, 65536)
+  assert.equal(database['gemini-4-argon'].maxOutput, 32768)
+  assert.equal(database['google/gemini-4-argon'].maxOutput, 943718)
   assert.equal(database['inception/mercury-3'].pricing.output, 0.35)
   assert.equal(database['openai/gpt-6.1-terra:batch'].pricing, undefined)
   assert.equal(database['gpt-4.1-nano'], undefined)
@@ -47,7 +55,7 @@ test('official prices replace stale imports, use a fixed FX rate, and leave unve
     schemaVersion: 1, asOf: '2026-10-16',
     exchangeRate: { date: '2026-10-16', cnyPerUsd: 6.722, source: 'https://bank.example/rate' },
     models: {
-      reasoner: { currency: 'CNY', pricing: { input: 6.722, output: 13.444 }, source: 'https://lab.example/pricing', region: 'China' },
+      reasoner: { currency: 'CNY', kind: 'catalog', pricing: { input: 6.722, output: 13.444 }, source: 'https://lab.example/pricing', region: 'China' },
       image: { currency: 'USD', unitPricing: { output_cost_per_image: 0.025 }, source: 'https://lab.example/images' },
     },
   }
@@ -56,6 +64,7 @@ test('official prices replace stale imports, use a fixed FX rate, and leave unve
   assert.deepEqual(result.database['vendor/reasoner'].pricing, { input: 1, output: 2 })
   assert.equal(result.database['vendor/reasoner'].contextWindow, 8000)
   assert.equal(result.database.reasoner.pricingSource.exchangeRate.cnyPerUsd, 6.722)
+  assert.equal(result.database.reasoner.pricingSource.kind, 'catalog')
   for (const id of ['unknown', 'vendor/reasoner:free', 'image']) assert.equal('pricing' in result.database[id], false, id)
   assert.equal('unitPricing' in result.database.unknown, false)
   assert.equal(result.database.image.unitPricing.output_cost_per_image, 0.025)
