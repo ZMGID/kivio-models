@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-16",
+  "asOf": "2026-10-31",
   "baseline": "Official standard pay-as-you-go reference prices; text tokens and shortest context tier unless specified. Qwen uses China Beijing RMB, Z.AI uses its official USD rate card. Unknown/third-party quotes are omitted, not free. Media billing remains separate.",
   "exchangeRate": {
     "date": "2026-10-16",
@@ -13,17 +13,17 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 10.0,
-        "cachedInput": 1.0,
-        "output": 50.0
+        "input": 10,
+        "cachedInput": 1,
+        "output": 50
       },
       "tiers": [
         {
           "condition": "More than 272000 input tokens",
           "pricing": {
-            "input": 20.0,
-            "cachedInput": 2.0,
-            "output": 75.0
+            "input": 20,
+            "cachedInput": 2,
+            "output": 75
           }
         }
       ]
@@ -33,17 +33,17 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 2.0,
+        "input": 2,
         "cachedInput": 0.1,
-        "output": 10.0
+        "output": 10
       },
       "tiers": [
         {
           "condition": "More than 272000 input tokens",
           "pricing": {
-            "input": 4.0,
+            "input": 4,
             "cachedInput": 0.2,
-            "output": 15.0
+            "output": 15
           }
         }
       ]
@@ -73,17 +73,17 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 2.0,
+        "input": 2,
         "cachedInput": 0.2,
-        "output": 10.0
+        "output": 10
       },
       "tiers": [
         {
           "condition": "More than 272000 input tokens",
           "pricing": {
-            "input": 4.0,
+            "input": 4,
             "cachedInput": 0.4,
-            "output": 15.0
+            "output": 15
           }
         }
       ]
@@ -93,17 +93,17 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 4.0,
+        "input": 4,
         "cachedInput": 0.4,
-        "output": 20.0
+        "output": 20
       },
       "tiers": [
         {
           "condition": "More than 272000 input tokens",
           "pricing": {
-            "input": 8.0,
+            "input": 8,
             "cachedInput": 0.8,
-            "output": 30.0
+            "output": 30
           }
         }
       ]
@@ -113,17 +113,17 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 2.0,
+        "input": 2,
         "cachedInput": 0.2,
-        "output": 12.0
+        "output": 12
       },
       "tiers": [
         {
           "condition": "More than 272000 input tokens",
           "pricing": {
-            "input": 4.0,
+            "input": 4,
             "cachedInput": 0.4,
-            "output": 18.0
+            "output": 18
           }
         }
       ]
@@ -153,17 +153,17 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 5.0,
+        "input": 5,
         "cachedInput": 0.5,
-        "output": 30.0
+        "output": 30
       },
       "tiers": [
         {
           "condition": "More than 272000 input tokens",
           "pricing": {
-            "input": 10.0,
-            "cachedInput": 1.0,
-            "output": 45.0
+            "input": 10,
+            "cachedInput": 1,
+            "output": 45
           }
         }
       ],
@@ -176,15 +176,15 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 30.0,
-        "output": 180.0
+        "input": 30,
+        "output": 180
       },
       "tiers": [
         {
           "condition": "More than 272000 input tokens",
           "pricing": {
-            "input": 60.0,
-            "output": 270.0
+            "input": 60,
+            "output": 270
           }
         }
       ],
@@ -199,13 +199,13 @@
       "pricing": {
         "input": 2.5,
         "cachedInput": 0.25,
-        "output": 15.0
+        "output": 15
       },
       "tiers": [
         {
           "condition": "More than 272000 input tokens",
           "pricing": {
-            "input": 5.0,
+            "input": 5,
             "cachedInput": 0.5,
             "output": 22.5
           }
@@ -246,15 +246,15 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 30.0,
-        "output": 180.0
+        "input": 30,
+        "output": 180
       },
       "tiers": [
         {
           "condition": "More than 272000 input tokens",
           "pricing": {
-            "input": 60.0,
-            "output": 270.0
+            "input": 60,
+            "output": 270
           }
         }
       ],
@@ -269,7 +269,7 @@
       "pricing": {
         "input": 1.75,
         "cachedInput": 0.175,
-        "output": 14.0
+        "output": 14
       },
       "aliases": [
         "gpt-5.2-2025-12-11"
@@ -280,8 +280,8 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 21.0,
-        "output": 168.0
+        "input": 21,
+        "output": 168
       },
       "aliases": [
         "gpt-5.2-pro-2025-12-11"
@@ -294,7 +294,7 @@
       "pricing": {
         "input": 1.25,
         "cachedInput": 0.125,
-        "output": 10.0
+        "output": 10
       },
       "aliases": [
         "gpt-5.1-2025-11-13"
@@ -307,7 +307,7 @@
       "pricing": {
         "input": 1.25,
         "cachedInput": 0.125,
-        "output": 10.0
+        "output": 10
       },
       "aliases": [
         "gpt-5-2025-08-07"
@@ -320,7 +320,7 @@
       "pricing": {
         "input": 0.25,
         "cachedInput": 0.025,
-        "output": 2.0
+        "output": 2
       },
       "aliases": [
         "gpt-5-mini-2025-08-07"
@@ -344,8 +344,8 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 15.0,
-        "output": 120.0
+        "input": 15,
+        "output": 120
       },
       "aliases": [
         "gpt-5-pro-2025-10-06"
@@ -356,9 +356,9 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 2.0,
+        "input": 2,
         "cachedInput": 0.5,
-        "output": 8.0
+        "output": 8
       },
       "aliases": [
         "gpt-4.1-2025-04-14"
@@ -397,7 +397,7 @@
       "pricing": {
         "input": 2.5,
         "cachedInput": 1.25,
-        "output": 10.0
+        "output": 10
       },
       "aliases": [
         "gpt-4o-2024-08-06",
@@ -409,8 +409,8 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 5.0,
-        "output": 15.0
+        "input": 5,
+        "output": 15
       }
     },
     "gpt-4o-mini": {
@@ -431,9 +431,9 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 15.0,
+        "input": 15,
         "cachedInput": 7.5,
-        "output": 60.0
+        "output": 60
       },
       "aliases": [
         "o1-2024-12-17"
@@ -444,8 +444,8 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 150.0,
-        "output": 600.0
+        "input": 150,
+        "output": 600
       },
       "aliases": [
         "o1-pro-2025-03-19"
@@ -456,8 +456,8 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 20.0,
-        "output": 80.0
+        "input": 20,
+        "output": 80
       },
       "aliases": [
         "o3-pro-2025-06-10"
@@ -468,9 +468,9 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 2.0,
+        "input": 2,
         "cachedInput": 0.5,
-        "output": 8.0
+        "output": 8
       },
       "aliases": [
         "o3-2025-04-16"
@@ -507,8 +507,8 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 10.0,
-        "output": 30.0
+        "input": 10,
+        "output": 30
       }
     },
     "gpt-4-0613": {
@@ -516,8 +516,8 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 30.0,
-        "output": 60.0
+        "input": 30,
+        "output": 60
       }
     },
     "gpt-3.5-turbo": {
@@ -543,8 +543,8 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 1.0,
-        "output": 2.0
+        "input": 1,
+        "output": 2
       }
     },
     "gpt-3.5-turbo-instruct": {
@@ -553,7 +553,7 @@
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
         "input": 1.5,
-        "output": 2.0
+        "output": 2
       }
     },
     "gpt-5.6-cyber": {
@@ -563,7 +563,7 @@
       "pricing": {
         "input": 12.5,
         "cachedInput": 1.25,
-        "output": 75.0
+        "output": 75
       }
     },
     "chat-latest": {
@@ -571,9 +571,9 @@
       "source": "https://developers.openai.com/api/docs/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 5.0,
+        "input": 5,
         "cachedInput": 0.5,
-        "output": 30.0
+        "output": 30
       }
     },
     "gpt-5.3-codex": {
@@ -583,7 +583,7 @@
       "pricing": {
         "input": 1.75,
         "cachedInput": 0.175,
-        "output": 14.0
+        "output": 14
       }
     },
     "gpt-5-search-api": {
@@ -593,7 +593,7 @@
       "pricing": {
         "input": 1.25,
         "cachedInput": 0.125,
-        "output": 10.0
+        "output": 10
       }
     },
     "text-embedding-3-small": {
@@ -634,12 +634,12 @@
       "condition": "Image and text token rates are separate; see modalityPricing",
       "modalityPricing": {
         "image": {
-          "input": 8.0,
-          "cachedInput": 2.0,
-          "output": 30.0
+          "input": 8,
+          "cachedInput": 2,
+          "output": 30
         },
         "text": {
-          "input": 5.0,
+          "input": 5,
           "cachedInput": 1.25
         }
       },
@@ -653,12 +653,12 @@
       "condition": "Image and text token rates are separate; see modalityPricing",
       "modalityPricing": {
         "image": {
-          "input": 8.0,
-          "cachedInput": 2.0,
-          "output": 30.0
+          "input": 8,
+          "cachedInput": 2,
+          "output": 30
         },
         "text": {
-          "input": 5.0,
+          "input": 5,
           "cachedInput": 1.25
         }
       },
@@ -672,12 +672,12 @@
       "condition": "Image and text token rates are separate; see modalityPricing",
       "modalityPricing": {
         "image": {
-          "input": 8.0,
-          "cachedInput": 2.0,
-          "output": 30.0
+          "input": 8,
+          "cachedInput": 2,
+          "output": 30
         },
         "text": {
-          "input": 5.0,
+          "input": 5,
           "cachedInput": 1.25
         }
       }
@@ -688,14 +688,14 @@
       "condition": "Image and text token rates are separate; see modalityPricing",
       "modalityPricing": {
         "image": {
-          "input": 8.0,
-          "cachedInput": 2.0,
-          "output": 32.0
+          "input": 8,
+          "cachedInput": 2,
+          "output": 32
         },
         "text": {
-          "input": 5.0,
+          "input": 5,
           "cachedInput": 1.25,
-          "output": 10.0
+          "output": 10
         }
       }
     },
@@ -707,10 +707,10 @@
         "image": {
           "input": 2.5,
           "cachedInput": 0.25,
-          "output": 8.0
+          "output": 8
         },
         "text": {
-          "input": 2.0,
+          "input": 2,
           "cachedInput": 0.2
         }
       }
@@ -721,12 +721,12 @@
       "condition": "Image and text token rates are separate; see modalityPricing",
       "modalityPricing": {
         "image": {
-          "input": 10.0,
+          "input": 10,
           "cachedInput": 2.5,
-          "output": 40.0
+          "output": 40
         },
         "text": {
-          "input": 5.0,
+          "input": 5,
           "cachedInput": 1.25
         }
       }
@@ -737,14 +737,14 @@
       "condition": "Image and text token rates are separate; see modalityPricing",
       "modalityPricing": {
         "image": {
-          "input": 8.0,
-          "cachedInput": 2.0,
-          "output": 32.0
+          "input": 8,
+          "cachedInput": 2,
+          "output": 32
         },
         "text": {
-          "input": 5.0,
+          "input": 5,
           "cachedInput": 1.25,
-          "output": 10.0
+          "output": 10
         }
       }
     },
@@ -753,9 +753,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 10.0,
+        "input": 10,
         "cachedInput": 0.25,
-        "output": 50.0
+        "output": 50
       }
     },
     "claude-mythos-5.1": {
@@ -763,9 +763,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 10.0,
+        "input": 10,
         "cachedInput": 0.25,
-        "output": 50.0
+        "output": 50
       }
     },
     "claude-fable-5": {
@@ -773,9 +773,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 10.0,
-        "cachedInput": 1.0,
-        "output": 50.0
+        "input": 10,
+        "cachedInput": 1,
+        "output": 50
       }
     },
     "claude-mythos-5": {
@@ -783,9 +783,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 10.0,
-        "cachedInput": 1.0,
-        "output": 50.0
+        "input": 10,
+        "cachedInput": 1,
+        "output": 50
       }
     },
     "claude-opus-5.5": {
@@ -793,9 +793,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 4.0,
+        "input": 4,
         "cachedInput": 0.2,
-        "output": 20.0
+        "output": 20
       }
     },
     "claude-opus-5": {
@@ -803,9 +803,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 5.0,
+        "input": 5,
         "cachedInput": 0.5,
-        "output": 25.0
+        "output": 25
       }
     },
     "claude-opus-4.8": {
@@ -813,9 +813,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 5.0,
+        "input": 5,
         "cachedInput": 0.5,
-        "output": 25.0
+        "output": 25
       }
     },
     "claude-opus-4.7": {
@@ -823,9 +823,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 5.0,
+        "input": 5,
         "cachedInput": 0.5,
-        "output": 25.0
+        "output": 25
       }
     },
     "claude-opus-4.6": {
@@ -833,9 +833,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 5.0,
+        "input": 5,
         "cachedInput": 0.5,
-        "output": 25.0
+        "output": 25
       }
     },
     "claude-opus-4.5": {
@@ -843,9 +843,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 5.0,
+        "input": 5,
         "cachedInput": 0.5,
-        "output": 25.0
+        "output": 25
       }
     },
     "claude-opus-4.1": {
@@ -853,9 +853,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 15.0,
+        "input": 15,
         "cachedInput": 1.5,
-        "output": 75.0
+        "output": 75
       }
     },
     "claude-opus-4": {
@@ -863,9 +863,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 15.0,
+        "input": 15,
         "cachedInput": 1.5,
-        "output": 75.0
+        "output": 75
       }
     },
     "claude-sonnet-5.5": {
@@ -873,9 +873,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 2.0,
+        "input": 2,
         "cachedInput": 0.1,
-        "output": 10.0
+        "output": 10
       }
     },
     "claude-sonnet-5": {
@@ -883,9 +883,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 2.0,
+        "input": 2,
         "cachedInput": 0.2,
-        "output": 10.0
+        "output": 10
       }
     },
     "claude-sonnet-4.6": {
@@ -893,9 +893,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 3.0,
+        "input": 3,
         "cachedInput": 0.3,
-        "output": 15.0
+        "output": 15
       }
     },
     "claude-sonnet-4.5": {
@@ -903,9 +903,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 3.0,
+        "input": 3,
         "cachedInput": 0.3,
-        "output": 15.0
+        "output": 15
       }
     },
     "claude-sonnet-4": {
@@ -913,9 +913,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 3.0,
+        "input": 3,
         "cachedInput": 0.3,
-        "output": 15.0
+        "output": 15
       }
     },
     "claude-haiku-5.5": {
@@ -943,9 +943,9 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 1.0,
+        "input": 1,
         "cachedInput": 0.1,
-        "output": 5.0
+        "output": 5
       }
     },
     "claude-haiku-3.5": {
@@ -955,7 +955,7 @@
       "pricing": {
         "input": 0.8,
         "cachedInput": 0.08,
-        "output": 4.0
+        "output": 4
       }
     },
     "glm-5.3-flash": {
@@ -1013,7 +1013,7 @@
       "source": "https://docs.z.ai/guides/overview/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 1.0,
+        "input": 1,
         "cachedInput": 0.2,
         "output": 3.2
       }
@@ -1399,7 +1399,8 @@
       "aliases": [
         "deepseek-v4-flash",
         "deepseek-v4-flash-vision-exp",
-        "deepseek-v4.1-flash"
+        "deepseek-v4.1-flash",
+        "deepseek-v4.1-flash-1017"
       ]
     },
     "deepseek-v4-pro": {
@@ -1420,8 +1421,8 @@
       "source": "https://ai.google.dev/gemini-api/docs/pricing",
       "condition": "Standard paid tier; text input/output; Input price: $2.00 through November 30, 2026. $4.00 starting December 1, 2026.; Output price (including thinking tokens): $10.00 through November 30, 2026. $20.00 starting December 1, 2026.; Context caching price: $0.10 through November 30, 2026. $0.20 starting December 1, 2026. Implicit caching only (explicit caching is not supported).",
       "pricing": {
-        "input": 2.0,
-        "output": 10.0,
+        "input": 2,
+        "output": 10,
         "cachedInput": 0.1
       }
     },
@@ -1470,8 +1471,8 @@
       "source": "https://ai.google.dev/gemini-api/docs/pricing",
       "condition": "Standard paid tier; text input/output; Input price: $2.00, prompts <= 200k tokens $4.00, prompts > 200k tokens; Output price (including thinking tokens): $12.00, prompts <= 200k tokens $18.00, prompts > 200k; Context caching price: $0.20, prompts <= 200k tokens $0.40, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price)",
       "pricing": {
-        "input": 2.0,
-        "output": 12.0,
+        "input": 2,
+        "output": 12,
         "cachedInput": 0.2
       },
       "tiers": [
@@ -1492,10 +1493,10 @@
       "modalityPricing": {
         "text": {
           "input": 0.5,
-          "output": 3.0
+          "output": 3
         },
         "image": {
-          "output": 60.0
+          "output": 60
         }
       },
       "unitPricing": {
@@ -1515,7 +1516,7 @@
           "output": 1.5
         },
         "image": {
-          "output": 30.0
+          "output": 30
         }
       },
       "unitPricing": {
@@ -1531,7 +1532,7 @@
       "condition": "Standard paid tier; text input/output; Input price: $0.50 (text / image / video) $1.00 (audio); Output price (including thinking tokens): $3.00; Context caching price: $0.05 (text / image / video) $0.10 (audio) $1.00 / 1,000,000 tokens per hour (storage price)",
       "pricing": {
         "input": 0.5,
-        "output": 3.0,
+        "output": 3,
         "cachedInput": 0.05
       }
     },
@@ -1541,11 +1542,11 @@
       "condition": "Text tokens and image generation billed separately; Input price: $2.00 (text/image), equivalent to $0.0011 per image*; Output price: $12.00 (text and thinking) $120.00 (images) Equivalent to $0.134 per 1K/2K image** and $0.24 per 4K image**",
       "modalityPricing": {
         "text": {
-          "input": 2.0,
-          "output": 12.0
+          "input": 2,
+          "output": 12
         },
         "image": {
-          "output": 120.0
+          "output": 120
         }
       },
       "unitPricing": {
@@ -1561,7 +1562,7 @@
       "condition": "Standard paid tier; text input/output; Input price: $1.25, prompts <= 200k tokens $2.50, prompts > 200k tokens; Output price (including thinking tokens): $10.00, prompts <= 200k tokens $15.00, prompts > 200k; Context caching price: $0.125, prompts <= 200k tokens $0.25, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price)",
       "pricing": {
         "input": 1.25,
-        "output": 10.0,
+        "output": 10,
         "cachedInput": 0.125
       },
       "tiers": [
@@ -1621,8 +1622,8 @@
       "source": "https://ai.google.dev/gemini-api/docs/pricing",
       "condition": "Standard paid tier; text input/output; Input price: $1.00 (text / image / video / audio) through December 31, 2026. $2.00 (text / image / video / audio) starting January 1, 2027.; Output price (including thinking tokens): $5.00 through December 31, 2026. $10.00 starting January 1, 2027.; Context caching price: $0.10 through December 31, 2026. $0.20 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027.",
       "pricing": {
-        "input": 1.0,
-        "output": 5.0,
+        "input": 1,
+        "output": 5,
         "cachedInput": 0.1
       }
     },
@@ -1631,8 +1632,8 @@
       "source": "https://ai.google.dev/gemini-api/docs/pricing",
       "condition": "Standard paid tier; text input/output; Input price: $1.00 (text / image / video / audio) through December 31, 2026. $2.00 (text / image / video / audio) starting January 1, 2027.; Output price: $5.00 through December 31, 2026. $10.00 starting January 1, 2027.",
       "pricing": {
-        "input": 1.0,
-        "output": 5.0
+        "input": 1,
+        "output": 5
       }
     },
     "grok-4.7": {
@@ -1640,17 +1641,17 @@
       "source": "https://docs.x.ai/developers/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 2.0,
+        "input": 2,
         "cachedInput": 0.5,
-        "output": 6.0
+        "output": 6
       },
       "tiers": [
         {
           "condition": "At least 200000 input tokens",
           "pricing": {
-            "input": 4.0,
-            "cachedInput": 1.0,
-            "output": 12.0
+            "input": 4,
+            "cachedInput": 1,
+            "output": 12
           }
         }
       ]
@@ -1660,17 +1661,17 @@
       "source": "https://docs.x.ai/developers/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 1.0,
+        "input": 1,
         "cachedInput": 0.2,
-        "output": 2.0
+        "output": 2
       },
       "tiers": [
         {
           "condition": "At least 200000 input tokens",
           "pricing": {
-            "input": 2.0,
+            "input": 2,
             "cachedInput": 0.4,
-            "output": 4.0
+            "output": 4
           }
         }
       ]
@@ -1680,17 +1681,17 @@
       "source": "https://docs.x.ai/developers/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 2.0,
+        "input": 2,
         "cachedInput": 0.5,
-        "output": 6.0
+        "output": 6
       },
       "tiers": [
         {
           "condition": "At least 200000 input tokens",
           "pricing": {
-            "input": 4.0,
-            "cachedInput": 1.0,
-            "output": 12.0
+            "input": 4,
+            "cachedInput": 1,
+            "output": 12
           }
         }
       ]
@@ -1700,17 +1701,17 @@
       "source": "https://docs.x.ai/developers/pricing",
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
-        "input": 2.0,
+        "input": 2,
         "cachedInput": 0.3,
-        "output": 6.0
+        "output": 6
       },
       "tiers": [
         {
           "condition": "At least 200000 input tokens",
           "pricing": {
-            "input": 4.0,
+            "input": 4,
             "cachedInput": 0.6,
-            "output": 12.0
+            "output": 12
           }
         }
       ]
@@ -1730,7 +1731,7 @@
           "pricing": {
             "input": 2.5,
             "cachedInput": 0.4,
-            "output": 5.0
+            "output": 5
           }
         }
       ]
@@ -1750,7 +1751,7 @@
           "pricing": {
             "input": 2.5,
             "cachedInput": 0.4,
-            "output": 5.0
+            "output": 5
           }
         }
       ]
@@ -1770,7 +1771,7 @@
           "pricing": {
             "input": 2.5,
             "cachedInput": 0.4,
-            "output": 5.0
+            "output": 5
           }
         }
       ]
@@ -1790,7 +1791,7 @@
           "pricing": {
             "input": 2.5,
             "cachedInput": 0.4,
-            "output": 5.0
+            "output": 5
           }
         }
       ]
@@ -1801,8 +1802,8 @@
       "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 24元 | 72元 | 无免费额度",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 24.0,
-        "output": 72.0
+        "input": 24,
+        "output": 72
       }
     },
     "qwen3.8-max": {
@@ -1811,8 +1812,8 @@
       "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 12.0,
-        "output": 36.0
+        "input": 12,
+        "output": 36
       }
     },
     "qwen3.8-max-0902": {
@@ -1821,8 +1822,8 @@
       "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 12.0,
-        "output": 36.0
+        "input": 12,
+        "output": 36
       },
       "aliases": [
         "qwen3.8-max-2026-09-02"
@@ -1834,8 +1835,8 @@
       "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 12.0,
-        "output": 36.0
+        "input": 12,
+        "output": 36
       }
     },
     "qwen3.7-max-2026-06-08": {
@@ -1844,8 +1845,8 @@
       "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 12.0,
-        "output": 36.0
+        "input": 12,
+        "output": 36
       }
     },
     "qwen3.7-max-2026-05-20": {
@@ -1854,8 +1855,8 @@
       "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 12.0,
-        "output": 36.0
+        "input": 12,
+        "output": 36
       }
     },
     "qwen3.7-max-preview": {
@@ -1864,8 +1865,8 @@
       "condition": "China Beijing; 仅思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 12.0,
-        "output": 36.0
+        "input": 12,
+        "output": 36
       }
     },
     "qwen3.7-max-2026-05-17": {
@@ -1874,8 +1875,8 @@
       "condition": "China Beijing; 仅思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 12.0,
-        "output": 36.0
+        "input": 12,
+        "output": 36
       }
     },
     "qwen-max": {
@@ -1913,15 +1914,15 @@
       "condition": "China Beijing; thinking output rate; 0<Token≤256K | 2元 | 8元 | 8元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 2.0,
-        "output": 8.0
+        "input": 2,
+        "output": 8
       },
       "tiers": [
         {
           "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 6元 | 24元 | 24元 | 100万Token",
           "pricing": {
-            "input": 6.0,
-            "output": 24.0
+            "input": 6,
+            "output": 24
           }
         }
       ]
@@ -1932,15 +1933,15 @@
       "condition": "China Beijing; thinking output rate; 0<Token≤256K | 2元 | 12元 | 12元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 2.0,
-        "output": 12.0
+        "input": 2,
+        "output": 12
       },
       "tiers": [
         {
           "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 8元 | 48元 | 48元 | 100万Token",
           "pricing": {
-            "input": 8.0,
-            "output": 48.0
+            "input": 8,
+            "output": 48
           }
         }
       ]
@@ -1951,15 +1952,15 @@
       "condition": "China Beijing; thinking output rate; 0<Token≤256K | 2元 | 12元 | 12元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 2.0,
-        "output": 12.0
+        "input": 2,
+        "output": 12
       },
       "tiers": [
         {
           "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 8元 | 48元 | 48元 | 100万Token",
           "pricing": {
-            "input": 8.0,
-            "output": 48.0
+            "input": 8,
+            "output": 48
           }
         }
       ]
@@ -1977,15 +1978,15 @@
         {
           "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2元 | 12元 | 12元 | 100万Token",
           "pricing": {
-            "input": 2.0,
-            "output": 12.0
+            "input": 2,
+            "output": 12
           }
         },
         {
           "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 4元 | 24元 | 24元 | 100万Token",
           "pricing": {
-            "input": 4.0,
-            "output": 24.0
+            "input": 4,
+            "output": 24
           }
         }
       ]
@@ -2003,15 +2004,15 @@
         {
           "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2元 | 12元 | 12元 | 100万Token",
           "pricing": {
-            "input": 2.0,
-            "output": 12.0
+            "input": 2,
+            "output": 12
           }
         },
         {
           "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 4元 | 24元 | 24元 | 100万Token",
           "pricing": {
-            "input": 4.0,
-            "output": 24.0
+            "input": 4,
+            "output": 24
           }
         }
       ]
@@ -2029,15 +2030,15 @@
         {
           "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2元 | 12元 | 12元 | 100万Token",
           "pricing": {
-            "input": 2.0,
-            "output": 12.0
+            "input": 2,
+            "output": 12
           }
         },
         {
           "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 4元 | 24元 | 24元 | 100万Token",
           "pricing": {
-            "input": 4.0,
-            "output": 24.0
+            "input": 4,
+            "output": 24
           }
         }
       ]
@@ -2049,42 +2050,42 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.8,
-        "output": 8.0
+        "output": 8
       },
       "tiers": [
         {
           "condition": "China Beijing; non-thinking output rate; 0<Token≤128K | 0.8元 | 2元 | 8元 | 100万Token",
           "pricing": {
             "input": 0.8,
-            "output": 2.0
+            "output": 2
           }
         },
         {
           "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2.4元 | 20元 | 24元 | 100万Token",
           "pricing": {
             "input": 2.4,
-            "output": 24.0
+            "output": 24
           }
         },
         {
           "condition": "China Beijing; non-thinking output rate; 128K<Token≤256K | 2.4元 | 20元 | 24元 | 100万Token",
           "pricing": {
             "input": 2.4,
-            "output": 20.0
+            "output": 20
           }
         },
         {
           "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 4.8元 | 48元 | 64元 | 100万Token",
           "pricing": {
             "input": 4.8,
-            "output": 64.0
+            "output": 64
           }
         },
         {
           "condition": "China Beijing; non-thinking output rate; 256K<Token≤1M | 4.8元 | 48元 | 64元 | 100万Token",
           "pricing": {
             "input": 4.8,
-            "output": 48.0
+            "output": 48
           }
         }
       ]
@@ -2096,42 +2097,42 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.8,
-        "output": 8.0
+        "output": 8
       },
       "tiers": [
         {
           "condition": "China Beijing; non-thinking output rate; 0<Token≤128K | 0.8元 | 2元 | 8元 | 100万Token",
           "pricing": {
             "input": 0.8,
-            "output": 2.0
+            "output": 2
           }
         },
         {
           "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2.4元 | 20元 | 24元 | 100万Token",
           "pricing": {
             "input": 2.4,
-            "output": 24.0
+            "output": 24
           }
         },
         {
           "condition": "China Beijing; non-thinking output rate; 128K<Token≤256K | 2.4元 | 20元 | 24元 | 100万Token",
           "pricing": {
             "input": 2.4,
-            "output": 20.0
+            "output": 20
           }
         },
         {
           "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 4.8元 | 48元 | 64元 | 100万Token",
           "pricing": {
             "input": 4.8,
-            "output": 64.0
+            "output": 64
           }
         },
         {
           "condition": "China Beijing; non-thinking output rate; 256K<Token≤1M | 4.8元 | 48元 | 64元 | 100万Token",
           "pricing": {
             "input": 4.8,
-            "output": 48.0
+            "output": 48
           }
         }
       ]
@@ -2143,42 +2144,42 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.8,
-        "output": 8.0
+        "output": 8
       },
       "tiers": [
         {
           "condition": "China Beijing; non-thinking output rate; 0<Token≤128K | 0.8元 | 2元 | 8元 | 100万Token",
           "pricing": {
             "input": 0.8,
-            "output": 2.0
+            "output": 2
           }
         },
         {
           "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2.4元 | 20元 | 24元 | 100万Token",
           "pricing": {
             "input": 2.4,
-            "output": 24.0
+            "output": 24
           }
         },
         {
           "condition": "China Beijing; non-thinking output rate; 128K<Token≤256K | 2.4元 | 20元 | 24元 | 100万Token",
           "pricing": {
             "input": 2.4,
-            "output": 20.0
+            "output": 20
           }
         },
         {
           "condition": "China Beijing; thinking output rate; 256K<Token≤1M | 4.8元 | 48元 | 64元 | 100万Token",
           "pricing": {
             "input": 4.8,
-            "output": 64.0
+            "output": 64
           }
         },
         {
           "condition": "China Beijing; non-thinking output rate; 256K<Token≤1M | 4.8元 | 48元 | 64元 | 100万Token",
           "pricing": {
             "input": 4.8,
-            "output": 48.0
+            "output": 48
           }
         }
       ]
@@ -2190,14 +2191,14 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.8,
-        "output": 8.0
+        "output": 8
       },
       "tiers": [
         {
           "condition": "China Beijing; non-thinking output rate; 无阶梯计价 | 0.8元 | 2元 | 8元 | 100万Token",
           "pricing": {
             "input": 0.8,
-            "output": 2.0
+            "output": 2
           }
         }
       ]
@@ -2209,14 +2210,14 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.8,
-        "output": 8.0
+        "output": 8
       },
       "tiers": [
         {
           "condition": "China Beijing; non-thinking output rate; 无阶梯计价 | 0.8元 | 2元 | 8元 | 100万Token",
           "pricing": {
             "input": 0.8,
-            "output": 2.0
+            "output": 2
           }
         }
       ]
@@ -2228,7 +2229,7 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.8,
-        "output": 2.0
+        "output": 2
       }
     },
     "qwen-plus-2025-01-12": {
@@ -2238,7 +2239,7 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.8,
-        "output": 2.0
+        "output": 2
       }
     },
     "qwen-plus-2024-12-20": {
@@ -2248,7 +2249,7 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.8,
-        "output": 2.0
+        "output": 2
       }
     },
     "qwen3.8-flash": {
@@ -2358,21 +2359,21 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.2,
-        "output": 2.0
+        "output": 2
       },
       "tiers": [
         {
           "condition": "China Beijing; 非思考和思考模式 | 128K<Token≤256K | 0.8元 | 8元 | 100万Token",
           "pricing": {
             "input": 0.8,
-            "output": 8.0
+            "output": 8
           }
         },
         {
           "condition": "China Beijing; 非思考和思考模式 | 256K<Token≤1M | 1.2元 | 12元 | 100万Token",
           "pricing": {
             "input": 1.2,
-            "output": 12.0
+            "output": 12
           }
         }
       ]
@@ -2384,21 +2385,21 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.2,
-        "output": 2.0
+        "output": 2
       },
       "tiers": [
         {
           "condition": "China Beijing; 非思考和思考模式 | 128K<Token≤256K | 0.8元 | 8元 | 100万Token",
           "pricing": {
             "input": 0.8,
-            "output": 8.0
+            "output": 8
           }
         },
         {
           "condition": "China Beijing; 非思考和思考模式 | 256K<Token≤1M | 1.2元 | 12元 | 100万Token",
           "pricing": {
             "input": 1.2,
-            "output": 12.0
+            "output": 12
           }
         }
       ]
@@ -2417,14 +2418,14 @@
           "condition": "China Beijing; 非思考和思考模式 | 128K<Token≤256K | 0.6元 | 6元 | 100万Token",
           "pricing": {
             "input": 0.6,
-            "output": 6.0
+            "output": 6
           }
         },
         {
           "condition": "China Beijing; 非思考和思考模式 | 256K<Token≤1M | 1.2元 | 12元 | 100万Token",
           "pricing": {
             "input": 1.2,
-            "output": 12.0
+            "output": 12
           }
         }
       ]
@@ -2443,14 +2444,14 @@
           "condition": "China Beijing; 非思考和思考模式 | 128K<Token≤256K | 0.6元 | 6元 | 100万Token",
           "pricing": {
             "input": 0.6,
-            "output": 6.0
+            "output": 6
           }
         },
         {
           "condition": "China Beijing; 非思考和思考模式 | 256K<Token≤1M | 1.2元 | 12元 | 100万Token",
           "pricing": {
             "input": 1.2,
-            "output": 12.0
+            "output": 12
           }
         }
       ]
@@ -2462,7 +2463,7 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.5,
-        "output": 2.0
+        "output": 2
       }
     },
     "qwen3.8-omni-flash": {
@@ -2482,22 +2483,22 @@
       "condition": "China Beijing; 非思考和思考模式 | 0<Token≤32K | 1元 | 10元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 1.0,
-        "output": 10.0
+        "input": 1,
+        "output": 10
       },
       "tiers": [
         {
           "condition": "China Beijing; 非思考和思考模式 | 32K<Token≤128K | 1.5元 | 15元 | 100万Token",
           "pricing": {
             "input": 1.5,
-            "output": 15.0
+            "output": 15
           }
         },
         {
           "condition": "China Beijing; 非思考和思考模式 | 128K<Token≤256K | 3元 | 30元 | 100万Token",
           "pricing": {
-            "input": 3.0,
-            "output": 30.0
+            "input": 3,
+            "output": 30
           }
         }
       ]
@@ -2509,7 +2510,7 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.5,
-        "output": 2.0
+        "output": 2
       }
     },
     "qwen-vl-ocr": {
@@ -2538,8 +2539,8 @@
       "condition": "China Beijing; 5元 | 5元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 5.0,
-        "output": 5.0
+        "input": 5,
+        "output": 5
       }
     },
     "qwen3-coder-flash": {
@@ -2548,29 +2549,29 @@
       "condition": "China Beijing; 0<Token≤32K | 1元 | 4元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 1.0,
-        "output": 4.0
+        "input": 1,
+        "output": 4
       },
       "tiers": [
         {
           "condition": "China Beijing; 32K<Token≤128K | 1.5元 | 6元 | 100万Token",
           "pricing": {
             "input": 1.5,
-            "output": 6.0
+            "output": 6
           }
         },
         {
           "condition": "China Beijing; 128K<Token≤256K | 2.5元 | 10元 | 100万Token",
           "pricing": {
             "input": 2.5,
-            "output": 10.0
+            "output": 10
           }
         },
         {
           "condition": "China Beijing; 256K<Token≤1M | 5元 | 25元 | 100万Token",
           "pricing": {
-            "input": 5.0,
-            "output": 25.0
+            "input": 5,
+            "output": 25
           }
         }
       ]
@@ -2581,29 +2582,29 @@
       "condition": "China Beijing; 0<Token≤32K | 1元 | 4元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 1.0,
-        "output": 4.0
+        "input": 1,
+        "output": 4
       },
       "tiers": [
         {
           "condition": "China Beijing; 32K<Token≤128K | 1.5元 | 6元 | 100万Token",
           "pricing": {
             "input": 1.5,
-            "output": 6.0
+            "output": 6
           }
         },
         {
           "condition": "China Beijing; 128K<Token≤256K | 2.5元 | 10元 | 100万Token",
           "pricing": {
             "input": 2.5,
-            "output": 10.0
+            "output": 10
           }
         },
         {
           "condition": "China Beijing; 256K<Token≤1M | 5元 | 25元 | 100万Token",
           "pricing": {
-            "input": 5.0,
-            "output": 25.0
+            "input": 5,
+            "output": 25
           }
         }
       ]
@@ -2645,7 +2646,7 @@
       "region": "China (Beijing)",
       "pricing": {
         "input": 0.6,
-        "output": 1.0
+        "output": 1
       }
     },
     "qwen-deep-research": {
@@ -2654,8 +2655,8 @@
       "condition": "China Beijing; 54元 | 163元 | 无免费额度",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 54.0,
-        "output": 163.0
+        "input": 54,
+        "output": 163
       }
     },
     "qwen-deep-research-2025-12-15": {
@@ -2664,8 +2665,8 @@
       "condition": "China Beijing; 79元 | 236元 | 无免费额度",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 79.0,
-        "output": 236.0
+        "input": 79,
+        "output": 236
       }
     },
     "qwen3.8-2.4t-a95b": {
@@ -2674,8 +2675,8 @@
       "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 12元 | 36元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 12.0,
-        "output": 36.0
+        "input": 12,
+        "output": 36
       }
     },
     "qwen3.8-27b": {
@@ -2684,8 +2685,8 @@
       "condition": "China Beijing; 非思考和思考模式 | 0<Token≤1M | 3元 | 12元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 3.0,
-        "output": 12.0
+        "input": 3,
+        "output": 12
       }
     },
     "qwen3.6-35b-a3b": {
@@ -2704,8 +2705,8 @@
       "condition": "China Beijing; thinking output rate; 0<Token≤256K | 3元 | 18元 | 18元 | 100万Token",
       "region": "China (Beijing)",
       "pricing": {
-        "input": 3.0,
-        "output": 18.0
+        "input": 3,
+        "output": 18
       }
     },
     "qwen3.5-397b-a17b": {
@@ -2721,8 +2722,8 @@
         {
           "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 3元 | 18元 | 18元 | 100万Token",
           "pricing": {
-            "input": 3.0,
-            "output": 18.0
+            "input": 3,
+            "output": 18
           }
         }
       ]
@@ -2740,8 +2741,8 @@
         {
           "condition": "China Beijing; thinking output rate; 128K<Token≤256K | 2元 | 16元 | 16元 | 100万Token",
           "pricing": {
-            "input": 2.0,
-            "output": 16.0
+            "input": 2,
+            "output": 16
           }
         }
       ]
@@ -3108,7 +3109,7 @@
           "output": 7.5
         },
         "image": {
-          "output": 30.0
+          "output": 30
         }
       },
       "unitPricing": {
@@ -3358,7 +3359,7 @@
       "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
       "condition": "Speech synthesis per character; voice cloning separate",
       "unitPricing": {
-        "output_cost_per_character": 9e-05
+        "output_cost_per_character": 0.00009
       }
     },
     "stepaudio-3-asr-max": {
@@ -3638,9 +3639,9 @@
       "condition": "Online inference, text/non-audio tokens; 输入长度 [0, 1024]",
       "region": "China",
       "pricing": {
-        "input": 6.0,
+        "input": 6,
         "cachedInput": 1.2,
-        "output": 30.0
+        "output": 30
       }
     },
     "doubao-seed-2.1-pro": {
@@ -3649,9 +3650,9 @@
       "condition": "Online inference, text/non-audio tokens; 输入长度 [0, 1024]",
       "region": "China",
       "pricing": {
-        "input": 6.0,
+        "input": 6,
         "cachedInput": 1.2,
-        "output": 30.0
+        "output": 30
       },
       "aliases": [
         "seed-2.1-pro"
@@ -3674,9 +3675,9 @@
       "condition": "Online inference, text/non-audio tokens; 输入长度 [0, 256]",
       "region": "China",
       "pricing": {
-        "input": 3.0,
+        "input": 3,
         "cachedInput": 0.6,
-        "output": 15.0
+        "output": 15
       },
       "aliases": [
         "seed-2.1-turbo"
@@ -3690,7 +3691,7 @@
       "pricing": {
         "input": 3.2,
         "cachedInput": 0.64,
-        "output": 16.0
+        "output": 16
       },
       "tiers": [
         {
@@ -3698,7 +3699,7 @@
           "pricing": {
             "input": 4.8,
             "cachedInput": 0.96,
-            "output": 24.0
+            "output": 24
           }
         },
         {
@@ -3706,7 +3707,7 @@
           "pricing": {
             "input": 9.6,
             "cachedInput": 1.92,
-            "output": 48.0
+            "output": 48
           }
         }
       ],
@@ -3754,7 +3755,7 @@
       "pricing": {
         "input": 0.2,
         "cachedInput": 0.04,
-        "output": 2.0
+        "output": 2
       },
       "tiers": [
         {
@@ -3762,7 +3763,7 @@
           "pricing": {
             "input": 0.4,
             "cachedInput": 0.08,
-            "output": 4.0
+            "output": 4
           }
         },
         {
@@ -3770,7 +3771,7 @@
           "pricing": {
             "input": 0.8,
             "cachedInput": 0.16,
-            "output": 8.0
+            "output": 8
           }
         }
       ],
@@ -3786,7 +3787,7 @@
       "pricing": {
         "input": 3.2,
         "cachedInput": 0.64,
-        "output": 16.0
+        "output": 16
       },
       "tiers": [
         {
@@ -3794,7 +3795,7 @@
           "pricing": {
             "input": 4.8,
             "cachedInput": 0.96,
-            "output": 24.0
+            "output": 24
           }
         },
         {
@@ -3802,7 +3803,7 @@
           "pricing": {
             "input": 9.6,
             "cachedInput": 1.92,
-            "output": 48.0
+            "output": 48
           }
         }
       ],
@@ -3818,7 +3819,7 @@
       "pricing": {
         "input": 0.8,
         "cachedInput": 0.16,
-        "output": 2.0
+        "output": 2
       },
       "tiers": [
         {
@@ -3826,7 +3827,7 @@
           "pricing": {
             "input": 1.2,
             "cachedInput": 0.16,
-            "output": 6.0
+            "output": 6
           }
         }
       ]
@@ -4641,17 +4642,17 @@
       "condition": "Separate text/audio token billing",
       "modalityPricing": {
         "text": {
-          "input": 4.0,
+          "input": 4,
           "cachedInput": 0.4,
-          "output": 24.0
+          "output": 24
         },
         "audio": {
-          "input": 32.0,
+          "input": 32,
           "cachedInput": 0.4,
-          "output": 64.0
+          "output": 64
         },
         "image": {
-          "input": 5.0,
+          "input": 5,
           "cachedInput": 0.5
         }
       }
@@ -4663,11 +4664,11 @@
       "modalityPricing": {
         "text": {
           "input": 2.5,
-          "output": 10.0
+          "output": 10
         },
         "audio": {
-          "input": 32.0,
-          "output": 64.0
+          "input": 32,
+          "output": 64
         }
       },
       "aliases": [
@@ -4694,11 +4695,11 @@
       "modalityPricing": {
         "text": {
           "input": 2.5,
-          "output": 10.0
+          "output": 10
         },
         "audio": {
-          "input": 32.0,
-          "output": 64.0
+          "input": 32,
+          "output": 64
         }
       }
     },
@@ -4712,8 +4713,8 @@
           "output": 0.6
         },
         "audio": {
-          "input": 10.0,
-          "output": 20.0
+          "input": 10,
+          "output": 20
         }
       },
       "aliases": [
@@ -4738,7 +4739,7 @@
       "condition": "Standard pay-as-you-go; text tokens; lowest input-length tier",
       "pricing": {
         "input": 2.5,
-        "output": 10.0
+        "output": 10
       },
       "aliases": [
         "gpt-4o-search-preview-2025-03-11"
@@ -4751,11 +4752,11 @@
       "modalityPricing": {
         "text": {
           "input": 2.5,
-          "output": 10.0
+          "output": 10
         },
         "audio": {
-          "input": 40.0,
-          "output": 80.0
+          "input": 40,
+          "output": 80
         }
       },
       "aliases": [
@@ -4763,6 +4764,70 @@
         "gpt-4o-audio-preview-2024-12-17",
         "gpt-4o-audio-preview-2025-06-03"
       ]
+    },
+    "gpt-6.1-terra": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+      "condition": "Standard text tokens; through 272000 input tokens. Pro is an API reasoning mode; the qualified Pro ID is an OpenRouter alias.",
+      "pricing": {
+        "input": 1,
+        "output": 5,
+        "cachedInput": 0.05
+      },
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 2,
+            "output": 7.5,
+            "cachedInput": 0.1
+          }
+        }
+      ],
+      "aliases": [
+        "openai/gpt-6.1-terra-pro",
+        "openai.gpt-6.1-terra"
+      ]
+    },
+    "kimi-k3.1-pro": {
+      "currency": "USD",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "condition": "Standard inference; cache writes and web search billed separately; Batch is 60% of standard.",
+      "pricing": {
+        "input": 2,
+        "output": 10,
+        "cachedInput": 0.2
+      }
+    },
+    "kimi-k3.1-pro-highspeed": {
+      "currency": "USD",
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "condition": "Standard inference; cache writes and web search billed separately; Batch is 60% of standard.",
+      "pricing": {
+        "input": 4,
+        "output": 20,
+        "cachedInput": 0.2
+      }
+    },
+    "minimax-m3.1-flash": {
+      "currency": "USD",
+      "source": "https://platform.minimax.io/docs/pricing/overview",
+      "condition": "Standard pay-as-you-go; text tokens; excludes the earlier Flash Preview route.",
+      "pricing": {
+        "input": 0.15,
+        "output": 0.6,
+        "cachedInput": 0.015
+      }
+    },
+    "mercury-3": {
+      "currency": "USD",
+      "source": "https://docs.inceptionlabs.ai/get-started/models",
+      "condition": "Launch 50% promotion; regular input/output/cached input are 0.20/0.70/0.02. No end date published.",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.35,
+        "cachedInput": 0.01
+      }
     }
   }
 }
