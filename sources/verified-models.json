@@ -1276,6 +1276,11 @@
         "output": 1.8
       },
       "output": 1.2
+    },
+    "source": {
+      "catalog": "OMP",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json",
+      "provider": "openai-codex"
     }
   },
   "openai-codex/gpt-5.6-sol": {
@@ -1327,6 +1332,11 @@
         "output": 30
       },
       "output": 20
+    },
+    "source": {
+      "catalog": "OMP",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json",
+      "provider": "openai-codex"
     }
   },
   "openai-codex/gpt-5.6-terra": {
@@ -1378,6 +1388,11 @@
         "output": 18
       },
       "output": 12
+    },
+    "source": {
+      "catalog": "OMP",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json",
+      "provider": "openai-codex"
     }
   },
   "openai-codex/gpt-6-astra": {
@@ -1422,6 +1437,11 @@
       "cacheWrite": 0,
       "input": 10,
       "output": 50
+    },
+    "source": {
+      "catalog": "OMP",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json",
+      "provider": "openai-codex"
     }
   },
   "openai-codex/gpt-6-luna": {
@@ -1466,6 +1486,11 @@
       "cacheWrite": 0,
       "input": 0.1,
       "output": 0.5
+    },
+    "source": {
+      "catalog": "OMP",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json",
+      "provider": "openai-codex"
     }
   },
   "openai-codex/gpt-6-sol": {
@@ -1510,6 +1535,11 @@
       "cacheWrite": 0,
       "input": 2,
       "output": 10
+    },
+    "source": {
+      "catalog": "OMP",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json",
+      "provider": "openai-codex"
     }
   },
   "openai-codex/gpt-6.1-sol": {
@@ -1554,6 +1584,11 @@
       "cacheWrite": 0,
       "input": 2,
       "output": 10
+    },
+    "source": {
+      "catalog": "OMP",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json",
+      "provider": "openai-codex"
     }
   },
   "openai-codex/gpt-daybreak-blue-latest": {
@@ -1598,6 +1633,530 @@
       "cacheWrite": 6.25,
       "input": 5,
       "output": 30
+    },
+    "source": {
+      "catalog": "OMP",
+      "url": "https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json",
+      "provider": "openai-codex"
+    }
+  },
+  "claude-fable-5-2": {
+    "displayName": "Claude Fable 5.2",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview"
+    },
+    "maxOutput": 128000,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "releaseDate": "2026-11-09",
+    "canonicalId": "anthropic/claude-fable-5-2",
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinkingOff": false,
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview"
+    }
+  },
+  "anthropic/claude-fable-5-2": {
+    "displayName": "Claude Fable 5.2",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview"
+    },
+    "maxOutput": 128000,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "releaseDate": "2026-11-09",
+    "canonicalId": "anthropic/claude-fable-5-2",
+    "thinkingOff": false,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview"
+    }
+  },
+  "anthropic/claude-fable-5.2": {
+    "displayName": "Anthropic: Claude Fable 5.2",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "file"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview"
+    },
+    "maxOutput": 128000,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinkingOff": false,
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview"
+    }
+  },
+  "anthropic/claude-fable-5.2:batch": {
+    "displayName": "Anthropic: Claude Fable 5.2 (batch)",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "file"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview"
+    },
+    "maxOutput": 128000,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinkingOff": false,
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview"
+    }
+  },
+  "anthropic.claude-fable-5-2": {
+    "displayName": "Claude Fable 5.2",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview"
+    },
+    "maxOutput": 128000,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "releaseDate": "2026-11-09",
+    "canonicalId": "anthropic/claude-fable-5-2",
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinkingOff": false,
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/overview"
+    }
+  },
+  "claude-mythos-5-2": {
+    "displayName": "Claude Mythos 5.2",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": true,
+      "functionCalling": true,
+      "reasoning": true,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://platform.claude.com/docs/en/models/mythos-5-2/overview"
+    },
+    "maxOutput": 128000,
+    "thinkingOff": false,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://platform.claude.com/docs/en/models/mythos-5-2/overview"
+    }
+  },
+  "anthropic/claude-mythos-5-2": {
+    "displayName": "Claude Mythos 5.2",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": true,
+      "functionCalling": true,
+      "reasoning": true,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://platform.claude.com/docs/en/models/mythos-5-2/overview"
+    },
+    "maxOutput": 128000,
+    "thinkingOff": false,
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://platform.claude.com/docs/en/models/mythos-5-2/overview"
+    },
+    "aliasOf": "claude-mythos-5-2"
+  },
+  "gemini-4-carbon": {
+    "displayName": "Gemini 4 Carbon",
+    "contextWindow": 1048576,
+    "capabilities": {
+      "vision": true,
+      "videoInput": true,
+      "audioInput": true,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://aistudio.google.com/docs/models/gemini-4-carbon"
+    },
+    "maxOutput": 65536,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "releaseDate": "2026-11-10",
+    "canonicalId": "google/gemini-4-carbon",
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://aistudio.google.com/docs/models/gemini-4-carbon"
+    }
+  },
+  "google/gemini-4-carbon": {
+    "displayName": "Gemini 4 Carbon",
+    "contextWindow": 1048576,
+    "capabilities": {
+      "vision": true,
+      "videoInput": true,
+      "audioInput": true,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://aistudio.google.com/docs/models/gemini-4-carbon"
+    },
+    "maxOutput": 65536,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "releaseDate": "2026-11-10",
+    "canonicalId": "google/gemini-4-carbon",
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://aistudio.google.com/docs/models/gemini-4-carbon"
+    }
+  },
+  "cohere/embed-5-fast": {
+    "displayName": "Cohere: Embed 5 Fast",
+    "contextWindow": 128000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": false,
+      "reasoning": false,
+      "structuredOutput": false,
+      "embedding": true
+    },
+    "modelType": "embedding",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "embeddings"
+      ]
+    },
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://docs.cohere.com/v2/docs/models"
+    },
+    "reasoningEfforts": [],
+    "dimensions": 2048,
+    "multilingual": true,
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://docs.cohere.com/v2/docs/models"
+    }
+  },
+  "cohere/embed-5-pro": {
+    "displayName": "Cohere: Embed 5 Pro",
+    "contextWindow": 128000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": false,
+      "reasoning": false,
+      "structuredOutput": false,
+      "embedding": true
+    },
+    "modelType": "embedding",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "embeddings"
+      ]
+    },
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://docs.cohere.com/v2/docs/models"
+    },
+    "reasoningEfforts": [],
+    "dimensions": 2048,
+    "multilingual": true,
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://docs.cohere.com/v2/docs/models"
+    }
+  },
+  "gpt-image-2.6-flare": {
+    "displayName": "GPT Image 2.6 Flare",
+    "contextWindow": 0,
+    "capabilities": {
+      "vision": true,
+      "imageGeneration": true
+    },
+    "modelType": "image_generation",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-flare"
+    },
+    "reasoningEfforts": [],
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-flare"
+    }
+  },
+  "openai/gpt-image-2.6-flare": {
+    "displayName": "GPT Image 2.6 Flare",
+    "contextWindow": 400000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": false,
+      "reasoning": false,
+      "structuredOutput": true,
+      "imageGeneration": true
+    },
+    "modelType": "image_generation",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-flare"
+    },
+    "reasoningEfforts": [],
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-flare"
+    }
+  },
+  "gpt-image-2.6-sunburst": {
+    "displayName": "GPT Image 2.6 Sunburst",
+    "contextWindow": 0,
+    "capabilities": {
+      "vision": true,
+      "imageGeneration": true
+    },
+    "modelType": "image_generation",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst"
+    },
+    "reasoningEfforts": [],
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst"
+    }
+  },
+  "openai/gpt-image-2.6-sunburst": {
+    "displayName": "GPT Image 2.6 Sunburst",
+    "contextWindow": 400000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": false,
+      "reasoning": false,
+      "structuredOutput": true,
+      "imageGeneration": true
+    },
+    "modelType": "image_generation",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst"
+    },
+    "reasoningEfforts": [],
+    "verification": {
+      "date": "2026-11-11",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst"
     }
   }
 }

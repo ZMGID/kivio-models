@@ -8,6 +8,37 @@ const previous = entries => ({ _meta: { schemaVersion: 1, version: '2026-10-13.1
 const model = (id, extra = {}) => ({ id, name: id, reasoning: false, tool_call: false, modalities: { input: ['text'], output: ['text'] }, limit: { context: 32000, output: 4000 }, ...extra })
 const feeds = (extra = {}) => ({ 'models-dev': {}, 'models-dev-canonical': {}, 'openrouter-all': { data: [] }, litellm: {}, ...extra })
 
+test('the maintained supplements can be imported with their source attribution', () => {
+  const verified = JSON.parse(readFileSync(new URL('../sources/verified-models.json', import.meta.url), 'utf8'))
+  const { database } = buildCatalog(previous({}), feeds({ verified }), '2026-11-11.1')
+  for (const [id, entry] of Object.entries(verified)) {
+    assert.ok(entry.source?.url?.startsWith('https://'), id)
+    assert.ok(database._meta.sources.includes(entry.source.url), id)
+    assert.equal(database[id].contextWindow, entry.contextWindow, id)
+  }
+})
+
+test('November refresh includes verified new models without reviving rejected candidates', () => {
+  const database = JSON.parse(readFileSync(new URL('../v1/modelDatabase.json', import.meta.url), 'utf8'))
+  for (const id of ['claude-fable-5-2', 'anthropic/claude-fable-5.2', 'claude-mythos-5-2']) {
+    assert.equal(database[id].thinkingOff, false, id)
+    assert.equal(database[id].pricing.input, 8, id)
+    assert.deepEqual(database[id].reasoningEfforts, ['low', 'medium', 'high', 'xhigh', 'max'], id)
+  }
+  assert.equal(database['gemini-4-carbon'].maxOutput, 65536)
+  assert.equal(database['cohere/embed-5-pro'].dimensions, 2048)
+  assert.equal(database['gpt-image-2.6-flare'].pricing, undefined)
+  assert.equal(database['gpt-image-2.6-flare'].modalityPricing.image.output, 30)
+  assert.equal(database['meta-llama/llama-3-8b-instruct'].maxOutput, 8192)
+  assert.equal(database['ministral-3b-2512'].contextWindow, 262144)
+  for (const id of ['gpt-6-rosalind', 'gpt-6-cyber', 'gpt-6-astra-law', 'together-ai-8.1b-21b', '~unbiased/pareto-latest']) assert.equal(database[id], undefined, id)
+  for (const [id, entry] of Object.entries(database)) {
+    if (id === '_meta') continue
+    for (const target of [entry.aliasOf, entry.variantOf].filter(Boolean)) assert.ok(database[target], `${id}: ${target}`)
+    if (entry.contextWindow > 0 && entry.maxOutput !== undefined) assert.ok(entry.maxOutput <= entry.contextWindow, id)
+  }
+})
+
 test('published October refresh preserves verified controls, limits, and independently priced variants', () => {
   const database = JSON.parse(readFileSync(new URL('../v1/modelDatabase.json', import.meta.url), 'utf8'))
   for (const id of ['gpt-6.1-terra', 'openai/gpt-6.1-terra']) {

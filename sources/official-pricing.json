@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-31",
+  "asOf": "2026-11-11",
   "baseline": "Reference prices; OMP snapshot overrides for matched native and OpenRouter routes as requested on 2026-10-31. Other entries retain the existing verified rate cards and fixed CNY conversion. Unknown prices are omitted. Media, schedules, and cache writes remain separate metadata.",
   "exchangeRate": {
     "date": "2026-10-16",
@@ -18814,6 +18814,81 @@
         "input": 5,
         "output": 30,
         "cachedInput": 0.5
+      }
+    },
+    "claude-fable-5-2": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/models/fable-5-2/overview",
+      "pricing": {
+        "input": 8,
+        "output": 40,
+        "cachedInput": 0.2
+      },
+      "condition": "Standard first-party reference rates; cache writes and fast mode billed separately",
+      "aliases": [
+        "anthropic.claude-fable-5-2"
+      ]
+    },
+    "claude-mythos-5-2": {
+      "currency": "USD",
+      "source": "https://platform.claude.com/docs/en/models/mythos-5-2/overview",
+      "pricing": {
+        "input": 8,
+        "output": 40,
+        "cachedInput": 0.2
+      },
+      "condition": "Standard first-party reference rates; cache writes and fast mode billed separately"
+    },
+    "gemini-4-carbon": {
+      "currency": "USD",
+      "source": "https://aistudio.google.com/docs/pricing#gemini-4-carbon",
+      "pricing": {
+        "input": 2,
+        "output": 10,
+        "cachedInput": 0.1
+      },
+      "condition": "Introductory rates through 2026-11-30. From 2026-12-01: input 4, output 20, implicit cache read 0.2 USD per million tokens. Explicit caching unsupported; client does not switch rates by date.",
+      "tiers": [
+        {
+          "condition": "From 2026-12-01",
+          "pricing": {
+            "input": 4,
+            "output": 20,
+            "cachedInput": 0.2
+          }
+        }
+      ]
+    },
+    "gpt-image-2.6-flare": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-image-2.6-flare",
+      "condition": "Image and text token rates are separate; see modalityPricing",
+      "modalityPricing": {
+        "image": {
+          "input": 8,
+          "cachedInput": 2,
+          "output": 30
+        },
+        "text": {
+          "input": 5,
+          "cachedInput": 1.25
+        }
+      }
+    },
+    "gpt-image-2.6-sunburst": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst",
+      "condition": "Image and text token rates are separate; see modalityPricing",
+      "modalityPricing": {
+        "image": {
+          "input": 8,
+          "cachedInput": 2,
+          "output": 30
+        },
+        "text": {
+          "input": 5,
+          "cachedInput": 1.25
+        }
       }
     }
   }
