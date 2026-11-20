@@ -2158,5 +2158,633 @@
       "date": "2026-11-11",
       "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst"
     }
+  },
+  "gpt-6.2-astra": {
+    "displayName": "GPT-6.2 Astra",
+    "contextWindow": 1050000,
+    "maxOutput": 128000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true,
+      "webSearch": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra"
+    },
+    "releaseDate": "2026-11-17",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra"
+    },
+    "thinkingOff": false
+  },
+  "openai/gpt-6.2-astra": {
+    "displayName": "GPT-6.2 Astra",
+    "contextWindow": 1050000,
+    "maxOutput": 128000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true,
+      "webSearch": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "source": {
+      "catalog": "OpenRouter",
+      "url": "https://openrouter.ai/openai/gpt-6.2-astra",
+      "provider": "openrouter"
+    },
+    "releaseDate": "2026-11-17",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://openrouter.ai/openai/gpt-6.2-astra"
+    },
+    "thinkingOff": false
+  },
+  "openai-codex/gpt-6.2-astra": {
+    "displayName": "GPT-6.2 Astra",
+    "contextWindow": 272000,
+    "maxOutput": 128000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": false,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "source": {
+      "catalog": "Codex CLI",
+      "url": "https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/models-manager/models.json",
+      "provider": "openai-codex"
+    },
+    "releaseDate": "2026-11-17",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/models-manager/models.json"
+    },
+    "maxContextWindow": 872000,
+    "thinkingOff": false
+  },
+  "gpt-6.2-sol": {
+    "displayName": "GPT-6.2 Sol",
+    "contextWindow": 1050000,
+    "maxOutput": 128000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true,
+      "webSearch": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol"
+    },
+    "releaseDate": "2026-11-17",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol"
+    },
+    "thinkingOff": false
+  },
+  "openai/gpt-6.2-sol": {
+    "displayName": "GPT-6.2 Sol",
+    "contextWindow": 1050000,
+    "maxOutput": 128000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true,
+      "webSearch": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "source": {
+      "catalog": "OpenRouter",
+      "url": "https://openrouter.ai/openai/gpt-6.2-sol",
+      "provider": "openrouter"
+    },
+    "releaseDate": "2026-11-17",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://openrouter.ai/openai/gpt-6.2-sol"
+    },
+    "thinkingOff": false
+  },
+  "openai-codex/gpt-6.2-sol": {
+    "displayName": "GPT-6.2 Sol",
+    "contextWindow": 500000,
+    "maxOutput": 128000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": false,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "source": {
+      "catalog": "Codex CLI",
+      "url": "https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/models-manager/models.json",
+      "provider": "openai-codex"
+    },
+    "releaseDate": "2026-11-17",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/models-manager/models.json"
+    },
+    "maxContextWindow": 872000,
+    "thinkingOff": false
+  },
+  "gemini-4-hydrogen": {
+    "displayName": "Gemini 4 Hydrogen",
+    "contextWindow": 1048576,
+    "maxOutput": 65536,
+    "capabilities": {
+      "vision": true,
+      "videoInput": true,
+      "audioInput": true,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true,
+      "webSearch": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ],
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://aistudio.google.com/docs/models/gemini-4-hydrogen"
+    },
+    "releaseDate": "2026-11-12",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://aistudio.google.com/docs/models/gemini-4-hydrogen"
+    },
+    "thinkingOff": false
+  },
+  "google/gemini-4-hydrogen": {
+    "displayName": "Gemini 4 Hydrogen",
+    "contextWindow": 1048576,
+    "maxOutput": 65536,
+    "capabilities": {
+      "vision": true,
+      "videoInput": true,
+      "audioInput": true,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true,
+      "webSearch": false
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ],
+    "source": {
+      "catalog": "OpenRouter",
+      "url": "https://openrouter.ai/google/gemini-4-hydrogen",
+      "provider": "openrouter"
+    },
+    "releaseDate": "2026-11-12",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://openrouter.ai/google/gemini-4-hydrogen"
+    },
+    "thinkingOff": false
+  },
+  "gemini-4-neon": {
+    "displayName": "Gemini 4 Neon",
+    "contextWindow": 1048576,
+    "maxOutput": 65536,
+    "capabilities": {
+      "vision": true,
+      "videoInput": true,
+      "audioInput": true,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true,
+      "webSearch": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ],
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://aistudio.google.com/docs/models/gemini-4-neon"
+    },
+    "releaseDate": "2026-11-18",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://aistudio.google.com/docs/models/gemini-4-neon"
+    },
+    "thinkingOff": false
+  },
+  "google/gemini-4-neon": {
+    "displayName": "Gemini 4 Neon",
+    "contextWindow": 1048576,
+    "maxOutput": 65536,
+    "capabilities": {
+      "vision": true,
+      "videoInput": true,
+      "audioInput": true,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true,
+      "webSearch": false
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ],
+    "source": {
+      "catalog": "OpenRouter",
+      "url": "https://openrouter.ai/google/gemini-4-neon",
+      "provider": "openrouter"
+    },
+    "releaseDate": "2026-11-18",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://openrouter.ai/google/gemini-4-neon"
+    },
+    "thinkingOff": false
+  },
+  "qwen4-max": {
+    "displayName": "Qwen4-Max",
+    "contextWindow": 1000000,
+    "maxOutput": 131072,
+    "capabilities": {
+      "vision": true,
+      "videoInput": true,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true,
+      "webSearch": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "high",
+      "xhigh"
+    ],
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://help.aliyun.com/en/model-studio/qwen4-max"
+    },
+    "releaseDate": "2026-11-16",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://help.aliyun.com/en/model-studio/qwen4-max"
+    },
+    "thinkingOff": true
+  },
+  "qwen/qwen4-max": {
+    "displayName": "Qwen4-Max",
+    "contextWindow": 1000000,
+    "maxOutput": 131072,
+    "capabilities": {
+      "vision": true,
+      "videoInput": true,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true,
+      "webSearch": false
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "high",
+      "xhigh"
+    ],
+    "source": {
+      "catalog": "OpenRouter",
+      "url": "https://openrouter.ai/qwen/qwen4-max",
+      "provider": "openrouter"
+    },
+    "releaseDate": "2026-11-16",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://openrouter.ai/qwen/qwen4-max"
+    },
+    "thinkingOff": true
+  },
+  "hy4-flash": {
+    "displayName": "Hy4 Flash",
+    "contextWindow": 1048576,
+    "maxOutput": 65536,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "high"
+    ],
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://cloud.tencent.com/document/product/1823/132252"
+    },
+    "releaseDate": "2026-11-16",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://cloud.tencent.com/document/product/1823/132252"
+    }
+  },
+  "tencent/hy4-flash": {
+    "displayName": "Hy4 Flash",
+    "contextWindow": 1048576,
+    "maxOutput": 65536,
+    "capabilities": {
+      "vision": true,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [],
+    "source": {
+      "catalog": "OpenRouter",
+      "url": "https://openrouter.ai/tencent/hy4-flash",
+      "provider": "openrouter"
+    },
+    "releaseDate": "2026-11-16",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://openrouter.ai/tencent/hy4-flash"
+    }
+  },
+  "olala-v1.0-mini-7a1b": {
+    "displayName": "Olala v1.0 mini 7A1B",
+    "contextWindow": 32768,
+    "capabilities": {
+      "vision": false,
+      "videoInput": false,
+      "audioInput": false,
+      "functionCalling": true,
+      "reasoning": true,
+      "structuredOutput": true,
+      "streaming": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/olala-v1-0-mini-7a1b/"
+    },
+    "releaseDate": "2026-11-18",
+    "verification": {
+      "date": "2026-11-21",
+      "url": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/olala-v1-0-mini-7a1b/"
+    }
   }
 }

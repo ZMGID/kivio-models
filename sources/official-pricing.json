@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-11",
+  "asOf": "2026-11-21",
   "baseline": "Reference prices; OMP snapshot overrides for matched native and OpenRouter routes as requested on 2026-10-31. Other entries retain the existing verified rate cards and fixed CNY conversion. Unknown prices are omitted. Media, schedules, and cache writes remain separate metadata.",
   "exchangeRate": {
     "date": "2026-10-16",
@@ -18889,6 +18889,128 @@
           "input": 5,
           "cachedInput": 1.25
         }
+      }
+    },
+    "gpt-6.2-astra": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.2-astra",
+      "pricing": {
+        "input": 8,
+        "output": 40,
+        "cachedInput": 0.4
+      },
+      "condition": "Standard reference rates. Function calling requires the Responses API.",
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 16,
+            "output": 60,
+            "cachedInput": 0.8
+          }
+        }
+      ]
+    },
+    "openai-codex/gpt-6.2-astra": {
+      "currency": "USD",
+      "source": "https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/models-manager/models.json",
+      "condition": "Codex subscription route. Usage depends on the account plan."
+    },
+    "gpt-6.2-sol": {
+      "currency": "USD",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.2-sol",
+      "pricing": {
+        "input": 2,
+        "output": 10,
+        "cachedInput": 0.1
+      },
+      "condition": "Standard reference rates. Function calling requires the Responses API.",
+      "tiers": [
+        {
+          "condition": "More than 272000 input tokens",
+          "pricing": {
+            "input": 4,
+            "output": 15,
+            "cachedInput": 0.2
+          }
+        }
+      ]
+    },
+    "openai-codex/gpt-6.2-sol": {
+      "currency": "USD",
+      "source": "https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/models-manager/models.json",
+      "condition": "Codex subscription route. Usage depends on the account plan."
+    },
+    "gemini-4-hydrogen": {
+      "currency": "USD",
+      "source": "https://aistudio.google.com/docs/pricing#gemini-4-hydrogen",
+      "pricing": {
+        "input": 1.5,
+        "output": 7.5,
+        "cachedInput": 0.075
+      },
+      "condition": "Paid-tier Standard rates with implicit cache reads."
+    },
+    "gemini-4-neon": {
+      "currency": "USD",
+      "source": "https://aistudio.google.com/docs/pricing#gemini-4-neon",
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cachedInput": 0.15
+      },
+      "condition": "Paid-tier Standard rates with implicit cache reads."
+    },
+    "qwen4-max": {
+      "currency": "CNY",
+      "source": "https://help.aliyun.com/en/model-studio/qwen4-max#model-pricing",
+      "region": "China (Beijing)",
+      "condition": "Pay-as-you-go input and output price for both thinking modes.",
+      "pricing": {
+        "input": 10,
+        "output": 30
+      }
+    },
+    "qwen/qwen4-max": {
+      "currency": "USD",
+      "source": "https://openrouter.ai/qwen/qwen4-max",
+      "kind": "catalog",
+      "condition": "OpenRouter price shown with a 5% discount on 2026-11-21.",
+      "pricing": {
+        "input": 1.425,
+        "output": 4.275,
+        "cachedInput": 0.07125
+      }
+    },
+    "hy4-flash": {
+      "currency": "CNY",
+      "source": "https://cloud.tencent.com/product/tokenhub",
+      "region": "China (Guangzhou)",
+      "condition": "Standard pay-as-you-go list prices before promotions.",
+      "pricing": {
+        "input": 0.5,
+        "output": 2,
+        "cachedInput": 0.02
+      }
+    },
+    "tencent/hy4-flash": {
+      "currency": "USD",
+      "source": "https://openrouter.ai/tencent/hy4-flash",
+      "kind": "catalog",
+      "condition": "OpenRouter price shown with a 50% discount on 2026-11-21.",
+      "pricing": {
+        "input": 0.035,
+        "output": 0.1405,
+        "cachedInput": 0.0015
+      }
+    },
+    "olala-v1.0-mini-7a1b": {
+      "currency": "USD",
+      "source": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/olala-v1-0-mini-7a1b/",
+      "condition": "OVHcloud AI Endpoints lists this route as free.",
+      "pricing": {
+        "input": 0,
+        "output": 0
       }
     }
   }
