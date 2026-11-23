@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-21",
+  "asOf": "2026-11-24",
   "baseline": "Reference prices; OMP snapshot overrides for matched native and OpenRouter routes as requested on 2026-10-31. Other entries retain the existing verified rate cards and fixed CNY conversion. Unknown prices are omitted. Media, schedules, and cache writes remain separate metadata.",
   "exchangeRate": {
     "date": "2026-10-16",
@@ -19008,6 +19008,38 @@
       "currency": "USD",
       "source": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/olala-v1-0-mini-7a1b/",
       "condition": "OVHcloud AI Endpoints lists this route as free.",
+      "pricing": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    "thinkingmachines/inkling-2-mini": {
+      "currency": "USD",
+      "source": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
+      "kind": "catalog",
+      "condition": "OpenRouter route only",
+      "pricing": {
+        "input": 0.075,
+        "output": 0.3,
+        "cachedInput": 0.015
+      }
+    },
+    "radixark/daisyrose-27b": {
+      "currency": "USD",
+      "source": "https://openrouter.ai/radixark/daisyrose-27b",
+      "kind": "catalog",
+      "condition": "OpenRouter route only",
+      "pricing": {
+        "input": 0.15,
+        "output": 1.875,
+        "cachedInput": 0.0375
+      }
+    },
+    "inclusionai/ling-3.2-flash:free": {
+      "currency": "USD",
+      "source": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
+      "kind": "catalog",
+      "condition": "OpenRouter route only",
       "pricing": {
         "input": 0,
         "output": 0

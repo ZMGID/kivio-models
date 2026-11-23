@@ -2786,5 +2786,412 @@
       "date": "2026-11-21",
       "url": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/olala-v1-0-mini-7a1b/"
     }
+  },
+  "glm-5.4": {
+    "displayName": "GLM-5.4",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "maxOutput": 131072,
+    "reasoningEfforts": [
+      "low",
+      "high",
+      "max"
+    ],
+    "thinkingOff": false,
+    "releaseDate": "2026-11-23",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://zcode.z.ai/en/docs/configuration",
+      "provider": "zai-coding-plan"
+    }
+  },
+  "zhipuai/glm-5.4": {
+    "displayName": "GLM-5.4",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "maxOutput": 131072,
+    "reasoningEfforts": [
+      "low",
+      "high",
+      "max"
+    ],
+    "thinkingOff": false,
+    "releaseDate": "2026-11-23",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://zcode.z.ai/en/docs/configuration",
+      "provider": "zai-coding-plan"
+    },
+    "aliasOf": "glm-5.4"
+  },
+  "inkling-2-mini": {
+    "displayName": "Inkling 2 Mini",
+    "contextWindow": 1048576,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "releaseDate": "2026-11-20",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://thinkingmachines.ai/model-card/inkling-2-mini/",
+      "provider": "thinkingmachines"
+    }
+  },
+  "thinkingmachines/inkling-2-mini": {
+    "displayName": "Inkling 2 Mini",
+    "contextWindow": 1048576,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true,
+      "structuredOutput": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "maxOutput": 65536,
+    "releaseDate": "2026-11-21",
+    "source": {
+      "catalog": "OpenRouter",
+      "url": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
+      "provider": "openrouter"
+    }
+  },
+  "daisyrose-27b": {
+    "displayName": "DaisyRose 27B",
+    "contextWindow": 262144,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "releaseDate": "2026-11-18",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://huggingface.co/RadixArk/DaisyRose-27B",
+      "provider": "radixark"
+    }
+  },
+  "radixark/daisyrose-27b": {
+    "displayName": "DaisyRose 27B",
+    "contextWindow": 262144,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true,
+      "structuredOutput": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "maxOutput": 235929,
+    "releaseDate": "2026-11-21",
+    "source": {
+      "catalog": "OpenRouter",
+      "url": "https://openrouter.ai/radixark/daisyrose-27b",
+      "provider": "openrouter"
+    }
+  },
+  "lingsante-3.1-flash": {
+    "displayName": "LingSante 3.1 Flash",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": false,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [],
+    "thinkingOff": true,
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
+      "provider": "inclusionai"
+    }
+  },
+  "inclusionai/lingsante-3.1-flash": {
+    "displayName": "LingSante 3.1 Flash",
+    "contextWindow": 1000000,
+    "capabilities": {
+      "vision": false,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "reasoningEfforts": [],
+    "thinkingOff": true,
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
+      "provider": "inclusionai"
+    },
+    "aliasOf": "lingsante-3.1-flash"
+  },
+  "inclusionai/ling-3.2-flash:free": {
+    "displayName": "Ling 3.2 Flash (free)",
+    "contextWindow": 1048576,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true,
+      "structuredOutput": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "maxOutput": 262144,
+    "thinkingOff": true,
+    "reasoningEfforts": [],
+    "releaseDate": "2026-11-13",
+    "source": {
+      "catalog": "OpenRouter",
+      "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
+      "provider": "openrouter"
+    }
+  },
+  "mai-code-2": {
+    "displayName": "MAI Code 2",
+    "contextWindow": 1050000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "maxOutput": 128000,
+    "releaseDate": "2026-11-17",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://microsoft.ai/pdf/MAI-Code-2-And-MAI-Code-2-Flash-Model-Card.pdf",
+      "provider": "microsoft"
+    }
+  },
+  "mai-code-2-flash": {
+    "displayName": "MAI Code 2 Flash",
+    "contextWindow": 1050000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "maxOutput": 128000,
+    "releaseDate": "2026-11-17",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://microsoft.ai/pdf/MAI-Code-2-And-MAI-Code-2-Flash-Model-Card.pdf",
+      "provider": "microsoft"
+    }
+  },
+  "microsoft/mai-code-2": {
+    "displayName": "MAI Code 2",
+    "contextWindow": 1050000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "maxOutput": 128000,
+    "releaseDate": "2026-11-17",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://microsoft.ai/pdf/MAI-Code-2-And-MAI-Code-2-Flash-Model-Card.pdf",
+      "provider": "microsoft"
+    },
+    "aliasOf": "mai-code-2"
+  },
+  "microsoft/mai-code-2-flash": {
+    "displayName": "MAI Code 2 Flash",
+    "contextWindow": 1050000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modelType": "chat",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "maxOutput": 128000,
+    "releaseDate": "2026-11-17",
+    "source": {
+      "catalog": "Official documentation",
+      "url": "https://microsoft.ai/pdf/MAI-Code-2-And-MAI-Code-2-Flash-Model-Card.pdf",
+      "provider": "microsoft"
+    },
+    "aliasOf": "mai-code-2-flash"
+  },
+  "microsoft/mai-image-2.7": {
+    "displayName": "MAI Image 2.7",
+    "contextWindow": 4096,
+    "capabilities": {
+      "vision": true,
+      "imageGeneration": true,
+      "reasoning": false,
+      "functionCalling": false
+    },
+    "modelType": "image_generation",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "reasoningEfforts": [],
+    "source": {
+      "catalog": "OpenRouter",
+      "url": "https://openrouter.ai/microsoft/mai-image-2.7",
+      "provider": "openrouter"
+    }
+  },
+  "microsoft/mai-image-2.7-flash": {
+    "displayName": "MAI Image 2.7 Flash",
+    "contextWindow": 4096,
+    "capabilities": {
+      "vision": true,
+      "imageGeneration": true,
+      "reasoning": false,
+      "functionCalling": false
+    },
+    "modelType": "image_generation",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "reasoningEfforts": [],
+    "source": {
+      "catalog": "OpenRouter",
+      "url": "https://openrouter.ai/microsoft/mai-image-2.7-flash",
+      "provider": "openrouter"
+    }
   }
 }
