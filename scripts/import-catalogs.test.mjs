@@ -39,21 +39,27 @@ test('November refresh includes verified new models without reviving rejected ca
   }
 })
 
-test('published October refresh preserves verified controls, limits, and independently priced variants', () => {
+test('published catalog preserves Codex windows and independently priced variants', () => {
   const database = JSON.parse(readFileSync(new URL('../v1/modelDatabase.json', import.meta.url), 'utf8'))
   for (const id of ['gpt-6.1-terra', 'openai/gpt-6.1-terra']) {
     assert.equal(database[id].contextWindow, 500000)
     assert.equal(database[id].pricing.input, 1)
     assert.deepEqual(database[id].reasoningEfforts, ['low', 'medium', 'high', 'xhigh', 'max'])
   }
-  const codex = JSON.parse(readFileSync(new URL('../sources/codex-models-2026-10-31.json', import.meta.url), 'utf8'))
+  const codex = JSON.parse(readFileSync(new URL('../sources/codex-models-2026-11-24.json', import.meta.url), 'utf8'))
   for (const [name, reference] of Object.entries(codex.models)) {
+    if (reference.source !== 'live') continue
     for (const id of [name, 'openai/' + name]) assert.equal(database[id].contextWindow, reference.contextWindow, id)
   }
+  for (const name of ['gpt-6.2-astra', 'gpt-6.2-sol']) {
+    assert.equal(database['openai-codex/' + name].contextWindow, codex.models[name].contextWindow, name)
+  }
   assert.equal(database['gpt-6.1-terra'].thinkingOff, false)
-  assert.equal(database['gpt-5.4'].contextWindow, 1000000)
-  assert.equal(database['gpt-5.4-mini'].contextWindow, 400000)
-  assert.equal(database['gpt-5.4-nano'].contextWindow, 400000)
+  assert.equal(database['gpt-5.4'].contextWindow, codex.models['gpt-5.4'].contextWindow)
+  assert.equal(database['gpt-5.4-mini'].contextWindow, codex.models['gpt-5.4-mini'].contextWindow)
+  assert.equal(database['gpt-5.4-nano'].contextWindow, codex.fallback.contextWindow)
+  assert.equal(database['openai/gpt-6.1-terra-pro:batch'].contextWindow, codex.models['gpt-6.1-terra'].contextWindow)
+  assert.equal(database['gpt-4o'].contextWindow, 128000)
   assert.deepEqual(database['gpt-5.5-pro'].reasoningEfforts, ['low', 'medium', 'high', 'xhigh'])
   assert.equal(database['openai-codex/gpt-6-astra'].contextWindow, 272000)
   assert.equal(database['openai-codex/gpt-6.1-sol'].contextWindow, 500000)

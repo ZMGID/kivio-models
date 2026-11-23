@@ -2161,7 +2161,7 @@
   },
   "gpt-6.2-astra": {
     "displayName": "GPT-6.2 Astra",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -2204,7 +2204,7 @@
   },
   "openai/gpt-6.2-astra": {
     "displayName": "GPT-6.2 Astra",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -2291,7 +2291,7 @@
   },
   "gpt-6.2-sol": {
     "displayName": "GPT-6.2 Sol",
-    "contextWindow": 1050000,
+    "contextWindow": 500000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -2334,7 +2334,7 @@
   },
   "openai/gpt-6.2-sol": {
     "displayName": "GPT-6.2 Sol",
-    "contextWindow": 1050000,
+    "contextWindow": 500000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,

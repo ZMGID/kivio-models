@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "version": "2026-11-24.1",
+    "version": "2026-11-24.2",
     "schemaVersion": 1,
     "description": "AI model database for Kivio. Keyed by model ID patterns. Used for auto-filling model info when adding models.",
     "sources": [
@@ -210,7 +210,10 @@
       "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
       "https://microsoft.ai/pdf/MAI-Code-2-And-MAI-Code-2-Flash-Model-Card.pdf",
       "https://openrouter.ai/microsoft/mai-image-2.7",
-      "https://openrouter.ai/microsoft/mai-image-2.7-flash"
+      "https://openrouter.ai/microsoft/mai-image-2.7-flash",
+      "https://github.com/openai/codex/blob/rust-v0.120.0/codex-rs/models-manager/models.json",
+      "https://github.com/openai/codex/blob/rust-v0.139.0/codex-rs/models-manager/models.json",
+      "https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/models-manager/src/model_info.rs"
     ],
     "importSnapshot": {
       "date": "2026-11-11",
@@ -1007,7 +1010,7 @@
   },
   "~openai/gpt-astra-latest": {
     "displayName": "OpenAI: GPT Astra Latest",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -1086,7 +1089,7 @@
   },
   "~openai/gpt-luna-latest": {
     "displayName": "OpenAI: GPT Luna Latest",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -1160,7 +1163,7 @@
   },
   "~openai/gpt-mini-latest": {
     "displayName": "OpenAI: GPT Mini Latest",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -1234,7 +1237,7 @@
   },
   "~openai/gpt-sol-latest": {
     "displayName": "OpenAI: GPT Sol Latest",
-    "contextWindow": 1050000,
+    "contextWindow": 500000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -1313,7 +1316,7 @@
   },
   "~openai/gpt-terra-latest": {
     "displayName": "OpenAI: GPT Terra Latest",
-    "contextWindow": 1050000,
+    "contextWindow": 500000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -3329,7 +3332,7 @@
   },
   "accounts/fireworks/models/gpt-oss-120b": {
     "displayName": "GPT OSS 120B",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
@@ -3361,7 +3364,7 @@
   },
   "accounts/fireworks/models/gpt-oss-20b": {
     "displayName": "accounts/fireworks/models/gpt-oss-20b",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "functionCalling": true,
@@ -42343,7 +42346,7 @@
   },
   "gpt-4.1": {
     "displayName": "GPT-4.1",
-    "contextWindow": 1047576,
+    "contextWindow": 272000,
     "maxOutput": 32768,
     "capabilities": {
       "vision": true,
@@ -42386,7 +42389,7 @@
   },
   "gpt-4.1-2025-04-14": {
     "displayName": "gpt-4.1-2025-04-14",
-    "contextWindow": 1047576,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -42417,7 +42420,7 @@
   },
   "gpt-4.1-mini": {
     "displayName": "GPT-4.1 Mini",
-    "contextWindow": 1047576,
+    "contextWindow": 272000,
     "maxOutput": 32768,
     "capabilities": {
       "vision": true,
@@ -42460,7 +42463,7 @@
   },
   "gpt-4.1-mini-2025-04-14": {
     "displayName": "gpt-4.1-mini-2025-04-14",
-    "contextWindow": 1047576,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -42895,7 +42898,7 @@
   },
   "gpt-5": {
     "displayName": "GPT-5",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -42985,7 +42988,7 @@
   },
   "gpt-5-mini": {
     "displayName": "GPT-5 Mini",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -43075,7 +43078,7 @@
   },
   "gpt-5-nano": {
     "displayName": "GPT-5 Nano",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -43165,7 +43168,7 @@
   },
   "gpt-5-pro": {
     "displayName": "GPT-5 Pro",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "maxOutput": 272000,
     "capabilities": {
       "vision": true,
@@ -43223,7 +43226,7 @@
   },
   "gpt-5-pro-2025-10-06": {
     "displayName": "gpt-5-pro-2025-10-06",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -43303,7 +43306,7 @@
   },
   "gpt-5.1": {
     "displayName": "GPT-5.1",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -43410,7 +43413,7 @@
   },
   "gpt-5.2": {
     "displayName": "GPT-5.2",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -43517,7 +43520,7 @@
   },
   "gpt-5.2-pro": {
     "displayName": "GPT-5.2 Pro",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -43776,7 +43779,7 @@
   },
   "gpt-5.4": {
     "displayName": "GPT-5.4",
-    "contextWindow": 1000000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -43834,7 +43837,7 @@
   },
   "gpt-5.4-2026-03-05": {
     "displayName": "gpt-5.4-2026-03-05",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -43865,7 +43868,7 @@
   },
   "gpt-5.4-mini": {
     "displayName": "GPT-5.4 Mini",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -43955,7 +43958,7 @@
   },
   "gpt-5.4-nano": {
     "displayName": "GPT-5.4 Nano",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -44045,7 +44048,7 @@
   },
   "gpt-5.4-pro": {
     "displayName": "GPT-5.4 Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -44103,7 +44106,7 @@
   },
   "gpt-5.4-pro-2026-03-05": {
     "displayName": "gpt-5.4-pro-2026-03-05",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -44135,7 +44138,7 @@
   },
   "gpt-5.5": {
     "displayName": "GPT-5.5",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -44193,7 +44196,7 @@
   },
   "gpt-5.5-2026-04-23": {
     "displayName": "gpt-5.5-2026-04-23",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -44226,7 +44229,7 @@
   },
   "gpt-5.5-instant": {
     "displayName": "GPT-5.5 Instant",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -44257,7 +44260,7 @@
   },
   "gpt-5.5-pro": {
     "displayName": "GPT-5.5 Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -44315,7 +44318,7 @@
   },
   "gpt-5.5-pro-2026-04-23": {
     "displayName": "gpt-5.5-pro-2026-04-23",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -44430,7 +44433,7 @@
   },
   "gpt-5.6-cyber": {
     "displayName": "GPT-5.6 Cyber",
-    "contextWindow": 400000,
+    "contextWindow": 372000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -44798,7 +44801,7 @@
   },
   "gpt-6-astra-fast": {
     "displayName": "GPT-6 Astra (Fast)",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -45140,7 +45143,7 @@
   },
   "gpt-6.2-astra": {
     "displayName": "GPT-6.2 Astra",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -45207,7 +45210,7 @@
   },
   "gpt-6.2-sol": {
     "displayName": "GPT-6.2 Sol",
-    "contextWindow": 1050000,
+    "contextWindow": 500000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -45537,7 +45540,7 @@
   },
   "gpt-daybreak-red-latest": {
     "displayName": "GPT-5.6 Cyber",
-    "contextWindow": 400000,
+    "contextWindow": 372000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -45897,7 +45900,7 @@
   },
   "gpt-oss-120b": {
     "displayName": "GPT OSS 120B",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
@@ -45931,7 +45934,7 @@
   },
   "gpt-oss-120b-turbo": {
     "displayName": "openai/gpt-oss-120b-Turbo",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "functionCalling": true,
@@ -45948,7 +45951,7 @@
   },
   "gpt-oss-120b-ultra": {
     "displayName": "openai/gpt-oss-120b-Ultra",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "functionCalling": true,
@@ -45965,7 +45968,7 @@
   },
   "gpt-oss-20b": {
     "displayName": "gpt-oss-20b",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "functionCalling": true,
@@ -45982,7 +45985,7 @@
   },
   "gpt-oss:120b": {
     "displayName": "gpt-oss:120b",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
@@ -46014,7 +46017,7 @@
   },
   "gpt-oss:120b-cloud": {
     "displayName": "gpt-oss:120b-cloud",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "functionCalling": true
     },
@@ -46025,11 +46028,11 @@
       "provider": "ollama",
       "sourceId": "ollama/gpt-oss:120b-cloud"
     },
-    "maxOutput": 131072
+    "maxOutput": 128000
   },
   "gpt-oss:20b": {
     "displayName": "gpt-oss:20b",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
@@ -46061,7 +46064,7 @@
   },
   "gpt-oss:20b-cloud": {
     "displayName": "gpt-oss:20b-cloud",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "functionCalling": true
     },
@@ -46072,7 +46075,7 @@
       "provider": "ollama",
       "sourceId": "ollama/gpt-oss:20b-cloud"
     },
-    "maxOutput": 131072
+    "maxOutput": 128000
   },
   "gpt-realtime-2.1": {
     "displayName": "GPT-Realtime-2.1",
@@ -76200,7 +76203,7 @@
   },
   "openai.gpt-5.4": {
     "displayName": "GPT-5.4",
-    "contextWindow": 1000000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -76278,7 +76281,7 @@
   },
   "openai.gpt-5.5": {
     "displayName": "GPT-5.5",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -77086,7 +77089,7 @@
   },
   "openai.gpt-oss-120b": {
     "displayName": "gpt-oss-120b",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
@@ -77101,7 +77104,7 @@
       "url": "https://models.dev/api.json",
       "provider": "amazon-bedrock"
     },
-    "maxOutput": 131072,
+    "maxOutput": 128000,
     "modalities": {
       "input": [
         "text"
@@ -77120,7 +77123,7 @@
   },
   "openai.gpt-oss-120b-1:0": {
     "displayName": "gpt-oss-120b",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
@@ -77154,7 +77157,7 @@
   },
   "openai.gpt-oss-20b": {
     "displayName": "gpt-oss-20b",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
@@ -77169,7 +77172,7 @@
       "url": "https://models.dev/api.json",
       "provider": "amazon-bedrock"
     },
-    "maxOutput": 131072,
+    "maxOutput": 128000,
     "modalities": {
       "input": [
         "text"
@@ -77188,7 +77191,7 @@
   },
   "openai.gpt-oss-20b-1:0": {
     "displayName": "gpt-oss-20b",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
@@ -77290,7 +77293,7 @@
   },
   "openai/gpt-4.1": {
     "displayName": "GPT-4.1",
-    "contextWindow": 1047576,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -77352,7 +77355,7 @@
   },
   "openai/gpt-4.1-mini": {
     "displayName": "GPT-4.1 Mini",
-    "contextWindow": 1047576,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -77414,7 +77417,7 @@
   },
   "openai/gpt-4.1-mini:batch": {
     "displayName": "GPT-4.1 Mini",
-    "contextWindow": 1047576,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -77478,7 +77481,7 @@
   },
   "openai/gpt-4.1:batch": {
     "displayName": "GPT-4.1",
-    "contextWindow": 1047576,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -77974,7 +77977,7 @@
   },
   "openai/gpt-5": {
     "displayName": "GPT-5",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -78166,7 +78169,7 @@
   },
   "openai/gpt-5-mini": {
     "displayName": "GPT-5 Mini",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -78244,7 +78247,7 @@
   },
   "openai/gpt-5-mini:batch": {
     "displayName": "GPT-5 Mini",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -78325,7 +78328,7 @@
   },
   "openai/gpt-5-nano": {
     "displayName": "GPT-5 Nano",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -78403,7 +78406,7 @@
   },
   "openai/gpt-5-nano:batch": {
     "displayName": "GPT-5 Nano",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -78484,7 +78487,7 @@
   },
   "openai/gpt-5-pro": {
     "displayName": "GPT-5 Pro",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -78556,7 +78559,7 @@
   },
   "openai/gpt-5-pro:batch": {
     "displayName": "GPT-5 Pro",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -78631,7 +78634,7 @@
   },
   "openai/gpt-5:batch": {
     "displayName": "GPT-5",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -78712,7 +78715,7 @@
   },
   "openai/gpt-5.1": {
     "displayName": "GPT-5.1",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -78786,7 +78789,7 @@
   },
   "openai/gpt-5.1:batch": {
     "displayName": "OpenAI: GPT-5.1 (batch)",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -78860,7 +78863,7 @@
   },
   "openai/gpt-5.2": {
     "displayName": "GPT-5.2",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -78994,7 +78997,7 @@
   },
   "openai/gpt-5.2-pro": {
     "displayName": "GPT-5.2 Pro",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -79069,7 +79072,7 @@
   },
   "openai/gpt-5.2-pro:batch": {
     "displayName": "OpenAI: GPT-5.2 Pro (batch)",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -79144,7 +79147,7 @@
   },
   "openai/gpt-5.2:batch": {
     "displayName": "OpenAI: GPT-5.2 (batch)",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -79369,7 +79372,7 @@
   },
   "openai/gpt-5.4": {
     "displayName": "GPT-5.4",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -79481,7 +79484,7 @@
   },
   "openai/gpt-5.4-mini": {
     "displayName": "GPT-5.4 Mini",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -79556,7 +79559,7 @@
   },
   "openai/gpt-5.4-mini:batch": {
     "displayName": "GPT-5.4 Mini",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -79634,7 +79637,7 @@
   },
   "openai/gpt-5.4-nano": {
     "displayName": "GPT-5.4 Nano",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -79709,7 +79712,7 @@
   },
   "openai/gpt-5.4-nano:batch": {
     "displayName": "GPT-5.4 Nano",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -79787,7 +79790,7 @@
   },
   "openai/gpt-5.4-pro": {
     "displayName": "GPT-5.4 Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -79863,7 +79866,7 @@
   },
   "openai/gpt-5.4-pro:batch": {
     "displayName": "GPT-5.4 Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -79942,7 +79945,7 @@
   },
   "openai/gpt-5.4:batch": {
     "displayName": "GPT-5.4",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -80020,7 +80023,7 @@
   },
   "openai/gpt-5.5": {
     "displayName": "GPT-5.5",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -80097,7 +80100,7 @@
   },
   "openai/gpt-5.5-instant": {
     "displayName": "GPT-5.5 Instant",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -80127,7 +80130,7 @@
   },
   "openai/gpt-5.5-pro": {
     "displayName": "GPT-5.5 Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -80204,7 +80207,7 @@
   },
   "openai/gpt-5.5-pro:batch": {
     "displayName": "GPT-5.5 Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -80283,7 +80286,7 @@
   },
   "openai/gpt-5.5:batch": {
     "displayName": "GPT-5.5",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -80362,7 +80365,7 @@
   },
   "openai/gpt-5.6-cyber": {
     "displayName": "GPT-5.6 Cyber",
-    "contextWindow": 400000,
+    "contextWindow": 372000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -80519,7 +80522,7 @@
   },
   "openai/gpt-5.6-luna-pro": {
     "displayName": "OpenAI: GPT-5.6 Luna Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -80595,7 +80598,7 @@
   },
   "openai/gpt-5.6-luna-pro:batch": {
     "displayName": "OpenAI: GPT-5.6 Luna Pro (batch)",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -80831,7 +80834,7 @@
   },
   "openai/gpt-5.6-sol-pro": {
     "displayName": "OpenAI: GPT-5.6 Sol Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -80907,7 +80910,7 @@
   },
   "openai/gpt-5.6-sol-pro:batch": {
     "displayName": "OpenAI: GPT-5.6 Sol Pro (batch)",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -81143,7 +81146,7 @@
   },
   "openai/gpt-5.6-terra-pro": {
     "displayName": "OpenAI: GPT-5.6 Terra Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -81219,7 +81222,7 @@
   },
   "openai/gpt-5.6-terra-pro:batch": {
     "displayName": "OpenAI: GPT-5.6 Terra Pro (batch)",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -81457,7 +81460,7 @@
   },
   "openai/gpt-6-astra-fast": {
     "displayName": "GPT-6 Astra (Fast)",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -81487,7 +81490,7 @@
   },
   "openai/gpt-6-astra-pro": {
     "displayName": "OpenAI: GPT-6 Astra Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -81566,7 +81569,7 @@
   },
   "openai/gpt-6-astra-pro:batch": {
     "displayName": "OpenAI: GPT-6 Astra Pro (batch)",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -81807,7 +81810,7 @@
   },
   "openai/gpt-6-luna-pro": {
     "displayName": "OpenAI: GPT-6 Luna Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -81883,7 +81886,7 @@
   },
   "openai/gpt-6-luna-pro:batch": {
     "displayName": "OpenAI: GPT-6 Luna Pro (batch)",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -82119,7 +82122,7 @@
   },
   "openai/gpt-6-sol-pro": {
     "displayName": "OpenAI: GPT-6 Sol Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -82195,7 +82198,7 @@
   },
   "openai/gpt-6-sol-pro:batch": {
     "displayName": "OpenAI: GPT-6 Sol Pro (batch)",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -82433,7 +82436,7 @@
   },
   "openai/gpt-6.1-sol-pro": {
     "displayName": "GPT-6.1 Sol Pro (OpenRouter)",
-    "contextWindow": 1050000,
+    "contextWindow": 500000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -82494,7 +82497,7 @@
   },
   "openai/gpt-6.1-sol-pro:batch": {
     "displayName": "GPT-6.1 Sol Pro (OpenRouter)",
-    "contextWindow": 1050000,
+    "contextWindow": 500000,
     "capabilities": {
       "vision": true,
       "functionCalling": true,
@@ -82754,7 +82757,7 @@
   },
   "openai/gpt-6.1-terra-pro": {
     "displayName": "OpenAI: GPT-6.1 Terra Pro",
-    "contextWindow": 1050000,
+    "contextWindow": 500000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -82814,7 +82817,7 @@
   },
   "openai/gpt-6.1-terra-pro:batch": {
     "displayName": "OpenAI: GPT-6.1 Terra Pro (batch)",
-    "contextWindow": 1050000,
+    "contextWindow": 500000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -82850,7 +82853,7 @@
   },
   "openai/gpt-6.1-terra:batch": {
     "displayName": "OpenAI: GPT-6.1 Terra (batch)",
-    "contextWindow": 1050000,
+    "contextWindow": 500000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -82886,7 +82889,7 @@
   },
   "openai/gpt-6.2-astra": {
     "displayName": "GPT-6.2 Astra",
-    "contextWindow": 1050000,
+    "contextWindow": 272000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -82954,7 +82957,7 @@
   },
   "openai/gpt-6.2-sol": {
     "displayName": "GPT-6.2 Sol",
-    "contextWindow": 1050000,
+    "contextWindow": 500000,
     "maxOutput": 128000,
     "capabilities": {
       "vision": true,
@@ -83144,7 +83147,7 @@
   },
   "openai/gpt-chat-latest": {
     "displayName": "OpenAI: GPT Chat Latest",
-    "contextWindow": 400000,
+    "contextWindow": 272000,
     "capabilities": {
       "vision": true,
       "videoInput": false,
@@ -83489,7 +83492,7 @@
   },
   "openai/gpt-oss-120b": {
     "displayName": "GPT OSS 120B",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
@@ -83563,7 +83566,7 @@
   },
   "openai/gpt-oss-120b-turbo": {
     "displayName": "openai/gpt-oss-120b-Turbo",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "functionCalling": true,
@@ -83579,7 +83582,7 @@
   },
   "openai/gpt-oss-120b-ultra": {
     "displayName": "openai/gpt-oss-120b-Ultra",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "functionCalling": true,
@@ -83595,7 +83598,7 @@
   },
   "openai/gpt-oss-120b:batch": {
     "displayName": "OpenAI: gpt-oss-120b (batch)",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
@@ -83668,7 +83671,7 @@
   },
   "openai/gpt-oss-120b:peft:131072": {
     "displayName": "GPT OSS 120B",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
@@ -83713,7 +83716,7 @@
   },
   "openai/gpt-oss-20b": {
     "displayName": "GPT OSS 20B",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
@@ -83787,7 +83790,7 @@
   },
   "openai/gpt-oss-20b:batch": {
     "displayName": "OpenAI: gpt-oss-20b (batch)",
-    "contextWindow": 131072,
+    "contextWindow": 128000,
     "capabilities": {
       "vision": false,
       "videoInput": false,
