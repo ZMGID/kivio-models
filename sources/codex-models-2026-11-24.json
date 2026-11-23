@@ -1,0 +1,103 @@
+{
+  "fetchedAt": "2026-11-23T18:25:50.079909Z",
+  "clientVersion": "0.171.0",
+  "liveCatalogReference": "https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/models-manager/models.json",
+  "fallback": {
+    "contextWindow": 272000,
+    "source": "https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/models-manager/src/model_info.rs"
+  },
+  "models": {
+    "gpt-6.2-sol": {
+      "contextWindow": 500000,
+      "source": "live"
+    },
+    "gpt-6.2-astra": {
+      "contextWindow": 272000,
+      "source": "live"
+    },
+    "gpt-6.1-terra": {
+      "contextWindow": 500000,
+      "source": "live"
+    },
+    "gpt-6.1-sol": {
+      "contextWindow": 500000,
+      "source": "live"
+    },
+    "gpt-6-astra": {
+      "contextWindow": 272000,
+      "source": "live"
+    },
+    "gpt-6-sol": {
+      "contextWindow": 272000,
+      "source": "live"
+    },
+    "gpt-6-luna": {
+      "contextWindow": 272000,
+      "source": "live"
+    },
+    "gpt-5.6-sol": {
+      "contextWindow": 272000,
+      "source": "live"
+    },
+    "gpt-5.6-terra": {
+      "contextWindow": 272000,
+      "source": "live"
+    },
+    "gpt-5.6-luna": {
+      "contextWindow": 272000,
+      "source": "live"
+    },
+    "gpt-5.5": {
+      "contextWindow": 272000,
+      "source": "https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/models-manager/models.json"
+    },
+    "gpt-daybreak-blue-latest": {
+      "contextWindow": 272000,
+      "source": "https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/models-manager/models.json"
+    },
+    "gpt-daybreak-red-latest": {
+      "contextWindow": 372000,
+      "source": "https://github.com/openai/codex/blob/rust-v0.171.0/codex-rs/models-manager/models.json"
+    },
+    "gpt-5.4": {
+      "contextWindow": 272000,
+      "source": "https://github.com/openai/codex/blob/rust-v0.139.0/codex-rs/models-manager/models.json"
+    },
+    "gpt-5.4-mini": {
+      "contextWindow": 272000,
+      "source": "https://github.com/openai/codex/blob/rust-v0.139.0/codex-rs/models-manager/models.json"
+    },
+    "gpt-5.3-codex": {
+      "contextWindow": 272000,
+      "source": "https://github.com/openai/codex/blob/rust-v0.139.0/codex-rs/models-manager/models.json"
+    },
+    "gpt-5.2": {
+      "contextWindow": 272000,
+      "source": "https://github.com/openai/codex/blob/rust-v0.139.0/codex-rs/models-manager/models.json"
+    },
+    "gpt-5": {
+      "contextWindow": 272000,
+      "source": "https://github.com/openai/codex/blob/rust-v0.120.0/codex-rs/models-manager/models.json"
+    },
+    "gpt-5.1": {
+      "contextWindow": 272000,
+      "source": "https://github.com/openai/codex/blob/rust-v0.120.0/codex-rs/models-manager/models.json"
+    },
+    "gpt-oss-120b": {
+      "contextWindow": 128000,
+      "source": "https://github.com/openai/codex/blob/rust-v0.120.0/codex-rs/models-manager/models.json"
+    },
+    "gpt-oss-20b": {
+      "contextWindow": 128000,
+      "source": "https://github.com/openai/codex/blob/rust-v0.120.0/codex-rs/models-manager/models.json"
+    }
+  },
+  "aliases": {
+    "gpt-5.6-cyber": "gpt-daybreak-red-latest",
+    "gpt-6-astra-fast": "gpt-6-astra",
+    "gpt-astra-latest": "gpt-6.2-astra",
+    "gpt-sol-latest": "gpt-6.2-sol",
+    "gpt-terra-latest": "gpt-6.1-terra",
+    "gpt-luna-latest": "gpt-6-luna"
+  }
+}
