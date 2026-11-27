@@ -79,7 +79,17 @@ test('published catalog preserves Codex windows and independently priced variant
   assert.equal(database['gemini-4-argon'].maxOutput, 32768)
   assert.equal(database['google/gemini-4-argon'].maxOutput, 943718)
   assert.equal(database['inception/mercury-3'].pricing.output, 0.35)
-  assert.equal(database['openai/gpt-6.1-terra:batch'].pricing, undefined)
+  assert.deepEqual(database['openai/gpt-6.1-terra:batch'].pricing, { input: 0.5, output: 2.5, cachedInput: 0.025 })
+  assert.equal(database['openai/gpt-6.2-astra-pro:batch'].contextWindow, codex.models['gpt-6.2-astra'].contextWindow)
+  assert.equal(database['openai/gpt-6.2-astra-pro:batch'].pricing.output, 20)
+  assert.equal(database['openai-codex/gpt-6.2-astra'].pricing, undefined)
+  assert.deepEqual(database['nvidia/nemotron-3.5-lightning:free'].pricing, { input: 0, output: 0 })
+  assert.equal(database['nvidia/nemotron-3.5-lightning'].pricing.output, 0.2)
+  assert.equal(database['accounts/fireworks/models/ember-1'].pricing.output, 15)
+  assert.equal(database['accounts/fireworks/routers/glm-5p3-fast'].pricing.output, 6.6)
+  assert.equal(database['microsoft/mai-image-2.7'].modalityPricing.image.output, 34)
+  assert.equal(database['microsoft/mai-image-2.7'].pricing, undefined)
+  assert.equal(database['openrouter/auto'].pricing, undefined)
   assert.equal(database['gpt-4.1-nano'], undefined)
   assert(database['gpt-4.1']) // A future retirement announcement is not a shutdown.
 })
@@ -89,6 +99,9 @@ test('official prices replace stale imports, use a fixed FX rate, and leave unve
     reasoner: { displayName: 'Reasoner', contextWindow: 32000, capabilities: {}, pricing: { input: 99, output: 199, cachedInput: 9 } },
     'vendor/reasoner': { displayName: 'Hosted', contextWindow: 8000, capabilities: {}, aliasOf: 'reasoner', pricing: { input: 8 } },
     'vendor/reasoner:free': { displayName: 'Free route', contextWindow: 8000, capabilities: {}, variantOf: 'reasoner', pricing: { input: 0, output: 0 } },
+    'gateway/scoped': { displayName: 'Scoped', contextWindow: 8000, capabilities: {} },
+    'scoped': { displayName: 'Bare alias', contextWindow: 8000, capabilities: {}, aliasOf: 'gateway/scoped' },
+    'other/scoped': { displayName: 'Other route', contextWindow: 8000, capabilities: {}, source: { curatedBase: 'gateway/scoped' } },
     unknown: { displayName: 'Unknown', contextWindow: 32000, capabilities: {}, pricing: { input: 0 }, unitPricing: { output_cost_per_image: 0.04 } },
     image: { displayName: 'Image', contextWindow: 0, capabilities: { imageGeneration: true }, pricing: { input: 0, output: 0 } },
   })
@@ -97,6 +110,7 @@ test('official prices replace stale imports, use a fixed FX rate, and leave unve
     exchangeRate: { date: '2026-10-16', cnyPerUsd: 6.722, source: 'https://bank.example/rate' },
     models: {
       reasoner: { currency: 'CNY', kind: 'catalog', pricing: { input: 6.722, output: 13.444 }, source: 'https://lab.example/pricing', region: 'China' },
+      'gateway/scoped': { currency: 'USD', routeOnly: true, pricing: { input: 1, output: 3 }, source: 'https://gateway.example/pricing' },
       image: { currency: 'USD', unitPricing: { output_cost_per_image: 0.025 }, source: 'https://lab.example/images' },
     },
   }
@@ -107,6 +121,8 @@ test('official prices replace stale imports, use a fixed FX rate, and leave unve
   assert.equal(result.database.reasoner.pricingSource.exchangeRate.cnyPerUsd, 6.722)
   assert.equal(result.database.reasoner.pricingSource.kind, 'catalog')
   for (const id of ['unknown', 'vendor/reasoner:free', 'image']) assert.equal('pricing' in result.database[id], false, id)
+  assert.deepEqual(result.database['gateway/scoped'].pricing, { input: 1, output: 3 })
+  for (const id of ['scoped', 'other/scoped']) assert.equal(result.database[id].pricing, undefined, id)
   assert.equal('unitPricing' in result.database.unknown, false)
   assert.equal(result.database.image.unitPricing.output_cost_per_image, 0.025)
   assert.equal(original.reasoner.pricing.input, 99)
