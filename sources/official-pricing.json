@@ -18987,14 +18987,15 @@
     },
     "thinkingmachines/inkling-2-mini": {
       "currency": "USD",
-      "source": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-      "kind": "catalog",
-      "condition": "OpenRouter route only",
+      "source": "https://openrouter.ai/api/v1/models?output_modalities=all",
       "pricing": {
-        "input": 0.075,
-        "output": 0.3,
-        "cachedInput": 0.015
-      }
+        "input": 0.06,
+        "output": 0.24,
+        "cachedInput": 0.012
+      },
+      "condition": "OpenRouter route only; catalog token rates checked 2026-11-28.",
+      "kind": "catalog",
+      "routeOnly": true
     },
     "radixark/daisyrose-27b": {
       "currency": "USD",
@@ -19994,6 +19995,202 @@
           "output": 10
         }
       }
+    },
+    "glm-5.4": {
+      "currency": "USD",
+      "source": "https://docs.z.ai/devpack/overview",
+      "condition": "Z.ai GLM Coding Plan uses subscription credits and plan quotas. The standard Model API is not open."
+    },
+    "aihubmix/coding-glm-5.4": {
+      "currency": "USD",
+      "source": "https://aihubmix.com/model/coding-glm-5.4",
+      "pricing": {
+        "input": 0.12,
+        "output": 0.44,
+        "cachedInput": 0.03
+      },
+      "condition": "AIHubMix pay-as-you-go. Request model ID: coding-glm-5.4.",
+      "kind": "catalog",
+      "routeOnly": true
+    },
+    "beatapi/glm-5.4": {
+      "currency": "USD",
+      "source": "https://beatapi.io/glm-5-4-api",
+      "pricing": {
+        "input": 0.56,
+        "output": 1.76,
+        "cachedInput": 0.104
+      },
+      "condition": "BeatAPI pay-as-you-go text route. Request model ID: glm-5.4.",
+      "kind": "catalog",
+      "routeOnly": true
+    },
+    "longcat-2.5": {
+      "currency": "USD",
+      "source": "https://longcat.ai/platform/docs/pricing/longcat-2.5",
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "cachedInput": 0.006
+      },
+      "condition": "LongCat official pay-as-you-go; limited-time USD price.",
+      "aliases": [
+        "meituan/longcat-2.5"
+      ]
+    },
+    "muse-ember-1.0": {
+      "currency": "USD",
+      "source": "https://dev.meta.ai/docs/pricing-rate-limits#muse-ember",
+      "pricing": {
+        "input": 0.1,
+        "output": 0.5,
+        "cachedInput": 0.004
+      },
+      "condition": "Meta Model API Standard mode.",
+      "tiers": [
+        {
+          "condition": "More than 200000 input tokens; higher rates apply to the full request",
+          "pricing": {
+            "input": 0.3,
+            "output": 1.5,
+            "cachedInput": 0.012
+          }
+        }
+      ]
+    },
+    "github-copilot/mai-code-2": {
+      "currency": "USD",
+      "source": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing#microsoft",
+      "pricing": {
+        "input": 0.5,
+        "output": 2.5,
+        "cachedInput": 0.025
+      },
+      "condition": "GitHub Copilot usage-based billing. Regular rates start May 17, 2027.",
+      "kind": "catalog",
+      "routeOnly": true,
+      "tiers": [
+        {
+          "condition": "From 2027-05-17",
+          "pricing": {
+            "input": 1,
+            "output": 5,
+            "cachedInput": 0.05
+          }
+        }
+      ]
+    },
+    "github-copilot/mai-code-2-flash": {
+      "currency": "USD",
+      "source": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing#microsoft",
+      "pricing": {
+        "input": 0.05,
+        "output": 0.25,
+        "cachedInput": 0.005
+      },
+      "condition": "GitHub Copilot usage-based billing. Regular rates start May 17, 2027.",
+      "kind": "catalog",
+      "routeOnly": true,
+      "tiers": [
+        {
+          "condition": "From 2027-05-17",
+          "pricing": {
+            "input": 0.1,
+            "output": 0.5,
+            "cachedInput": 0.01
+          }
+        }
+      ]
+    },
+    "accounts/fireworks/models/inkling-2-small": {
+      "currency": "USD",
+      "source": "https://fireworks.ai/models/fireworks/inkling-2-small",
+      "pricing": {
+        "input": 0.3,
+        "output": 1,
+        "cachedInput": 0.03
+      },
+      "condition": "Fireworks Serverless Standard route.",
+      "routeOnly": true
+    },
+    "qwen/qwen3.8-27b:batch": {
+      "currency": "USD",
+      "source": "https://openrouter.ai/api/v1/models?output_modalities=all",
+      "pricing": {
+        "input": 0.16,
+        "output": 2,
+        "cachedInput": 0.04
+      },
+      "condition": "OpenRouter route only; catalog token rates checked 2026-11-28.",
+      "kind": "catalog",
+      "routeOnly": true
+    },
+    "qwen/qwen3.8-max-0902:batch": {
+      "currency": "USD",
+      "source": "https://openrouter.ai/api/v1/models?output_modalities=all",
+      "pricing": {
+        "input": 1.15,
+        "output": 3.45
+      },
+      "condition": "OpenRouter route only; catalog token rates checked 2026-11-28.",
+      "kind": "catalog",
+      "routeOnly": true
+    },
+    "x-ai/grok-4.6:batch": {
+      "currency": "USD",
+      "source": "https://openrouter.ai/api/v1/models?output_modalities=all",
+      "pricing": {
+        "input": 1.6,
+        "output": 4.8,
+        "cachedInput": 0.4
+      },
+      "condition": "OpenRouter route only; catalog token rates checked 2026-11-28.",
+      "kind": "catalog",
+      "routeOnly": true,
+      "tiers": [
+        {
+          "condition": "OpenRouter listed threshold: 200000 prompt tokens",
+          "pricing": {
+            "input": 3.2,
+            "output": 9.6,
+            "cachedInput": 0.8
+          }
+        }
+      ]
+    },
+    "x-ai/grok-4.7:batch": {
+      "currency": "USD",
+      "source": "https://openrouter.ai/api/v1/models?output_modalities=all",
+      "pricing": {
+        "input": 1.6,
+        "output": 4.8,
+        "cachedInput": 0.4
+      },
+      "condition": "OpenRouter route only; catalog token rates checked 2026-11-28.",
+      "kind": "catalog",
+      "routeOnly": true,
+      "tiers": [
+        {
+          "condition": "OpenRouter listed threshold: 200000 prompt tokens",
+          "pricing": {
+            "input": 3.2,
+            "output": 9.6,
+            "cachedInput": 0.8
+          }
+        }
+      ]
+    },
+    "z-ai/glm-5.2:batch": {
+      "currency": "USD",
+      "source": "https://openrouter.ai/api/v1/models?output_modalities=all",
+      "pricing": {
+        "input": 0.322,
+        "output": 0.989,
+        "cachedInput": 0.109
+      },
+      "condition": "OpenRouter route only; catalog token rates checked 2026-11-28.",
+      "kind": "catalog",
+      "routeOnly": true
     }
   }
 }
