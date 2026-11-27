@@ -30,17 +30,17 @@ export function applyOfficialPricing(database, policy) {
       index.set(key, id)
     }
   }
-  const resolve = (id, seen = new Set()) => {
+  const resolve = (id, requested = id, seen = new Set()) => {
     if (!id || seen.has(id)) return undefined
     seen.add(id)
     const direct = index.get(normalize(id))
-    if (direct) return direct
+    if (direct && (!records[direct].routeOnly || (id === requested && id === direct))) return direct
     // Free/batch routes need an explicit official quote, never their paid parent's rate.
     if (/(?:[:/-]free|:batch)$/.test(id) || id.startsWith('ft:')) return undefined
     const qualified = index.get(normalize(id.split('/').at(-1)))
-    if (qualified) return qualified
+    if (qualified && !records[qualified].routeOnly) return qualified
     const entry = database[id]
-    return resolve(entry?.aliasOf, seen) ?? resolve(entry?.source?.curatedBase, seen)
+    return resolve(entry?.aliasOf, requested, seen) ?? resolve(entry?.source?.curatedBase, requested, seen)
   }
   const convert = (values, currency) => Object.fromEntries(Object.entries(values).map(([key, value]) => {
     if (!Number.isFinite(value) || value < 0) throw new Error(`Invalid official price: ${key}`)

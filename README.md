@@ -33,14 +33,14 @@ Kivio 发版流程会先固定模型库提交 SHA，再把同一份经过校验�
 
 ## 收录来源与批量维护
 
-当前 `2026-11-24.2` 快照收录 3,000 个可识别模型 ID。GPT 聊天模型的默认上下文按 [Codex 上下文规则](GPT-CONTEXT-2026-11-24.md) 维护。最近的模型增删与渠道来源见 [11 月 24 日更新记录](REFRESH-2026-11-24.md)。ID 数量包含供应商限定 ID、日期快照及免费变体。
+当前 `2026-11-28.1` 快照收录 3,015 个可识别模型 ID。本次为 74 个已有 ID 补齐报价，修正 5 个 Fireworks 渠道的费率，并新增 15 个有报价的渠道 ID。GPT 聊天模型的默认上下文按 [Codex 上下文规则](GPT-CONTEXT-2026-11-24.md) 维护。最近的模型增删与渠道来源见 [11 月 24 日更新记录](REFRESH-2026-11-24.md)。ID 数量包含供应商限定 ID、日期快照及免费变体。
 
 来源：
 
 - [OMP 模型库](https://github.com/can1357/oh-my-pi/blob/c29f7c56f5530d805bb2887ade964aa55970d8e1/packages/catalog/src/models.json)：此次指定的优先依据。对已匹配的原厂和 OpenRouter 渠道记录，以固定提交的数据覆盖旧资料；原始字段投影与 SHA-256 见 `sources/omp-models-2026-10-31.json`，每项变更见 `OMP-COMPARISON-2026-10-31.json`。API、Codex 订阅和托管渠道的同名模型分别保存，不混用窗口或价格。
 
 - [Models.dev](https://github.com/anomalyco/models.dev)：优先使用模型原厂资料和供应商无关的模型记录；主要推理平台用于补缺，转售商价格不作为裸模型 ID 的统一价格。
-- [OpenRouter 全模态目录](https://openrouter.ai/api/v1/models?output_modalities=all)：补充聊天、图像、视频和向量模型；保留 `:free`、`:batch` 等变体的限定 ID。此源只补充非价格资料；发布价格由下述官方价格表统一覆盖。
+- [OpenRouter 全模态目录](https://openrouter.ai/api/v1/models?output_modalities=all)：补充聊天、图像、视频和向量模型；保留 `:free`、`:batch` 等变体的限定 ID。导入时以此源补充模型资料。经核验的渠道报价登记在官方价格表，设有 `routeOnly` 的报价仅适用对应的渠道 ID。
 - [LiteLLM 模型目录](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json)：补充开源和向量模型，排除按尺寸/画质计费的配置组合及通用图片编辑操作。
 - [Voyage 官方资料](https://www.mongodb.com/docs/voyageai/models/)：核对新向量模型的默认维度和多模态能力；Cohere 的轻量向量模型也用[官方模型表](https://docs.cohere.com/v2/docs/models)核对。补充资料维护在 `sources/verified-models.json`。
 
