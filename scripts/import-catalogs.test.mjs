@@ -90,11 +90,14 @@ test('published catalog preserves Codex windows and independently priced variant
   assert.equal(database['microsoft/mai-image-2.7'].modalityPricing.image.output, 34)
   assert.equal(database['microsoft/mai-image-2.7'].pricing, undefined)
   assert.equal(database['openrouter/auto'].pricing, undefined)
-  for (const id of ['glm-5.4', 'zhipuai/glm-5.4', 'mai-code-2', 'microsoft/mai-code-2']) {
+  for (const id of ['mai-code-2', 'microsoft/mai-code-2']) {
     assert.equal(database[id].pricing, undefined, id)
   }
+  for (const id of ['glm-5.4', 'zhipuai/glm-5.4', 'beatapi/glm-5.4']) {
+    assert.deepEqual(database[id].pricing, { input: 0.56, output: 1.76, cachedInput: 0.104 }, id)
+    assert.equal(database[id].pricingSource.url, 'https://beatapi.io/glm-5-4-api', id)
+  }
   assert.deepEqual(database['aihubmix/coding-glm-5.4'].pricing, { input: 0.12, output: 0.44, cachedInput: 0.03 })
-  assert.deepEqual(database['beatapi/glm-5.4'].pricing, { input: 0.56, output: 1.76, cachedInput: 0.104 })
   assert.equal(database['github-copilot/mai-code-2'].pricingTiers[0].pricing.output, 5)
   assert.equal(database['muse-ember-1.0'].pricingTiers[0].pricing.output, 1.5)
   assert.equal(database['longcat-2.5'].pricing.cachedInput, 0.006)

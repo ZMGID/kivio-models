@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "version": "2026-11-28.2",
+    "version": "2026-11-28.3",
     "schemaVersion": 1,
     "description": "AI model database for Kivio. Keyed by model ID patterns. Used for auto-filling model info when adding models.",
     "sources": [
@@ -37578,13 +37578,19 @@
       "url": "https://zcode.z.ai/en/docs/configuration",
       "provider": "zai-coding-plan"
     },
+    "pricing": {
+      "input": 0.56,
+      "output": 1.76,
+      "cachedInput": 0.104
+    },
     "pricingSource": {
-      "kind": "official",
-      "url": "https://docs.z.ai/devpack/overview",
+      "kind": "catalog",
+      "url": "https://beatapi.io/glm-5-4-api",
       "date": "2026-11-28",
       "model": "glm-5.4",
       "currency": "USD",
-      "condition": "Z.ai GLM Coding Plan uses subscription credits and plan quotas. The standard Model API is not open."
+      "tokenUnit": "per million tokens",
+      "condition": "GLM-5.4 reference rate from BeatAPI pay-as-you-go. Z.ai Coding Plan is billed by subscription credits."
     }
   },
   "glm-5p1": {
@@ -115713,13 +115719,19 @@
       "provider": "zai-coding-plan"
     },
     "aliasOf": "glm-5.4",
+    "pricing": {
+      "input": 0.56,
+      "output": 1.76,
+      "cachedInput": 0.104
+    },
     "pricingSource": {
-      "kind": "official",
-      "url": "https://docs.z.ai/devpack/overview",
+      "kind": "catalog",
+      "url": "https://beatapi.io/glm-5-4-api",
       "date": "2026-11-28",
       "model": "glm-5.4",
       "currency": "USD",
-      "condition": "Z.ai GLM Coding Plan uses subscription credits and plan quotas. The standard Model API is not open."
+      "tokenUnit": "per million tokens",
+      "condition": "GLM-5.4 reference rate from BeatAPI pay-as-you-go. Z.ai Coding Plan is billed by subscription credits."
     }
   },
   "zhipuai/glm-5v-turbo": {
@@ -120507,10 +120519,10 @@
       "kind": "catalog",
       "url": "https://beatapi.io/glm-5-4-api",
       "date": "2026-11-28",
-      "model": "beatapi/glm-5.4",
+      "model": "glm-5.4",
       "currency": "USD",
       "tokenUnit": "per million tokens",
-      "condition": "BeatAPI pay-as-you-go text route. Request model ID: glm-5.4."
+      "condition": "GLM-5.4 reference rate from BeatAPI pay-as-you-go. Z.ai Coding Plan is billed by subscription credits."
     }
   },
   "github-copilot/mai-code-2": {
