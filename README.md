@@ -33,7 +33,7 @@ Kivio 发版流程会先固定模型库提交 SHA，再把同一份经过校验�
 
 ## 收录来源与批量维护
 
-当前 `2026-11-28.2` 快照收录 3,020 个可识别模型 ID。此次补齐 LongCat 2.5、Muse Ember 和 5 个 OpenRouter 批量渠道的报价，更新 Inkling 2 Mini 的 OpenRouter 价格，并新增 GLM-5.4、MAI Code 2 系列及 Inkling 2 Small 的独立计费渠道。GPT 聊天模型的默认上下文按 [Codex 上下文规则](GPT-CONTEXT-2026-11-24.md) 维护。最近的模型增删与渠道来源见 [11 月 24 日更新记录](REFRESH-2026-11-24.md)。ID 数量包含供应商限定 ID、日期快照及免费变体。
+当前 `2026-11-28.3` 快照收录 3,020 个可识别模型 ID。11 月 28 日补齐 LongCat 2.5、Muse Ember 和 5 个 OpenRouter 批量渠道的报价，更新 Inkling 2 Mini 的 OpenRouter 价格，并新增 GLM-5.4、MAI Code 2 系列及 Inkling 2 Small 的独立计费渠道。GLM-5.4 默认参考价取自 BeatAPI。GPT 聊天模型的默认上下文按 [Codex 上下文规则](GPT-CONTEXT-2026-11-24.md) 维护。最近的模型增删与渠道来源见 [11 月 24 日更新记录](REFRESH-2026-11-24.md)。ID 数量包含供应商限定 ID、日期快照及免费变体。
 
 来源：
 

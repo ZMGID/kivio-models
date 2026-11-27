@@ -19998,8 +19998,17 @@
     },
     "glm-5.4": {
       "currency": "USD",
-      "source": "https://docs.z.ai/devpack/overview",
-      "condition": "Z.ai GLM Coding Plan uses subscription credits and plan quotas. The standard Model API is not open."
+      "source": "https://beatapi.io/glm-5-4-api",
+      "kind": "catalog",
+      "pricing": {
+        "input": 0.56,
+        "output": 1.76,
+        "cachedInput": 0.104
+      },
+      "aliases": [
+        "beatapi/glm-5.4"
+      ],
+      "condition": "GLM-5.4 reference rate from BeatAPI pay-as-you-go. Z.ai Coding Plan is billed by subscription credits."
     },
     "aihubmix/coding-glm-5.4": {
       "currency": "USD",
@@ -20010,18 +20019,6 @@
         "cachedInput": 0.03
       },
       "condition": "AIHubMix pay-as-you-go. Request model ID: coding-glm-5.4.",
-      "kind": "catalog",
-      "routeOnly": true
-    },
-    "beatapi/glm-5.4": {
-      "currency": "USD",
-      "source": "https://beatapi.io/glm-5-4-api",
-      "pricing": {
-        "input": 0.56,
-        "output": 1.76,
-        "cachedInput": 0.104
-      },
-      "condition": "BeatAPI pay-as-you-go text route. Request model ID: glm-5.4.",
       "kind": "catalog",
       "routeOnly": true
     },
