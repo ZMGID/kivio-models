@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "version": "2026-11-28.1",
+    "version": "2026-11-28.2",
     "schemaVersion": 1,
     "description": "AI model database for Kivio. Keyed by model ID patterns. Used for auto-filling model info when adding models.",
     "sources": [
@@ -287,7 +287,14 @@
       "https://openrouter.ai/meta-llama/llama-3.2-3b-instruct",
       "https://fireworks.ai/pricing",
       "https://openrouter.ai/api/v1/models/microsoft/mai-image-2.7/endpoints",
-      "https://openrouter.ai/api/v1/models/microsoft/mai-image-2.7-flash/endpoints"
+      "https://openrouter.ai/api/v1/models/microsoft/mai-image-2.7-flash/endpoints",
+      "https://docs.z.ai/devpack/overview",
+      "https://aihubmix.com/model/coding-glm-5.4",
+      "https://beatapi.io/glm-5-4-api",
+      "https://longcat.ai/platform/docs/pricing/longcat-2.5",
+      "https://dev.meta.ai/docs/pricing-rate-limits#muse-ember",
+      "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing#microsoft",
+      "https://fireworks.ai/models/fireworks/inkling-2-small"
     ],
     "importSnapshot": {
       "date": "2026-11-11",
@@ -37570,6 +37577,14 @@
       "catalog": "Official documentation",
       "url": "https://zcode.z.ai/en/docs/configuration",
       "provider": "zai-coding-plan"
+    },
+    "pricingSource": {
+      "kind": "official",
+      "url": "https://docs.z.ai/devpack/overview",
+      "date": "2026-11-28",
+      "model": "glm-5.4",
+      "currency": "USD",
+      "condition": "Z.ai GLM Coding Plan uses subscription credits and plan quotas. The standard Model API is not open."
     }
   },
   "glm-5p1": {
@@ -105430,18 +105445,18 @@
       "provider": "openrouter"
     },
     "pricing": {
-      "input": 0.075,
-      "output": 0.3,
-      "cachedInput": 0.015
+      "input": 0.06,
+      "output": 0.24,
+      "cachedInput": 0.012
     },
     "pricingSource": {
       "kind": "catalog",
-      "url": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
+      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
       "date": "2026-11-28",
       "model": "thinkingmachines/inkling-2-mini",
       "currency": "USD",
       "tokenUnit": "per million tokens",
-      "condition": "OpenRouter route only"
+      "condition": "OpenRouter route only; catalog token rates checked 2026-11-28."
     }
   },
   "thinkingmachines/inkling-small": {
@@ -115697,7 +115712,15 @@
       "url": "https://zcode.z.ai/en/docs/configuration",
       "provider": "zai-coding-plan"
     },
-    "aliasOf": "glm-5.4"
+    "aliasOf": "glm-5.4",
+    "pricingSource": {
+      "kind": "official",
+      "url": "https://docs.z.ai/devpack/overview",
+      "date": "2026-11-28",
+      "model": "glm-5.4",
+      "currency": "USD",
+      "condition": "Z.ai GLM Coding Plan uses subscription credits and plan quotas. The standard Model API is not open."
+    }
   },
   "zhipuai/glm-5v-turbo": {
     "displayName": "GLM-5V Turbo",
@@ -117926,7 +117949,21 @@
     },
     "releaseDate": "2026-11-02",
     "canonicalId": "meituan/longcat-2.5",
-    "aliasOf": "meituan/longcat-2.5"
+    "aliasOf": "meituan/longcat-2.5",
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cachedInput": 0.006
+    },
+    "pricingSource": {
+      "kind": "official",
+      "url": "https://longcat.ai/platform/docs/pricing/longcat-2.5",
+      "date": "2026-11-28",
+      "model": "longcat-2.5",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "LongCat official pay-as-you-go; limited-time USD price."
+    }
   },
   "meituan/longcat-2.5": {
     "displayName": "LongCat-2.5",
@@ -117954,7 +117991,21 @@
       ]
     },
     "releaseDate": "2026-11-02",
-    "canonicalId": "meituan/longcat-2.5"
+    "canonicalId": "meituan/longcat-2.5",
+    "pricing": {
+      "input": 0.3,
+      "output": 1.2,
+      "cachedInput": 0.006
+    },
+    "pricingSource": {
+      "kind": "official",
+      "url": "https://longcat.ai/platform/docs/pricing/longcat-2.5",
+      "date": "2026-11-28",
+      "model": "longcat-2.5",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "LongCat official pay-as-you-go; limited-time USD price."
+    }
   },
   "meta/muse-ember": {
     "displayName": "Meta: Muse Ember",
@@ -118038,7 +118089,31 @@
       ]
     },
     "releaseDate": "2026-11-09",
-    "canonicalId": "meta/muse-ember-1.0"
+    "canonicalId": "meta/muse-ember-1.0",
+    "pricing": {
+      "input": 0.1,
+      "output": 0.5,
+      "cachedInput": 0.004
+    },
+    "pricingTiers": [
+      {
+        "condition": "More than 200000 input tokens; higher rates apply to the full request",
+        "pricing": {
+          "input": 0.3,
+          "output": 1.5,
+          "cachedInput": 0.012
+        }
+      }
+    ],
+    "pricingSource": {
+      "kind": "official",
+      "url": "https://dev.meta.ai/docs/pricing-rate-limits#muse-ember",
+      "date": "2026-11-28",
+      "model": "muse-ember-1.0",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "Meta Model API Standard mode."
+    }
   },
   "meta/muse-glimmer-30b:batch": {
     "displayName": "Muse Glimmer 30B",
@@ -118546,7 +118621,31 @@
       "high",
       "xhigh",
       "max"
-    ]
+    ],
+    "pricing": {
+      "input": 0.1,
+      "output": 0.5,
+      "cachedInput": 0.004
+    },
+    "pricingTiers": [
+      {
+        "condition": "More than 200000 input tokens; higher rates apply to the full request",
+        "pricing": {
+          "input": 0.3,
+          "output": 1.5,
+          "cachedInput": 0.012
+        }
+      }
+    ],
+    "pricingSource": {
+      "kind": "official",
+      "url": "https://dev.meta.ai/docs/pricing-rate-limits#muse-ember",
+      "date": "2026-11-28",
+      "model": "muse-ember-1.0",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "Meta Model API Standard mode."
+    }
   },
   "nex-agi/nex-n2.6": {
     "displayName": "Nex AGI: Nex-N2.6",
@@ -118793,7 +118892,21 @@
       "input": 0.04,
       "output": 1.35
     },
-    "variantOf": "qwen/qwen3.8-27b"
+    "variantOf": "qwen/qwen3.8-27b",
+    "pricing": {
+      "input": 0.16,
+      "output": 2,
+      "cachedInput": 0.04
+    },
+    "pricingSource": {
+      "kind": "catalog",
+      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
+      "date": "2026-11-28",
+      "model": "qwen/qwen3.8-27b:batch",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "OpenRouter route only; catalog token rates checked 2026-11-28."
+    }
   },
   "qwen/qwen3.8-max-0902:batch": {
     "displayName": "Qwen3.8 Max (0902)",
@@ -118863,7 +118976,20 @@
       "input": 2,
       "output": 6
     },
-    "variantOf": "qwen/qwen3.8-max-0902"
+    "variantOf": "qwen/qwen3.8-max-0902",
+    "pricing": {
+      "input": 1.15,
+      "output": 3.45
+    },
+    "pricingSource": {
+      "kind": "catalog",
+      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
+      "date": "2026-11-28",
+      "model": "qwen/qwen3.8-max-0902:batch",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "OpenRouter route only; catalog token rates checked 2026-11-28."
+    }
   },
   "ricursive-ai/ripple-65b-preview": {
     "displayName": "ricursive-ai/Ripple-65B-Preview",
@@ -119214,7 +119340,31 @@
       "input": 2,
       "output": 6
     },
-    "variantOf": "x-ai/grok-4.6"
+    "variantOf": "x-ai/grok-4.6",
+    "pricing": {
+      "input": 1.6,
+      "output": 4.8,
+      "cachedInput": 0.4
+    },
+    "pricingTiers": [
+      {
+        "condition": "OpenRouter listed threshold: 200000 prompt tokens",
+        "pricing": {
+          "input": 3.2,
+          "output": 9.6,
+          "cachedInput": 0.8
+        }
+      }
+    ],
+    "pricingSource": {
+      "kind": "catalog",
+      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
+      "date": "2026-11-28",
+      "model": "x-ai/grok-4.6:batch",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "OpenRouter route only; catalog token rates checked 2026-11-28."
+    }
   },
   "x-ai/grok-4.7:batch": {
     "displayName": "Grok 4.7",
@@ -119282,7 +119432,31 @@
       "input": 2,
       "output": 6
     },
-    "variantOf": "x-ai/grok-4.7"
+    "variantOf": "x-ai/grok-4.7",
+    "pricing": {
+      "input": 1.6,
+      "output": 4.8,
+      "cachedInput": 0.4
+    },
+    "pricingTiers": [
+      {
+        "condition": "OpenRouter listed threshold: 200000 prompt tokens",
+        "pricing": {
+          "input": 3.2,
+          "output": 9.6,
+          "cachedInput": 0.8
+        }
+      }
+    ],
+    "pricingSource": {
+      "kind": "catalog",
+      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
+      "date": "2026-11-28",
+      "model": "x-ai/grok-4.7:batch",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "OpenRouter route only; catalog token rates checked 2026-11-28."
+    }
   },
   "z-ai/glm-5.2:batch": {
     "displayName": "GLM-5.2",
@@ -119348,7 +119522,21 @@
       "input": 0.0341,
       "output": 7
     },
-    "variantOf": "z-ai/glm-5.2"
+    "variantOf": "z-ai/glm-5.2",
+    "pricing": {
+      "input": 0.322,
+      "output": 0.989,
+      "cachedInput": 0.109
+    },
+    "pricingSource": {
+      "kind": "catalog",
+      "url": "https://openrouter.ai/api/v1/models?output_modalities=all",
+      "date": "2026-11-28",
+      "model": "z-ai/glm-5.2:batch",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "OpenRouter route only; catalog token rates checked 2026-11-28."
+    }
   },
   "z-ai/glm-5.3-flashx-legal": {
     "displayName": "Z.ai: GLM 5.3 FlashX Legal",
@@ -120241,6 +120429,224 @@
       "currency": "USD",
       "tokenUnit": "per million tokens",
       "condition": "Fireworks Serverless Standard (US) route only."
+    }
+  },
+  "aihubmix/coding-glm-5.4": {
+    "displayName": "GLM-5.4 (AIHubMix)",
+    "contextWindow": 1050000,
+    "capabilities": {
+      "vision": true,
+      "videoInput": true,
+      "reasoning": true,
+      "functionCalling": true,
+      "streaming": true,
+      "structuredOutput": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "modelType": "chat",
+    "source": {
+      "catalog": "Official provider documentation",
+      "url": "https://aihubmix.com/model/coding-glm-5.4",
+      "provider": "aihubmix"
+    },
+    "pricing": {
+      "input": 0.12,
+      "output": 0.44,
+      "cachedInput": 0.03
+    },
+    "pricingSource": {
+      "kind": "catalog",
+      "url": "https://aihubmix.com/model/coding-glm-5.4",
+      "date": "2026-11-28",
+      "model": "aihubmix/coding-glm-5.4",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "AIHubMix pay-as-you-go. Request model ID: coding-glm-5.4."
+    }
+  },
+  "beatapi/glm-5.4": {
+    "displayName": "GLM-5.4 (BeatAPI)",
+    "contextWindow": 1000000,
+    "maxOutput": 128000,
+    "capabilities": {
+      "vision": false,
+      "videoInput": false,
+      "reasoning": true,
+      "functionCalling": true,
+      "streaming": true
+    },
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "modelType": "chat",
+    "source": {
+      "catalog": "Official provider documentation",
+      "url": "https://beatapi.io/glm-5-4-api",
+      "provider": "beatapi"
+    },
+    "pricing": {
+      "input": 0.56,
+      "output": 1.76,
+      "cachedInput": 0.104
+    },
+    "pricingSource": {
+      "kind": "catalog",
+      "url": "https://beatapi.io/glm-5-4-api",
+      "date": "2026-11-28",
+      "model": "beatapi/glm-5.4",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "BeatAPI pay-as-you-go text route. Request model ID: glm-5.4."
+    }
+  },
+  "github-copilot/mai-code-2": {
+    "displayName": "MAI Code 2 (GitHub Copilot)",
+    "contextWindow": 1050000,
+    "maxOutput": 128000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "modelType": "chat",
+    "source": {
+      "catalog": "Official provider documentation",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing#microsoft",
+      "provider": "github-copilot"
+    },
+    "pricing": {
+      "input": 0.5,
+      "output": 2.5,
+      "cachedInput": 0.025
+    },
+    "pricingTiers": [
+      {
+        "condition": "From 2027-05-17",
+        "pricing": {
+          "input": 1,
+          "output": 5,
+          "cachedInput": 0.05
+        }
+      }
+    ],
+    "pricingSource": {
+      "kind": "catalog",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing#microsoft",
+      "date": "2026-11-28",
+      "model": "github-copilot/mai-code-2",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "GitHub Copilot usage-based billing. Regular rates start May 17, 2027."
+    }
+  },
+  "github-copilot/mai-code-2-flash": {
+    "displayName": "MAI Code 2 Flash (GitHub Copilot)",
+    "contextWindow": 1050000,
+    "maxOutput": 128000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "modelType": "chat",
+    "source": {
+      "catalog": "Official provider documentation",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing#microsoft",
+      "provider": "github-copilot"
+    },
+    "pricing": {
+      "input": 0.05,
+      "output": 0.25,
+      "cachedInput": 0.005
+    },
+    "pricingTiers": [
+      {
+        "condition": "From 2027-05-17",
+        "pricing": {
+          "input": 0.1,
+          "output": 0.5,
+          "cachedInput": 0.01
+        }
+      }
+    ],
+    "pricingSource": {
+      "kind": "catalog",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing#microsoft",
+      "date": "2026-11-28",
+      "model": "github-copilot/mai-code-2-flash",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "GitHub Copilot usage-based billing. Regular rates start May 17, 2027."
+    }
+  },
+  "accounts/fireworks/models/inkling-2-small": {
+    "displayName": "Inkling 2 Small (Fireworks)",
+    "contextWindow": 1040000,
+    "capabilities": {
+      "vision": true,
+      "reasoning": true,
+      "functionCalling": true
+    },
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "modelType": "chat",
+    "source": {
+      "catalog": "Official provider documentation",
+      "url": "https://fireworks.ai/models/fireworks/inkling-2-small",
+      "provider": "fireworks-ai"
+    },
+    "pricing": {
+      "input": 0.3,
+      "output": 1,
+      "cachedInput": 0.03
+    },
+    "pricingSource": {
+      "kind": "official",
+      "url": "https://fireworks.ai/models/fireworks/inkling-2-small",
+      "date": "2026-11-28",
+      "model": "accounts/fireworks/models/inkling-2-small",
+      "currency": "USD",
+      "tokenUnit": "per million tokens",
+      "condition": "Fireworks Serverless Standard route."
     }
   }
 }
